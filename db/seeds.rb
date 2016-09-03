@@ -6,6 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Project.create(name: "", categories: "", order: 0, displayed: true,
+Project.create(name: "", shortname:"", categories: "", order: 0, displayed: true,
 				created_at: Time.now, updated_at: Time.now)
 
