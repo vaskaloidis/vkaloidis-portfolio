@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
-gem "font-awesome-rails"
+# Image Upload Feature
+#   - brew install imagemagick
+gem "paperclip", "~> 5.0.0"
 
+gem "font-awesome-rails"
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
