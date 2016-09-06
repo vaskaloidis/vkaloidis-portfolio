@@ -1,99 +1,35 @@
 <h1 class="fullName">Vasilios C. Kaloidis</h1>
 
-<p id="notice"><%= notice %></p>
+<!--<p id="notice"><%= notice %></p>-->
 
-<%= render "skills" %>
+<div class="container">
 
-<h1>Projects</h1>
-<div class="card-columns">
-    <div class="card">
-        <!--<img class="card-img-top" src="" alt="Card image cap">-->
-        <div class="card-block">
-            <h4 class="card-title">Card title that wraps to a new line</h4>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-    </div>
-    <div class="card card-block">
-        <blockquote class="card-blockquote">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer>
-                <small class="text-muted">
-                    Someone famous in <cite title="Source Title">Source Title</cite>
-                </small>
-            </footer>
-        </blockquote>
-    </div>
-    <div class="card">
-        <!--<img class="card-img-top" src="..." alt="Card image cap">-->
-        <div class="card-block">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-    </div>
-    <div class="card card-block card-inverse card-primary text-xs-center">
-        <blockquote class="card-blockquote">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-            <footer>
-                <small>
-                    Someone famous in <cite title="Source Title">Source Title</cite>
-                </small>
-            </footer>
-        </blockquote>
-    </div>
-    <div class="card card-block text-xs-center">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-    <!--<div class="card"><img class="card-img" src="..." alt="Card image"></div>-->
-    <div class="card card-block text-xs-right">
-        <blockquote class="card-blockquote">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer>
-                <small class="text-muted">
-                    Someone famous in <cite title="Source Title">Source Title</cite>
-                </small>
-            </footer>
-        </blockquote>
-    </div>
-    <div class="card card-block">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-</div>
+    <%= render "skills" %>
 
-<%#= render partial: "projects/project", collection: @products %>
-<%#= render @projects %>
-
-<% if true %>
-    <table>
-        <thead>
-        <tr>
-            <th>Name</th>
-            <th>Categories</th>
-            <th>Order</th>
-            <th>Displayed</th>
-            <th>Modified</th>
-            <th colspan="3"></th>
-        </tr>
-        </thead>
-        <tbody>
+    <h1>Projects</h1>
+    <div class="card-columns">
         <% @projects.each do |project| %>
-            <tr>
-                <td><%= project.name %></td>
-                <td><%= project.categories %></td>
-                <td><%= project.order %></td>
-                <td><%= project.displayed %></td>
-                <td><%= project.modified %></td>
-                <td><%= link_to 'Show', project %></td>
-                <td><%= link_to 'Edit', edit_project_path(project) %></td>
-            </tr>
+           <% if project.displayed %>
+                <div class="card">
+                    <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+                    <div class="card-block">
+                        <h4 class="card-title"><%= project.name %></h4>
+                        <%
+                            description = project.summary
+                            categoryHtml = buildCategoryHtml(project.categories)
+                        %>
+                        <p class="card-text"><%= description %></p>
+                        <p class="card-text"><small class="text-muted"><%= categoryHtml %></small></p>
+                        <p class="card-text"><small class="text-muted">
+                            <%= link_to 'Show', project %>-
+                            <%= link_to 'Edit', edit_project_path(project) %></small></p>
+                    </div>
+                </div>
+            <% end %>
         <% end %>
-        </tbody>
-    </table>
-<% end %>
+    </div>
+
+</div>
 
 <br>
 
