@@ -1,5 +1,4 @@
 class GithubController < ApplicationController
-
 	def starred
 		url = 'https://api.github.com/users/vaskaloidis/starred'
 		uri = URI(url)

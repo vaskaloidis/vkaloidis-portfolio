@@ -5,14 +5,6 @@ class ProjectsController < ApplicationController
 	http_basic_authenticate_with name: @username, password: @password, except: [:index, :show]
 	before_action :set_project, only: [:show, :edit, :update, :destroy]
 
-	def username
-		return @username
-	end
-
-	def password
-		return @password
-	end
-
   # GET /projects
   # GET /projects.json
   def index
