@@ -1,4 +1,5 @@
 class AddAttachmentImgToProjects < ActiveRecord::Migration
+# add_attachment :users, :avatar
   def self.up
     change_table :projects do |t|
       t.attachment :img

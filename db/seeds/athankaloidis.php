@@ -9,4 +9,6 @@
 	onclick="window.location='http://www.athankaloidis.com'"
 	value="www.athankaloidis.com" />
 
-<p><a href="http://athankaloidis.com"><center><img class="img-polaroid" width="400" height="400" src="./projects/akmemorial/akmemorial.png" /></center></a></p>
+<p><a href="http://athankaloidis.com">
+	<img class="img-polaroid" width="400" height="400" src="./projects/akmemorial/akmemorial.png" />
+</a></p>

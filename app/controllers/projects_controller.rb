@@ -1,5 +1,17 @@
 class ProjectsController < ApplicationController
-  before_action :set_project, only: [:show, :edit, :update, :destroy]
+	@username = "temporary"
+	@password = "temporary"
+
+	http_basic_authenticate_with name: @username, password: @password, except: [:index, :show]
+	before_action :set_project, only: [:show, :edit, :update, :destroy]
+
+	def username
+		return @username
+	end
+
+	def password
+		return @password
+	end
 
   # GET /projects
   # GET /projects.json
@@ -10,12 +22,11 @@ class ProjectsController < ApplicationController
   # GET /projects/1
   # GET /projects/1.json
   def show
-    @projects = Project.all
   end
 
   # GET /projects/new
   def new
-    @projects = Project.new
+    @project = Project.new
   end
 
   # GET /projects/1/edit
@@ -70,6 +81,6 @@ class ProjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_params
-      params.require(:project).permit(:name, :categories, :shortname, :order, :displayed)
+      params.require(:project).permit(:name, :categories, :content, :order, :displayed)
     end
 end

@@ -21,6 +21,12 @@
 </p>
 
 <p>
+    <div style="border:1px solid black; margin:25px; padding:5px;">
+        <%= @project.content.html_safe %>
+    </div>
+</p>
+
+<p>
     <strong>Displayed:</strong>
     <%= @project.displayed %>
 </p>
