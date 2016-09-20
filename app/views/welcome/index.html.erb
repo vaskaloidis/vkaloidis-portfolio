@@ -1,24 +1,28 @@
 <div class="container">
-	<h1 class="fullName"><%= link_to "vasilios c. kaloidis", root_path %> <%#= image_tag('helmet.png') %></h1>
-	
+	<!--<h1 class="fullName"><%= link_to "vasilios c. kaloidis", root_path %> <%#= image_tag('helmet.png') %></h1>-->
+	<h1>vasilios c. kaloidis</h1>
 	<%= render "skills" %>
 	
-	<h1>Projects</h1>
+	<h1>projects</h1>
 	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 		<% @projects.each do |project| %>
 				<% if project.displayed %>
 						
-						<% if @count == @half # Split DIV For 2 columns   %>
+						<% if @count == @half # Split DIV For 2 columns     %>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<% end %>
 						
-						<div class="panel panel-default center-block">
-							<p data-toggle="modal" data-target="#modal<%= project.id %>"
-							   class="panel-body">
-								<%= project.name %><br>
-								<%= buildCategoryHtml(project.categories).html_safe %>
-							</p>
+						<div data-toggle="modal" data-target="#modal<%= project.id %>" class="projectHover panel panel-default center-block">
+							<div class="panel-body">
+								<div class="pull-right">
+									<%= buildCategoryIconHtml(project.categories).html_safe %>
+								</div>
+								<div class="clearfix">
+									<%= project.name %><br>
+									<%= buildCategoryLabelHtml(project.categories).html_safe %>
+								</div>
+							</div>
 						</div>
 						
 						<!-- Modal -->

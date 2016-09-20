@@ -16,6 +16,19 @@ body {
   //padding-top: 60px;
 }
 
+.devicon {
+  font-size: 40px;
+  margin-right:6px;
+}
+
+.projectHover:hover {
+  border-top:1px solid #333;
+}
+
+.fa {
+  margin-right:6px;
+}
+
 #project_content {
   height: 500px;
 }
