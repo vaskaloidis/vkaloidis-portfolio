@@ -12,17 +12,19 @@
             </ul>
         </div>
     <% end %>
-
+			<div class="actions">
+				<%= f.submit %>
+			</div>
     <div class="field">
         <%= f.text_area :name %>
     </div>
+			
+			<div class="field">
+				<%= f.text_area :categories %>
+			</div>
 
     <div class="field">
         <%= f.text_area :content %>
-    </div>
-
-    <div class="field">
-        <%= f.text_area :categories %>
     </div>
 
     <div class="field">
@@ -33,9 +35,6 @@
         <%= f.check_box :displayed %>
     </div>
 
-    <div class="actions">
-        <%= f.submit %>
-    </div>
 <% end %>
 
 </div>

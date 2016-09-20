@@ -1,0 +1,47 @@
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<span class="navbar-brand"><%= link_to "vkaloidis.com", root_path %></span>
+		</div>
+		
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+			<ul class="nav navbar-nav">
+				<li><%= link_to "Vasilios Kaloidis", root_path %> <span class="sr-only">(current)</span></li>
+			</ul>
+			
+			<% if current_page?(:controller => 'projects', :action => 'show', :id => 1) or
+				current_page?(:controller => 'projects', :action => 'new', :id => 1) or
+				current_page?(:controller => 'projects', :action => 'edit', :id => 1) or
+				current_page?(:controller => 'projects', :action => 'update', :id => 1) or
+				current_page?(:controller => 'projects', :action => 'destroy', :id => 1) %>
+					
+					<li><%= link_to 'Projects', projects_path %></li>
+					<% if current_page?(:controller => 'projects', :action => 'new', :id => 1) %>
+							<li class="active"><%= link_to 'New', new_project_path %></li>
+					<% else %>
+							<li><%= link_to 'New', new_project_path %></li>
+					<% end %>
+					
+					<ul class="nav navbar-nav navbar-right">
+						<% if current_page?(:controller => 'projects', :action => 'edit', :id => 1) %>
+								<li class="active"><%= link_to 'View', @project %></li>
+						<% else %>
+								<li><%= link_to 'View', @project %></li>
+						<% end %>
+						
+						<li><%= link_to 'Back', projects_path %></li>
+					</ul>
+			<% else %>
+					<li class="active"><%= link_to 'Projects', projects_path %></li>
+					<li><%= link_to 'New', new_project_path %></li>
+			<% end %>
+		
+		</div>
+	</div>
+</nav>

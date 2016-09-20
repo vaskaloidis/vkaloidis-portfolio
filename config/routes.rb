@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  # Projects
+	# Projects
   resources :projects
 
   # Main Page
@@ -8,6 +8,6 @@ Rails.application.routes.draw do
 
   # Authentication (Not working yet)
   get 'login', to: 'welcome#authenticate'
-  # map_method.logout('/logout', :controller => 'sessions', :action => 'destroy')
+	# get '/logout', :controller => 'sessions', :action => 'destroy'
 
 end

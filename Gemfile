@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'bootswatch-rails'
+
 gem 'github_api'
 gem 'faraday-http-cache'
 
@@ -10,7 +12,10 @@ gem 'bootstrap_form'
 gem "paperclip", "~> 5.0.0"
 
 gem "font-awesome-rails"
-gem 'bootstrap', '~> 4.0.0.alpha3.1'
+
+# gem 'bootstrap', '~> 4.0.0.alpha3.1'
+gem 'bootstrap-sass', '~> 3.3.6'
+# gem 'sass-rails', '>= 3.2'
 
 # Bundle edge Rails instead: gem 'rails', github_api: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'

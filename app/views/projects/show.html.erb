@@ -1,35 +1,40 @@
-<p id="notice"><%= notice %></p>
+<%= render 'navbar' %>
+<div class="container">
+	
+	<%= link_to 'Edit', edit_project_path(@project) %> |
+	<%= link_to 'Back', projects_path %>
+	
+	<p id="notice"><%= notice %></p>
+	
+	<p>
+		<strong>Name:</strong>
+		<%= @project.name %>
+	</p>
+	
+	<p>
+		<strong>Shortname:</strong>
+		<%= @project.shortname %>
+	</p>
+	
+	<p>
+		<strong>Categories:</strong>
+		<%= @project.categories %>
+	</p>
+	
+	<p>
+		<strong>Order:</strong>
+		<%= @project.order %>
+	</p>
+	
+	<p>
+	<div style="border:1px solid black; margin:25px; padding:5px;">
+		<%= @project.content.html_safe %>
+	</div>
+	</p>
+	
+	<p>
+		<strong>Displayed:</strong>
+		<%= @project.displayed %>
+	</p>
 
-<p>
-    <strong>Name:</strong>
-    <%= @project.name %>
-</p>
-
-<p>
-    <strong>Shortname:</strong>
-    <%= @project.shortname %>
-</p>
-
-<p>
-    <strong>Categories:</strong>
-    <%= @project.categories %>
-</p>
-
-<p>
-    <strong>Order:</strong>
-    <%= @project.order %>
-</p>
-
-<p>
-    <div style="border:1px solid black; margin:25px; padding:5px;">
-        <%= @project.content.html_safe %>
-    </div>
-</p>
-
-<p>
-    <strong>Displayed:</strong>
-    <%= @project.displayed %>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+</div>

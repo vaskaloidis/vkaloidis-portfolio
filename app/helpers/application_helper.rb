@@ -16,19 +16,24 @@ module ApplicationHelper
 	end
 
 	def getCategoryButton(category)
-		result = ''
-		tag = ""
-		tagHtml = ""
+		type    = 'not-devicon'
+		result  = ''
+		tag     = ''
+		devicon = ''
+		tagHtml = ''
 		case category
 			when "Html"
-				result = 'success'
-				tag = 'html5'
+				result  = 'success'
+				tag     = 'html5'
+				devicon = 'devicon-html5-plain'
 			when "Java"
-				result = 'warning'
-				tag = 'coffee'
+				result  = 'warning'
+				tag     = 'coffee'
+				devicon = 'devicon-java-plain'
 			when "Java EE"
-				result = 'warning'
-				tag = 'coffee'
+				result  = 'warning'
+				tag     = 'coffee'
+				devicon = 'html5'
 			when "JavaFX"
 				result = 'warning'
 			when "MIPS"
@@ -53,11 +58,13 @@ module ApplicationHelper
 				result = 'default'
 				tag = 'laptop'
 			when "PHP"
-				result = 'danger'
-				tag = 'space-shuttle'
+				result  = 'danger'
+				tag     = 'space-shuttle'
+				devicon = 'devicon-php-plain colored'
 			when "MySQL"
-				result = 'info'
-				tag = 'database'
+				result  = 'info'
+				tag     = 'database'
+				devicon = 'devicon-mysql-plain-wordmark colored'
 			when "Mac OSX"
 				result = 'info'
 				tag = 'apple'
@@ -87,6 +94,16 @@ module ApplicationHelper
 		if !tag.empty?
 			tagHtml = ' <i class="fa fa-' + tag + '"></i> '
 		end
-		return '<span class="tag tag-' + result + '">' + tagHtml + category + '</span> '
+		if type == 'devicon'
+			if !devicon.empty?
+				return '<i class="' + devicon + '"></i>'
+
+			else
+				return ''
+				# return '<span class="tag tag-' + result + '">' + tagHtml + category + '</span> '
+			end
+		else
+			return '<span class="label label-' + result + '">' + tagHtml + category + '</span> '
+		end
 	end
 end

@@ -1,23 +1,20 @@
 /*
- *
  * Color Scheme: https://coolors.co/f1e0c5-9ffff5-c9b79c-ff7260-5e5f60
- * Dark Bootstrap Swatch: Slate
- *
  */
+// Example using 'Cerulean' bootswatch
 @import "bootstrap-sprockets";
-@import "bootswatch/paper/variables";
+// Import cerulean variables
+@import "bootswatch/cerulean/variables";
+// Then bootstrap itself
 @import "bootstrap";
-@import "bootswatch/paper/bootswatch";
+// And finally bootswatch style itself
+@import "bootswatch/cerulean/bootswatch";
 @import 'font-awesome';
 @import 'https://fonts.googleapis.com/css?family=Oswald';
 @import 'rails_bootstrap_forms';
 
 body {
-  //padding-top: 60px;
-}
-
-#project_content {
-  height: 500px;
+  padding-top: 60px;
 }
 
 .modal-body > .img-responsive {
@@ -31,22 +28,29 @@ body {
 }
 
 footer {
-  //margin: 50px 0;
+  margin: 50px 0;
 }
 
 .card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 4;
+  }
 }
 
 .fullName > a {
-  font-family: 'Alegreya Sans', sans-serif;
-  //font-family: 'Oswald', sans-serif;
+  //font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
   //color:#A5D4E7;
   color: #5E5F60;
-  font-size: 1.1em;
+  font-size: 1.5em;
   text-decoration: none;
 }
 
 .container {
+  margin-top: 20px;
 }
 
 .container img {
