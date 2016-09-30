@@ -3,7 +3,7 @@ class ProjectsController < ApplicationController
 	@password = "temporary"
 
   http_basic_authenticate_with name: @username, password: @password
-  before_action :set_project, only: [:show, :edit, :update, :destroy, :create, :index]
+  before_action :set_project, only: [:show, :edit, :update, :destroy, :create]
 
   # GET /projects
   # GET /projects.json

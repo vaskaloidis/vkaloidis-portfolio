@@ -18,10 +18,10 @@
                 onclick="window.location='http://www.thenewwoodburyfleamarket.com/'"
                 value="www.thenewwoodburyfleamarket.com" /><br>
                 <a href="http://www.thenewwoodburyfleamarket.com">
-                    <img class="img-polaroid" width="400" height="400" src="./projectSections/woodburyflea/woodburyfleaSs1.png" />
-                    <img class="img-polaroid" width="400" height="400" src="./projectSections/woodburyflea/woodburyfleaSs2.png" />
-                    <img class="img-polaroid" width="400" height="400" src="./projectSections/woodburyflea/woodburyfleaSs3.png" />
-                    <img class="img-polaroid" width="400" height="400" src="./projectSections/woodburyflea/woodburyfleaSs4.png" />
+                    <img class="img-polaroid" width="400" height="400" src="./projects/woodburyflea/woodburyfleaSs1.png" />
+                    <img class="img-polaroid" width="400" height="400" src="./projects/woodburyflea/woodburyfleaSs2.png" />
+                    <img class="img-polaroid" width="400" height="400" src="./projects/woodburyflea/woodburyfleaSs3.png" />
+                    <img class="img-polaroid" width="400" height="400" src="./projects/woodburyflea/woodburyfleaSs4.png" />
                 </a>
             <br>
             <?php if($section == "all" && $thisSection != "" && $Config->get('direct_link')) { ?>

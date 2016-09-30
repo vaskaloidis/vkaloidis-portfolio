@@ -1,4 +1,137 @@
-// Place all the styles related to the Welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootswatch/paper/variables";
+@import "bootstrap";
+@import "bootswatch/paper/bootswatch";
+
+h1 {
+  margin:20px;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+}
+
+.center {
+  text-align: center;
+}
+
+.topButtons {
+}
+
+header {
+  //RM: background: url(images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  background-image: image_url('header-bg-2.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+  border-bottom: 1px black solid;
+  min-height: 272px;
+}
+
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+header .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+//TODO COMBINE THESE CLEAN THIS UP
+.nobreak {
+  display: inline-block;;
+}
+
+h1.fullname {
+  text-align: center;
+}
+
+img.logo {
+  //height:50%;
+  max-width: 300px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+// Mobile
+@media (max-width: 768px) {
+  img.logo {
+    width: 100%;
+    text-align: center;
+  }
+  .fullname {
+    margin-top:0px;
+    padding-top:0px;
+  }
+  h1.fullname > a {
+    width: 100%;
+  }
+  .portfolio-item {
+    margin-bottom:0px;
+    padding-bottom:0px;
+  }
+  .skills {
+    text-align: center;
+  }
+}
+
+// Desktop (min-width: @screen-sm-min)
+@media (min-width: 768px) {
+  .h1.fullname {
+    display: inline-block;
+
+  }
+  img.logo {
+    width: 165px;
+  }
+  header {
+    min-height: 685px;
+  }
+  header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+  }
+}
+
+.fullName > a {
+  font-family: 'Alegreya Sans', sans-serif;
+  //font-family: 'Oswald', sans-serif;
+  //color:#A5D4E7;
+  color: #5E5F60;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+
 

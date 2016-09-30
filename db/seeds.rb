@@ -9,6 +9,11 @@
 # Project.create(categories: "", order: 0, displayed: true, created_at: Time.now, updated_at: Time.now,
 #   name: "", content: File.read(project_seeds_dir + "", summary: "", img_file_name: "")
 
+
+
+
+
+
 project_seeds_dir = "db/seeds/"
 img_dir = "img/"
 
