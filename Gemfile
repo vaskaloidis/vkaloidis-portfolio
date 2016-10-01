@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'yaml_db'
+
 gem 'bootswatch-rails'
 
 gem 'github_api'

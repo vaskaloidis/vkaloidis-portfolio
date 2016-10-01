@@ -1,21 +1,36 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-# TEMPLATE:
-# Project.create(categories: "", order: 0, displayed: true, created_at: Time.now, updated_at: Time.now,
-#   name: "", content: File.read(project_seeds_dir + "", summary: "", img_file_name: "")
-
-
+require 'rubygems'
+require 'sitemap_generator'
+require 'mysql2'
+require 'uri'
 
 require 'seed_dump'
 
-
+# Dirs
 project_seeds_dir = "db/seeds/"
 img_dir = "img/"
+
+#
+client = Mysql2::Client.new(:host     => "localhost",
+                            :username => "root",
+                            :password => "root",
+                            :port     => "8889",
+                            :database => "wordpress",
+                            :socket   => "/Applications/MAMP/tmp/mysql/mysql.sock");
+
+client.query("SELECT * FROM `wp_posts`").each do |row|
+
+	query = '?terms=' + title
+	puts query
+
+	#       t.string :name
+	# t.text :contet
+	# t.text :excerpt
+	# t.text :categories
+
+	Article.create()
+
+end
+
 
 # ISAAC / OCHRE
 Project.create(categories: "Java, JavaFX, Maven, Maven MOJO", order: 0, displayed: true, created_at: Time.now, updated_at: Time.now,

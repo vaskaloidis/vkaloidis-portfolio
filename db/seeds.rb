@@ -14,6 +14,8 @@
 require 'seed_dump'
 
 
+
+
 project_seeds_dir = "db/seeds/"
 img_dir = "img/"
 
