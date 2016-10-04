@@ -154,7 +154,7 @@ module ApplicationHelper
 			when "Bower"
 				devicon = 'devicon-bower-plain-wordmark colored'
 			when "Wordpress"
-				devicon = 'devicon-wordpress-plain-wordmark colored'
+				devicon = 'devicon-Bluehelmet-plain-wordmark colored'
 			when "Css"
 				devicon = 'devicon-css3-plain-wordmark colored'
 			when "Hosted"

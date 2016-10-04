@@ -9,7 +9,7 @@
 	
 	<!--<h1 class="fullName"><%= link_to "vasilios c. kaloidis", root_path %> <%#= image_tag('helmet.png') %></h1>-->
 	
-	<div style="text-align:center">
+	<div class="aligncenter">
 		<%= image_tag("vkaloidis-hipster-logo.png", :class => "logo") %>
 	</div>
 	
@@ -32,7 +32,15 @@
 		<% @projects.each do |project| %>
 				<% if project.displayed %>
 						
-						<% if @count == @half.round # Split DIV For 2 columns        %>
+						<%
+							if project.isArticle?
+								# name = Lookup Article by Name
+							else
+								name = project.name
+							end
+						%>
+						
+						<% if @count == @half.round # Split DIV For 2 columns             %>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<% end %>
@@ -75,6 +83,22 @@
 				<% end %>
 				<% @count = @count + 1 %>
 		<% end %>
+		</div>
+		
+		<!-- ARTICLES SECTION-->
+		<div class="container">
+			<hr>
+			<h1 class="center">articles</h1>
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<% @articles.each do |article| %>
+					<div class="post">
+							<h3 class=""><%= article.name %></h3>
+							<p class="subtitle"><%= sanitize article.excerpt %></p>
+							<span class="meta"><%= link_to "View Article...", root_path %></span>
+							<small>Posted by <strong>Vasilios Kaloidis</strong> on <%= article.created_at %></small>
+					</div>
+			<% end %>
+			</div>
 		</div>
 		
 		<!-- GITHUB SECTION - TODO: GOTTA Start caching this and Authenticating first **** -->

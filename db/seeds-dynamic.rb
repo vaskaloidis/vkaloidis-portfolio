@@ -14,7 +14,7 @@ client = Mysql2::Client.new(:host     => "localhost",
                             :username => "root",
                             :password => "root",
                             :port     => "8889",
-                            :database => "wordpress",
+                            :database => "Bluehelmet",
                             :socket   => "/Applications/MAMP/tmp/mysql/mysql.sock");
 
 client.query("SELECT * FROM `wp_posts`").each do |row|

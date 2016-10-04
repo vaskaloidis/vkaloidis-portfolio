@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Vasilios C. Kaloidis</title>
-    <%= csrf_meta_tags %>
-	  <%= stylesheet_link_tag 'https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css' %>
-	  <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Lato:100' %>
-	  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-	  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+	<title>Vasilios C. Kaloidis</title>
+	<%= csrf_meta_tags %>
+	<%= stylesheet_link_tag 'https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css' %>
+	<%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Lato:100' %>
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+<% if !current_page?(:controller => 'welcome') %>
+		<%= render 'layouts/navbar' %>
+		<div class="container">
+			<%= yield %>
+		</div>
+<% else %>
+		<%= yield %>
+<% end %>
+
+
+</body>
 </html>

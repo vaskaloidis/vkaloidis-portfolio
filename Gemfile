@@ -1,23 +1,37 @@
 source 'https://rubygems.org'
 
-gem 'yaml_db'
-
-gem 'bootswatch-rails'
-
+# Github API + Cache
 gem 'github_api'
 gem 'faraday-http-cache'
 
-gem 'bootstrap_form'
 
-# Image Upload Feature
-#   - brew install imagemagick
+
+# MySQL + Db Dump Gem
+gem 'mysql2'
+gem 'yaml_db'
+
+
+
+# Markdown + HTML Converters
+gem 'redcarpet'
+gem 'html2markdown'
+gem 'upmark'
+
+
+# Image Attach Feature
+# brew install imagemagick
 gem "paperclip", "~> 5.0.0"
 
-gem "font-awesome-rails"
 
+# Bootstrap, Bootswatch, Font-Awesome, SASS
+gem 'bootstrap_form'
+gem 'bootswatch-rails'
+gem "font-awesome-rails"
 # gem 'bootstrap', '~> 4.0.0.alpha3.1'
 gem 'bootstrap-sass', '~> 3.3.6'
 # gem 'sass-rails', '>= 3.2'
+
+
 
 # Bundle edge Rails instead: gem 'rails', github_api: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'

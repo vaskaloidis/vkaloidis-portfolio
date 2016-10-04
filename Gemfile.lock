@@ -42,6 +42,7 @@ GEM
     arel (7.1.1)
     autoprefixer-rails (6.4.1.1)
       execjs
+    blankslate (3.1.3)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -83,6 +84,8 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     hashie (3.4.4)
+    html2markdown (0.0.3)
+      nokogiri
     i18n (0.7.0)
     jbuilder (2.6.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -110,6 +113,7 @@ GEM
     multi_json (1.12.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    mysql2 (0.4.4)
     nio4r (1.2.1)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
@@ -126,6 +130,8 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
+    parslet (1.7.1)
+      blankslate (>= 2.0, <= 4.0)
     pkg-config (1.1.7)
     puma (3.6.0)
     rack (2.0.1)
@@ -158,6 +164,7 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    redcarpet (3.3.4)
     ref (2.0.0)
     sass (3.4.22)
     sass-rails (5.0.6)
@@ -191,6 +198,8 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.2)
       execjs (>= 0.3.0, < 3)
+    upmark (0.10.0)
+      parslet (~> 1.7.0)
     web-console (3.3.1)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -215,12 +224,15 @@ DEPENDENCIES
   faraday-http-cache
   font-awesome-rails
   github_api
+  html2markdown
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  mysql2
   paperclip (~> 5.0.0)
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
+  redcarpet
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
@@ -229,6 +241,7 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
+  upmark
   web-console
   yaml_db
 

@@ -10,15 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160906003604) do
+ActiveRecord::Schema.define(version: 20161004055657) do
+
+  create_table "articles", force: :cascade do |t|
+    t.string   "name"
+    t.text     "content"
+    t.text     "excerpt"
+    t.text     "categories"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "shortname"
+  end
 
   create_table "projects", force: :cascade do |t|
     t.text     "name"
     t.text     "categories"
     t.integer  "order"
     t.boolean  "displayed"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
     t.string   "shortname"
     t.string   "content"
     t.string   "summary"
@@ -26,6 +36,7 @@ ActiveRecord::Schema.define(version: 20160906003604) do
     t.string   "img_content_type"
     t.integer  "img_file_size"
     t.datetime "img_updated_at"
+    t.boolean  "isArticle",        default: false
   end
 
 end
