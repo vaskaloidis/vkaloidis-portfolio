@@ -1,6 +1,9 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # IDE files
+.idea/vkaloidis.iml
+kaloidis.iml
+.idea/
 .idea
 
 # Mac DS_Store
