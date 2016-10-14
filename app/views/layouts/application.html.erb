@@ -10,7 +10,8 @@
 </head>
 
 <body>
-<% if !current_page?(:controller => 'welcome') %>
+<% if !current_page?(:controller => 'welcome') or
+			defined? @single_article%>
 		<%= render 'layouts/navbar' %>
 		<div class="container">
 			<%= yield %>

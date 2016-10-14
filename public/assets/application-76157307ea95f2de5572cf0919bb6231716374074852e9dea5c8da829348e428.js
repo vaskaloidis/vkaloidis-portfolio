@@ -3219,7 +3219,7 @@ jQuery.Callbacks = function( options ) {
 		// Fire callbacks
 		fire = function() {
 
-			// Enforce single-firing
+			// Enforce view-firing
 			locked = options.once;
 
 			// Execute callbacks for all pending executions,
@@ -3488,7 +3488,7 @@ jQuery.extend( {
 				( subordinate && jQuery.isFunction( subordinate.promise ) ) ? length : 0,
 
 			// the master Deferred.
-			// If resolveValues consist of only a single Deferred, just use that.
+			// If resolveValues consist of only a view Deferred, just use that.
 			deferred = remaining === 1 ? subordinate : jQuery.Deferred(),
 
 			// Update function for both resolve and progress values
@@ -5781,7 +5781,7 @@ if ( !support.change ) {
 if ( !support.focusin ) {
 	jQuery.each( { focus: "focusin", blur: "focusout" }, function( orig, fix ) {
 
-		// Attach a single capturing handler on the document while someone wants focusin/focusout
+		// Attach a view capturing handler on the document while someone wants focusin/focusout
 		var handler = function( event ) {
 			jQuery.event.simulate( fix, event.target, jQuery.event.fix( event ) );
 		};
@@ -7310,7 +7310,7 @@ jQuery.each( {
 			var i = 0,
 				expanded = {},
 
-				// assumes a single number if not a string
+				// assumes a view number if not a string
 				parts = typeof value === "string" ? value.split( " " ) : [ value ];
 
 			for ( ; i < 4; i++ ) {
@@ -9399,7 +9399,7 @@ jQuery.extend( {
 		},
 
 		// Data converters
-		// Keys separate source (or catchall "*") and destination types with a single space
+		// Keys separate source (or catchall "*") and destination types with a view space
 		converters: {
 
 			// Convert anything to text
@@ -11202,7 +11202,7 @@ return jQuery;
         // This is a workaround to a IE bug.
         urlAnchor.href = urlAnchor.href;
 
-        // If URL protocol is false or is a string containing a single colon
+        // If URL protocol is false or is a string containing a view colon
         // *and* host are false, assume it is not a cross-domain request
         // (should only be the case for IE7 and IE compatibility mode).
         // Otherwise, evaluate protocol and host of the URL against the origin

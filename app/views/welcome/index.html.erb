@@ -40,7 +40,7 @@
 							end
 						%>
 						
-						<% if @count == @half.round # Split DIV For 2 columns             %>
+						<% if @count == @half.round # Split DIV For 2 columns                %>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<% end %>
@@ -85,63 +85,90 @@
 		<% end %>
 		</div>
 		
-		<!-- ARTICLES SECTION-->
-		<div class="container">
-			<hr>
-			<h1 class="center">articles</h1>
-			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			<% @articles.each do |article| %>
-					<div class="post">
-							<h3 class=""><%= article.name %></h3>
-							<p class="subtitle"><%= sanitize article.excerpt %></p>
-							<span class="meta"><%= link_to "View Article...", root_path %></span>
-							<small>Posted by <strong>Vasilios Kaloidis</strong> on <%= article.created_at %></small>
+		<% if @featureBlog %>
+			<!-- ARTICLES SECTION-->
+				<div class="container">
+					<hr>
+					<h1 class="center">articles</h1>
+					<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+						<% @articlesTop.each do |article| %>
+								<div class="post">
+									<h3 class="">
+										<%= article.name %>
+									</h3>
+									<p class="subtitle">
+										<%= sanitize article.excerpt %></p>
+									
+									<span class="meta">
+											<%= link_to article.name, controller: "articles", action: "view", id: article.id %>
+									</span>
+									<small>Posted by <strong>Vasilios Kaloidis</strong> on <%= article.created_at %></small>
+								</div>
+						<% end %>
 					</div>
-			<% end %>
-			</div>
-		</div>
-		
-		<!-- GITHUB SECTION - TODO: GOTTA Start caching this and Authenticating first **** -->
-		<% if @feature == true %>
-				<h1 class="center">GitHub Activity</h1>
-				<div class="card-columns">
-					<% @eventsJson.each do |item| %>
-							<div class="card">
-								<% image_tag(item["actor"]["avatar_url"], class: "card-img-top") %>
-								<div class="card-block">
-									<p class="card-text">
-										<small class="text-muted">
-											<%= link_to item["actor"]["login"], item["actor"]["url"] %>
-											
-											<%= item["event"] %>
-											
-											<%= link_to item["repo"]["name"], item["repo"]["url"] %>
-											
-											<%= item["created_at"] %>
-											<%#= link_to item["org"]["login"], item["org"]["url"] %>
-										</small>
-									</p>
-								</div>
-							</div>
-					<% end %>
 				</div>
-				<br>
-				<h1 class="center">GitHub Starred Repositories</h1>
-				<div class="card-columns">
-					<% @starredJson.each do |item| %>
-							<div class="card">
-								<div class="card-block">
-									<h6 class="card-title"><%= item["name"] %></h6>
-									<p class="card-text"><%= trimDescription(70, item["description"]) %></p>
-									<p class="card-text">
-										<small class="text-muted">
-											<%= link_to "View...", item["url"] %>
-										</small>
-									</p>
-								</div>
+				
+				<% count = 0 %>
+				<% @articlesBottom.each do |article| %>
+						<% if count == 0 %> <div class="row"> <% end %>
+						
+							<div class="col-xs-4 col-sm-4 col-xs-4 col-md-4">
+								<%= link_to article.name, controller: "articles", action: "view", id: article.id %>
 							</div>
+							
+							<%
+							if count == 2
+								puts '</div>'
+								count = 0
+							else
+								count = count + 1
+							end
+							%>
 					<% end %>
 				</div>
 		<% end %>
+
+<!-- GITHUB SECTION - TODO: GOTTA Start caching this and Authenticating first **** -->
+<% if @featureGithub %>
+		<h1 class="center">GitHub Activity</h1>
+		<div class="card-columns">
+			<% @eventsJson.each do |item| %>
+					<div class="card">
+						<% image_tag(item["actor"]["avatar_url"], class: "card-img-top") %>
+						<div class="card-block">
+							<p class="card-text">
+								<small class="text-muted">
+									<%= link_to item["actor"]["login"], item["actor"]["url"] %>
+									
+									<%= item["event"] %>
+									
+									<%= link_to item["repo"]["name"], item["repo"]["url"] %>
+									
+									<%= item["created_at"] %>
+									<%#= link_to item["org"]["login"], item["org"]["url"] %>
+								</small>
+							</p>
+						</div>
+					</div>
+			<% end %>
 		</div>
+		<br>
+		<h1 class="center">GitHub Starred Repositories</h1>
+		<div class="card-columns">
+			<% @starredJson.each do |item| %>
+					<div class="card">
+						<div class="card-block">
+							<h6 class="card-title"><%= item["name"] %></h6>
+							<p class="card-text"><%= trimDescription(70, item["description"]) %></p>
+							<p class="card-text">
+								<small class="text-muted">
+									<%= link_to "View...", item["url"] %>
+								</small>
+							</p>
+						</div>
+					</div>
+			<% end %>
+		</div>
+<% end %>
+</div>
 

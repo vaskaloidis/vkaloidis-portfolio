@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :set_article, only: [:show, :edit, :update, :destroy, :view]
 
   # GET /articles
   # GET /articles.json
@@ -7,9 +7,15 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
 
+  # GET /article/1
+  # GET /article/1.json
+  def view
+  end
+
   # GET /articles/1
   # GET /articles/1.json
   def show
+    @single_article = true
   end
 
   # GET /articles/new
@@ -69,6 +75,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:name, :content, :excerpt, :categories)
+      params.require(:article).permit(:name, :content, :excerpt, :categories,)
     end
 end
