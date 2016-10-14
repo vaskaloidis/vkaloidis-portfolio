@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'dotenv-rails', :groups => [:development, :test]
+
 # Github API + Cache
 gem 'github_api'
 gem 'faraday-http-cache'
