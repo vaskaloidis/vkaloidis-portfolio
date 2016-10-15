@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'seed_dump'
 
 gem 'dotenv-rails', :groups => [:development, :test]
 
@@ -8,7 +9,7 @@ gem 'faraday-http-cache'
 
 
 # MySQL + Db Dump Gem
-gem 'mysql2'
+# gem 'mysql2'
 gem 'yaml_db'
 
 
@@ -77,6 +78,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+	gem 'debase'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
