@@ -1,60 +1,10 @@
 require 'rubygems'
-# require 'sitemap_generator' TODO: Sitemap generator
-require 'mysql2'
+require 'sitemap_generator'
+# require 'mysql2'
 require 'uri'
+
 require 'seed_dump'
 
-# Dirs
-project_seeds_dir = "db/seeds/"
-img_dir = "img/"
-
-#
-client = Mysql2::Client.new(:host     => "localhost",
-                            :username => "root",
-                            :password => "root",
-                            :port     => "8889",
-                            :database => "wordpress",
-                            :socket   => "/Applications/MAMP/tmp/mysql/mysql.sock");
-
-client.query("SELECT * FROM `wp_posts` WHERE `post_type` = 'post'").each do |row|
-
-	puts "Importing Article " + row["post_title"]
-
-	# t.string   "name"
-	# t.text     "content"
-	# t.text     "excerpt"
-	# t.text     "categories"
-	# t.datetime "created_at", null: false
-	# t.datetime "updated_at", null: false
-	# t.string   "shortname"
-
-	first = true
-	categories = ""
-	client.query("SELECT * FROM `wp_term_relationships` WHERE `object_id` = '" + row["ID"].to_s + "' ").each do |relationship|
-		puts "Iterating relationship " + relationship["object_id"].to_s
-		client.query("SELECT * FROM `wp_terms` WHERE `term_id` = '" + relationship["term_taxonomy_id"].to_s + "' ").each do |term|
-			puts "Iterating Term " + term["name"]
-			if first
-				categories = term["name"]
-				first = false
-			elsif first == false
-				categories = categories + ", " + term["name"]
-			end
-
-			if Category.exists?(name: term["name"]) == false
-				Category.create(name: term["name"], code: term["slug"])
-			end
-		end
-	end
-
-	filtered = HTMLPage.new :contents => row["post_content"]
-
-
-	Article.create(name: row["post_title"], excerpt: row["post_excerpt"], created_at: row["post_date"],
-	               content: filtered, shortname: row["post_name"],  updated_at: row["post_modified"],
-                 categories: categories)
-
-end
 
 
 # ISAAC / OCHRE
@@ -140,8 +90,3 @@ Project.create(categories: "C, YACC", order: 1, displayed: true, created_at: Tim
 Project.create(categories: "Circuit", order: 0, displayed: true, created_at: Time.now, updated_at: Time.now,
                name: "4 bit Full Adder Circuit (Logism)", content: File.read(project_seeds_dir + "4bit.php"),  summary: "",
                img_file_name: "")
-
-## Categories
-# Project.all.each as |project|
-#
-#  end

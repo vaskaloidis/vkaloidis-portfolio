@@ -9,20 +9,16 @@ gem 'faraday-http-cache'
 
 
 # MySQL + Db Dump Gem
-# gem 'mysql2'
 gem 'yaml_db'
-
 
 # Markdown + HTML Converters
 gem 'redcarpet'
 gem 'html2markdown'
 gem 'upmark'
 
-
 # Image Attach Feature
 # brew install imagemagick
 gem "paperclip", "~> 5.0.0"
-
 
 # Bootstrap, Bootswatch, Font-Awesome, SASS
 gem 'bootstrap_form'
@@ -39,7 +35,6 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Database
 # gem 'sqlite3'
 gem 'pg'
-
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
@@ -78,7 +73,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-	gem 'debase'
+	gem 'mysql2'
+	# gem 'wordpress-import'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
