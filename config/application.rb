@@ -9,8 +9,10 @@ Bundler.require(*Rails.groups)
 module Vkaloidis
 	class Application < Rails::Application
 
-
 		config.autoload_paths += ["#{Rails.root}/lib"]
+
+		config.action_controller.page_cache_directory = "#{Rails.root.to_s}/public/deploy"
+
 
 #1		# Load the lib folder, a thousand times
 		# config.autoload_paths += %W(#{config.root}/lib)

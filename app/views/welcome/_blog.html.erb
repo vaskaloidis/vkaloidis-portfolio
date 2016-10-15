@@ -1,0 +1,41 @@
+<!-- ARTICLES SECTION-->
+<div class="container">
+	<hr>
+	<h1 class="center">articles</h1>
+	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+		<% @articlesTop.each do |article| %>
+				<div class="post">
+					<h3 class="">
+						<%= article.name %>
+					</h3>
+					<p class="subtitle">
+						<%= sanitize article.excerpt %></p>
+					
+					<span class="meta">
+											<%= link_to article.name, controller: "articles", action: "view", id: article.id %>
+									</span>
+					<small>Posted by <strong>Vasilios Kaloidis</strong> on <%= article.created_at %></small>
+				</div>
+		<% end %>
+	</div>
+	<br>
+	<h2>Archive</h2>
+	<% count = 0 %>
+	<% @articlesBottom.each do |article| %>
+			<% if count == 0 %>
+					<div class="row">
+			<% end %>
+			
+			<div class="col-xs-4 col-sm-4 col-xs-4 col-md-4">
+				<%= link_to article.name, controller: "articles", action: "view", id: article.id %>
+			</div>
+			
+			<% if count == 2 %>
+					</div>
+			<% count = 0
+			   else
+				   count = count + 1
+			   end
+			%>
+	<% end %>
+</div>

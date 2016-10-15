@@ -1,0 +1,39 @@
+<h1 class="center">GitHub Activity</h1>
+<div class="card-columns">
+	<% @eventsJson.each do |item| %>
+			<div class="card">
+				<% image_tag(item["actor"]["avatar_url"], class: "card-img-top") %>
+				<div class="card-block">
+					<p class="card-text">
+						<small class="text-muted">
+							<%= link_to item["actor"]["login"], item["actor"]["url"] %>
+							
+							<%= item["event"] %>
+							
+							<%= link_to item["repo"]["name"], item["repo"]["url"] %>
+							
+							<%= item["created_at"] %>
+							<%#= link_to item["org"]["login"], item["org"]["url"] %>
+						</small>
+					</p>
+				</div>
+			</div>
+	<% end %>
+</div>
+<br>
+<h1 class="center">GitHub Starred Repositories</h1>
+<div class="card-columns">
+	<% @starredJson.each do |item| %>
+			<div class="card">
+				<div class="card-block">
+					<h6 class="card-title"><%= item["name"] %></h6>
+					<p class="card-text"><%= trimDescription(70, item["description"]) %></p>
+					<p class="card-text">
+						<small class="text-muted">
+							<%= link_to "View...", item["url"] %>
+						</small>
+					</p>
+				</div>
+			</div>
+	<% end %>
+</div>

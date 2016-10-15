@@ -7,6 +7,7 @@ gem 'dotenv-rails', :groups => [:development, :test]
 gem 'github_api'
 gem 'faraday-http-cache'
 
+# Cache
 
 # MySQL + Db Dump Gem
 gem 'yaml_db'
