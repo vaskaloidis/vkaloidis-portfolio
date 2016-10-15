@@ -1,24 +1,28 @@
-<p id="notice"><%= notice %></p>
+<div style="border:2px solid black">
+	
+	<p id="notice"><%= notice %></p>
+	
+	<p>
+		<strong>Name:</strong>
+		<%= @article.name %>
+	</p>
+	
+	<p>
+		<strong>content:</strong>
+		<%= @article.content %>
+	</p>
+	
+	<p>
+		<strong>Excerpt:</strong>
+		<%= @article.excerpt %>
+	</p>
+	
+	<p>
+		<strong>Categories:</strong>
+		<%= @article.categories %>
+	</p>
+	
+	<%= link_to 'Edit', edit_article_path(@article) %> |
+	<%= link_to 'Back', articles_path %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @article.name %>
-</p>
-
-<p>
-  <strong>content:</strong>
-  <%= @article.content %>
-</p>
-
-<p>
-  <strong>Excerpt:</strong>
-  <%= @article.excerpt %>
-</p>
-
-<p>
-  <strong>Categories:</strong>
-  <%= @article.categories %>
-</p>
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+</div>

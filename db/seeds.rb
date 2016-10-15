@@ -47,10 +47,9 @@ client.query("SELECT * FROM `wp_posts` WHERE `post_type` = 'post'").each do |row
 		end
 	end
 
-	filtered = HTMLPage.new :contents => row["post_content"]
-
-	filtered = ReverseMarkdown.convert(input, unknown_tags: :raise, github_flavored: true)
-
+	# filtered = HTMLPage.new :contents => row["post_content"]
+	# filtered = ReverseMarkdown.convert(input, unknown_tags: :raise, github_flavored: true)
+	filtered = row["post_content"]
 
 	Article.create(name: row["post_title"], excerpt: row["post_excerpt"], created_at: row["post_date"],
 	               content: filtered, shortname: row["post_name"],  updated_at: row["post_modified"],
