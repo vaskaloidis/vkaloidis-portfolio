@@ -14,7 +14,7 @@ gem 'yaml_db'
 
 # Markdown + HTML Converters
 gem 'redcarpet'
-gem 'html2markdown'
+gem 'reverse_markdown'
 gem 'upmark'
 
 # Image Attach Feature
