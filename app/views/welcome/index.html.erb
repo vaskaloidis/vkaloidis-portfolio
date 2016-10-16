@@ -89,12 +89,12 @@
 		<% end %>
 		</div>
 		
-		<% if @featureBlog %>
+		<% if ApplicationHelper::isTrue(@featureBlog) %>
 				<%= render "blog" %>
 	<% end %>
 		
 		<!-- GITHUB SECTION - TODO: GOTTA Start caching this and Authenticating first **** -->
-		<% if @featureGithub %>
+		<% if ApplicationHelper::isTrue @featureGithub %>
 				<%= render "github" %>
 	<% end %>
 </div>

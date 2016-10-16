@@ -1,6 +1,10 @@
 module ApplicationHelper
 	require 'Bluehelmet/Parser'
 
+	def self.isTrue(s)
+		!!(s =~ /^(true|t|yes|y|1)$/i)
+	end
+
 	def convertMarkdown(markdown)
 		return Parser.convertMarkdown(markdown)
 	end
