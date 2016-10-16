@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
-	@username = Rails.env.username
-	@password = Rails.env.password
+	@username = ENV['username']
+	@password = ENV['password']
 
   http_basic_authenticate_with name: @username, password: @password
   before_action :set_project, only: [:show, :edit, :update, :destroy, :create]

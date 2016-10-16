@@ -3,9 +3,9 @@
 require 'redcarpet'
 # require 'platform-api'
 require 'Bluehelmet/Wordpress'
-require 'Upmark'
 
 namespace :Bluehelmet do
+
 	desc "Import Wordpress"
 	task :import_wp => :environment do
 
@@ -34,12 +34,8 @@ namespace :Bluehelmet do
 
 			# postContent = ReverseMarkdown.convert(input, unknown_tags: :raise, github_flavored: true)
 
-			puts row["post_content"]
-
-			puts "*******************"
-
 			puts "Converted to Markdown: "
-			postContent = Upmark.convert(row["post_content"])
+			# postContent = Upmark.convert(row["post_content"])
 			puts postContent
 
 			categories = wp.categories(row["ID"])
@@ -101,7 +97,7 @@ namespace :Bluehelmet do
 		Project.all.each do |project|
 			puts project.name
 			oldProject = project.content
-			project.content = Upmark.convert(oldProject)
+			# project.content = Upmark.convert(oldProject)
 			project.save
 
 		end
