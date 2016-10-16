@@ -11,7 +11,7 @@ module Vkaloidis
 
 		config.autoload_paths += ["#{Rails.root}/lib"]
 
-		config.action_controller.page_cache_directory = "#{Rails.root.to_s}/public/deploy"
+		# config.action_controller.page_cache_directory = "#{Rails.root.to_s}/public/deploy"
 
 
 #1		# Load the lib folder, a thousand times

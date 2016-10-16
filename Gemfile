@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+
 gem 'seed_dump'
 
 gem 'dotenv-rails', :groups => [:development, :test]
@@ -14,8 +15,8 @@ gem 'yaml_db'
 
 # Markdown + HTML Converters
 gem 'redcarpet'
-# gem 'reverse_markdown'
-gem 'upmark'
+gem 'reverse_markdown'
+# gem 'upmark'
 
 # Image Attach Feature
 # brew install imagemagick

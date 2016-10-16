@@ -27,6 +27,7 @@
 	
 	<hr>
 	
+	<!--P ROJECTS -->
 	<h1 class="center">projects</h1>
 	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 		<% @projects.each do |project| %>
@@ -71,7 +72,10 @@
 											<h4 class="modal-title" id="myModalLabel"><%= project.name %></h4>
 										</div>
 										<div class="modal-body">
-											<p><%= project.content.html_safe %></p>
+											<p>
+												<%#= @markdown.render(project.content.html_safe) %>
+												<%= project.content.html_safe %>
+											</p>
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
