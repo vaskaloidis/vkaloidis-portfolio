@@ -1,8 +1,15 @@
 # rake Bluehelmet:import_wp
 
-require 'redcarpet'
-# require 'platform-api'
+require 'Bluehelmet/Parser'
 require 'Bluehelmet/Wordpress'
+require 'reverse_markdown'
+require 'html_massage'
+
+ReverseMarkdown.config do |config|
+	config.unknown_tags    = :pass_through
+	config.github_flavored = true
+	config.tag_border      = ''
+end
 
 namespace :Bluehelmet do
 
@@ -18,7 +25,7 @@ namespace :Bluehelmet do
 
 		posts.each do |row|
 
-			puts "*** Importing Article " + row["ID"] + " - " + row["post_title"] + " *** "
+			puts "*** Importing Article " + row["ID"].to_s + " - " + row["post_title"] + " *** "
 
 			imgs.each do |row| # Image
 				puts row["img-data"]
@@ -26,17 +33,9 @@ namespace :Bluehelmet do
 			end
 
 			# HTML -> Markdown
-			# renderer = Redcarpet::Render::HTML.new(no_links: true, hard_wrap: true)
-			# markdown = Redcarpet::Markdown.new(renderer, extensions = {})
-			# article.content    = markdown.render(row["post_content"])
-			# article.content    = Render::Markdown.new.render(row["post_content"])
-			# filtered = HTMLPage.new :contents => row["post_content"]
-
-			# postContent = ReverseMarkdown.convert(input, unknown_tags: :raise, github_flavored: true)
-
 			puts "Converted to Markdown: "
-			# postContent = Upmark.convert(row["post_content"])
-			puts postContent
+			result      = ReverseMarkdown.convert(row["post_content"])
+			postContent = result.inspect
 
 			categories = wp.categories(row["ID"])
 
@@ -61,10 +60,9 @@ namespace :Bluehelmet do
 
 			puts "Post added - " + article.name
 		end
-
 	end
 
-
+	# Markdown / HTML Converters
 	desc "View Post"
 	task :view_post => :environment do
 		wp = Wordpress.new
@@ -77,33 +75,98 @@ namespace :Bluehelmet do
 			puts "Convert to Markdown: "
 			postContent = Upmark.convert(row["post_content"])
 			puts postContent
-			end
+		end
+	end
+	desc "Convert each Projects' HTML to Markdown"
+	task :convert_projects => :environment do
+		Project.all.each do |project|
+			puts project.name
+			oldProject      = project.content
+			result          = ReverseMarkdown.convert(oldProject)
+			project.content = result.inspect
+			project.save
+		end
+	end
+
+	desc "Test HTML and Markdown Parsers"
+	task :test_parsers => :environment do
+		require 'Bluehelmet/RedcarpetRenderer'
+		# wp = Wordpress.new
+		# wp.posts.each do |project|
+		# content = project["post_content"]
+		Project.all.each do |project|
+			content = project.content
+			puts "******************************"
+			puts content
+			puts "**********"
+			result = ReverseMarkdown.convert(content)
+			puts result.inspect
+			puts "**********"
+			output = Parser.convertMarkdown(result.inspect)
+			puts output
+			puts "******************************"
+			puts ""
+			puts ""
+			puts ""
+		end
+		wp = Wordpress.new
+		wp.posts.each do |post|
+			content = post["post_content"]
+			puts "******************************"
+			puts content
+			puts "**********"
+			result = ReverseMarkdown.convert(content)
+			puts result.inspect
+			puts "**********"
+			output = Parser.convertMarkdown(result.inspect)
+			puts output
+			puts "******************************"
+			puts ""
+			puts ""
+			puts ""
+		end
 	end
 
 	# Database
 	desc "Reset Database"
-	task :reset_database => :environment do
+	task :reset => :environment do
 		Rake::Task["db:drop"].invoke
 		Rake::Task["db:create"].invoke
 		Rake::Task["db:migrate"].invoke
-		Rake::Task["db:load"].invoke
+		Rake::Task["db:schema:load"].invoke
 	end
-
-
-
-	desc "Convert Projects HTML to Markdown"
-	task :convert_projects => :environment do
-
-		Project.all.each do |project|
-			puts project.name
-			oldProject = project.content
-			# project.content = Upmark.convert(oldProject)
-			project.save
-
+	desc "Seed Articles and Projects"
+	task :seed => :environment do
+		Rake::Task["Bluehelmet:import_wp"].invoke
+		Rake::Task["db:data:load"].invoke
+		Rake::Task["Bluehelmet:convert_projects"].invoke
+	end
+	desc "Info"
+	task :info => :environment do
+		Bundler.with_clean_env do
+			sh "rails --help | grep db: "
 		end
-
+		Bundler.with_clean_env do
+			sh "rails --help | grep Bluehelmet: "
+		end
 	end
 
+	# HEROKU
+	desc "Clear Heroku Cache"
+	task :heroku_cache => :environment do
+		heroku("run rake Bluehelmet:clear_cache")
+	end
+	desc "Upload Database to Heroku"
+	task :push_db => :environment do
+		heroku("pg:reset HEROKU_POSTGRESQL_GOLD")
+		heroku("pg:push vkaloidis HEROKU_POSTGRESQL_GOLD --app vkaloidis")
+	end
+
+	def heroku(cmd)
+		Bundler.with_clean_env do
+			sh "heroku " + cmd.to_s
+		end
+	end
 
 	#  Clear Cache
 	desc "Clear Cache"
@@ -119,20 +182,7 @@ namespace :Bluehelmet do
 	end
 
 
-	# HEROKU
 	# heroku pg:reset HEROKU_POSTGRESQL_GOLD # Reset first
 	# heroku pg:push vkaloidis HEROKU_POSTGRESQL_GOLD --app vkaloidis
-
-	desc "Upload Database"
-	task :push_db => :environment do
-		heroku("pg:reset HEROKU_POSTGRESQL_GOLD")
-		heroku("pg:push vkaloidis HEROKU_POSTGRESQL_GOLD --app vkaloidis")
-	end
-
-	def heroku(cmd)
-		Bundler.with_clean_env do
-			sh "heroku " + cmd.to_s
-		end
-	end
 
 end

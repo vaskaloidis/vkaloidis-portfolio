@@ -14,6 +14,7 @@ gem 'faraday-http-cache'
 gem 'yaml_db'
 
 # Markdown + HTML Converters
+gem 'html_massage'
 gem 'redcarpet'
 gem 'reverse_markdown'
 # gem 'upmark'

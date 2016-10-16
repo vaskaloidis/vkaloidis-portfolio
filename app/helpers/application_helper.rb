@@ -1,4 +1,9 @@
 module ApplicationHelper
+	require 'Bluehelmet/Parser'
+
+	def convertMarkdown(markdown)
+		return Parser.convertMarkdown(markdown)
+	end
 
 	def trimDescription(count, description)
 		firstPart = description.split(" ").first(count).join(" ")

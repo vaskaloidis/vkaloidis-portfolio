@@ -73,8 +73,8 @@
 										</div>
 										<div class="modal-body">
 											<p>
-												<%#= @markdown.render(project.content.html_safe) %>
-												<%= project.content.html_safe %>
+												<%#= project.content.html_safe %>
+												<%= convertMarkdown(project.content).html_safe %>
 											</p>
 										</div>
 										<div class="modal-footer">

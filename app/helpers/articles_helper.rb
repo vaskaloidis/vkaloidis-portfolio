@@ -6,7 +6,7 @@ module ArticlesHelper
 
 	def markdown
 		return @markdown unless @mardown.nil?
-		@markdown = Render::Markdown.new.render(content)
+		# @markdown = Render::Markdown.new.render(content)
 	end
 
 	def format_syntax_highlighter(text)

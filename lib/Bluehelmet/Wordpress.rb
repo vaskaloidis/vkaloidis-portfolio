@@ -18,7 +18,7 @@ class Wordpress
 	end
 
 	def termsQuery (id)
-		return client.query("SELECT * FROM `wp_terms` WHERE `term_id` = '" + id.to_s + "' ")
+		return @client.query("SELECT * FROM `wp_terms` WHERE `term_id` = '" + id.to_s + "' ")
 	end
 
 	def categories (id)

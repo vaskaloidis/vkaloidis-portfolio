@@ -39,16 +39,12 @@ ActiveRecord::Schema.define(version: 20161015211956) do
     t.text     "categories"
     t.integer  "order"
     t.boolean  "displayed"
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
     t.string   "shortname"
     t.string   "content"
     t.string   "summary"
-    t.string   "img_file_name"
-    t.string   "img_content_type"
-    t.integer  "img_file_size"
-    t.datetime "img_updated_at"
-    t.boolean  "isArticle",        default: false
+    t.boolean  "isArticle",  default: false
   end
 
 end
