@@ -105,9 +105,6 @@ namespace :Bluehelmet do
 	end
 
 
-
-
-
 	#  Clear Cache
 	desc "Clear Cache"
 	task :clear_cache => :environment do
@@ -128,13 +125,13 @@ namespace :Bluehelmet do
 
 	desc "Upload Database"
 	task :push_db => :environment do
-		heroku("pg:reset HEROKU_POSTGRESQL_GOLD", "vkaloidis")
-		heroku("pg:push vkaloidis HEROKU_POSTGRESQL_GOLD", "vkaloidis")
+		heroku("pg:reset HEROKU_POSTGRESQL_GOLD")
+		heroku("pg:push vkaloidis HEROKU_POSTGRESQL_GOLD --app vkaloidis")
 	end
 
-	def heroku(cmd, app_name)
+	def heroku(cmd)
 		Bundler.with_clean_env do
-			sh "heroku #{cmd} --app #{app_name}"
+			sh "heroku " + cmd.to_s
 		end
 	end
 

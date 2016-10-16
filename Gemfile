@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'seed_dump'
+# Cache
+# gem 'memcache'
+# # gem 'memcache', '~> 1.5', '>= 1.5.1'
 
 gem 'dotenv-rails', :groups => [:development, :test]
 
 # Github API + Cache
 gem 'github_api'
 gem 'faraday-http-cache'
-
-# Cache
 
 # MySQL + Db Dump Gem
 gem 'yaml_db'
@@ -20,7 +20,7 @@ gem 'reverse_markdown'
 
 # Image Attach Feature
 # brew install imagemagick
-gem "paperclip", "~> 5.0.0"
+# gem "paperclip", "~> 5.0.0"
 
 # Bootstrap, Bootswatch, Font-Awesome, SASS
 gem 'bootstrap_form'
