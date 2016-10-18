@@ -4,10 +4,11 @@ require 'Bluehelmet/Parser'
 require 'Bluehelmet/Wordpress'
 require 'reverse_markdown'
 require 'html_massage'
+require 'kramdown'
 
 ReverseMarkdown.config do |config|
 	config.unknown_tags    = :pass_through
-	config.github_flavored = true
+	config.github_flavored = false
 	config.tag_border      = ''
 end
 
@@ -99,16 +100,22 @@ namespace :Bluehelmet do
 			puts "******************************"
 			puts content
 			puts "**********"
-			result = ReverseMarkdown.convert(content)
+			result = ReverseMarkdown.convert(content) # HTML To Markdown
 			puts result.inspect
+			# doc = Kramdown::Document.new(content, input: "HTML").method_missing
+			# result = Kramdown::Converter::Kramdown
+			# puts result
 			puts "**********"
-			output = Parser.convertMarkdown(result.inspect)
+			# output = Parser.convertMarkdown(result.inspect) # Markdown to HTML
+			# output = Kramdown::Document.new(result).to_html
+			output = Kramdown::Converter::HTML.convert(result)
 			puts output
 			puts "******************************"
 			puts ""
 			puts ""
 			puts ""
 		end
+		return ''
 		wp = Wordpress.new
 		wp.posts.each do |post|
 			content = post["post_content"]
@@ -144,11 +151,11 @@ namespace :Bluehelmet do
 	desc "Info"
 	task :info => :environment do
 		Bundler.with_clean_env do
-			sh "rails --help | grep db: "
-		end
-		Bundler.with_clean_env do
 			sh "rails --help | grep Bluehelmet: "
 		end
+		# Bundler.with_clean_env do
+			# sh "rails --help | grep db: "
+		# end
 	end
 
 	# HEROKU

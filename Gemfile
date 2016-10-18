@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Logging
+gem 'rollbar'
+
 # Cache
 # gem 'memcache'
 # # gem 'memcache', '~> 1.5', '>= 1.5.1'
@@ -17,6 +20,7 @@ gem 'yaml_db'
 gem 'html_massage'
 gem 'redcarpet'
 gem 'reverse_markdown'
+gem 'kramdown'
 # gem 'upmark'
 
 # Image Attach Feature
