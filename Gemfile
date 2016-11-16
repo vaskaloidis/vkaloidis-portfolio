@@ -1,13 +1,10 @@
 source 'https://rubygems.org'
 
-# Logging
-gem 'rollbar'
-
 # Cache
 # gem 'memcache'
 # # gem 'memcache', '~> 1.5', '>= 1.5.1'
 
-gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv-rails'
 
 # Github API + Cache
 gem 'github_api'
@@ -31,9 +28,8 @@ gem 'kramdown'
 gem 'bootstrap_form'
 gem 'bootswatch-rails'
 gem "font-awesome-rails"
-# gem 'bootstrap', '~> 4.0.0.alpha3.1'
 gem 'bootstrap-sass', '~> 3.3.6'
-# gem 'sass-rails', '>= 3.2'
+gem 'sass-rails', '>= 3.2'
 
 
 # Bundle edge Rails instead: gem 'rails', github_api: 'rails/rails'
@@ -46,7 +42,7 @@ gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+# gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -67,6 +63,11 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+group :production do
+  # Logging
+  gem 'rollbar'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
