@@ -14,7 +14,7 @@ end
 
 namespace :Bluehelmet do
 
-	desc "Import Wordpress"
+	desc "Import Wordpress Files, optionally publish or unpublish all, or publish based on WP publish status"
 	task :import_wp => :environment do
 
 		puts "Starting Wordpress Import"
@@ -35,8 +35,8 @@ namespace :Bluehelmet do
 
 			# HTML -> Markdown
 			puts "Converted to Markdown: "
-			result      = ReverseMarkdown.convert(row["post_content"])
-			postContent = result.inspect
+			# result      = ReverseMarkdown.convert(row["post_content"])
+			# postContent = result.inspect
 
 			categories = wp.categories(row["ID"])
 
@@ -47,14 +47,23 @@ namespace :Bluehelmet do
 			article.created_at = row["post_date"]
 			article.updated_at = row["post_modified"]
 			article.content    = postContent
+			article.content    = row["post_content"]
+			article.markdown   = false
 			article.categories = categories
 
-			if row["post_status"].equal?("publish")
-				puts "Article Published"
-				article.published = true
-			elsif row["post_status"].equal?("draft")
-				puts "Article Draft"
+			disableAll = true
+
+			if disableAll == true
+				puts "Article Drafted: " + article.name
 				article.published = false
+			else
+				if row["post_status"].equal?("publish")
+					puts "Article Published"
+					article.published = true
+				elsif row["post_status"].equal?("draft")
+					puts "Article Draft"
+					article.published = false
+				end
 			end
 
 			article.save
@@ -64,7 +73,7 @@ namespace :Bluehelmet do
 	end
 
 	# Markdown / HTML Converters
-	desc "View Post"
+	desc "View Articles, converted to markdown (depracated since Markdown column added)"
 	task :view_post => :environment do
 		wp = Wordpress.new
 		wp.view(82).each do |row|
@@ -78,7 +87,7 @@ namespace :Bluehelmet do
 			puts postContent
 		end
 	end
-	desc "Convert each Projects' HTML to Markdown"
+	desc "Convert each Projects' HTML to Markdown (depracated)"
 	task :convert_projects => :environment do
 		Project.all.each do |project|
 			puts project.name
@@ -89,7 +98,17 @@ namespace :Bluehelmet do
 		end
 	end
 
-	desc "Test HTML and Markdown Parsers"
+	desc "Set all Projects and optionally Articles Markdown column to false"
+	task :set_entity_markdown_false => :environment do
+		Project.all.each do |project|
+			project.markdown = false
+		end
+		Article.all.each do |article|
+			article.markdown = false
+		end
+	end
+
+	desc "Test HTML and Markdown Parsers on Projects and Articles"
 	task :test_parsers => :environment do
 		require 'Bluehelmet/RedcarpetRenderer'
 		# wp = Wordpress.new
