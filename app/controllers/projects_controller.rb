@@ -3,7 +3,7 @@ class ProjectsController < ApplicationController
 	@password = ENV['password']
 
   http_basic_authenticate_with name: @username, password: @password
-  before_action :set_project, only: [:show, :edit, :update, :destroy, :create]
+  before_action :set_project, only: [:show, :edit, :update, :destroy]
 
   # GET /projects
   # GET /projects.json
@@ -73,6 +73,6 @@ class ProjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_params
-      params.require(:project).permit(:name, :categories, :content, :order, :displayed)
+      params.require(:project).permit(:name, :categories, :content, :order, :displayed, :markdown)
     end
 end

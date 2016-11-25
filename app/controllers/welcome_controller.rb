@@ -1,7 +1,6 @@
 class WelcomeController < ApplicationController
 	helper GithubHelper, ApplicationHelper
 	def index
-
 		# @featureBlog = false
 		if Rails.env.production?
 			@featureBlog = false

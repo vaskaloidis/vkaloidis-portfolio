@@ -1,8 +1,8 @@
 class ArticlesController < ApplicationController
   @username = ENV['username']
   @password = ENV['password']
+  http_basic_authenticate_with name: @username, password: @password, except: :view
 
-  http_basic_authenticate_with name: @username, password: @password
   before_action :set_article, only: [:show, :edit, :update, :destroy, :view]
 
   # GET /articles
