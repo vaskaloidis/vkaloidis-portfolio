@@ -7,16 +7,23 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<span class="navbar-brand"><%= link_to "VKaloidis.com", root_path %></span>
+			<%= link_to "vasi.io", root_path, class: "navbar-brand" %>
 		</div>
 		
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 			<ul class="nav navbar-nav">
-				<li><%= link_to "Projects", root_path %> </li>
+				<!--<li class="active"><a href="#">Link <span class="sr-only">(current)</a></li>-->
+				<li><%= link_to "Admin", admin_path %> </li>
+				<li><%= link_to "All Projects", projects_path %> </li>
+				<li><%= link_to "New Project", new_project_path %> </li>
+				<li><%= link_to "All Articles", articles_path %> </li>
+				<li><%= link_to "New Article", new_article_path %> </li>
+				<li><%= link_to "All Categories", categories_path %> </li>
+				<li><%= link_to "New Category", new_category_path %> </li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Vasilios Kaloidis</a></li>
 			</ul>
-		
 		</div>
 	</div>
 </nav>
