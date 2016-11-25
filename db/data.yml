@@ -1,0 +1,2093 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2016-10-15 05:59:33.333579'
+    - '2016-10-15 05:59:33.333579'
+
+---
+articles:
+  columns:
+  - id
+  - name
+  - content
+  - excerpt
+  - categories
+  - created_at
+  - updated_at
+  - shortname
+  - published
+  - markdown
+  records: 
+  - - 1
+    - Auto Draft
+    - '""'
+    - ''
+    - ''
+    - '2016-10-15 08:11:34'
+    - '2016-10-15 08:11:34'
+    - ''
+    - false
+    - true
+  - - 2
+    - Blocks Templates and Layouts
+    - '"1) To create a block that has dynamic PHP code and place it anywhere on your
+      site, you first must instantiate the block in app/design/frontend/ThemePackage/Theme/layout/local.xml
+      and put the following contents:\n\n\r &nbsp;\r\n\n\\<?xml version=\"1.0\"?\\>\n\n\\<layout
+      version=\"0.0.1\"\\>\n\n\\<default\\>\n\n&nbsp;&nbsp;&nbsp; \\<reference name=\"left\"\\>\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      \\<block type=\"page/html\" name=\"bishopsInterchange\"\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      as=\"interchangeSearch\" output=\"toHtml\"\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      template=\"bishops/interchange/search.phtml\"\\>\n\n\r &nbsp;\r\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      \\</block\\>\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\</block\\>\n\n&nbsp;&nbsp;&nbsp;
+      \\</reference\\>\n\n\r &nbsp;\r\n\n\\</default\\>\n\n\\</layout\\>\n\n\r &nbsp;\r\n\nchange
+      the value of Reference Name to wherever you want the code to appear on your
+      site (for examples of what to put as a value, look in some of the magento files
+      in app/design/frontend/base/default/layout/ !!)\n\n\r &nbsp;\r\n\n2) Create
+      a template file in app/design/frontend/base/default/template/Package/Module/template.phtml
+      and put some HTML code into it. Boom! Now the code from your PHTML file appears
+      wherever you specified it in your reference name tag in the layout file we first
+      created!\n\n\r &nbsp;\r\n\n3) To use Dynamic PHP Code \\*\\* FINISH\n\n\r &nbsp;"'
+    - ''
+    - ''
+    - '2013-08-14 19:51:33'
+    - '2013-08-14 19:51:33'
+    - ''
+    - false
+    - true
+  - - 3
+    - Creating Magento Models for Module Database Integration
+    - '"1. First make sure you have read up on our tutorial on creating Controllers
+      and Routes.\n2. Create a Package, Module and then create a route in your config.xml.
+      IE:\r\n```\nstandard\r\n\r\n                Bishops_Interchange\r\n                interchange\n```\n3.
+      Next you need to add a model to the config.xml file as well.\r\n```\nBishops_Lookups_Model\r\n        lookups_data\n```\n4.
+      Next step\n\r &nbsp;"'
+    - ''
+    - ''
+    - '2013-08-15 20:51:56'
+    - '2013-08-15 20:51:56'
+    - ''
+    - false
+    - true
+  - - 4
+    - Magento Theme-ing - Style-ing the Navigation Bar
+    - '"The Navigation bar is a pain in the rear end to style. You want to give the
+      buttons background-images but you aren''t sure how when the HTML looks like
+      this: &nbsp; [pre\n\n"'
+    - ''
+    - ''
+    - '2013-08-21 00:17:03'
+    - '2013-08-21 00:17:03'
+    - ''
+    - false
+    - true
+  - - 5
+    - PHPStorm Xdebug Install on OSX Yosemite running MAMP
+    - '"Getting PHPstorm running on OSX Yosemite with MAMP is a PAIN! Here is my guide.\r
+      \r First make sure you have Homebrew \r`ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"`\r
+      \r Install Mamp for OSX Yosemite. This is by far my favorite MAMP server for
+      mac.\r http://www.mamp.info/en/\r \r Install PHPStorm\r \r**Configure and Install
+      Xdebug XDebug on PHPStorm on a Mac:**\r \r Guide:\r https://www.jetbrains.com/phpstorm/help/configuring-xdebug.html\r
+      http://www.xdebug.org/docs/faq#custom-phpize\r \r On Mac upload, export your
+      PHP.ini to desktop:\r`php -i > ~/Desktop/PHP_OUTPUT.txt`\r Upload it to XDebug
+      Tailored Installation Wizard:\r http://www.xdebug.org/wizard.php\r \r OSX Yosemite
+      PHPize error, the fix is to install Xcode5 command line tools:\r http://stackoverflow.com/questions/19531262/cant-phpize-or-configure-an-extension-in-os-x-10-9-mavericks\r`xcode-select
+      --install\r\n\r\nIf you have any other problems, use Brew to install memcached,
+      zlib or any other apps you need from Brew. After a while messing with it I eventually
+      got phpize to properly print the correct info. \r\n\r\n\r\nPHPStorm FastCGI
+      Error:\r\nphp-cgi not found\r\nPlease ensure that configured PHP Interpreter
+      built as CGI program (--enable-fastcgi was specified)\r\nhttp://stackoverflow.com/questions/23667178/how-do-i-enable-fastcgi-on-my-mavericks-using-php-5-4-24\r\nThis
+      guide installs brew, taps a few libraries you need - but I found another one
+      that I needed to get it working: tap homebrew/versions \r\n\r\nHere is another
+      real useful guide:\r\nhttp://echo.co/blog/os-x-1010-yosemite-local-development-environment-apache-php-and-mysql-homebrew\r\nhttps://github.com/Homebrew/homebrew-php/issues/205`\n\n"'
+    - ''
+    - Uncategorized
+    - '2014-12-31 13:30:14'
+    - '2014-12-31 13:30:14'
+    - ''
+    - false
+    - true
+  - - 6
+    - Switching code from PHP tags to Ruby on Rails tags (html.erb) using Regex and
+      RubyMine
+    - '"So you have some code like this (sorry if it''s sloppy) First you remove the
+      ? mark from the opening php tag \\<?php and then change ?\\> to \\</code\\>...
+      Long day at work so I don''t feel like messing with [the regex I found on Stack
+      Overflow](http://stackoverflow.com/a/9321653/2517480)&nbsp;(I need to learn
+      REGEX better) and it prepares us for our next step (don''t laugh REGEX pros''s)
+      ![](http://puu.sh/gDFt0/b00b15f1c9.png)&nbsp; ![](http://puu.sh/gDG51/f02991ccde.png)Next
+      run (sorry this is sloppy... wayy to long of a day to mess with the REGEX) &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp;\n\n"'
+    - ''
+    - Uncategorized
+    - '2015-03-17 08:22:44'
+    - '2015-03-17 08:22:44'
+    - ''
+    - false
+    - true
+  - - 7
+    - Macbook SSD Tutorial
+    - '"Nice little run-down of the process of upgrading to an SSD for the new Macbook
+      user...\r \r http://www.cnet.com/how-to/upgrade-your-macbook-install-ssd-hard-drive/\r
+      \r My laptop is going to be a beast...\r \r Cheers\n\n"'
+    - ''
+    - OSX, Apple
+    - '2015-03-27 08:27:26'
+    - '2015-08-25 04:21:45'
+    - macbook-ssd-tutorial
+    - false
+    - true
+  - - 8
+    - Asus RT-N56U Wireless N-Router and Samsung 850 Evo 1tb SSD Review
+    - '"Just got the new Samsung 850 Evo 1tb SSD Hard Drive, and the Asus RT-N56U
+      wireless N router. Very excited for the speed upgrade that I will get from both
+      :)\r \r**Samsung 850 Evo 1tb HD** ($360 - Walmart)is freaking awesome, blazing
+      fast speeds, **Two Thumbs Up**. [http://www.cnet.com/products/samsung-ssd-850-evo/](http://www.cnet.com/products/samsung-ssd-850-evo/)\n\nThe
+      **Asus RT-N56U Wireless-N Router** ($60 Refurbished - Ebay / Amazon)seems really
+      slick - I will post&nbsp;a review (0-2 thumbs up / down) in the next 2/3 days
+      after I deploy the router + it''s matching access point. This LAN is replacing
+      my Linksys Wrt54G router - which was the best router back when we bought it&nbsp;-
+      now it''s just garbage... Cnet says:\n\n[http://www.cnet.com/products/asus-rt-n56u-dual-band-gigabit-wireless-n-router/](http://www.cnet.com/products/asus-rt-n56u-dual-band-gigabit-wireless-n-router/)\r
+      \r PS: I find the best deals on everything on the internet... Coupons...\r \r
+      Enjoy\r \r \r"'
+    - ''
+    - Apelon, Samsung SSD Hd, Samsung, Asus Wireless N Router, Asus, SSD, Router
+    - '2015-04-08 09:35:03'
+    - '2015-08-05 19:06:05'
+    - asus-rt-n56u-wireless-n-router-and-samsung-850-evo-1tb-ssd-review
+    - false
+    - true
+  - - 9
+    - Reviews
+    - '""'
+    - ''
+    - Uncategorized
+    - '2015-04-08 09:39:09'
+    - '2015-04-08 09:39:09'
+    - ''
+    - false
+    - true
+  - - 10
+    - Gwern.net - Checklist for perfect writing
+    - '"So I came across this page when browsing Gwners site. This guy seems to be
+      a genius. Check it out, it might be useful for a final paper or something. http://www.gwern.net/About#writing-checklist
+      Enjoy\n\n"'
+    - ''
+    - Uncategorized
+    - '2016-02-07 18:01:53'
+    - '2016-02-07 18:01:53'
+    - ''
+    - false
+    - true
+  - - 11
+    - PHPStorm Xdebug running on MAMP on Yosemite
+    - '"Xdebug has proven to be one of the hardest things to get running on any IDE.
+      I have had an exceptionally hard time getting it running on MAMP server running
+      on Yosemite. Here is my solution:\r \r - Make sure you have MAMP, Homebrew and
+      Yosemite\r \r Make sure you have tapped thome Homebrew Repositories:\r \r brew
+      tap homebrew/dupes\r brew tap homebrew/versions\r brew tap homebrew/homebrew-php\r
+      brew tap homebrew/homebrew-binary\r \r Next install PHP 5.6 with the php-cgi
+      module. I was running into a very popular bug about not having php-cgi installed.
+      I have the latest MAMP server, running PHP 5.5, and I wanted to keep my MySQL
+      local server running as-is to keep my many databases and the environment intact
+      (because I have already wasted enough time getting xdebug to run).\r \r brew
+      install php56 --without-snmp --with-cgi --with-debug --with-homebrew-openssl
+      --with-imap --with-intl --with-mysql\r \r Then install xdebug\r \r brew install
+      php56-xdebug\r \r Next, find out which httpd.conf file you are using by doing
+      the following command. NOTE: This did not work for me, this produced a false
+      positive and I actually had to find my MAMP httpd.conf file in a different location:\r
+      \r ps aux | grep httpd - This will display the PHP file running. Ex: /Applications/MAMP/Library/bin/httpd
+      - Navigate to the folder containing the httpd file and run httpd -V | grep .conf
+      to see what Config file it is using\r \r This did not work for me - I instead
+      found my working httpd.conf file in:\r \r /Applications/MAMP/conf/apache/httpd.conf\r
+      \r Add the line:\r \r LoadModule php5\\_module /usr/local/opt/php56/libexec/apache2/libphp5.so\r
+      \r This will load the new PHP 5.6 as the PHP version for the MAMP server. Restart
+      the server, open up PHP Storm and open Prefs \\> Languages \\> PHP \\> Interpreter
+      \\> Click ... and Add a new Interpreter. Set the new PHP home to the new PHP
+      5.6 installed with homebrew:\r \r /usr/local/Cellar/php56/5.6.4/bin\n\n"'
+    - ''
+    - OSX, Yosemite, Apache, MAMP, Homebrew, PHPStorm, Xdebug
+    - '2015-02-11 06:35:45'
+    - '2015-02-12 20:03:37'
+    - phpstorm-xdebug-running-on-mamp-on-yosemite
+    - false
+    - true
+  - - 12
+    - Using jQuery in Magento Modules
+    - '"1) First download Jquery and place it in the base directory of magento in
+      the JS folder (magento/js.)\n\n2) Next, add the following line to the header.html
+      file in app/design/frontend/ThemePackage/Theme/template/page/head.phtml&nbsp;-\n\n`\r\n\r\n<script
+      type=\"text/javascript\" src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js\"></script>\r\n\r\n<script
+      type=\"text/javascript\">\r\n$.noConflict();\r\n</script>\r\n\r\n`\r \r place
+      it below the line that says:\r \r`\r\n\r\n<?php echo $this->getCssJsHtml() ?>\r\n\r\n</code> \r\n\r\n3)
+      Check to see if Jquery is being loaded using and if the DOM works:\r\n\r\n<script>\r\n\r\nif(document.getElementById(''year'')){
+      } else {\r\ndocument.write(\"DOM NOT Supported\");\r\n}\r\n\r\nif(typeof jQuery
+      === ''undefined''){\r\ndocument.write(\"<h2>Jquery NOT Loaded</h2>\");\r\n}\r\n\r\n</script>\r\n4)
+       You want to load the event listeners when the page loads, so:\r\n<code>\r\nwindow.onload
+      = init;\r\nfunction init(){\r\n\r\nvar year = document.getElementById(''year'');\r\n\r\nyear.onchange
+      = selectYear;\r\n\r\n}\r\n\r\n`;\r \r &nbsp;\r \r 5) You are going to want to
+      make a route that leads to an action so you can use AJAX to return parameters
+      through the Magento system:\r \r`\r\n\r\npublic function getmakeAction(){\r\n\r\n$year
+      = '''';\r\n\r\nforeach ($this->getRequest()->getParams() as $key => $value){\r\n\r\n}\r\n\r\n</code>\r\n\r\nand
+      the AJAX:\r\n\r\n<code>\r\n\r\nfunction selectYear() {\r\n\r\nvar year_selected
+      = year.value;\r\n\r\nvar ajax;\r\n\r\najax = new XMLHttpRequest();\r\n\r\nif(ajax){
+      } else {\r\ndocument.write(\"<h2>Ajax HTTP Request Object is not loading properly</h2>\");\r\n}\r\n\r\najax.open(''get'',
+      ''/interchange/search/getmake?year='' + encodeURIComponent(year_selected));\r\n\r\najax.onreadystatechange
+      = function() {\r\nhandleResponse(ajax);\r\n};\r\n\r\najax.send(null);\r\n\r\nreturn
+      false;\r\n}\r\n\r\nfunction handleResponse(ajax){\r\n\r\nif(ajax.readyState
+      == 4){\r\n\r\nif((ajax.status == 200) || (ajax.status == 304)){\r\n\r\nvar make
+      = document.getElementById(''make'');\r\n\r\nmake.innerHTML = ajax.responseText;\r\n\r\nmake.disabled
+      = false;\r\n\r\nresults.style.display = ''block'';\r\n\r\n} else {\r\nalert(\"Error
+      in AJAX Response!\");\r\n}\r\n\r\n}\r\n\r\n}\r\n\r\n`\r \r Enjoy!"'
+    - ''
+    - Uncategorized
+    - '2013-08-15 00:37:01'
+    - '2014-08-07 20:05:05'
+    - using-jquery-in-magento-modules
+    - false
+    - true
+  - - 13
+    - Exporting Microsoft SQL Server (MsSql) Databases and Tables into MySql Server
+      with PHPMyAdmin
+    - '"**Export MsSql Data**\r1) First you need to right click on the database that
+      you would like to export in MsSql Server, go to Tasks and Export Data Source.\r
+      2) On the first screen click Next. Then choose SQL Server Native Client 10 -
+      which should be the default. Also choose Use Windows Authentication, unless
+      you would like to authenticate otherwise. Choose the Database you would like
+      to Export, and click next.\r 3) For a Destination, choose Excel. Then select
+      a desired file output and keep the version to 97-2003. Also check the box that
+      says first row has column names. Click Next.\r 4) Select Copy data from one
+      or more data views and click next.\r 5) Select the tables you would like to
+      export and click next.\r 6) Then follow the guide By clicking Next, Run immediately
+      then click Finish and it will create a file for you\r \r**Convert to OpenOffice
+      Format**\n1. Open your newly created Excel file in Open-office\n2. Save the
+      file as an ODS Spreadsheet (.ods)\n3. Check the data in the spreadsheet you
+      just created and make sure it looks alright\n**Import into MySql**\n1. Install
+      PHPMyAdmin if you have not already done so, and open it up.\n2. Choose the Import
+      tool from the top row, or select a database and choose the import tool if you
+      would like to import the data into a database.\n3. Browse for your file\n4.
+      Select Open Office Spreadsheet for Format\n5. Check the check box that says
+      the first line contains column names\n6. Import the file and boom! Microsoft
+      SQL Server to Open Source MySQL\n"'
+    - ''
+    - ''
+    - '2013-08-15 20:32:15'
+    - '2013-08-15 20:32:15'
+    - exporting-microsoft-sql-server-mssql-databases-and-tables-into-mysql-server-with-phpmyadmin
+    - false
+    - true
+  - - 14
+    - Awesome tool for developers
+    - '"I use this tool CONSTANTLY to test different screen sizes!\r \r My MacBook
+      Pro is pretty small, so when sites look good on my laptop, they may not look
+      good on a bigger monitor. With [Screenfly](http://quirktools.com/screenfly/
+      \"Screenly\") you can test your site on anything from an iPhone (or many other
+      pre-configured cell-phones) or iPad to a 1080p Television with 1920x1080 resolution!\r
+      \r I can even check websites running on my laptop locally using http://localhost:8080!\r
+      \r &nbsp;\r \r http://quirktools.com/screenfly/\n\n"'
+    - ''
+    - ''
+    - '2013-08-19 06:46:59'
+    - '2013-08-19 06:46:59'
+    - awesome-tool-for-developers
+    - false
+    - true
+  - - 15
+    - Homebrew — The missing package manager for OS X
+    - '"[Homebrew — The missing package manager for OS X](http://brew.sh/). This thing
+      is awesome, it brings the&nbsp;awesome Linux package manager to mac. I grabbed
+      Ant in a few seconds when I was installing Tomcat on my Macbook Pro."'
+    - ''
+    - Uncategorized
+    - '2014-06-10 08:25:58'
+    - '2014-06-10 08:25:58'
+    - homebrew-the-missing-package-manager-for-os-x
+    - false
+    - true
+  - - 16
+    - NoSQL comparison Amazon's DynamoDB Vs MongoDB Vs Oracle for database Logging
+      using Log4J
+    - '"NoSQL is the new hot thing for large data management&nbsp;right now - and
+      it could be replacing your Oracle or MySQL server before you know it! You can
+      quickly, easily and efficiently handle massive amounts of data using NoSQL database
+      services. Two popular solutions&nbsp;are MongoDB and Amazon DynamoDB.\r \r At
+      work, I was tasked with researching a viable solution for a possible&nbsp;large&nbsp;NoSQL
+      database. I began with&nbsp;researching DynamoDB and comparing some of its benefits
+      with MongoDB, and comparing them with Oracle''s speed and efficiency (because
+      we already implement Oracle as our Software''s database).\r \r I work for the
+      Laboratory Information Management Software (LIMS) Company - Core Informatics&nbsp;http://www.corelims.com/
+      - and my&nbsp;goal is to build a centralized logging database server that all
+      of our LIMS instances can log to, using Log4J. The amount of data this database
+      is going to handle will be enormous, because&nbsp;each copy of our software
+      will be constantly logging to the database. We chose NoSQL because it''s claim
+      to fame is handling massive amounts of data quickly and efficiently.\r \r Also
+      contributing is my co-worker Toan Nguyen-Dinh!\r \r Enjoy!\n\n# Comparison\n_This
+      table is a work in progress, and will be updated frequently. Feel free to leave
+      a comment and I will try to notify &nbsp;you when we update the table_\n\n|
+      | File (Same Server) | Oracle (Separate server) | MongoDB | DynamoDB |\n| ---
+      | --- | --- | --- | --- |\n| Performance w/o async wrapper (See _note on async
+      wrapper_) | **Appender Used: Log4j 1 RollingFileAppender**\r\n- 900ms/10K records
+      (10K+ recs/s)\n | **Appender used: log4j2 JDBC Appender**\n- On different server:
+      ~6s/**100** records (~16 recs/s) w/ DBPool\n\r Toan:\r \r**Custom JDBC appender
+      that does Async and batch loading**\n- On different server: ~9s/10K records
+      (~1100 recs/s)\n | **Appender used: Spring MongoDB log4j Appender**\r\n- On
+      same server: ~2.7-3s/10K records (3K+ recs/s)\n- On different server(from slow
+      comp+net at home):&nbsp;~18-20s/10K records (~500 recs/s)\n | |\n| Data Type
+      Support | \n- String\n | \n- String\n- Number\n- Boolean\n- DateTime\n- Binaries\n-
+      ... numerous others common types\n | \n- String\n- Number\n- Boolean\n- DateTime\n-
+      Binary\n- ... various others notably:\r\n  - Object\n  - Array\n  - Regular
+      Expression\n  - JavaScript\n | \n- String\n- Number\n- Base64 Binary\n |\n|
+      Potential Speed\r Bottlenecks | \n- Slow hard drive\n- Drive on VM is being
+      used by other processes\n- If using a shared drive, will be slower\n | \n- Slow
+      Network / Network traffic\n- Using up connections if using the same database
+      as LIMS\n | \n- Slow Network / Network Traffic if not on same server\n | |\n|
+      Size Limits | \n- File Limit: Disk Space\n- Record Limit: Java String size?&nbsp;(4GB?)\n
+      | \n- DB Size Limit: Oracle TableSpace / Disk Space\n- Record Limit (CLOB):
+      4GB\n | \n- DB Size Limit: 2GB on 32-bit server\r \"Virtually unlimited\" on
+      64-bit server&nbsp;(People give example of 3TB on single node)\n- By default,
+      24K collections + indexes per DB (can be increased to 3Million Collections +
+      Indexes)\n- Unlimited documents per collection, unless capped\n- Record Limit
+      (Document): 16MB (includes keys and values)\n | \n- DB Size Limit: **Research**\n-
+      Record Limit: 65KB (includes keys and values)\n |\n| Scalability Potential |
+      Add more disk space, easy on VM | Manual setup with load balancer and Replication
+      Server\r (Does RDS allow easy setup of replication servers?) | Manual setup
+      with sharding (Does Amazon provide auto-sharding?) | Automatic Growth |\n| Log
+      Rotation Setup | Embedded in the appender | Script that runs periodically\r
+      Note that deleting from table is transactional and can take time | Cap size
+      of collection (max cap is 4Billion documents)\r \r Per MongoDB documentation:\r_capped
+      collection: A fixed-sized&nbsp;[c](http://docs.mongodb.org/manual/reference/glossary/#term-collection)ollection&nbsp;that
+      automatically overwrites its oldest entries when it reaches its maximum size._
+      | |\n| Security Risks | \n- File is local and unencrypted, can be accessed locally,
+      but no transfer over the wire.\n | \n- Data is transferred over the wire, possibly
+      unencrypted\n | \n- Data is transferred over the wire, possibly unencrypted\n
+      | |\n| Costs | Free | No extra cost if already using Oracle | No extra cost
+      if using an existing server (app or DB server) | |\n| Main Limitations | \n-
+      Not load balanceable\n- Not centralized, unless using a shared drive (slower)\n-
+      Not easily searchable\n | \n- Speed\n- Speed\n- Did I mention speed?\n | \n-
+      No in-house expert\n- Another moving piece in technology stack\n | \n- No in-house
+      expert\n- Another moving piece in technology stack\n |\n\n#### \n\n### Amazon
+      DynamoDB&nbsp;<sup>4</sup>\n\n#### Traditional Database Problems (What DynamoDB
+      solves)\n\n- Traditional databases find it hard to maintain acceptable data
+      speeds because many databases were not designed to handle large scale software\n-
+      As more and more simultaneous LIMS + ELN Instances write & access our Logging
+      Database, the database layer will slow down and can possibly fail\n- Traditional
+      solution: build a large distributed database cluster or partition data over
+      multiple instances as you scale - this is hard and expensive to build + maintain
+      (and continually grow) and this will require a lot of expertise.\n- Database
+      may also may reach a point where the maximum amount of data may exceed the maximum
+      amount of data allowed in cluster\n- Big problems: Too much data to handle quickly
+      (or even possibly), patching and upgrading DB software in DB clusters without
+      any downtime\n\n**DynamoDB''s Solution**\n\n- High performance, non-relational
+      database service developed for the cloud\n- Created from the ground up specifically
+      for large scale applications to offer low latency (server side latency is typically
+      1-9 milliseconds) and high throughput database service\n- Runs on solid state
+      drives, built to maintain consistent fast latencies at any scale\n- DynamoDB
+      is a service, not a software\n- Simply tell the service how many requests you
+      would like it to be able to handle per second and it scales itself automatically\n-
+      When you need more data connections per second, simply update the request capacity
+      in the AWS management console or using the API. The previous throughput level
+      is available while scaling (no downtime).\n- Amazon''s DynamoDB solution is
+      very reliable: the data is replicated across multiple AWS availability zones
+      for maximum up-time + synchronous data replication protects any individual node\n\n**About
+      DynamoDB**\n\n- Dynamo DB is schema-less (except for the required primary key)\n-
+      Individual items in a DynamoDB table can have any number of attributes.\n- A
+      database is a collection of tables, a table is a collection of items and each
+      item is a collection of attributes\n- _Individual&nbsp;items in a table can
+      have any number of attributes, but there is a limit of 64KB on the item size.
+      Item size is the sum of lengths of its attributes names and values (binary and
+      uf-8 lengths)_\n- _Each attribute in an item is a name-value pair and an&nbsp;attribute&nbsp;can
+      be single valued or a multi-valued set, no duplicates allowed. DynamoDB&nbsp;doesn''t&nbsp;allow&nbsp;null
+      or empty string attribute values. The ID is the only required attribute.,_\n\n**DynamoDB
+      Primary Key&nbsp;**<sup>2</sup>\n\n- Hash type primary key - the primary key
+      is made of one attribute, a hash attribute. The DB builds an un-ordered hash
+      index on this primary key attribute\n- Hash and range type primary key - in
+      this case the primary key is made of two attributes: the first is a hash attribute
+      and the second is a range attribute. DB builds an un-ordered hash index on the
+      has primary key attribute and a sorted range index on the range primary key
+      attribute. Example, a forum DB setup:\r ![](https://corelims.atlassian.net/wiki/download/attachments/20840572/image2014-7-23%2010%3A9%3A17.png?version=1&modificationDate=1406124556603&api=v2
+      \"Core Product Development > Database Logging > image2014-7-23 10:9:17.png\")\n\n**DynamoDB
+      Data Types**\n\n**Scalar data types -&nbsp;**number, string, binary\n\n**Multi-valued
+      data types -**&nbsp;String set, Number set, Binary set\n\n**Item Operations**-
+      the&nbsp;_UpdateItem_&nbsp;operation allows you to update existing attribute
+      values, add new attributes, and delete existing attributes from an item. You
+      can also preform conditional updates, Example: so the update will only happen
+      if the current price is $20.\n\n**Notable DynamoDB Documented Limits Vs. MongoDB&nbsp;**<sup>1</sup><sup>,
+      2</sup>\n\n- Table Size: No practical limit in number of bytes or items.&nbsp;**VS**&nbsp;_MongoDB''s
+      maximum number of collections (tables) in a DB is a function of the size of
+      the namespace file and the number of indexes of collections in the database_\n-
+      Hash or hash-and-range primary key:&nbsp;Number of hash key values - No practical
+      limit.\n- Hash-and-range primary key: Number&nbsp;of range keys per hash value
+      - No practical limit for tables without local secondary indexes\n- Attribute
+      name lengths - cannot exceed 255 bytes.&nbsp;**VS**&nbsp;_MongoDB namespaces
+      (including databases and collection (table) names cannot exceed 123bytes)_\n-
+      Item (row) size - cannot exceed 65kb, Attribute names count against a attribute
+      name binary length and attribute value lengths.&nbsp;**VS**&nbsp;_MongoDB document
+      size limit is 16 megabytes and no more than 100 levels of nesting documents_\n-
+      Maximum concurrent Control Plane API requests (creating, updating or deleting)
+      - Up to 10 of these requests running concurrently \\*\\* This may be a game-changer
+      because our centralized logging server would need way more than 10 concurrent
+      API connections.\n\n**DynamoDB Vs. MongoDB**&nbsp;<sup>3</sup>\n\n- With DynamoDB
+      you are not able to alter indexing after its been created, without creating
+      a new table and migrating the data.\n- Use MongoDB if you require the features
+      of a document database; DynamoDB is key-value based and supports search of just
+      a value or set, no sub-document supported and no complex index and query is
+      supported.\n- DynamoDB item (row) size limit is 65kb, MongoDB does not have
+      this limitation.\n- Use MongoDB if you need any other data types other than
+      string, number and base64 encoded binary\n- Use MongoDB is you are going to
+      query by regular expression\n- Use DynamoDB if integrating with other AWS''s\n\n**DynamoDB&nbsp;****Connection**\n\n-
+      AWS SDK is recommended for connection, rather than making requests to DynamoDB
+      API directly from application\n- The SDK handle authentication ,serialization
+      and connection management\n- Direct API access requires construction of individual
+      JSON service requests; containing JSON payload, HTTP headers and a valid AWS
+      signature\n- JSON is just for data transport, the data is not stored on disk
+      in JSON format (MongoDB is stored this way)\n\n**_Additional Reading_**\n\n&nbsp;[http://info.mongodb.com/rs/mongodb/images/10gen\\_Top\\_5\\_NoSQL\\_Considerations.pdf](http://info.mongodb.com/rs/mongodb/images/10gen_Top_5_NoSQL_Considerations.pdf)\n\n####
+      Note on async wrapper\n\nThe async wrapper will decrease the time to almost
+      nothing on any of the appenders, but doesn''t represent the true performance
+      of your logger. It only delegates the process of logging to a different thread
+      so it can continue its own process without having to wait for the log to be
+      written and committed. That is&nbsp;**extremely**&nbsp;useful in practice, but
+      it does nothing for our comparison, because we want to compare the actual speed
+      of each process so we can find out how long our resources (CPU, mem, etc) is
+      being taken up just for logging.\n\nAlso note that the async wrapper has a buffer,
+      so the longer it takes to actually log something, the longer the object will
+      stay in the buffer and if we hit the buffer limit, things will start slowing
+      down because it will start waiting for the buffer to clear before it can add
+      more things to it. There is a setting to NOT block when the buffer is full,
+      but it means that you will lose all data that doesn''t fit in the buffer.\n\nLastly,
+      if the main thread is killed (i.e. Tomcat is shut down or killed) and there
+      are still things in the buffer, all that information will be lost.\n\n# References\n\n1
+      -&nbsp;[http://docs.mongodb.org/manual/reference/limits/](http://docs.mongodb.org/manual/reference/limits/)\n\n2
+      -&nbsp;[http://awsdocs.s3.amazonaws.com/dynamodb/latest/dynamodb-dg.pdf](http://awsdocs.s3.amazonaws.com/dynamodb/latest/dynamodb-dg.pdf)\n\n3
+      -&nbsp;[http://www.masonzhang.com/2013/08/7-reasons-you-should-use-mongodb-over.html](http://www.masonzhang.com/2013/08/7-reasons-you-should-use-mongodb-over.html)\n\n4
+      -&nbsp;[http://aws.amazon.com/dynamodb/](http://aws.amazon.com/dynamodb/)\n\n"'
+    - ''
+    - Uncategorized
+    - '2014-07-24 19:10:17'
+    - '2014-08-07 20:01:32'
+    - nosql-comparison-amazons-dynamodb-vs-mongodb
+    - false
+    - true
+  - - 17
+    - Splunk Database app Bug
+    - '"When trying to ues the Splunk DB Connect App, to attempt to connect to my
+      Oracle DB in splunk, I was getting the following error.\r \r Error: Encountered
+      the following error while trying to update: In handler ''localapps'': Error
+      while posting to url=/servicesNS/nobody/dbx/dbx/install/java\r \r I found another
+      person in the Splunk \"Answers\" forum and nobody answered either of us, so
+      I dug deep into the logs and found the problem.\r \r The problem is, that Splunk
+      is looking in Program Files/Java/Jre7/bin/ for a folder in bin called server
+      containing a a jvm.dll - the server folder nor the jvm.dll did not exist.\r
+      \r After alot of searching (and re installing Java with no avail) I discovered
+      jvm.dll in Program Files/Java/Jre7/bin/client - so what you need to do to fix
+      this random Java error when adding a database in the DB app in Splunk is: copy
+      the client folder in jre7/bin and rename it to server and place it in jre7/bin
+      - make sure it contains jvm.dll and boom your all set. Restart Splunk and everything
+      will work fine.\r \r Also, you are going to need the Oracle JDBC driver, I used
+      this one:\r \r http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-111060-084321.html\r
+      \r And download \"objdbc6.jar\" and place it in Program Files / Splunk / etc
+      / apps / dbx / bin / lib\r \r And Splunk should be able to connect to your Oracle
+      database using JDBC\r \r Enjoy!\n\n"'
+    - ''
+    - Splunk, Java, JDBC, Oracle
+    - '2014-08-08 23:29:51'
+    - '2014-08-08 23:29:51'
+    - splunk-database-app-bug
+    - false
+    - true
+  - - 18
+    - OSX Yosemite MAMP update bug
+    - '"After I decided to get the new Yosemite update yesterday once it was released,
+      I knew I was going to run into some problems.\r \r Every time I update, I always
+      have a few programs that don''t run. MAMP was one of them. But I found a simple
+      fix!\n\n> \"Workaround for the 10.10 Preview 5 bug: Rename the file “envvars”
+      located in /Applications/MAMP/Library/bin into “\\_envvars”\r \r - http://stackoverflow.com/questions/25139599/mamp-pro-3-05-on-mavericks-updated-to-yosemite-apache-does-not-start\r
+      \r Works good for me. Enjoy"'
+    - ''
+    - OSX, Yosemite, Apache, MAMP
+    - '2014-10-22 06:27:12'
+    - '2014-10-22 06:27:12'
+    - osx-yosemite-mamp-update-bug
+    - false
+    - true
+  - - 19
+    - Java 8, Tomcat 8, and RESTEasy on Mac OS X | Wolf Paulus
+    - '"/Library/Tomcat\n\nvia [Java 8, Tomcat 8, and RESTEasy on Mac OS X | Wolf
+      Paulus](http://wolfpaulus.com/jounal/mac/java-tomcat-resteasy/).\n\n"'
+    - ''
+    - Java, OSX, Apache, Tomcat, Maven
+    - '2015-01-13 09:23:18'
+    - '2015-01-13 09:23:18'
+    - java-8-tomcat-8-and-resteasy-on-mac-os-x-wolf-paulus
+    - false
+    - true
+  - - 20
+    - Saving a read-only file edited in vi / vim | GeekyBoy.com
+    - '"Who hasn''t run into this problem in VIM! (especially working with APache
+      Virtual Hosts) Everyone forgets to run Vim in SUDO on Linux or Mac!\n\n[Saving
+      a read-only file edited in vi / vim | GeekyBoy.com](http://www.geekyboy.com/archives/629).\n\nGenius!
+      Pure Genius! :)\n\n"'
+    - ''
+    - OSX, Apache, Linux
+    - '2015-01-19 03:31:42'
+    - '2015-01-19 03:31:42'
+    - saving-a-read-only-file-edited-in-vi-vim-geekyboy-com
+    - false
+    - true
+  - - 21
+    - Homebrew Maven with JDK8
+    - '"I recently started working for a Medical Terminology called Apelon in Hartford
+      CT - they specialize in open source medical terminology products that are written
+      in Java and make heavy use of Maven.\r \r After pulling the repositories off
+      GitHub and grabbing Maven from Homebrew, I received an error that Maven was
+      using JDK 1.7 not 1.8! After some research I found this solution:\r \r`export
+      JAVA_HOME=/Library/Java/JavaVirtualMachines/{jdk-version}/Contents/Home`\r \r
+      Boom! Problem solved! Gotta love StackOverflow!\r \r http://stackoverflow.com/questions/18813828/why-maven-use-jdk-1-6-but-my-java-version-is-1-7\r
+      \r Enjoy\n\n"'
+    - ''
+    - Java, OSX, Maven, Apelon
+    - '2015-02-04 06:29:20'
+    - '2015-02-04 06:29:20'
+    - homebrew-maven-with-jdk8
+    - false
+    - true
+  - - 22
+    - The Best OSX Software
+    - '"Here are some of the best popular and unknown apps I use daily for OSX:\r
+      \r - Transmit by Panic (http://panic.com/transmit/)\r \r - Textmate (http://macromates.com/)\r
+      \r - PHPStorm & MAMP Server\r \r - AppZapper\r \r - ShiftIt\\*\\* - Probably
+      my favorite app on my 13\" Macbook Pro. This is the best productivity tool I
+      have ever used. (https://github.com/fikovnik/ShiftIt)\r \r - Cinch\\*\\* - Similar
+      to ShiftIt except it is activated by mouse rather than hotkeys. Still probably
+      my most used program together with ShiftIt (http://www.irradiatedsoftware.com/cinch/)\r
+      \r - SmoothMouse - I never liked how an external (USB) mouse felt on my Macbook
+      Pro. I liked the speed and acceleration I got from a mouse running on Linux
+      or even a Windows computer for productivity and speed. Actually - it''s the
+      only thing I like about Windows computers, seriously.(http://smoothmouse.com/)\r
+      \r - 1Password\r \r - Connect360 - Stream Music and Videos on Xbox360 from a
+      Mac.\r \r - Homebrew\r \r - Backblaze Backup - Online backup app. Just got it
+      - but it seems pretty good. Probably going to buy it after the trial runs-out.\r
+      \r I will keep adding to this list as I run across apps I use. Because I have
+      so much (735gb and counting..) stuff on my laptop, mainly Software - I can''t
+      think of half of the software I use off the top of my head... I plan to upgrade
+      from my 750gb (full) hard drive to a 1TB Samsung SSD hard-drive soon.\r \r Enjoy.\n\n"'
+    - ''
+    - OSX, Yosemite, Apache, MAMP, Homebrew, PHPStorm
+    - '2015-02-11 08:51:59'
+    - '2015-02-11 08:51:59'
+    - the-best-osx-software
+    - false
+    - true
+  - - 23
+    - Mac Print History
+    - '"I just learned how to dig up your print history on your Mac! This is a pretty
+      cool trick:\r \r First, in Terminal:\r \r cupsctl WebInterface=yes\r \r Next,
+      Open a web browser to:\r \r http://localhost:631/jobs/\r \r Next, Click Jobs,
+      and Unfortunately you have to Click \"Reprint Job\" and print jobs randomly
+      until you find the correct file your looking for.\r \r Enjoy.\r \r EDIT: There
+      is a program out there called CUPS-PDF claims to be able to save a copy as a
+      PDF when you click \"reprint job\" in the CUPS web panel, but I have not gotten
+      it to work yet.\n\n"'
+    - ''
+    - OSX, Yosemite
+    - '2015-02-11 09:59:23'
+    - '2015-02-11 10:19:08'
+    - mac-print-history
+    - false
+    - true
+  - - 24
+    - OSX Homebrew error - mkdtemp failed on /tmp/temp-folder-name
+    - '"I was trying to install Apache through Homebrew today and I ran into this
+      error:\r \r mktemp: mkdtemp failed on /tmp/httpd22-uQc6se: No such file or directory\r
+      \r The problem here is that /private/tmp (/tmp on mac is just a symlink to /private/tmp)
+      had the wrong permissions, and/or /private/tmp did not even exist. How this
+      happened - who knows!\r \r Anyways - let''s fix this / figure out what happened.\r
+      \r ls -lra / | grep tmp \r ls -lra /private | grep tmp\r \r This will tell you
+      what your /tmp is doing and what the permissions are, and if /private/tmp exists.
+      This should tell you that /tmp is a symlink to /private/tmp.\r \r Anyways, let''s
+      fix the permissions and make a /private/tmp if it does not exist.\r \r mkdir
+      /private/tmp\r sudo chmod 1777 /private/tmp\r sudo chmod 1777 /tmp\r \r This
+      creates /private/tmp if it is not already created, and then sets the permissions
+      to 1777.\r \r Enjoy.\n\n"'
+    - ''
+    - OSX, Yosemite, Homebrew
+    - '2015-02-16 00:40:35'
+    - '2015-02-16 00:40:35'
+    - osx-homebrew-error-mkdtemp-failed-on-tmptemp-folder-name
+    - false
+    - true
+  - - 25
+    - Java SE 1.8 EE Incorrect Access Restrictions for JavaFX jfxrt.jar
+    - '"In Java 8 (JavaSE-1.8 EE) / JavaFX there is a bug in Eclipse that gives a
+      false Access Restriction warning for any reference to the JavaFX jfxrt.jar class.
+      A hurdle for most of the suggested solutions to this problem was that we are
+      using Maven, so any project configuration files were generated by m2e and are
+      overwritten whenever the POM files are changed. Our prioject includes multi-module
+      maven builds with over 20+ individual projects.\n\n```\nAccess restriction:
+      The constructor CheckBox(String) is not accessible due to restriction on required
+      library /opt/java/jdk_x64_1.8.0_0-b132/jre/lib/ext/jfxrt.jar\n```\n\r My Co-Worker
+      Dan Armbrust (Software Engineer, Apelon) reported this bug to the Eclipse Bug
+      Tracker\r \r\n```\nhttps://bugs.eclipse.org/bugs/show_bug.cgi?id=431067\n```\n\r
+      \r This has not properly been fixed, but in the meantime, the solution we are
+      using at Apelon for this bug is as follows:\r \r To implement this fix, you
+      must unzip the org.eclipse.osgi JAR, then modify the /org.eclipse.osgi/JavaSE-1.8.profile
+      and change the first property to the values below.\r \r The JAR file is commonly
+      located in these locations (the numbers and letters are the end of the file
+      name may be different):\r\n```\nWindows: C:\\Program Files\\Eclipse\\plugins\\org.eclipse.osgi_3.10.2.v20150203-1939.jar\r\nLinux:
+      /opt/Eclipse/Eclipse_x64_4.4_luna/plugins/org.eclipse.osgi_3.10.0.v20140606-1445.jar\n```\n\r
+      Unpackage the jar (I used WinZip on windows, and Ez7z on my Macbook at home)\r
+      \r Edit the JavaSE-1.8.properties file with a text editor (I used Notepad++),
+      and edit the org.osgi.framework.system.packages section, add the following packages
+      to the top of the list, above the ones that are already there.\r\n```\njavafx.animation,\\\r\n
+      javafx.application,\\\r\n javafx.beans,\\\r\n javafx.beans.binding,\\\r\n javafx.beans.property,\\\r\n
+      javafx.beans.property.adapter,\\\r\n javafx.beans.value,\\\r\n javafx.collections,\\\r\n
+      javafx.collections.transformation,\\\r\n javafx.concurrent,\\\r\n javafx.css,\\\r\n
+      javafx.embed.swing,\\\r\n javafx.event,\\\r\n javafx.fxml,\\\r\n javafx.geometry,\\\r\n
+      javafx.print,\\\r\n javafx.scene,\\\r\n javafx.scene.canvas,\\\r\n javafx.scene.chart,\\\r\n
+      javafx.scene.control,\\\r\n javafx.scene.control.cell,\\\r\n javafx.scene.effect,\\\r\n
+      javafx.scene.image,\\\r\n javafx.scene.input,\\\r\n javafx.scene.layout,\\\r\n
+      javafx.scene.media,\\\r\n javafx.scene.paint,\\\r\n javafx.scene.shape,\\\r\n
+      javafx.scene.text,\\\r\n javafx.scene.transform,\\\r\n javafx.scene.web,\\\r\n
+      javafx.stage,\\\r\n javafx.util,\\\r\n javafx.util.converter,\\\r\n com.sun.javafx.tk,\\\r\n
+      com.sun.javafx.binding,\\\r\n com.sun.javafx.collections,\\\n```\n\n### Delete
+      the Sign Info\n\nDelete the ECLIPSE\\_.RSA file and the ECLIPSE\\_.SF file.
+      Then Open MANIFEST.MF in a text editor and delete all of the entire bottom section
+      where it says \"Name\" and \"SHA1-Digest\".\n\n\r \r \r Re-package the JAR using
+      Winzip, and place it back in the plugins directory. But after re-packaging the
+      JAR, I had to open it in WinZip (just to view the contents of the JAR zipped)
+      to verify that the folder structure reflected that of the original JAR file
+      that we unzipped. _This took me a few attempts to get it correct, as I did not
+      zip the files properly and created an odd folder structure within the JAR file
+      that caused Eclipse to crash on launch._ \r \r \r \r If anyone ended up at this
+      article after searching for a solution to this error: the above instructions
+      double as directions to fix this error.\r\n### If you get this error on Eclipse
+      Launch:\n ![Eclipse error](http://kaloidistech.com/wordpress/wp-content/uploads/2015/03/Eclipse-error-300x138.jpg)\r
+      \r The error reads, \"An error has occurred. See the log file...\" and the contents
+      of that log file are:\r \r[![Eclipse Error Log](http://kaloidistech.com/wordpress/wp-content/uploads/2015/03/Eclipse-Error-Log-300x168.jpg)](http://kaloidistech.com/wordpress/wp-content/uploads/2015/03/Eclipse-Error-Log.jpg)\n\nThe
+      contents of the log file\"\n\n```\n!SESSION Wed Mar 11 15:22:31 EDT 2015 ------------------------------------------\r\n!ENTRY
+      org.eclipse.equinox.launcher 4 0 2015-03-11 15:22:31.699\r\n!MESSAGE Exception
+      launching the Eclipse Platform:\r\n!STACK\r\njava.lang.ClassNotFoundException:
+      org.eclipse.core.runtime.adaptor.EclipseStarter\r\n\tat java.net.URLClassLoader.findClass(Unknown
+      Source)\r\n\tat java.lang.ClassLoader.loadClass(Unknown Source)\r\n\tat java.lang.ClassLoader.loadClass(Unknown
+      Source)\r\n\tat org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:645)\r\n\tat
+      org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)\r\n\tat org.eclipse.equinox.launcher.Main.run(Main.java:1465)\n```\n\nAs
+      I said, this error came as a result of my \"hacking\" a JAR file (as a work-around
+      for a JavaFX bug(. Java 8 and JavaFX are very new technologies; both are great
+      updates for Java, and FX is an awesome replacement for the Swing framework,
+      but (as always) with new technology comes new bugs. And this is one of them.\n\nThis
+      error came as a result of me modifying the org.eclipse.osgi JAR''s JavaSE-1.8.properties
+      file. You may also have some problems with the signatures in the JAR as well.
+      Read the comment for further instructions on how to fix the signature issues
+      that may arise from hacking the JAR.\n\n**To simply remedy this problem:** grab
+      a fresh download of Eclipse, and replace the modified JAR with a fresh copy
+      from a new Eclipse download. By replacing your modified JAR with a fresh un-modified
+      copy from the Eclipse Download, you will know whether or not that JAR was the
+      problem.\n\n**Make sure to check the folder structure of the JAR that you suspect
+      is causing problems to see if maybe WinZip created some weird folder structure
+      when zipping up the folder back into a JAR.** This happened to me many times
+      and Dan had to help me figure out that Winzip was creating some weird folder
+      structure.\n\n**Also, I was initially using the JAR command in CLI to package
+      the JAR file, but this was also giving me folder structure problems. I would
+      not recommend using the JAR command to package JARs actually**. Dan suggested
+      that I just use a zip program to zip the file and then simply change the extension
+      to .jar (Dan does not recommend WinZip, I used it because I don''t have time
+      to grab another right now). After enabling file extensions to be displayed in
+      Windows Explorer Prefs (Windows Computers make everything so complicated :)
+      )).\n\n**If this did not fix your problem:** then try figuring out which JAR
+      is giving you a problem from the error log and try replacing with with a fresh
+      copy from a new Eclipse download.\n\n\r \r That''s all!\r \r Cheers"'
+    - ''
+    - Java, Maven, Apelon, Eclipse, Java 8, JavaFX
+    - '2015-03-09 19:59:09'
+    - '2015-04-09 22:47:51'
+    - java-se-1-8-ee-incorrect-access-restrictions-for-javafx-jfxrt-jar
+    - false
+    - true
+  - - 26
+    - How to disable ads in Skype
+    - '"Guide on how to disable ads in Skype. Pretty cool article.\r \r http://www.cnet.com/how-to/how-to-disable-ads-in-skype/\n\n"'
+    - ''
+    - OSX, Linux
+    - '2015-03-10 07:36:20'
+    - '2015-03-17 22:54:03'
+    - how-to-disable-ads-in-skype
+    - false
+    - true
+  - - 27
+    - Ubuntu Server Dispatch Email on Successful SSH Login
+    - '"If you want to be dispatched an email whenever a user logs in successfully
+      to an account on your Linux box, I found this nifty script on Stack Overflow\n\n```\nip=`echo
+      $SSH_CONNECTION | cut -d \" \" -f 1`\r\n\r\nlogger -t ssh-wrapper $USER login
+      from $ip\r\n echo \"User $USER just logged in from $ip\" | sendemail -q -u \"SSH
+      Login\" -f \"Originator <from@address.com>\" -t \"Your Name <your.email@domain.com>\"
+      -s smtp.server.com &\n```\n\r http://stackoverflow.com/questions/6257522/how-to-import-java-source-into-eclipse\r
+      \r Enjoy!"'
+    - ''
+    - Linux, Ubuntu
+    - '2015-03-11 19:21:31'
+    - '2015-03-11 19:23:29'
+    - ubuntu-server-dispatch-email-on-successful-ssh-login
+    - false
+    - true
+  - - 28
+    - Wordpress Hotkeys
+    - '"Wordpress is really cool... Here''s how to make it cooler (hotkeys)\r \r http://premium.wpmudev.org/blog/50-awesome-time-saving-wordpress-keyboard-shortcuts/\r
+      \r \r Enjoy\n\n"'
+    - ''
+    - Uncategorized
+    - '2015-03-17 08:16:13'
+    - '2015-03-17 21:47:35'
+    - wordpress-hotkeys
+    - false
+    - true
+  - - 29
+    - GIT Cheat Sheet
+    - '"Awesome cheat sheet for using GIT commands. Very useful.\r \r http://overapi.com/static/cs/git-cheat-sheet-v2-back.svg\n\n"'
+    - ''
+    - GIT
+    - '2015-03-18 00:32:27'
+    - '2015-03-18 00:32:27'
+    - git-cheat-sheet
+    - false
+    - true
+  - - 30
+    - Java SE Development Kit 8u40 breaks JavaFX - java se archive
+    - '"So we had a little mixup today at Apelon - I got a new laptop (because mine
+      wasn''t holding up to the strain of development) and I pulled our latest changes
+      from GIT:\r \r I upgraded to the latest Java SDK 8u40 and our app''s CSS got
+      all messed up. I honestly was so busy that I did not have time to investigate
+      further - like what CSS tags were broken etc.. Dan and I just grabbed the most
+      recent (non u40) SDK asap and got back to work.\n\n##   \n\r http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html\r
+      \r It took Dan and I waaay too long to find that page.\r \r Cheers\n"'
+    - ''
+    - Java, Apelon, Java 8, GIT
+    - '2015-03-18 06:42:07'
+    - '2015-03-19 18:32:19'
+    - java-se-development-kit-8u40-breaks-javafx-java-se-archive
+    - false
+    - true
+  - - 31
+    - Switch OSX to Java SDK 8
+    - '"First,download Java SDK 8, here is a link to the 1.8 archives to avoid the
+      latest u40 release. Oracle will make you create a new account if you don''t
+      already have one\n\n```\nhttp://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html\n```\n\r
+      \r Then you set this in _~/.profile_\n```\nexport JAVA_HOME=$(/usr/libexec/java_home
+      -v 1.8)\n```\n\r \r Then\r\n```\njava -vesion\n```\n\r To make sure it all went
+      well\r"'
+    - ''
+    - Java 8
+    - '2015-03-18 07:37:56'
+    - '2015-03-19 18:34:36'
+    - switch-osx-to-java-sdk-8
+    - false
+    - true
+  - - 32
+    - PHPStorm Word Wrap
+    - '"So when I tried to use Word Wrapping in PHPStorm today I ran into some trouble...
+      Luckily Stack overflow came to the rescue!\n\n```\nFor all files: Settings |
+      Editor | Use soft wraps in editor\r\nFor currently opened file in editor: View
+      | Active Editor | Use Soft Wraps\n```\n\r \r http://stackoverflow.com/questions/10351608/word-wrapping-in-phpstorm\r
+      \r Cheers\r \r"'
+    - ''
+    - OSX, PHPStorm, PHP
+    - '2015-03-19 07:17:33'
+    - '2015-03-19 07:17:33'
+    - phpstorm-word-wrap
+    - false
+    - true
+  - - 33
+    - 'No PHP or Java, Language: English. Extensible vs. Extendible'
+    - '"So I was editing some stuff on www.kaloidistech.com and I was writing the
+      section on how our software is written when I ran into this little confusion.
+      I like to write really clean extendible code, so I tried to use the word extendible
+      in context and had to do some research.\r \r Apparently there is a Stack Overflow
+      for the English language, don''t believe me? See for yourself!\r \r http://english.stackexchange.com/questions/90426/extensible-vs-extendible\r
+      \r PS - I went with Extensible (so I had to change it from extendible)\n\n"'
+    - ''
+    - Uncategorized
+    - '2015-03-19 07:37:53'
+    - '2015-03-19 18:28:14'
+    - no-php-or-java-language-english-extensibke-vs-extendible
+    - false
+    - true
+  - - 34
+    - Maven Mojo's
+    - '"**Full Project:** [https://github.com/vaskaloidis/maven-example](https://github.com/vaskaloidis/maven-example)\r
+      \r So today I was tasked with learning about Mojo''s and making my first \"Hello
+      World\" program with Maven! Jesse, Informatics Engineer at Apelon, pulled me
+      off of development of our latest ISAAC feature, Mapping, and told me to write
+      the Hello World App, below is a guide. Here is a link to the whole project (2
+      of them in 1 repository) on GitHub.\r \r https://github.com/vaskaloidis/maven-example\r
+      \r In Eclipse, crate a new Maven Project. You will be making two projects, I
+      named my projects: vas and vasSecond. \r \r Let''s create the first project.
+      This project is the Maven Mojo. The other project executes this mojo.\r\n```\nNew
+      > Other > Maven > Maven Project\n```\n\r \r You will need to give your Maven
+      Project a Group ID (Apelon), and an ArtifactID (vas), and a version (1.0-SNAPSHOT).\r
+      \r A new file should have been created called App, open it and do something
+      like this:\r\n```\npackage apelon.vas;\r\n\r\nimport org.apache.maven.plugin.AbstractMojo;\r\nimport
+      org.apache.maven.plugin.MojoExecutionException;\r\nimport org.apache.maven.plugins.annotations.Mojo;\r\nimport
+      org.apache.maven.plugins.annotations.Parameter;\r\n\r\n/**\r\n * A Mojo that
+      says hi\r\n */\r\n@Mojo( name = \"sayhi\")\r\npublic class App extends AbstractMojo\r\n{\r\n    @Parameter
+      ( property = \"greeting\")\r\n    private String greeting;\r\n\t\r\n    public
+      void execute() throws MojoExecutionException \r\n    {\r\n    \tgetLog().info(greeting
+      + \" -Vas\");\r\n    \tSystem.out.println(greeting + \" -Vas (CLI)\");\r\n    }\r\n}\n```\n\r
+      \r Here you are adding a Maven annotation so we can reference this Java class
+      from the POM file. We are also annotating a string, which allows us to pass
+      in data from the POM file to be used in the Java class. \r \r You will probably
+      be getting an error about the org.apache dependency not being found. Ignore
+      that for now because it will be fixed once we create your Maven file. This simply
+      creates a new Goal that prints out \"Hello, World -Vas\" when run.\r \r Now
+      open your POM, and make it look like this.\r \r<script src=\"https://gist.github.com/vaskaloidis/507c1b800fc0933054d4.js\"></script>\r
+      \r Here we are adding the basics to our project, the Group ID, the artifact,
+      the verison and the packaging, which should have already been filled out by
+      Eclipse when it created your project. You are also identifying your build plugins
+      for when you build your project. You are adding 3 dependencies that your project
+      needs (one should fix your dependency problem). The other dependencies are for
+      jUnit (Unit testing) and the other is for the annotations we added in the App.java
+      file\r \r Now do a Maven Install in the project folder in the Command Line:\r\n```\nmvn
+      clean install\n```\n\r \r Now if you go to command line and try to run it, it
+      should print back \"Hello, World -Vas\". \r\n```\nmvn apelon:vas:0.0.1-SNAPSHOT:sayhi\n```\n\r
+      \r We are going to take this one step further and create another Maven project
+      that will execute this Mojo during a specified lifecycle phase.\r \r\n```\nNew
+      > Other > Maven > Maven Project\n```\n\r \r Now open that POM and add this to
+      your build section:\r \r<script src=\"https://gist.github.com/vaskaloidis/b048bf6fbf216156052f.js\"></script>\r
+      \r This executes the sayhi goal from the first project. You must run a maven
+      install on the first project before this will work. This will also pass in the
+      string called Greeting that it set to \"Hello Apelon World\", and the Java class
+      execute will print that to the command line upon execution. To run this second
+      POM so that it executes the first project''s Mojo, you navigate to the second
+      project''s main folder and run this command (or any command)\r\n```\nmvn clean
+      package\n```\n\r \r This will execute the execute method from the first project.
+      You have now made your first Maven Mojo!\r \r \r Cheers"'
+    - ''
+    - Java, OSX, Apache, Maven, Apelon, Eclipse, Java 8
+    - '2015-03-19 18:53:11'
+    - '2015-04-08 17:47:54'
+    - maven-mojos
+    - false
+    - true
+  - - 35
+    - Maven Variables and Maven Build Time Stamp Variable
+    - '"Maven POM file variables reference. Very Handy dandy.\r \r http://docs.codehaus.org/display/MAVENUSER/MavenPropertiesGuide\r
+      \r Here is one that I didn''t find on that page - and that is to add build time
+      to a Mojo Parameter\n\n```\n${maven.build.timestamp}\n```\n\r \r Used as such
+      in my Mojo\r\n```\n@Parameter (name=\"releaseDate\", defaultValue = \"${maven.build.timestamp}\")\r\nprivate
+      Date releaseDate;\n```\n\r \r Cheers"'
+    - ''
+    - Java, Maven, Apelon, Java 8
+    - '2015-03-24 22:05:36'
+    - '2015-03-25 21:48:32'
+    - maven-variables
+    - false
+    - true
+  - - 36
+    - Eclipse GIT Cherry Pick
+    - '"I just learned how (and what) cherry picking is with GIT in Eclipse - \r \r
+      https://wiki.eclipse.org/EGit/User\\_Guide#Cherry\\_Picking\r \r h/t Dan\n\n"'
+    - ''
+    - Apelon, Eclipse, GIT
+    - '2015-03-25 21:43:51'
+    - '2015-03-25 21:43:51'
+    - eclipse-git-cherry-pick
+    - false
+    - true
+  - - 37
+    - Maven Mojo Annotations
+    - '"I have had some trouble finding good guides to building Maven Mojo''s, and
+      even more trouble finding good guides on Maven 3 Mojo Annotations. Here are
+      a few that I found helpful\r \r - http://maven.apache.org/plugin-tools/maven-plugin-tools-annotations/index.html#Supported\\_Annotations\r
+      \r - http://maven.apache.org/guides/mini/guide-configuring-plugins.html\r \r
+      - http://maven.apache.org/guides/plugin/guide-java-plugin-development.html\r
+      \r Clean it up Apache, the Maven Docs aren''t looking so hot\r \r Cheers\n\n"'
+    - ''
+    - Java, Apache, Maven, Apelon, Java 8
+    - '2015-03-25 22:14:58'
+    - '2015-03-25 22:15:06'
+    - maven-mojo-annotations
+    - false
+    - true
+  - - 38
+    - Ubuntu 14 Trusty on the Macbook Pro
+    - '"I love staying in CLI mode on my Macbook Pro running..... Ubuntu 14 Trusty!!!!
+      Again\r \r Linux is back on the MBP and I honestly forgot about how much I loved
+      this OS (The last time I ran linux, was on my 2007 Macbook Pro running Ubuntu
+      5.10 Breezy Badger...Mac support has come a long way in 9 Versions.... As I
+      had learned to compile video card drivers running in Command Line Mode, on my
+      first day trying Linux :) ) ) It was love at first site, ha. Linux CLI is beautiful,
+      and that''s why people love Macs. Because OSX is Custom Linux / UNIX.\r \r ..
+      and then 6.02 Dapper Drake on my Server... I now run a small server farm (all
+      on Ubuntu 12.04 Precise) for the Kaloidis Technologies Hosting service, and
+      as a resource for the dev department.\r \r ([Ubuntu Releases](https://wiki.ubuntu.com/Releases
+      \"Ubuntu Relsease\"))\r \r**Specs**:\r 14\" MacBook Pro, late 2011, i7 processor,
+      15mb RAM, 1tb Samsung Evo SSD\r Most Used Apps: Netbeans, Submlime Text, Terminal,
+      Spotify\r \r**My Compiz Desktop**[![Screenshot from 2015-08-24 20:08:48](http://kaloidistech.com/wordpress/wp-content/uploads/2015/08/Screenshot-from-2015-08-24-200848-300x117.png)&nbsp;
+      &nbsp;&nbsp; ![Screenshot from 2015-08-24 20:07:53](http://kaloidistech.com/wordpress/wp-content/uploads/2015/08/Screenshot-from-2015-08-24-200753-300x117.png)](http://kaloidistech.com/wordpress/wp-content/uploads/2015/08/Screenshot-from-2015-08-24-200848.png)[![Screenshot
+      from 2015-08-24 20:10:26](http://kaloidistech.com/wordpress/wp-content/uploads/2015/08/Screenshot-from-2015-08-24-201026-300x117.png)
+      &nbsp; &nbsp; ![Screenshot from 2015-08-24 20:09:04](http://kaloidistech.com/wordpress/wp-content/uploads/2015/08/Screenshot-from-2015-08-24-200904-300x117.png)](http://kaloidistech.com/wordpress/wp-content/uploads/2015/08/Screenshot-from-2015-08-24-201026.png)
+      ![Screenshot from 2015-08-24 20:09:46](http://kaloidistech.com/wordpress/wp-content/uploads/2015/08/Screenshot-from-2015-08-24-200946-300x117.png)\r
+      \r &nbsp;\r \r Enjoy\n\n"'
+    - ''
+    - Linux, Ubuntu, MacBook Pro, post-format-gallery
+    - '2015-08-25 04:20:04'
+    - '2015-08-25 05:03:20'
+    - ubuntu-14-trusty-on-the-macbook-pro-again
+    - false
+    - true
+  - - 39
+    - Bash Rsync Backup Script
+    - '"I have a bunch of random text docs that I keep open constantly, and it would
+      be nice to have them accessible on my server through HTTP (and Putty + VIM if
+      I need to edit them); and a few folders that I want to backup to a remote Linux
+      server: so I use the following Rsync script:\n\n```\nDocs=\"/home/vasili/Documents/\"\r\nSDocs=\"/var/www/vkaloidis/docs/\"\r\n\r\n#Docs\r\nrsync
+      -I ${Docs}Todo.txt vasili@vkaloidis.com:${SDocs}Todo.txt\r\nrsync -I ${Docs}Bills.txt
+      vasili@vkaloidis.com:${SDocs}Bills.txt\r\nrsync -I ${Docs}LinuxNotes.txt vasili@vkaloidis.com:${SDocs}LinuxNotes.txt\r\nrsync
+      -I ${Docs}Notes.txt vasili@vkaloidis.com:${SDocs}Notes.txt\r\nrsync -I ${Docs}Work.txt
+      vasili@vkaloidis.com:${SDocs}Work.txt\r\n\r\nBackup=${Docs}Backups/Vas-MBP/\r\nSBackup=/home/vasili/Backups/Vas-mbp/\r\n\r\n#Backups\r\nrsync
+      -r /var/www/ vasili@vkaloidis.com:${Sbackup}\n```\n\r \r Then throw that script
+      in _/usr/bin/_ and then add this to cron with _crontab -e_. (This should execute
+      every 3 mintes).\r \r\n```\n*/03 * * * * /usr/bin/docs-sync.sh\n```\n\r \r Also
+      remember to make /usr/bin/docs-sync.sh executable with _sudo chmod +x /usr/bin/docs-sync.sh_\r
+      \r Password protect the Apache folder and your good to go!\r \r Enjoy"'
+    - ''
+    - Uncategorized, Linux, Ubuntu, Bash
+    - '2015-08-25 09:02:03'
+    - '2015-08-25 20:16:47'
+    - bash-rsync-backup-script
+    - false
+    - true
+  - - 40
+    - Convert and Burn .dmg on Linux
+    - '"http://askubuntu.com/questions/411700/how-to-burn-a-dmg-file-to-a-dvd-cd\r
+      \r Handy Dandy\n\n"'
+    - ''
+    - Linux
+    - '2015-09-03 05:40:52'
+    - '2015-09-03 05:40:52'
+    - convert-and-burn-dmg-on-linux
+    - false
+    - true
+  - - 41
+    - Sort Google Chrome Web Store (They somehow did not add this feature to their
+      website)
+    - '"[The best way to find new extensions on the Chrome Web Store - gHacks Tech
+      News](http://www.ghacks.net/2014/05/12/best-way-find-new-extensions-chrome-web-store/).\n\n"'
+    - ''
+    - Google, Chrome
+    - '2016-01-03 13:15:40'
+    - '2016-01-03 13:15:40'
+    - sort-google-chrome-web-store-they-somehow-did-not-add-this-feature-to-their-website
+    - false
+    - true
+  - - 42
+    - 'MirrorMirror - Building Raspberry Pi Digital Mirror running Ubuntu and PHP
+      - '
+    - '"[Building MirrorMirror](http://blog.dylanjpierce.com/raspberrypi/magicmirror/tutorial/2015/12/27/build-a-magic-mirror.html).\n\n"'
+    - ''
+    - Linux, Ubuntu, PHP
+    - '2016-01-04 13:24:21'
+    - '2016-01-04 13:24:21'
+    - mirrormirror-building-raspberry-pi-digital-mirror-running-ubuntu-and-php
+    - false
+    - true
+  - - 43
+    - bestmomo/nice-artisan
+    - '"[bestmomo/nice-artisan](https://github.com/bestmomo/nice-artisan).\n\n"'
+    - ''
+    - Laravel, ubuntu, terminal
+    - '2016-01-05 12:32:37'
+    - '2016-01-05 12:32:37'
+    - bestmomonice-artisan
+    - false
+    - true
+  - - 44
+    - Banish404 - Ubuntu app that fixes broken sources that break apt-get update calls...
+    - '"So you run apt-get update and get a 404 error about some repo that does not
+      exist... You can''t figure out which one because the correlation between the
+      404''d repo error message (after you tried to run the apt-get update): tells
+      you basically nothing about which source in one of your 300+ sources files in
+      etc/apt/sources.USELESS.NAMING.CONVENTION (useless because I personally think
+      that you should have to spend 20 minutes googling which file you need to update..
+      every time you do this...\r \r Here comes \"banish404\".. So I got it to work,
+      and then just ran a quick history 15 command so you can see what happened....\n\n>
+      history 15\r \\* Tried to get from source, then update and run but ran into\r
+      issues because of the broken update from the broken source.\r so we wget the
+      deb, installed it and ran\r 2002 sudo sudo add-apt-repository ppa:paul-climbing/ppa\r
+      2003 sudo add-apt-repository ppa:paul-climbing/ppa\r 2004 sudo apt-get update
+      (\\*\\* THIS FAILED obviously... \\*\\*)\r 2005 sudo add-apt-repository ppa:fossfreedom/packagefixes\r
+      2006 sudo apt-get install banish404 (\\*\\* THIS FAILED because the update command
+      never finished... So we can''t update and install anything... \\*\\*)\r 2007
+      wget https://launchpad.net/~fossfreedom/+archive/packagefixes/+files/banish404\\_0.1-4\\_all.deb\r
+      2008 mv banish404\\_0.1-4\\_all.deb ~/Downloads/\r 2009 cd ~/Downloads/\r 2010
+      sudo dpkg -i banish404\\_0.1-4\\_all.deb\r 2011 sudo banish404"'
+    - ''
+    - Uncategorized, Linux, Ubuntu, xbox360, ushare
+    - '2016-01-07 13:33:10'
+    - '2016-01-14 11:40:40'
+    - banish404-ubuntu-app-that-fixes-broken-sources-that-break-apt-get-update-calls
+    - false
+    - true
+  - - 45
+    - Ubuntu 15.10 Wily + Xbox360 - Movie, Music and Picture Streaming
+    - '"uShare\r A UPNP Server that I have used for a long long time for home-media
+      servers, and my MacbookPro''s running Ubuntu. Great tool, and still works on
+      Ubuntu 15.\r \r Install\r You can get it in the Ubuntu Store - search uShare
+      and download\r \r Reference http://ushare.geexbox.org for following sections:\r
+      \r Config:\r Configure based on above usage doc /etc/ushare.conf \r I only shared
+      my Movies: /home/vasili/Videos\r Run these commands and modify route flags based
+      on the ethernet adapter your using (IE: eth0 or wlan0) as well as the subnet
+      and IP address range. Replace the last 3 blocks of each with 0.0.0 (example
+      below)\n\n> ifconfig \r route add -net 10.0.0.0 netmask 255.0.0.0 wlan0 #I am
+      on my Wifi\r \r Usage:\r> ushare -c /home/vasili/Videos/ #-D for daemon and
+      -x for xbox360. These override your etc/ushare.conf settings\r \r For Sparta!\r"'
+    - ''
+    - Uncategorized, xbox360, xboxone, ubuntu 15.10 Wily, SSH, ssh-keys
+    - '2016-01-07 13:49:52'
+    - '2016-01-07 13:49:52'
+    - ubuntu-15-10-wily-xbox360-movie-music-and-picture-streaming
+    - false
+    - true
+  - - 46
+    - SSH Key - Send RSA Key to SSH-Server (using ONE Linux command)
+    - '"Found an extremely useful one-line solution to sending SSH keys to an Open-SSH
+      Server. Here it is:\n\n> cat ~/.ssh/id\\_rsa.pub | ssh vasili@kaloidistech.com
+      \"mkdir -p ~/.ssh && cat \\>\\> ~/.ssh/authorized\\_keys\"\r \r Before you can
+      send your key to your server, you must check to see if a key exists. Keys are
+      kept in the .ssh folder in your home directory - you will look for rsa files
+      using ls and grep. If you don''t find any, create a key using the ssh-keygen
+      command:\r \r> # Check if RSA key exists already in .ssh\r ls -lra ~/.ssh/ |
+      grep rsa\r # If not, create it\r \r \r Cheers\r \r \\*\\*Update: Fixed a minor
+      lexical error in the command"'
+    - ''
+    - Linux, Ubuntu, xbox360, Ubuntu-Server, Sublime Text 3, Evernote, Python
+    - '2016-01-08 09:37:20'
+    - '2016-01-14 11:40:31'
+    - ssh-key-send-rsa-key-to-ssh-server-using-one-linux-command
+    - false
+    - true
+  - - 47
+    - Sublime Text 3 +  Evernote Plugin
+    - '"Evernote integration with Sublime-Text 3 is very very uesful:\n\n[First Use
+      · bordaigorl/sublime-evernote Wiki](https://github.com/bordaigorl/sublime-evernote/wiki/First-Use).\n\n"'
+    - ''
+    - Linux, xbox360, Ubuntu-Server, Great Websites
+    - '2016-01-11 08:00:23'
+    - '2016-01-14 11:40:16'
+    - sublime-text-3-evernote-plugin
+    - false
+    - true
+  - - 48
+    - 'Ubuntu Desktop - Compiz-Hotkey to open file with SublimeText3 + Sublime3 Evernote
+      Plugin: Open Evernote Note'
+    - '"Recently I discovered some pretty cool **Sublime 3 Functionality..&nbsp;**So
+      needless to say&nbsp;I am now a big fan of Sublime 3. I also really like **[PackageControl.io](https://packagecontrol.io/)**
+      Sublime-Text package manager. It''s&nbsp;a great&nbsp;repository of some really
+      cool Sublime addons.\r \r I also f_requently_&nbsp;use Sublime Text 3 through
+      command line to launch files.. I am a _huuuge&nbsp;fan of&nbsp;**VIM**_ but
+      the **Monkai Theme** I have running in&nbsp;Sublime is wayyyyy too nice&nbsp;to
+      pass-up daily for VIM...\r \r Here are some Sublime Commands I frequently use\n\n>
+      subl --new-window ~/Documents/LinuxNotes.txt &nbsp;# Opens a text filke&nbsp;(that
+      I constantly jot&nbsp;down all my &nbsp;Linux / Programming notes&nbsp;in) in
+      a new Sublime window\r \r subl --add ~/Sites/vkaloidis/contact.php # Open&nbsp;file
+      in the&nbsp;currently running Sublime window as a new tab\r \r # These Sublime
+      Text 3 commands use features from the [Evernote Plugin](https://packagecontrol.io/packages/Evernote).
+      Full List below\r \r subl --new-window --command&nbsp;open\\_evernote\\_note
+      # Launches A list of my Evernote Notebooks, in Sublime\r You can view the commands
+      available in&nbsp;command-pallete , from the config file:&nbsp;/home/vasili/.config/sublime-text-3/Packages/Evernote/Default.sublime-commands.
+      I also included them at the bottom of this article.\r \r I use&nbsp;**Compiz**
+      **Commands**&nbsp;to&nbsp;execute various command-line commands that launch
+      various Application Interfaces: (Compiz OS-Hotkey opens applications, like a
+      quick-launcher). Here are the commands I use and the shortcut:\r \r**Compiz
+      Commands:**> Ctrl+Alt+c - Terminal Command:&nbsp;google-chrome - opens new Google
+      Chrome Window (Home-Page)\r \r Ctrl+Alt+s - Subl &nbsp;- Launches Sublime Text
+      3)\r \r_Ctrl+Alt+n -google-chrome --app=http://kaloidistech.com/wordpress/wp-admin/post-new.php
+      - Opens new Chrome App-Window of my Wordpress Blogs Post Page__Ctrl+Alt+m -&nbsp;subl
+      -n --command open\\_evernote\\_note - This opens a note in Sublime Text 3 from&nbsp;Evernote
+      using the Evernote plugin_\n\nEnjoy!\n\n### Sublime Text Command-Pallete Commands\n<script
+      src=\"https://gist.github.com/vaskaloidis/2e6b40999cb50f235654.js\"></script>"'
+    - ''
+    - Linux, Ubuntu, Compiz, xbox360, Ubuntu-Server, Great Websites, GitHub Repos,
+      post-format-aside
+    - '2016-01-11 14:19:59'
+    - '2016-01-14 11:39:50'
+    - ubuntu-desktop-compiz-hotkey-to-open-file-with-sublimetext3-sublime3-evernote-plugin-open-evernote-note
+    - false
+    - true
+  - - 49
+    - Ubuntu + Compiz - The Best Hotkey Config Ever
+    - '"This is sneaky my favorite thing about running Ubuntu Linux on my MacbookPro
+      &nbsp;- Compiz Commands + Effects Hotkeys / some Ubuntu Default Hotkeys / Effects.\r
+      \r**Window Management**\r Ctrl+Alt+Cmd+Left - Move Window Bottom Left Corner\r
+      Ctrl+Alt+Cmd+Up - Move Window Top Left\r Ctrl+Alt+Cmd+Right - Move Window Top&nbsp;Right
+      Corner\r Ctrl+Alt+Cmd+Down-Move Window Bottom Right Corner\r \r Cmd+Left - Resize
+      window Left Half of Screen\r Cmd+Right - Resize Window Right Half of Screen\r
+      \r &nbsp;\r \r**Sublime Text 3**\r Ctrl+Shift+P - Command Pallete\r Ctrl+K then
+      Ctrl+B - Toggle Showing Sidebar\r \r &nbsp;\r \r &nbsp;\r \r &nbsp;\n\n"'
+    - ''
+    - Linux, Ubuntu, Compiz
+    - '2016-01-14 11:39:01'
+    - '2016-01-14 11:39:01'
+    - ubuntu-compiz-the-best-hotkey-config-ever
+    - false
+    - true
+  - - 50
+    - 'Macbook Pro Ubuntu 15 Python Pip Install + Error: pkg_resources.DistributionNotFound:
+      The ''pip==1.0'' distribution was not found and is required by the application
+      FIXED'
+    - '"So the PIP Install is easy:\r \r http://www.saltycrane.com/blog/2010/02/how-install-pip-ubuntu/\r
+      \r But I ran into this issue, I got this error:\r \r pkg\\_resources.DistributionNotFound:
+      The ''pip==1.0'' distribution was not found and is required by the application\r
+      \r Well the fix is really easy but I had to do some searching:\n\n`easy_install
+      --upgrade pip`\n\n\r &nbsp;\r \r Then re-run the failed command\r\n\n` `\n\n"'
+    - ''
+    - Linux, Ubuntu, MacBook Pro
+    - '2016-02-01 15:34:13'
+    - '2016-02-01 15:34:55'
+    - macbook-pro-ubuntu-15-python-pip-install-error-pkg_resources-distributionnotfound-the-pip1-0-distribution-was-not-found-and-is-required-by-the-application-fixed
+    - false
+    - true
+  - - 51
+    - Launch Ubuntu Compiz Expose (Scale) Effect from Launcher Icon + Command-Line
+    - '"So &nbsp;I have&nbsp;wanted&nbsp;to research&nbsp;+ configure&nbsp;this for
+      a while now... I wanted the ability to execute the Compiz \"Expose\" (aka the
+      \"Scale-Effect\")&nbsp; from the command-line + the Ubuntu Dock (aka the&nbsp;Launcher)...
+      I found a nice Stack Overflow answer (link below), and learned how. Check it
+      out:\r \r First,&nbsp;set the \"Scale\" Compiz Effect hotkey&nbsp;to Super+W
+      or any other key-combo&nbsp;you want - but for this example we use Super+W -&nbsp;so
+      you can swap this out for your key-combo accordingly. First, we install xdo-tool
+      to simulate keystroke-combos in the console:\n\n```\nsudo apt-get install xdo-tool\n```\n\r
+      Then make a script called ''/usr/local/bin/compiz-scale.sh'' and make it executable.\r\n```\n#!
+      /bin/sh\r\n# Assumes compiz binding for Initiate Window Picker is set to key-binding
+      \"Super+W\"\r\nxdotool key Super+w\n```\n\r Then create the desktop entry.\r\n```\n#
+      Use Sublime Text 3 if you have it, or substitute subl with gedit\r\nsudo subl
+      /usr/share/applications/compzi-scale.desktop\r\n\r\n#!/usr/bin/env xdg-open\r\n#
+      link me to /usr/share/applications/\r\n\r\n[Desktop Entry]\r\nComment=Switch
+      programs\r\nExec=/usr/local/bin/compiz-scale.sh\r\nIcon=gnome-klotski\r\nName=Scale\r\nTerminal=false\r\nType=Application\r\nVersion=1.0\r\n\r\n#Link
+      this desktop file to a newly created link in the Launcher folder\r\nsudo ln
+      -s /usr/local/bin/compiz-scale.sh /usr/share/applications/compiz-scale.desktop\n```\n\r
+      Now search for \"scale\" and drag the file to the Dock. Click the icon to execute
+      the Scale Compiz Command.\r \r You can read the whole answer [here, on Stack
+      Overflow](http://askubuntu.com/questions/33852/can-unity-display-a-launcher-icon-for-spread-mode/39775#39775).\r
+      \r Enjoy!"'
+    - ''
+    - Linux, Apelon, Ubuntu, MacBook Pro, Compiz
+    - '2016-02-04 13:21:24'
+    - '2016-02-04 13:21:24'
+    - launch-ubuntu-compiz-expose-scale-effect-from-launcher-icon-command-line
+    - false
+    - true
+  - - 52
+    - Ubuntu Command-Line - Send command output to clipboard
+    - '"On Linux, I use the Command-Line constantly - so when I find some useful tricks:
+      I post them here because there''sa lot of tricks I have found that&nbsp;I use
+      often and&nbsp;I wish I had found&nbsp;them&nbsp;sooner.\r \r &nbsp;\r \r Here''s
+      a reallly useful command: you can pipe the result of any command to the clipboard
+      using an app called xclip. You can grab xclip from apt-get if you don''t already
+      have it. Use it like this, this pipes the current directory\r \r &nbsp;\n\n```\npwd
+      | xclip\n```\n\r Enjoy"'
+    - ''
+    - Ubuntu
+    - '2016-02-06 06:17:01'
+    - '2016-02-06 06:17:01'
+    - ubuntu-command-line-send-command-output-to-clipboard
+    - false
+    - true
+  - - 53
+    - Defonic Ambient noise generator - probably the coolest site ever
+    - '"Who doesn''t love the sound of the ocean? Now keep your house and listen to
+      Defonic. That''s what I did!\r \r[Defonic - a fabulous ambient noise generator](http://defonic.com/?ambient).\n\n"'
+    - ''
+    - ''
+    - '2016-02-09 12:46:25'
+    - '2016-02-09 12:46:25'
+    - defonic-ambient-noise-generator-probably-the-coolest-site-ever
+    - false
+    - true
+  - - 54
+    - Ubuntu Linux - Available Desktop Environments and Shells
+    - '"I wanted to try something new, and found this list. I plan to try a couple
+      of these, http://www.adameve.com/adult-sex-toys/dildo-sex-toys/realistic-dildos-c-1060.aspx
+      Enjoy &nbsp;\n\n"'
+    - ''
+    - Linux, Ubuntu, Compiz
+    - '2016-02-14 15:46:26'
+    - '2016-02-14 15:46:26'
+    - ubuntu-linux-available-desktop-environments-and-shells
+    - false
+    - true
+  - - 55
+    - xkcd - tar
+    - '"Very funny..\r \r[xkcd: tar](http://xkcd.com/1168/).\r \r Enjoy\n\n"'
+    - ''
+    - Linux, Ubuntu
+    - '2016-02-21 01:20:37'
+    - '2016-02-21 01:20:37'
+    - xkcd-tar
+    - false
+    - true
+  - - 56
+    - Codeology - Visualize GitHub Repos (PAN-App GH Repo)
+    - '"This is a really cool way to visualize GH Repo''s\r \r[Codeology/vaskaloidis](http://codeology.braintreepayments.com/vaskaloidis)\r
+      \r Enjoy\n\n"'
+    - ''
+    - Ubuntu
+    - '2016-02-21 01:31:53'
+    - '2016-03-28 22:10:04'
+    - codeology-visualize-github-repos-pan-app-gh-repo
+    - false
+    - true
+
+---
+categories:
+  columns:
+  - id
+  - name
+  - code
+  - html
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Uncategorized
+    - uncategorized
+    - 
+    - '2016-10-16 16:06:39.963899'
+    - '2016-10-16 16:06:39.963899'
+  - - 2
+    - OSX
+    - osx
+    - 
+    - '2016-10-16 16:06:39.976739'
+    - '2016-10-16 16:06:39.976739'
+  - - 3
+    - Apple
+    - apple
+    - 
+    - '2016-10-16 16:06:39.979843'
+    - '2016-10-16 16:06:39.979843'
+  - - 4
+    - Apelon
+    - apelon
+    - 
+    - '2016-10-16 16:06:39.988817'
+    - '2016-10-16 16:06:39.988817'
+  - - 5
+    - Samsung SSD Hd
+    - samsung-ssd-hd
+    - 
+    - '2016-10-16 16:06:39.992565'
+    - '2016-10-16 16:06:39.992565'
+  - - 6
+    - Samsung
+    - samsung
+    - 
+    - '2016-10-16 16:06:39.996055'
+    - '2016-10-16 16:06:39.996055'
+  - - 7
+    - Asus Wireless N Router
+    - asus-wireless-n-router
+    - 
+    - '2016-10-16 16:06:39.999192'
+    - '2016-10-16 16:06:39.999192'
+  - - 8
+    - Asus
+    - asus
+    - 
+    - '2016-10-16 16:06:40.002542'
+    - '2016-10-16 16:06:40.002542'
+  - - 9
+    - SSD
+    - ssd
+    - 
+    - '2016-10-16 16:06:40.006256'
+    - '2016-10-16 16:06:40.006256'
+  - - 10
+    - Router
+    - router
+    - 
+    - '2016-10-16 16:06:40.011845'
+    - '2016-10-16 16:06:40.011845'
+  - - 11
+    - Yosemite
+    - yosemite
+    - 
+    - '2016-10-16 16:06:40.04157'
+    - '2016-10-16 16:06:40.04157'
+  - - 12
+    - Apache
+    - apache
+    - 
+    - '2016-10-16 16:06:40.045394'
+    - '2016-10-16 16:06:40.045394'
+  - - 13
+    - MAMP
+    - mamp
+    - 
+    - '2016-10-16 16:06:40.048452'
+    - '2016-10-16 16:06:40.048452'
+  - - 14
+    - Homebrew
+    - homebrew
+    - 
+    - '2016-10-16 16:06:40.051306'
+    - '2016-10-16 16:06:40.051306'
+  - - 15
+    - PHPStorm
+    - phpstorm
+    - 
+    - '2016-10-16 16:06:40.054075'
+    - '2016-10-16 16:06:40.054075'
+  - - 16
+    - Xdebug
+    - xdebug
+    - 
+    - '2016-10-16 16:06:40.057322'
+    - '2016-10-16 16:06:40.057322'
+  - - 17
+    - Splunk
+    - splunk
+    - 
+    - '2016-10-16 16:06:40.108278'
+    - '2016-10-16 16:06:40.108278'
+  - - 18
+    - Java
+    - java
+    - 
+    - '2016-10-16 16:06:40.112666'
+    - '2016-10-16 16:06:40.112666'
+  - - 19
+    - JDBC
+    - jdbc
+    - 
+    - '2016-10-16 16:06:40.115671'
+    - '2016-10-16 16:06:40.115671'
+  - - 20
+    - Oracle
+    - oracle
+    - 
+    - '2016-10-16 16:06:40.118522'
+    - '2016-10-16 16:06:40.118522'
+  - - 21
+    - Tomcat
+    - tomcat
+    - 
+    - '2016-10-16 16:06:40.135603'
+    - '2016-10-16 16:06:40.135603'
+  - - 22
+    - Maven
+    - maven
+    - 
+    - '2016-10-16 16:06:40.140363'
+    - '2016-10-16 16:06:40.140363'
+  - - 23
+    - Linux
+    - linux
+    - 
+    - '2016-10-16 16:06:40.150327'
+    - '2016-10-16 16:06:40.150327'
+  - - 24
+    - Eclipse
+    - eclipse
+    - 
+    - '2016-10-16 16:06:40.19157'
+    - '2016-10-16 16:06:40.19157'
+  - - 25
+    - Java 8
+    - java-8
+    - 
+    - '2016-10-16 16:06:40.195271'
+    - '2016-10-16 16:06:40.195271'
+  - - 26
+    - JavaFX
+    - javafx
+    - 
+    - '2016-10-16 16:06:40.198264'
+    - '2016-10-16 16:06:40.198264'
+  - - 27
+    - Ubuntu
+    - ubuntu
+    - 
+    - '2016-10-16 16:06:40.210496'
+    - '2016-10-16 16:06:40.210496'
+  - - 28
+    - GIT
+    - git
+    - 
+    - '2016-10-16 16:06:40.219664'
+    - '2016-10-16 16:06:40.219664'
+  - - 29
+    - PHP
+    - php
+    - 
+    - '2016-10-16 16:06:40.240609'
+    - '2016-10-16 16:06:40.240609'
+  - - 30
+    - MacBook Pro
+    - macbook-pro
+    - 
+    - '2016-10-16 16:06:40.287946'
+    - '2016-10-16 16:06:40.287946'
+  - - 31
+    - post-format-gallery
+    - post-format-gallery
+    - 
+    - '2016-10-16 16:06:40.291697'
+    - '2016-10-16 16:06:40.291697'
+  - - 32
+    - Bash
+    - bash
+    - 
+    - '2016-10-16 16:06:40.301469'
+    - '2016-10-16 16:06:40.301469'
+  - - 33
+    - Google
+    - google
+    - 
+    - '2016-10-16 16:06:40.310964'
+    - '2016-10-16 16:06:40.310964'
+  - - 34
+    - Chrome
+    - chrome
+    - 
+    - '2016-10-16 16:06:40.313713'
+    - '2016-10-16 16:06:40.313713'
+  - - 35
+    - Laravel
+    - laravel
+    - 
+    - '2016-10-16 16:06:40.32484'
+    - '2016-10-16 16:06:40.32484'
+  - - 36
+    - ubuntu
+    - ubuntu-2
+    - 
+    - '2016-10-16 16:06:40.3277'
+    - '2016-10-16 16:06:40.3277'
+  - - 37
+    - terminal
+    - terminal
+    - 
+    - '2016-10-16 16:06:40.330385'
+    - '2016-10-16 16:06:40.330385'
+  - - 38
+    - xbox360
+    - xbox360
+    - 
+    - '2016-10-16 16:06:40.341669'
+    - '2016-10-16 16:06:40.341669'
+  - - 39
+    - ushare
+    - ushare
+    - 
+    - '2016-10-16 16:06:40.346038'
+    - '2016-10-16 16:06:40.346038'
+  - - 40
+    - xboxone
+    - xboxone
+    - 
+    - '2016-10-16 16:06:40.354087'
+    - '2016-10-16 16:06:40.354087'
+  - - 41
+    - ubuntu 15.10 Wily
+    - ubuntu-15-10-wily
+    - 
+    - '2016-10-16 16:06:40.357139'
+    - '2016-10-16 16:06:40.357139'
+  - - 42
+    - SSH
+    - ssh
+    - 
+    - '2016-10-16 16:06:40.359856'
+    - '2016-10-16 16:06:40.359856'
+  - - 43
+    - ssh-keys
+    - ssh-keys
+    - 
+    - '2016-10-16 16:06:40.362765'
+    - '2016-10-16 16:06:40.362765'
+  - - 44
+    - Ubuntu-Server
+    - ubuntu-server
+    - 
+    - '2016-10-16 16:06:40.371132'
+    - '2016-10-16 16:06:40.371132'
+  - - 45
+    - Sublime Text 3
+    - sublime-text-3
+    - 
+    - '2016-10-16 16:06:40.374054'
+    - '2016-10-16 16:06:40.374054'
+  - - 46
+    - Evernote
+    - evernote
+    - 
+    - '2016-10-16 16:06:40.376979'
+    - '2016-10-16 16:06:40.376979'
+  - - 47
+    - Python
+    - python
+    - 
+    - '2016-10-16 16:06:40.379763'
+    - '2016-10-16 16:06:40.379763'
+  - - 48
+    - Great Websites
+    - great-websites
+    - 
+    - '2016-10-16 16:06:40.390895'
+    - '2016-10-16 16:06:40.390895'
+  - - 49
+    - Compiz
+    - compiz
+    - 
+    - '2016-10-16 16:06:40.401449'
+    - '2016-10-16 16:06:40.401449'
+  - - 50
+    - GitHub Repos
+    - github-repos
+    - 
+    - '2016-10-16 16:06:40.407493'
+    - '2016-10-16 16:06:40.407493'
+  - - 51
+    - post-format-aside
+    - post-format-aside
+    - 
+    - '2016-10-16 16:06:40.410328'
+    - '2016-10-16 16:06:40.410328'
+
+---
+projects:
+  columns:
+  - id
+  - name
+  - categories
+  - order
+  - displayed
+  - created_at
+  - updated_at
+  - shortname
+  - content
+  - summary
+  - isArticle
+  - markdown
+  records: 
+  - - 1
+    - ISAAC Release Exporters
+    - Java, JavaFX, Maven, Maven MOJO
+    - 0
+    - true
+    - '2016-09-26 04:08:17.863923'
+    - '2016-11-16 07:12:46.464738'
+    - 
+    - "<h2>USCRS Content Request Handler - Terminology EConcept (.jbin) / USCRS\r\nContent-Request
+      Exporter Mojo</h2><p><b>Technologies: </b> Java, JavaFX,\r\nMaven, Apache Archiva,
+      Maestro Dev</p><br /><p>USCRS Content Request Exporter\r\nfor <a href=\\\"https://github.com/Apelon-VA/\\\">
+      \ ISAAC</a>. ISAAC is a Terminology\r\nSuite that works with Snomed CT, Loin,
+      RX-Norm libraries.       This was\r\ndeveloped as a modular component in the
+      JavaFX GUi, but it's also capable of\r\nbeing run on a         headless on a
+      CI server - this allows for nightly\r\ndata exports, utilized by this Maven
+      MOJO:</p>    <span class=\\\"centerthis\\\">        <button\r\ntype=\\\"submit\\\"
+      onclick=\\\"            window.location='https://github.com/Apelon-VA/va-isaac-gui/blob/develop/content-request/src/main/java/gov/va/isaac/request/uscrs/UscrsContentRequestHandler.java'\\\"\r\n\\
+      \                      class=\\\"btn btn-large btn-success\\\" >                <i\r\nclass=\\\"fa
+      fa-github fa-lg\\\"></i>&nbsp; UscrsContentRequestHandler.java\r\n\\       </button>
+      \       <button type=\\\"submit\\\" onclick=\\\"            window.location='https://github.com/Apelon-VA/va-isaac-gui/blob/develop/mojos/src/main/java/gov/va/isaac/mojos/datastore/export/ReleaseExporter.java'\\\"\r\n\\
+      \                      class=\\\"btn btn-large btn-success\\\" >                <i\r\nclass=\\\"fa
+      fa-github fa-lg\\\"></i>&nbsp; ReleaseExporter.java (Maven Mojo)\r\n\\       </button>
+      \   </span>    <p>Executes an EConcept (.jbin) export\r\nwhen -DskipExport=false
+      flag is set during a build. The MOJO takes a UUID of\r\na path, a date, and
+      export format.</p>        <p><b>Maestro Dev and\r\ngenerates the export then
+      pushes it to Archiva</b></p>    <h2>USCRS Export\r\nISAAC Operation + Econcept
+      / Changeset / XML Export ISAAC Operation</h2>\r\n\\   <p>Add concepts from list
+      view in the GUI.</p>    <span class=\\\"centerthis\\\">        <button\r\ntype=\\\"submit\\\"
+      onclick=\\\"            window.location='https://github.com/Apelon-VA/va-isaac-gui/blob/develop/list-view/src/main/java/gov/va/isaac/gui/listview/operations/UscrsExportOperation.java'\\\"\r\n\\
+      \      class=\\\"btn btn-large btn-success\\\">                <i class=\\\"fa\r\nfa-github
+      fa-lg\\\"></i>&nbsp; ISAAC - UscrsExportOperation.java        </button>\r\n\\
+      \              <button type=\\\"submit\\\" onclick=\\\"            window.location='https://github.com/Apelon-VA/va-isaac-gui/blob/develop/list-view/src/main/java/gov/va/isaac/gui/listview/operations/EconceptExportOperation.java'\\\"\r\n\\
+      \                      class=\\\"btn btn-large btn-success\\\" >                <i\r\nclass=\\\"fa
+      fa-github fa-lg\\\"></i>&nbsp; ISAAC - EconceptExportOperation.java\r\n\\       </button>
+      \   </span>\r\n"
+    - ''
+    - false
+    - true
+  - - 2
+    - OCHCRE - Helper Scripts for Maven in Python
+    - Python, Maven
+    - 0
+    - true
+    - '2016-09-26 04:08:17.879422'
+    - '2016-09-26 04:08:17.879423'
+    - 
+    - |
+      <h2>Apelon VA OCHRE Python Build All Maven Projects Script</h2>
+      <p>Here is the Gist</p>
+          <script src="https://gist.github.com/vaskaloidis/b27fe4a3537c1c3e116c.js"></script>
+          <input type="submit"
+                 onclick="window.location='https://gist.github.com/vaskaloidis/b27fe4a3537c1c3e116c'"
+                 style="text-align:center"
+                 class="btn btn-large btn-success"
+                 value="va-build-all.py"/>
+          <script src="https://gist.github.com/vaskaloidis/70d63d0d69cbfe9a13c7.js"></script>
+          <input type="submit"
+                 style="text-align:center"
+                 onclick="window.location='https://gist.github.com/vaskaloidis/70d63d0d69cbfe9a13c7'"
+                 class="btn btn-large btn-success"
+                 value="va-pull-repos-new.py"/>
+      <ol style="text-align:center" class="breadcrumb">
+          <li>
+              <a href="<?= $url . $thisSection ?>">
+                      <i class="fa fa-link fa-lg"></i>&nbsp;<b>Direct Link</b>&nbsp;<?= $url . $thisSection ?>
+              </a>
+          </li>
+      </ol>
+    - ''
+    - false
+    - true
+  - - 3
+    - Campus Swap.Net - College Student Market Place
+    - PHP, MySQL, Bootstrap, Github, HTML5
+    - 0
+    - true
+    - '2016-09-26 04:08:17.881966'
+    - '2016-09-26 04:11:04.966045'
+    - 
+    - |
+      <img src=\"./img/CampusSwap.gif\" align=\"left\" width=\"80\"><br /><img
+      src=\"./img/campusSwapLogoOnly.jpg\" ><p><b>Technologies: </b> PHP,
+      AJAX, CSS, Apache, MySql</p><br /><p>A website for college students,
+      requires a .edu at a CT university to create an account and contact other users.
+      coming soon.</p><input type=\"submit\"onclick=\"window.location='http://www.campusswap.net'\"class=\"btn
+      btn-large btn-primary\"value=\"www.campusswap.net - Alpha\" /><input
+      type=\"submit\"onclick=\"window.location='https://github.com/vaskaloidis/campusswap'\"class=\"btn
+      btn-large btn-primary\"value=\"GitHub - Campus Swap\" /><p><span class=\"centerthis\"><img
+      class=\"img-responsive\" src=\"./projects/campusswap/campusswap.png\" /></a></span></p><img
+      src=\"./img/iphoneWhite.jpg\" /><img src=\"./img/droidWhite.jpg\" ?><br>
+    - ''
+    - false
+    - true
+  - - 4
+    - The Bethlehem Vineyard
+    - PHP, MySQL, Bootstrap, HTML5, Github
+    - 0
+    - true
+    - '2016-09-26 04:08:17.884318'
+    - '2016-09-26 04:15:02.756296'
+    - 
+    - |
+      <h2>The Bethlehem Vineyard</h2><p><b>Technologies: </b> PHP, AJAX,
+      CSS, Bootstrap, Apache, MySql</p><p>A website for The Bethlehem Vineyard,
+      in Bethlehem CT. Great wine made by great people! Made with a custom content
+      management (CMS) system complete with a user / admin authentication system.</p><input
+      type=\"submit\"class=\"btn btn-large btn-primary\"onclick=\"window.location='http://www.bethlehemvineyard.com/'\"value=\"www.bethlehemvineyard.com\"
+      /><p><span class=\"centerthis\"><a href=\"http://www.bethlehemvineyard.com\"><img
+      class=\"img-responsive\" src=\"./projects/vineyard/vineyard1.png\" /></a><a
+      href=\"http://www.bethlehemvineyard.com\"><img class=\"img-responsive\"  src=\"./projects/vineyard/vineyard2.png\"
+      /></a><a href=\"http://www.bethlehemvineyard.com\"><img class=\"img-responsive\"
+      \ src=\"./projects/vineyard/vineyard3.png\" /></a></span></p>
+    - ''
+    - false
+    - true
+  - - 5
+    - The Cocktail Chemist
+    - PHP, MySQL, Bootstrap, HTML5, Github, Updated
+    - 0
+    - true
+    - '2016-09-26 04:08:17.886658'
+    - '2016-09-26 04:15:48.252921'
+    - 
+    - '<h2>The Cocktail Chemists</h2><p><b>Technologies: </b> PHP, AJAX, CSS, Hosted
+      on Apache by Kaloidis Technologies</p><p>A website for my friend Dimitri Zahariadis
+      for his mixologist consulting company.</p><input type="submit"class="btn btn-large
+      btn-primary"onclick="window.location=''http://thecocktailchemist.com/''"value="thecocktailchemist.com"
+      /><p><a href="http://thecocktailchemist.com"><span class="centerthis"><img class="img-responsive"
+      src="./projects/cocktail/cocktail.png" /></span></a></p>'
+    - ''
+    - false
+    - true
+  - - 6
+    - Woodbury Flea Market Website
+    - PHP, MySQL, Bootstrap, HTML5, Github
+    - 0
+    - true
+    - '2016-09-26 04:08:17.888908'
+    - '2016-09-26 04:16:58.452801'
+    - 
+    - |
+      <h2>The New Woodbury Flea Market</h2><p><b>Technologies: </b> PHP -
+      CMS / Auth System, Mysql, HTML, CSS</p><p>A website for the Woodbury Flea
+      Market, complete with a marketing campaign launched for the 2015 season</p><p>
+      \   <span class=\"centerthis\">        <input type=\"submit\"        class=\"btn btn-large
+      btn-success\"        onclick=\"window.location='http://www.thenewwoodburyfleamarket.com/'\"
+      \       value=\"www.thenewwoodburyfleamarket.com\" /><br>        <a href=\"http://www.thenewwoodburyfleamarket.com\">
+      \           <img class=\"img-responsive\" src=\"./projects/woodburyflea/woodburyfleaSs1.png\"
+      />            <img class=\"img-responsive\" src=\"./projects/woodburyflea/woodburyfleaSs2.png\"
+      />            <img class=\"img-responsive\" src=\"./projects/woodburyflea/woodburyfleaSs3.png\"
+      />            <img class=\"img-responsive\" src=\"./projects/woodburyflea/woodburyfleaSs4.png\"
+      />        </a>    </span>    </p>
+    - ''
+    - false
+    - true
+  - - 7
+    - Athan Kaloidis Memorial Foundation
+    - PHP, MySQL, Bootstrap, HTML5, Github
+    - 0
+    - true
+    - '2016-09-26 04:08:17.891371'
+    - '2016-09-26 04:17:31.65817'
+    - 
+    - |
+      <h2>Athan Kaloidis Memorial Foundation</h2><p><b>Technologies: </b>
+      PHP, MySQL, HTML, CSS, Bootstrap</p><p>A memorial website for my late
+      Uncle Athan Kaloidis, and the memorial foundation founded in his name by his
+      children: <a href=\"http://www.kaloidislaw.com/\">Attourney Ioannis Kaloidis</a>
+      and <a href=\"http://www.vasisrestaurant.com/\">Vasilios Kaloidis</a> (my cousin,
+      same name, not me)</p><input type=\"submit\"class=\"btn btn-large
+      btn-primary\"onclick=\"window.location='http://www.athankaloidis.com'\"value=\"www.athankaloidis.com\"
+      /><p><a href=\"http://athankaloidis.com\"><img class=\"img-responsive\"
+      src=\"./projects/akmemorial/akmemorial.png\" /></a></p>
+    - ''
+    - false
+    - true
+  - - 8
+    - Applescripts
+    - Mac OSX, New
+    - 0
+    - true
+    - '2016-09-26 04:08:17.893591'
+    - '2016-09-26 04:18:03.174236'
+    - 
+    - <h2><i class="fa fa-apple fa-lg"></i>&nbsp;Applescripts</h2><br /><p>Some Applescripts
+      I wrote / I am in the process of writing</p><br><h5><span class="glyphicon glyphicon-file"></span><a
+      href="./projects/applescripts/hidden_files.scpt">Show / Hide Hidden Finder Files</a></h5><h5><span
+      class="glyphicon glyphicon-cloud"></span><a href="./projects/applescripts/mac_sleep.scpt">Put
+      Mac to Sleep</a></h5><h5><span class="glyphicon glyphicon-user"></span><a href="./projects/applescripts/count_contacts.scpt">Count
+      Apple Address Book Contacts</a></h5><h5><i class="fa fa-flask"></i>&nbsp;Zipped
+      Mixtape > Unzipped > Imported into Itunes (Soon!)</h5><h5><i class="fa fa-flask"></i>&nbsp;Finder
+      Action > Resize Image to 400x400px (Soon!)</h5><br /><br>
+    - ''
+    - false
+    - true
+  - - 9
+    - C++ 3D City Building Fly-Through
+    - C++, OpenGL
+    - 0
+    - true
+    - '2016-09-26 04:08:17.896053'
+    - '2016-09-26 04:18:36.427855'
+    - 
+    - <h2>OpenGL 3D City Fly Through + Spotlight and Different Textures C++</h2><br
+      /><p>My Computer Graphics Class CS371 final project. It is a fly through of
+      multiple buildings. The fly through adjusts the gluLookAt() function by adding
+      and incrementing it's parameters then re-rendering the image in the timer()
+      function. Each building face has a normal, so the spotlight lighting feature
+      could be used. The buildings are all different Textures, all different combinations
+      of specucular, diffuse, ambient and shininess to exemplify Brass, Chrome, Jade,
+      Polished, Gold and Ruby. </p><span class="centerthis"><img class="img-responsive"
+      src="./projects/glfly/screen.png" /><img class="img-responsive" src="./projects/glfly/screen2.png"
+      /><img class="img-responsive" src="./projects/glfly/screen3.png" /></span><script
+      src="http://gist.github.com/6265757.js"></script>
+    - ''
+    - false
+    - true
+  - - 10
+    - C++ OpenGL 3D Cube
+    - C++, OpenGL
+    - 0
+    - true
+    - '2016-09-26 04:08:17.898313'
+    - '2016-09-26 04:19:58.814853'
+    - 
+    - <div  style="<?= $display ?>;" id="<?= $thisSection ?>"><div id="insideItem"><h2>OpenGL
+      3D Cube Manipulation C++</h2><br /><p>One of my first C++ Projects, using OpenGL.
+      To make the cube begin spinning, press S, and to make it stop spinning, press
+      s again. To make the cube get bigger, press G, and to make it smaller press
+      H. Pressing D moves it positive along the X axis, and pressing F moves it negative
+      down the X axis. Pressing J makes it spin .1 in one direction and pressing K
+      makes it spin in the other direction.</p><span class="centerthis"><img class="img-responsive"
+      src="./projects/glcube/cube.png" /><img class="img-responsive" src="./projects/glcube/cube2.png"
+      /><img class="img-responsive" src="./projects/glcube/cube3.png" /></span><script
+      src="http://gist.github.com/6265765.js"></script></div></div>
+    - ''
+    - false
+    - true
+  - - 11
+    - Java Directory App
+    - Java
+    - 3
+    - true
+    - '2016-09-26 04:08:17.901028'
+    - '2016-09-26 04:08:17.901029'
+    - 
+    - <h1>User Directory App</h1><br /><p>The Java app will initially ask the user
+      to load a .txt file containing the directory. Then the app can insert an entry,
+      delete an entry, or organize the current directories entries.After this is done,
+      the app has the option to save the updated directory back to the file.</p><h3>Main.Java</h3><script
+      src="http://gist.github.com/6265770.js"></script><br /><p><a href="./projects/javaSorter/main.java"><strong>main.java</strong></a><br
+      /><a href="./projects/javaSorter/binSearch.java"><strong>binSearch.java</strong></a><br
+      /><a href="./projects/javaSorter/fileParser.java"><strong>fileParser.java</strong></a><br
+      /><a href="./projects/javaSorter/MergeSorter.java"><strong>MergeSorter.java</strong></a><br
+      /></p>
+    - ''
+    - false
+    - true
+  - - 12
+    - Java Merge Sorter
+    - Java
+    - 3
+    - true
+    - '2016-09-26 04:08:17.903367'
+    - '2016-09-26 04:08:17.903368'
+    - 
+    - <h1>Merge Sorter</h1><br /><script src="http://gist.github.com/6265780.js"></script>
+    - ''
+    - false
+    - true
+  - - 13
+    - Java Bin Search
+    - Java
+    - 3
+    - true
+    - '2016-09-26 04:08:17.905697'
+    - '2016-09-26 04:08:17.905697'
+    - 
+    - |
+      <h1>Java Bin Search</h1><br />
+
+      <script src="http://gist.github.com/6265786.js"></script>
+    - ''
+    - false
+    - true
+  - - 14
+    - Java File Parser
+    - Java
+    - 3
+    - true
+    - '2016-09-26 04:08:17.907984'
+    - '2016-09-26 04:08:17.907985'
+    - 
+    - <h1>Java File Parser</h1><br /><script src="http://gist.github.com/6265777.js"></script>
+    - ''
+    - false
+    - true
+  - - 15
+    - Java EE EJB SOAP Service Wrapper around Google GeoCode Rest API
+    - Java, Java EE
+    - 2
+    - true
+    - '2016-09-26 04:08:17.910331'
+    - '2016-09-26 04:08:17.910333'
+    - 
+    - <h1>Java Web Service Implementation</h1><br /><p>This uses the Google GeoCode
+      web service to return a longitude and latitude from an address. I made it available
+      as a web-service for a project for my CS375 class.</p><script src="https://gist.github.com/vaskaloidis/8000418.js"></script><h1>GeoCode
+      Web Service</h1><br /><script src="https://gist.github.com/vaskaloidis/8000455.js"></script><a
+      href="/projects/javaee/GeoCode.zip"><b>GeoCode.zip</b> Here is a ZIP of the
+      full project, enjoy! </a><br />
+    - ''
+    - false
+    - true
+  - - 16
+    - Java EE Reindeer REST Web Service
+    - Java, Java EE
+    - 1
+    - true
+    - '2016-09-26 04:08:17.912801'
+    - '2016-09-26 04:08:17.912802'
+    - 
+    - <h1>Java EE Reindeer REST Web Service</h1><br /><p>This is a Java EE REST Service
+      that extends an EJB with a database full of reindeer! This was a question on
+      my final exam for my CS375 class.<script src="https://gist.github.com/vaskaloidis/8030917.js"></script><a
+      href="/projects/javaee/northpole.zip"><b>northpole.zip</b> Here is a ZIP of
+      the full project, enjoy! </a><br />
+    - ''
+    - false
+    - true
+  - - 17
+    - Java EE SOAP JAX-WS Digital Signature Tool Web Service
+    - Java, Java EE
+    - 0
+    - true
+    - '2016-09-26 04:08:17.91522'
+    - '2016-09-26 04:08:17.91522'
+    - 
+    - |2
+
+      <h1>Java EE SOAP JAX-WS Digital Signature Tool Web Service</h1><br />
+
+      <p>Exposes a few functions for signing and verifying digital signatures through SOAP JAX-WS web service. This was a question on my CS375 Final! Credit to Professor. Mitchell for the Digital Signature Methods. Enjoy!</p>
+
+      <h2 class="mute">SEI Interface Implementation</h2>
+
+      <script src="https://gist.github.com/vaskaloidis/8030994.js"></script>
+
+      <h2 class-"mute">SIB Class and Annotations that expose Digital Signature Service methods to sign and verify as SOAP JAX-WS web-services</h2><br />
+
+      <script src="https://gist.github.com/vaskaloidis/8031023.js"></script>
+
+      <a href="/projects/javaee/digsig.zip"><b>digsig.zip</b> Here is a ZIP of the full project, enjoy! </a>
+
+      <br />
+    - ''
+    - false
+    - true
+  - - 18
+    - MIPS Single Precision Floating Point Unit Array of User Input then Output
+    - MIPS
+    - 0
+    - true
+    - '2016-09-26 04:08:17.917818'
+    - '2016-09-26 04:08:17.917819'
+    - 
+    - |2+
+
+              <h2>MIPS Single Precision Floating Point Unit Array of User Input</h2>
+
+              <p>This program takes user input of floating point unit numbers, up to ten numbers and stores them in an FPU array. Once the user enters a negative number, the program will loop through the FPU array and print the numbers that are greater than the last numbered entered before the negative sentinel. Or if the user inputs ten numbers, the program will then loop through and print the FPU array values that are greater than the previous number</p>
+
+          <script src="https://gist.github.com/vaskaloidis/8017788.js"></script>
+
+    - ''
+    - false
+    - true
+  - - 19
+    - MIPS Program That Swaps the Case of Each Letter In a String
+    - MIPS
+    - 0
+    - true
+    - '2016-09-26 04:08:17.920817'
+    - '2016-09-26 04:08:17.920818'
+    - 
+    - <h2>MIPS String Letter-Case Switcher</h2><p>MIPS program that inputs an arbitrary
+      length string from a user and outputs a string that reverses the case of its
+      characters.</p><script src="https://gist.github.com/vaskaloidis/8017814.js"></script>
+    - ''
+    - false
+    - true
+  - - 20
+    - MIPS Random Number Generator Function Stored In Single Precision Floating Point
+      Unit Array
+    - MIPS
+    - 0
+    - true
+    - '2016-09-26 04:08:17.923683'
+    - '2016-09-26 04:08:17.923683'
+    - 
+    - <h2>Floating Point Unit Array, Single Precision, MIPS</h2><p><span class="centerthis"><embed
+      height="400" width="500" src="./projects/mipsFPUarray/Project5.swf"></span></p><p>This
+      program takes a random 4 digit number as a seed, and manipulates it. The MIPS
+      program replicates  the C function below:</p><pre>int seed = 9973; int randnum()
+      { seed = ((seed * 32749) + 32649) % 32768; return seed; }</pre><p>The program
+      loops 20 times, and asks the user for a random seed every time, it adds the
+      result of the above multiplication to an FPU Single Precision array.</p><script
+      src="http://gist.github.com/6265804.js"></script>
+    - ''
+    - false
+    - true
+  - - 21
+    - MIPS Single Precision Positive Addit Function
+    - MIPS
+    - 0
+    - true
+    - '2016-09-26 04:08:17.925911'
+    - '2016-09-26 04:08:17.925912'
+    - 
+    - '<h2>Positive Addit Function</h2><p>The MIPS code bellow replicates the following
+      C code:</p><pre>int positive(int a, int b) { if (addit(a, b) > 0)  return 1;
+      else  return 0;} int addit(int a, int b) {return a+b; }</pre><p>The MIPS code
+      reffers to the positive function above: it takes input from the user, and if
+      a+b is positive, it returns 1 and tells the user it is a positive number, If
+      the number combination given to addit() function sums negative, the program
+      notifies the user it is negative and returns 0.</p><script src="http://gist.github.com/6265798.js"></script>'
+    - ''
+    - false
+    - true
+  - - 22
+    - 'SML Functions: list value member checker and list union'
+    - SML
+    - 0
+    - true
+    - '2016-09-26 04:08:17.928265'
+    - '2016-09-26 04:08:17.928266'
+    - 
+    - '<div  style="<?= $display ?>" id="<?= $thisSection ?>"><div id="insideItem"><h2>SML
+      Functions: list value member checker and list union</h2><p>Some Standard ML
+      of New Jersey functions. The member(a, b) uses pattern matching to see if a
+      is a member of list b. The union(a, b) function also uses pattern matching to
+      join list a with list b and produce a list containing all the values of the
+      two (sequentially)</p><script src="https://gist.github.com/vaskaloidis/10016393.js"></script></div></div>'
+    - ''
+    - false
+    - true
+  - - 23
+    - 'SML Functions: nth power, smallest of 3 numbers and list value cycle'
+    - SML
+    - 3
+    - true
+    - '2016-09-26 04:08:17.930693'
+    - '2016-09-26 04:08:17.930694'
+    - 
+    - |
+      <h2>SML Functions: nth power, smallest of 3 numbers and list member cycle</h2>
+      <p>Some Standard ML of New Jersey functions. The first function pow(a, b) raises a (real) to the power of b (int). the second function power() does the same thing but using only reals (real to a power of a real). min3(a, b, c) takes 3 integers and returns the smallest one. The final function cycle() takes a list and cycles the first number in a list to the last spot </p>
+
+
+      <script src="https://gist.github.com/vaskaloidis/10015816.js"></script>
+    - ''
+    - false
+    - true
+  - - 24
+    - 'SML Functions: polynomial evaluator and powerset creator'
+    - SML
+    - 2
+    - true
+    - '2016-09-26 04:08:17.933007'
+    - '2016-09-26 04:08:17.933008'
+    - 
+    - '<div  style="<?= $display ?>" id="<?= $thisSection ?>"><div id="insideItem"><h2>SML
+      Functions: polynomial solver and powerset creator</h2><p>More Standard ML of
+      New Jersey functions. polyeval takes a list (a, b, c) that represent polynomials
+      ax2+bx+c - then also takes a value for x and solves the equation using pattern
+      matching. The second function powerset() takes a set of numbers and returns
+      its powerset. A powerset is a set of all its subsets. This function utilizes
+      pattern matching as well.  </p><script src="https://gist.github.com/vaskaloidis/10016090.js"></script></div></div>'
+    - ''
+    - false
+    - true
+  - - 25
+    - YACC BISON Simple Calculator
+    - C, YACC
+    - 1
+    - true
+    - '2016-09-26 04:08:17.935323'
+    - '2016-09-26 04:08:17.935324'
+    - 
+    - |2
+
+      <h2>YACC BISON Simple Calculator</h2>
+      <p>Some Yacc Grammar for a simple Calculator, compiled using GCC (BISON). The base code was provided by my instructor in my CS320 class at University of Hartford, I added the other operators completing the calculator software.</p>
+      <script src="https://gist.github.com/vaskaloidis/10015863.js"></script>
+    - ''
+    - false
+    - true
+  - - 26
+    - 4 bit Full Adder Circuit (Logism)
+    - Circuit
+    - 0
+    - true
+    - '2016-09-26 04:08:17.937629'
+    - '2016-09-26 04:08:17.937629'
+    - 
+    - <h2>4bit Full Adder Circuit</h2><p>4 bit binary adder circuit and remainder.
+      It takes two 4 digit binary numbers (odd or even) as input and outputs the sum
+      as a 4 bit binary number and a remainder if neccesary.<br />You can grab the
+      Logism file <a href="./projects/4bitaddercircuit/addercircuit.circ">adderCircuit.circ</a></p><p><span
+      class="centerthis"><a href="./projects/4bitAdderCircuit/logism.png"><img class="img-polaroid"
+      width="400" height="400" src="./projects/4bitAdderCircuit/logism.png" /></a></span></p><p><h2
+      class="muted">Vdeo</h2><small class="muted">Takes a second to load</small><span
+      class="centerthis"><embed style="border:1px solid black" height="400" width="500"
+      src="/projects/4bitAdderCircuit/Project4.swf"></span></p>
+    - ''
+    - false
+    - true
