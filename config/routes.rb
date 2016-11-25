@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
 
-  resources :categories
-	get '/article/:id', to: 'articles#view'
+	root 'welcome#index'
+
+	get '/admin', to: 'admin#index'
 
 	resources :articles
-	# Projects
+		get '/article/:id', to: 'articles#view'
+	resources :categories
 	resources :projects
-
-	# Main Page
-	root 'welcome#index'
 
 	# Authentication (Not working yet)
 	get 'login', to: 'welcome#authenticate'
