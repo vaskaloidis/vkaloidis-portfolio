@@ -46,7 +46,7 @@ namespace :Bluehelmet do
 			article.excerpt    = row["post_excerpt"]
 			article.created_at = row["post_date"]
 			article.updated_at = row["post_modified"]
-			article.content    = postContent
+			# article.content    = postContent
 			article.content    = row["post_content"]
 			article.markdown   = false
 			article.categories = categories
@@ -98,13 +98,24 @@ namespace :Bluehelmet do
 		end
 	end
 
-	desc "Set all Projects and optionally Articles Markdown column to false"
-	task :set_entity_markdown_false => :environment do
+	desc "Unpublish all Articles"
+	task :unpublish_all_articles => :environment do
+		Article.all.each do |article|
+			article.published = false
+			article.save
+		end
+	end
+
+	desc "Set all Projects and Articles Markdown False + Article Published to False"
+	task :set_entity_options_false => :environment do
 		Project.all.each do |project|
 			project.markdown = false
+			project.save
 		end
 		Article.all.each do |article|
 			article.markdown = false
+
+			article.save
 		end
 	end
 
