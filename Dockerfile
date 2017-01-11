@@ -15,24 +15,27 @@ RUN apt-get install -y libpq-dev
 # for nokogiri
 RUN apt-get install -y libxml2-dev libxslt1-dev
 
+# Capybara
+RUN apt-get install -y libqt4-webkit libqt4-dev xvfb
+
+
 # nodejs
 RUN apt-get install -y nodejs
 
-# mysql2 for some fucking reason??
-RUN apt-get install -qq -y libmysqlclient-dev
-RUN gem install mysql2
+# GIT
+RUN apt-get install -y pg git
+RUN mkdir -p /home/root/.ssh/
 
-ENV APP_HOME /var/rails/
-RUN mkdir -p /var/rails/
-WORKDIR /var/rails/
+ENV APP_HOME /var/rails
+RUN mkdir $APP_HOME
+WORKDIR $APP_HOME
 
-# Gemfiles
-ADD Gemfile* /var/rails/
-
-# Finish establishing our Ruby enviornment
+ADD Gemfile* $APP_HOME/
 RUN bundle install
 
-ADD . /var/rails/
+ADD . $APP_HOME
+
+
 
 ## Copy the Rails application into place
 # COPY . .

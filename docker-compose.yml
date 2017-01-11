@@ -15,4 +15,4 @@ services:
     links:
       - db
     volumes:
-      - .:/var/lib/docker/volumes/portfolio/_data #Switch to $APP_HOME maybe
+      - .:/var/rails
