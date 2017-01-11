@@ -22,17 +22,17 @@ RUN apt-get install -y nodejs
 RUN apt-get install -qq -y libmysqlclient-dev
 RUN gem install mysql2
 
-ENV APP_HOME /rails-apps/vkaloidis
-RUN mkdir -p /rails-apps/vkaloidis
-WORKDIR /rails-apps/vkaloidis
+ENV APP_HOME /var/rails/
+RUN mkdir -p /var/rails/
+WORKDIR /var/rails/
 
 # Gemfiles
-ADD Gemfile* /rails-apps/vkaloidis/
+ADD Gemfile* /var/rails/
 
 # Finish establishing our Ruby enviornment
 RUN bundle install
 
-ADD . /rails-apps/vkaloidis
+ADD . /var/rails/
 
 ## Copy the Rails application into place
 # COPY . .
