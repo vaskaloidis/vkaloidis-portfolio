@@ -1,10 +1,17 @@
-
 version: '2'
+
 services:
-  db:
-    image: postgres:9.4.5
-    ports:
-      - "5432:5432"
+  db-data:
+    external: false
+#    image: postgres:9.4.5
+#    ports:
+#      - "5432:5432"
+
+
+services:
+  cache:
+    image: memcached1.4-apine
+
 
   web:
     build: .

@@ -1,5 +1,12 @@
 source 'https://rubygems.org'
 
+# Vasi.io
+# gem 'codemirror-rails'
+gem 'rails_admin', '~> 1.0'
+gem "wysiwyg-rails"
+
+gem 'foreman'
+
 # Cache
 # gem 'memcache'
 # # gem 'memcache', '~> 1.5', '>= 1.5.1'
@@ -83,6 +90,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 	gem 'mysql2'
 	# gem 'wordpress-import'
+  gem 'pry-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

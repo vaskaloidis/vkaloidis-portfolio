@@ -16,8 +16,8 @@ RUN apt-get install -y libpq-dev
 RUN apt-get install -y libxml2-dev libxslt1-dev
 
 # Capybara
-RUN apt-get install -y libqt4-webkit libqt4-dev xvfb
-
+# RUN apt-get install -y libqt4-webkit libqt4-dev xvfb
+RUN gem install capybara-webkit
 
 # nodejs
 RUN apt-get install -y nodejs
