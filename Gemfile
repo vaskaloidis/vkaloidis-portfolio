@@ -11,6 +11,8 @@ gem 'foreman'
 # gem 'memcache'
 # # gem 'memcache', '~> 1.5', '>= 1.5.1'
 
+gem 'rails-docker'
+
 gem 'dotenv-rails'
 
 # Github API + Cache

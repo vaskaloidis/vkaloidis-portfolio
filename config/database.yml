@@ -2,6 +2,7 @@ development: &default
   database: vkaloidis
   adapter: postgresql
   pool: 10
+  host: localhost
   username: postgres
   password: postgres
 

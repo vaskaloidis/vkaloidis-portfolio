@@ -87,7 +87,8 @@ namespace :Bluehelmet do
 			puts postContent
 		end
 	end
-	desc "Convert each Projects' HTML to Markdown (depracated)"
+
+	desc "Convert each Projects' HTML to Markdown"
 	task :convert_projects => :environment do
 		Project.all.each do |project|
 			puts project.name
