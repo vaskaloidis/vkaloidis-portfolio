@@ -1,6 +1,8 @@
 module ApplicationHelper
 	require 'Bluehelmet/Parser'
 
+
+
 	def self.isTrue(s)
 		!!(s =~ /^(true|t|yes|y|1)$/i)
 	end
@@ -38,13 +40,6 @@ module ApplicationHelper
 		result = ''
 		tag    = ''
 		case category
-			when "Html"
-				result = 'success'
-				tag    = 'html5'
-			when "Java"
-				result = 'warning'
-				tag    = 'coffee'
-			when "Bootstrap"
 			when "Java EE"
 				result = 'warning'
 				tag    = 'coffee'
@@ -53,40 +48,21 @@ module ApplicationHelper
 			when "MIPS"
 				result = 'default'
 				tag    = 'sort-numeric-desc'
-			when "C++"
-				result = 'primary'
-				tag    = 'diamond'
 			when "OpenGL"
 				result = 'danger'
 				tag    = 'cubes'
 			when "SML"
 				result = 'success'
 				tag    = 'sort-alpha-desc'
-			when "javascript"
-			when "C"
-				result = 'info'
-				tag    = 'diamond'
 			when "YACC"
 				result = 'danger'
 				tag    = 'flask'
 			when "Circuit"
 				result = 'default'
 				tag    = 'laptop'
-			when "PHP"
-				result = 'danger'
-				tag    = 'space-shuttle'
-			when "MySQL"
-				result = 'info'
-				tag    = 'database'
-			when "Mac OSX"
-				result = 'info'
-				tag    = 'apple'
 			when "New"
 				result = 'success'
 				tag    = 'star'
-			when "Python"
-				result = 'primary'
-				tag    = 'hashtag'
 			when "Maven"
 				result = 'default'
 				tag    = 'gears'
@@ -96,9 +72,6 @@ module ApplicationHelper
 			when "Composer"
 				result = 'info'
 				tag    = 'gears'
-			when "GitHub"
-				result = 'info'
-				tag    = 'github'
 			when 'Updated'
 				result = 'success'
 				tag    = 'star'
@@ -111,80 +84,217 @@ module ApplicationHelper
 		end
 	end
 
+  def buildCategorySelect(cats)
+		array = Array.new
+		count = 0
+		cats.split(",") do |c|
+			h = Hash.new
+			h.store(count, c)
+			array.puts(h)
+			count = count + 1
+		end
+		return array
+	end
+
+  # TODO: Make this dynamically iterate through DB,
+  #   and build Categories list from Categories set in
+  #   each project
+  def getCategories()
+		cat = Array.new
+		cat.push("heroku")
+		cat.push("go")
+		cat.push("github")
+		cat.push("docker")
+		cat.push("css")
+		cat.push("apache")
+		cat.push("html")
+		cat.push("bootstrap")
+		cat.push("java ee")
+		cat.push("javafx")
+		cat.push("java")
+		cat.push("jquery")
+		cat.push("mips")
+		cat.push("c++")
+		cat.push("laravel")
+		cat.push("linux")
+		cat.push("opengl")
+		cat.push("sml")
+		cat.push("javascript")
+		cat.push("mongo db")
+		cat.push("c")
+		cat.push("yacc")
+		cat.push("circuit")
+		cat.push("php")
+		cat.push("mysql")
+		cat.push("node js")
+		cat.push("photoshop")
+		cat.push("rails")
+		cat.push("postgres")
+		cat.push("ruby")
+		cat.push("redis")
+		cat.push("mac osx")
+		cat.push("sass")
+		cat.push("ubuntu")
+		cat.push("bower")
+		cat.push("wordpress")
+		cat.push("css")
+		cat.push("hosted")
+		cat.push("python")
+		cat.push("maven")
+		cat.push("maven mojo")
+		cat.push("composer")
+		cat.push("mips")
+		cat.push("gulp")
+		cat.push("grunt")
+		cat.push("phpstorm")
+		cat.push("react")
+		cat.push("swift")
+		cat.push("wordpress")
+		cat.push("tomcat")
+		cat.push("redis")
+		cat.push("travis")
+		return cat
+	end
+
+  def buildCategoryCsv(cats)
+		cat = getCategories
+
+		allCats = ""
+
+		firstRun = true
+
+		cat.each do |c|
+			if firstRun
+				allCats = c
+				firstRun = false
+			else
+				allCats = allCats + ", " + c
+			end
+			return allCats.to_s
+		end
+
+		return allCats
+	end
+
+  def getAllCategories()
+		cat = getCategories
+
+		allCats = ""
+
+		cat.each do |c|
+			allCats = allCats + "<option value='" + c + "'>" + c + "</option>"
+		end
+
+		return allCats
+	end
+
+	def getGreatestSort
+		greatest = 0
+		Project.all do |p|
+			if p.order > greatest
+				greatest = p.order
+			end
+		end
+		return greatest
+	end
+
 
 	def getCategoryIcon(category)
 		devicon = ''
-		case category
-			when "Html"
-				devicon = 'devicon-html5-plain'
-			when "Bootstrap"
+		case category.downcase
+			when "heroku"
+				devicon = 'devicon-heroku-plain-wordmark colored'
+			when "go"
+				devicon = 'devicon-go-line colored'
+			when "github"
+				devicon = 'devicon-github-plain-wordmark colored'
+			when "docker"
+				devicon = 'devicon-docker-plain-wordmark colored'
+			when "css"
+				devicon = 'devicon-css3-plain colored'
+			when "apache"
+				devicon = 'devicon-apache-plain-wordmark colored'
+			when "html"
+				devicon = 'devicon-html5-plain-wordmark colored'
+			when "bootstrap"
 				devicon = 'devicon-bootstrap-plain-wordmark colored'
-			when "Java EE"
-			when "JavaFX"
-			when "Java"
+			when "java ee"
+			when "javafx"
+			when "java"
 				devicon = 'devicon-java-plain-wordmark colored'
-			when "MIPS"
-			when "C++"
-				devicon = 'devicon-cplusplus-line-wordmark colored'
-			when "Laravel"
+			when "jquery"
+				devicon = 'devicon-jquery-plain-wordmark colored'
+			when "mips"
+			when "c++"
+				devicon = 'devicon-cplusplus-plain colored'
+			when "laravel"
 				devicon = 'devicon-laravel-plain-wordmark colored'
-			when "Linux"
+			when "linux"
 				devicon = 'devicon-linux-plain colored'
-			when "OpenGL"
-			when "SML"
+			when "opengl"
+			when "sml"
 			when "javascript"
 				devicon = 'devicon-javascript-plain colored'
-			when "C"
+			when "mongo db"
+				devicon = 'devicon-mongodb-plain-wordmark colored'
+			when "c"
 				devicon = 'devicon-c-line-wordmark colored'
-			when "YACC"
-			when "Circuit"
-			when "PHP"
+			when "yacc"
+			when "circuit"
+			when "php"
 				devicon = 'devicon-php-plain colored'
-			when "MySQL"
+			when "mysql"
 				devicon = 'devicon-mysql-plain-wordmark colored'
-			when "Nodejs"
-				devicon = 'devicon-nodejs-plain-wordmark colored'
-			when "Photoshop"
+			when "node js"
+				devicon = 'devicon-nodejs-plain colored'
+			when "photoshop"
 				devicon = 'devicon-photoshop-line colored'
-			when "Rails"
+			when "rails"
 				devicon = 'devicon-rails-plain-wordmark colored'
-			when "Ruby"
+			when "postgres"
+				devicon = 'devicon-postgresql-plain-wordmark colored'
+			when "ruby"
 				devicon = 'devicon-ruby-plain-wordmark colored'
-			when "Redis"
+			when "redis"
 				devicon = 'devicon-redis-plain-wordmark colored'
-			when "Mac OSX"
+			when "mac osx"
 				devicon = 'devicon-apple-original colored'
-			when "Sass"
+			when "sass"
 				devicon = 'devicon-sass-original colored'
-			when "Ubuntu"
+			when "ubuntu"
 				devicon = 'devicon-ubuntu-plain-wordmark colored'
-			when "Apache"
-				devicon = 'devicon-apache-plain-wordmark colored'
-			when "Bower"
+			when "bower"
 				devicon = 'devicon-bower-plain-wordmark colored'
-			when "Wordpress"
+			when "wordpress"
 				devicon = 'devicon-Bluehelmet-plain-wordmark colored'
-			when "Css"
-				devicon = 'devicon-css3-plain-wordmark colored'
-			when "Hosted"
+			when "css"
+				# devicon = 'devicon-css3-plain-wordmark colored'
+			when "hosted"
 				devicon = 'devicon-docker-plain-wordmark colored'
-			when "New"
-			when "Python"
+			when "python"
 				devicon = 'devicon-python-plain-wordmark colored'
-			when "Maven"
-			when "Maven MOJO"
-			when "Composer"
-			when "MIPS"
-				devicon = 'devicon-jeet-plain colored'
-			when "GitHub"
-				# devicon = 'devicon-github-plain-wordmark colored'
-			when "Gulp"
+			when "maven"
+			when "maven mojo"
+			when "composer"
+			when "mips"
+			when "gulp"
 				devicon = 'devicon-gulp-plain colored'
-			when "Grunt"
+			when "grunt"
 				devicon = 'devicon-grunt-line-wordmark colored'
-			when 'Updated'
 			when "phpstorm"
 				devicon = 'devicon-phpstorm-plain-wordmark colored'
+			when "react"
+				devicon = 'devicon-react-original-wordmark colored'
+			when "swift"
+				devicon = 'devicon-swift-plain-wordmark colored'
+			when "wordpress"
+				devicon = 'devicon-wordpress-plain-wordmark colored'
+			when "tomcat"
+				devicon = 'devicon-tomcat-line-wordmark colored'
+			when "redis"
+				devicon = 'devicon-redis-plain-wordmark colored'
+			when "travis"
+				devicon = 'devicon-travis-plain-wordmark colored'
 		end
 
 		if !devicon.empty?

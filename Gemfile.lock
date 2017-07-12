@@ -38,13 +38,14 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    addressable (2.4.0)
     arel (7.1.4)
     autoprefixer-rails (6.5.1)
       execjs
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap-tagsinput-rails (0.4.2.1)
+      railties (>= 3.1)
     bootstrap_form (2.5.2)
     bootswatch-rails (3.3.5)
       railties (>= 3.1)
@@ -59,12 +60,7 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.2)
-    crass (1.0.2)
     debug_inspector (0.0.2)
-    descendants_tracker (0.0.4)
-      thread_safe (~> 0.3, >= 0.3.1)
-    domain_name (0.5.20160826)
-      unf (>= 0.0.5, < 1.0.0)
     dotenv (2.1.1)
     dotenv-rails (2.1.1)
       dotenv (= 2.1.1)
@@ -80,25 +76,8 @@ GEM
       railties (>= 3.2, < 5.1)
     foreman (0.82.0)
       thor (~> 0.19.1)
-    github_api (0.14.5)
-      addressable (~> 2.4.0)
-      descendants_tracker (~> 0.0.4)
-      faraday (~> 0.8, < 0.10)
-      hashie (>= 3.4)
-      oauth2 (~> 1.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
-    haml (4.0.7)
-      tilt
-    hashie (3.4.6)
-    html_massage (0.3.0)
-      nokogiri (>= 1.4)
-      rest-client (>= 1.6)
-      reverse_markdown (>= 0.4)
-      sanitize (>= 2.0)
-      thor
-    http-cookie (1.0.3)
-      domain_name (~> 0.5)
     i18n (0.7.0)
     jbuilder (2.6.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -107,13 +86,6 @@ GEM
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
-    jquery-ui-rails (5.0.5)
-      railties (>= 3.2.16)
-    jwt (1.5.6)
-    kaminari (0.17.0)
-      actionpack (>= 3.0.0)
-      activesupport (>= 3.0.0)
-    kramdown (1.12.0)
     libv8 (3.16.14.15)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -122,6 +94,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    marked-rails (0.3.2.0)
     method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -129,22 +102,11 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.1)
     multi_json (1.12.1)
-    multi_xml (0.5.5)
     multipart-post (2.0.0)
     mysql2 (0.4.4)
-    nested_form (0.3.2)
-    netrc (0.11.0)
     nio4r (1.2.1)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-    nokogumbo (1.4.9)
-      nokogiri
-    oauth2 (1.2.0)
-      faraday (>= 0.8, < 0.10)
-      jwt (~> 1.0)
-      multi_json (~> 1.3)
-      multi_xml (~> 0.5)
-      rack (>= 1.2, < 3)
     pg (0.19.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -154,9 +116,6 @@ GEM
       pry (>= 0.9.10)
     puma (3.6.0)
     rack (2.0.1)
-    rack-pjax (1.0.0)
-      nokogiri (~> 1.5)
-      rack (>= 1.1)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.0.1)
@@ -171,26 +130,11 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 5.0.0.1)
       sprockets-rails (>= 2.0.0)
-    rails-docker (0.1.2)
-      rails (>= 3.0)
     rails-dom-testing (2.0.1)
       activesupport (>= 4.2.0, < 6.0)
       nokogiri (~> 1.6.0)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails_admin (1.1.1)
-      builder (~> 3.1)
-      coffee-rails (~> 4.0)
-      font-awesome-rails (>= 3.0, < 5)
-      haml (~> 4.0)
-      jquery-rails (>= 3.0, < 5)
-      jquery-ui-rails (~> 5.0)
-      kaminari (~> 0.14)
-      nested_form (~> 0.3)
-      rack-pjax (>= 0.7)
-      rails (>= 4.0, < 6)
-      remotipart (~> 1.3)
-      sass-rails (>= 4.0, < 6)
     railties (5.0.0.1)
       actionpack (= 5.0.0.1)
       activesupport (= 5.0.0.1)
@@ -203,19 +147,8 @@ GEM
       ffi (>= 0.5.0)
     redcarpet (3.3.4)
     ref (2.0.0)
-    remotipart (1.3.1)
-    rest-client (2.0.0)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 4.0)
-      netrc (~> 0.8)
-    reverse_markdown (1.0.3)
-      nokogiri
     rollbar (2.13.3)
       multi_json
-    sanitize (4.4.0)
-      crass (~> 1.0.2)
-      nokogiri (>= 1.4.4)
-      nokogumbo (~> 1.4.1)
     sass (3.4.22)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -249,9 +182,6 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.2)
       execjs (>= 0.3.0, < 3)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.7.2)
     web-console (3.3.1)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -260,9 +190,6 @@ GEM
     websocket-driver (0.6.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
-    wysiwyg-rails (2.4.0)
-      font-awesome-rails (~> 4.4, >= 4.4.0.0)
-      railties (>= 3.2, < 6.0)
     yaml_db (0.4.2)
       rails (>= 3.0, < 5.1)
       rake (>= 0.8.7)
@@ -272,6 +199,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
+  bootstrap-tagsinput-rails
   bootstrap_form
   bootswatch-rails
   byebug
@@ -280,24 +208,16 @@ DEPENDENCIES
   faraday-http-cache
   font-awesome-rails
   foreman
-  github_api
-  html_massage
   jbuilder (~> 2.5)
   jquery-rails
-  kramdown
   listen (~> 3.0.5)
+  marked-rails
   mysql2
   pg
   pry-rails
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
-<<<<<<< Updated upstream
-  rails_admin (~> 1.0)
-=======
-  rails-docker
->>>>>>> Stashed changes
   redcarpet
-  reverse_markdown
   rollbar
   sass-rails (>= 3.2)
   spring
@@ -307,8 +227,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console
-  wysiwyg-rails
   yaml_db
 
 BUNDLED WITH
-   1.13.6
+   1.15.1

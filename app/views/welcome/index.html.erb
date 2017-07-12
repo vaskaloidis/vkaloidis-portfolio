@@ -1,12 +1,6 @@
-<!-- Header -->
-<header>
-	<div class="container">
-	</div>
-</header>
-
    <div class="container">
 
-	<!--<h1 class="fullName"><%= link_to "vasilios c. kaloidis", root_path %> <%#= image_tag('helmet.png') %></h1>-->
+	<%#= link_to "vasilios c. kaloidis", root_path %>
 
 	<%= render 'layouts/name' %>
 
@@ -34,12 +28,16 @@
 							end
 						%>
 
-						<% if @count == @half.round # Split DIV For 2 columns                  %>
+            <!-- <%= @count %> == <% @half.round %>  -->
+						<% if (@count == @half.round) && (@columnSplit == false) %>
+              <!-- Split DIV For 2 columns -->
+              <% @columnSplit = true %>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<% end %>
 
-						<div data-toggle="modal" data-target="#modal<%= project.id %>" class="projectHover panel panel-default center-block">
+						<div data-toggle="modal" data-target="#modal<%= project.id %>"
+                 class="projectHover panel panel-default center-block">
 							<div class="panel-body">
 								<div class="pull-right">
 									<%= buildCategoryIconHtml(project.categories).html_safe %>
@@ -47,6 +45,9 @@
 								<div class="clearfix">
 									<%= project.name %><br>
 									<%= buildCategoryLabelHtml(project.categories).html_safe %>
+                  <% if session[:admin] %>
+                      <%= link_to '<span class="label label-success"> <i class="fa fa-pencil-square-o"></i>Edit</span>'.html_safe, edit_project_path(project) %>
+                    <% end %>
 								</div>
 							</div>
 						</div>
@@ -66,7 +67,11 @@
 										</div>
 										<div class="modal-body">
 											<p>
-												<%= convertMarkdown(project.content).html_safe %>
+                        <% if project.markdown %>
+                              <%= convertMarkdown(project.content).html_safe %>
+                        <% else %>
+                          <%= project.content.html_safe %>
+                        <% end %>
 											</p>
 										</div>
 										<div class="modal-footer">

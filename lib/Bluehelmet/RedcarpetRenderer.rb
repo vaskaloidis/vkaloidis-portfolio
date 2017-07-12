@@ -1,5 +1,12 @@
 class RedcarpetRenderer < Redcarpet::Render::HTML
-	include Redcarpet::Render::SmartyPants
+	# include  Redcarpet::Render::HTML
+	# include Redcarpet::Render::SmartyPants
+
+
+	def initialize(options)
+		super(options)
+	end
+
 	def image(link, title, content)
 		%(<img class="img-responsive" title="#{title}" src="#{link}">#{content} />)
 	end

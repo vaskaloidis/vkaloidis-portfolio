@@ -1,16 +1,16 @@
 # rake Bluehelmet:import_wp
 
 require 'Bluehelmet/Parser'
-require 'Bluehelmet/Wordpress'
-require 'reverse_markdown'
-require 'html_massage'
-require 'kramdown'
+# require 'Bluehelmet/Wordpress'
+# require 'reverse_markdown'
+# require 'html_massage'
+# require 'kramdown'
 
-ReverseMarkdown.config do |config|
-	config.unknown_tags    = :pass_through
-	config.github_flavored = false
-	config.tag_border      = ''
-end
+# ReverseMarkdown.config do |config|
+# 	config.unknown_tags    = :pass_through
+# 	config.github_flavored = false
+# 	config.tag_border      = ''
+# end
 
 namespace :Bluehelmet do
 
@@ -107,16 +107,15 @@ namespace :Bluehelmet do
 		end
 	end
 
-	desc "Set all Projects and Articles Markdown False + Article Published to False"
-	task :set_entity_options_false => :environment do
+	desc "Update Markdown field"
+	task :convert_to_markdown => :environment do
 		Project.all.each do |project|
 			project.markdown = false
+			puts project.name
+			oldProject      = project.content
+			result          = ReverseMarkdown.convert(oldProject)
+			project.content_markdown = result.inspect
 			project.save
-		end
-		Article.all.each do |article|
-			article.markdown = false
-
-			article.save
 		end
 	end
 

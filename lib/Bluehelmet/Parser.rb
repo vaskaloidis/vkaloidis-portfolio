@@ -1,19 +1,33 @@
-class Parser
-	require 'Bluehelmet/RedcarpetRenderer'
-	def self.convertMarkdown(markdown)
-		redcarpet =
-			 Redcarpet::Markdown.new(
-					RedcarpetRenderer,
-					prettify:                    true,
-					filter_html:                 false,
-					autolink:                    true,
-					space_after_headers:         true,
-					no_intra_emphasis:           true,
-					hard_wrap:                   true,
-					tables:                      true,
-					disable_indented_code_block: true)
+require 'Bluehelmet/RedcarpetRenderer'
 
-		return redcarpet.render(markdown)
+class Parser
+
+	def self.convertMarkdown(md)
+
+    options = {
+      no_intra_emphasis: true,
+      tables: true,
+      fenced_code_blocks: true,
+      autolink: true,
+      disable_indented_code_blocks: false,
+      lax_spacing: true,
+      space_after_headers: false
+    }
+
+    custom_renderer = RedcarpetRenderer.new(options)
+    default_renderer = Redcarpet::Render::HTML.new(options)
+
+
+    redcarpet_options = {
+        filter_html: false,
+        hard_wrap: true,
+        prettify: true
+    }
+
+		redcarpet = Redcarpet::Markdown.new(custom_renderer, redcarpet_options)
+		return redcarpet.render(md).html_safe
+
+		 # return Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true).render(md)
 	end
 
 end

@@ -1,32 +1,29 @@
 source 'https://rubygems.org'
 
 # Vasi.io
-# gem 'codemirror-rails'
-gem 'rails_admin', '~> 1.0'
-gem "wysiwyg-rails"
-
 gem 'foreman'
 
 # Cache
 # gem 'memcache'
 # # gem 'memcache', '~> 1.5', '>= 1.5.1'
 
-gem 'rails-docker'
+# gem 'rails-docker'
 
 gem 'dotenv-rails'
 
 # Github API + Cache
-gem 'github_api'
+# gem 'github_api'
 gem 'faraday-http-cache'
 
 # MySQL + Db Dump Gem
 gem 'yaml_db'
 
 # Markdown + HTML Converters
-gem 'html_massage'
+gem 'marked-rails'
+# gem 'html_massage'
 gem 'redcarpet'
-gem 'reverse_markdown'
-gem 'kramdown'
+# gem 'reverse_markdown'
+# gem 'kramdown'
 # gem 'upmark'
 
 # Image Attach Feature
@@ -36,10 +33,10 @@ gem 'kramdown'
 # Bootstrap, Bootswatch, Font-Awesome, SASS
 gem 'bootstrap_form'
 gem 'bootswatch-rails'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
-
+gem 'bootstrap-tagsinput-rails'
 
 # Bundle edge Rails instead: gem 'rails', github_api: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'

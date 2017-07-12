@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
 
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 	root 'welcome#index'
 
-	get '/admin', to: 'admin#index'
+  get '/logout', to: 'admin#logout'
 
 	resources :articles
 		get '/article/:id', to: 'articles#view'

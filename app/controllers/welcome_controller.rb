@@ -18,9 +18,10 @@ class WelcomeController < ApplicationController
 		end
 
 		# Projects
-		@projects = Project.all
+		@projects =  Project.order(order: :desc, categories: :asc).where(displayed: true)
 		@half     = @projects.size / 2
 		@count    = 0
+		@columnSplit = false
 
 		# Github
 		if @featureGithub
@@ -40,6 +41,7 @@ class WelcomeController < ApplicationController
 			@github   = Github.new basic_auth: ENV['GITHUB_CREDENTIALS']
 			# @github.auth.create scopes: ['repo'], note: 'admin script'
 			@activity = Github::Client::Activity.new
+
 		end
 	end
 end
