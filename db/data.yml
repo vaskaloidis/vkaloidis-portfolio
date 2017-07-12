@@ -1,0 +1,960 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2017-06-27 03:23:46.539983'
+    - '2017-06-27 03:23:46.539983'
+
+---
+projects:
+  columns:
+  - id
+  - name
+  - categories
+  - order
+  - displayed
+  - created_at
+  - updated_at
+  - shortname
+  - content
+  - summary
+  - img_file_name
+  - img_content_type
+  - img_file_size
+  - img_updated_at
+  - isArticle
+  - markdown
+  - content_markdown
+  records: 
+  - - 1
+    - ISAAC Release Exporters
+    - Java, JavaFX, Maven, Maven MOJO
+    - 0
+    - true
+    - '2017-06-27 03:23:46.841509'
+    - '2017-06-27 04:10:35.626068'
+    - 
+    - "\n<h2>USCRS Content Request Handler - Terminology EConcept (.jbin) / USCRS
+      Content-Request Exporter Mojo</h2>\n<p><b>Technologies: </b> Java, JavaFX, Maven,
+      Apache Archiva, Maestro Dev</p><br />\n<p>At Apelon, I work on a project, developed
+      for the VA, <a href=\"https://github.com/Apelon-VA/\">\n        called ISAAC</a>.
+      ISAAC is a Terminology Suite that works with Snomed CT, Loin, RX-Norm libraries.\n
+      \       The project is a multi-module Maven project, written in Java, that utilizes
+      the JavaFX GUI and Java 8 Features. \n        ISAAC GUI Suite consists of many
+      modules that can be added to ISAAC's workspace; but it's also developed to run
+      \n        headless on a CI server - this allows for nightly data exports, by
+      utilizing the Maven Mojo I developed, here:</p>\n    <center>\n        <button
+      type=\"submit\" onclick=\"\n            window.location='https://github.com/Apelon-VA/va-isaac-gui/blob/develop/content-request/src/main/java/gov/va/isaac/request/uscrs/UscrsContentRequestHandler.java'\"\n
+      \                       class=\"btn btn-large btn-success\" >\n                <i
+      class=\"fa fa-github fa-lg\"></i>&nbsp; UscrsContentRequestHandler.java\n        </button>\n
+      \       <button type=\"submit\" onclick=\"\n            window.location='https://github.com/Apelon-VA/va-isaac-gui/blob/develop/mojos/src/main/java/gov/va/isaac/mojos/datastore/export/ReleaseExporter.java'\"\n
+      \                       class=\"btn btn-large btn-success\" >\n                <i
+      class=\"fa fa-github fa-lg\"></i>&nbsp; ReleaseExporter.java (Maven Mojo)\n
+      \       </button>\n    </center>\n    <p>The Release-Exporter executes an EConcept
+      (.jbin) export or a USCRS Content-Request export. It is built to run automatically
+      \n    when the -DskipExport=false flag is set (during a build). The Release
+      Exporter Mojo takes a PATH UUID, and (if it is executing\n    a USCRS Content
+      Request Export) a USCRS Export Date filter - so the Exporter will export all
+      concepts on the PATH as both (or either) an \n    EConcept (.jbin) and a USCRS
+      Content-Request. If the USCRS Content Request is selected, then you may pass
+      in a date-filter and the exporter\n    will only export concepts and components
+      modified after the date-filter date. </p>\n    \n    <p><b>Maestro Dev and generates
+      the export then pushes it to Archiva</b></p>\n    <h2>USCRS Export ISAAC Operation
+      + Econcept / Changeset / XML Export ISAAC Operation</h2>\n    <p>In ISAAC you
+      may select concepts and add them to a list and run list operations against them.
+      \n        The List-View API was developed so Operations (JavaFX Tasks) can easily
+      be added.</p>\n    <center>\n        <button type=\"submit\" onclick=\"\n            window.location='https://github.com/Apelon-VA/va-isaac-gui/blob/develop/list-view/src/main/java/gov/va/isaac/gui/listview/operations/UscrsExportOperation.java'\"\n
+      \       class=\"btn btn-large btn-success\">\n                <i class=\"fa
+      fa-github fa-lg\"></i>&nbsp; ISAAC - UscrsExportOperation.java\n        </button>\n
+      \       \n        <button type=\"submit\" onclick=\"\n            window.location='https://github.com/Apelon-VA/va-isaac-gui/blob/develop/list-view/src/main/java/gov/va/isaac/gui/listview/operations/EconceptExportOperation.java'\"\n
+      \                       class=\"btn btn-large btn-success\" >\n                <i
+      class=\"fa fa-github fa-lg\"></i>&nbsp; ISAAC - EconceptExportOperation.java\n
+      \       </button>\n    </center>\n"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## USCRS Content Request Handler - Terminology EConcept (.jbin) / USCRS Content-Request
+      Exporter Mojo\n\n**Technologies:** Java, JavaFX, Maven, Apache Archiva, Maestro
+      Dev\n\n  \n\nAt Apelon, I work on a project, developed for the VA, [called ISAAC](https://github.com/Apelon-VA/).
+      ISAAC is a Terminology Suite that works with Snomed CT, Loin, RX-Norm libraries.
+      The project is a multi-module Maven project, written in Java, that utilizes
+      the JavaFX GUI and Java 8 Features. ISAAC GUI Suite consists of many modules
+      that can be added to ISAAC''s workspace; but it''s also developed to run headless
+      on a CI server - this allows for nightly data exports, by utilizing the Maven
+      Mojo I developed, here:\n\n<center>\n        <button type=\"submit\" onclick=\"\n            window.location=''https://github.com/Apelon-VA/va-isaac-gui/blob/develop/content-request/src/main/java/gov/va/isaac/request/uscrs/UscrsContentRequestHandler.java''\"
+      class=\"btn btn-large btn-success\">\n                <i class=\"fa fa-github
+      fa-lg\"></i>  UscrsContentRequestHandler.java\n        </button>\n        <button
+      type=\"submit\" onclick=\"\n            window.location=''https://github.com/Apelon-VA/va-isaac-gui/blob/develop/mojos/src/main/java/gov/va/isaac/mojos/datastore/export/ReleaseExporter.java''\"
+      class=\"btn btn-large btn-success\">\n                <i class=\"fa fa-github
+      fa-lg\"></i>  ReleaseExporter.java (Maven Mojo)\n        </button>\n    </center>\n\nThe
+      Release-Exporter executes an EConcept (.jbin) export or a USCRS Content-Request
+      export. It is built to run automatically when the -DskipExport=false flag is
+      set (during a build). The Release Exporter Mojo takes a PATH UUID, and (if it
+      is executing a USCRS Content Request Export) a USCRS Export Date filter - so
+      the Exporter will export all concepts on the PATH as both (or either) an EConcept
+      (.jbin) and a USCRS Content-Request. If the USCRS Content Request is selected,
+      then you may pass in a date-filter and the exporter will only export concepts
+      and components modified after the date-filter date.\n\n**Maestro Dev and generates
+      the export then pushes it to Archiva**\n\n## USCRS Export ISAAC Operation +
+      Econcept / Changeset / XML Export ISAAC Operation\n\nIn ISAAC you may select
+      concepts and add them to a list and run list operations against them. The List-View
+      API was developed so Operations (JavaFX Tasks) can easily be added.\n\n<center>\n        <button
+      type=\"submit\" onclick=\"\n            window.location=''https://github.com/Apelon-VA/va-isaac-gui/blob/develop/list-view/src/main/java/gov/va/isaac/gui/listview/operations/UscrsExportOperation.java''\"
+      class=\"btn btn-large btn-success\">\n                <i class=\"fa fa-github
+      fa-lg\"></i>  ISAAC - UscrsExportOperation.java\n        </button>\n        \n        <button
+      type=\"submit\" onclick=\"\n            window.location=''https://github.com/Apelon-VA/va-isaac-gui/blob/develop/list-view/src/main/java/gov/va/isaac/gui/listview/operations/EconceptExportOperation.java''\"
+      class=\"btn btn-large btn-success\">\n                <i class=\"fa fa-github
+      fa-lg\"></i>  ISAAC - EconceptExportOperation.java\n        </button>\n    </center>"'
+  - - 2
+    - OCHCRE - Helper Scripts for Maven in Python
+    - Python, Maven
+    - 0
+    - true
+    - '2017-06-27 03:23:46.870977'
+    - '2017-06-27 04:10:35.64252'
+    - 
+    - |
+      <h2>Apelon VA OCHRE Python Build All Maven Projects Script</h2>
+      <p>Here is the Gist</p>
+          <script src="https://gist.github.com/vaskaloidis/b27fe4a3537c1c3e116c.js"></script>
+          <input type="submit"
+                 onclick="window.location='https://gist.github.com/vaskaloidis/b27fe4a3537c1c3e116c'"
+                 style="text-align:center"
+                 class="btn btn-large btn-success"
+                 value="va-build-all.py"/>
+          <script src="https://gist.github.com/vaskaloidis/70d63d0d69cbfe9a13c7.js"></script>
+          <input type="submit"
+                 style="text-align:center"
+                 onclick="window.location='https://gist.github.com/vaskaloidis/70d63d0d69cbfe9a13c7'"
+                 class="btn btn-large btn-success"
+                 value="va-pull-repos-new.py"/>
+      <ol style="text-align:center" class="breadcrumb">
+          <li>
+              <a href="<?= $url . $thisSection ?>">
+                      <i class="fa fa-link fa-lg"></i>&nbsp;<b>Direct Link</b>&nbsp;<?= $url . $thisSection ?>
+              </a>
+          </li>
+      </ol>
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## Apelon VA OCHRE Python Build All Maven Projects Script\n\nHere is the Gist\n\n<script
+      src=\"https://gist.github.com/vaskaloidis/b27fe4a3537c1c3e116c.js\"></script><input
+      type=\"submit\" onclick=\"window.location=''https://gist.github.com/vaskaloidis/b27fe4a3537c1c3e116c''\"
+      style=\"text-align:center\" class=\"btn btn-large btn-success\" value=\"va-build-all.py\"><script
+      src=\"https://gist.github.com/vaskaloidis/70d63d0d69cbfe9a13c7.js\"></script><input
+      type=\"submit\" style=\"text-align:center\" onclick=\"window.location=''https://gist.github.com/vaskaloidis/70d63d0d69cbfe9a13c7''\"
+      class=\"btn btn-large btn-success\" value=\"va-pull-repos-new.py\">\n1. [&nbsp;**Direct
+      Link**&nbsp;= $url . $thisSection ?\\>](<?= $url . $thisSection ?>)\n"'
+  - - 3
+    - Campus Swap.Net - College Student Market Place
+    - ''
+    - 0
+    - false
+    - '2017-06-27 03:23:46.882622'
+    - '2017-07-09 08:00:20.735169'
+    - 
+    - "<img src=\"./img/CampusSwap.gif\" align=\"left\" width=\"80\">\r\n<br />\r\n<img
+      src=\"./img/campusSwapLogoOnly.jpg\" >\r\n\r\n<p><b>Technologies: </b> PHP,
+      AJAX, CSS, Apache, MySql</p><br />\r\n\r\n<p>A website for college students,
+      requires a .edu at a CT university to create an account and contact other users.
+      coming soon.</p>\r\n\t\r\n\t<input type=\"submit\"\r\n\tonclick=\"window.location='http://www.campusswap.net'\"\r\n\tclass=\"btn
+      btn-large btn-primary\"\r\n\tvalue=\"www.campusswap.net - Alpha\" />\r\n\t\r\n\t<input
+      type=\"submit\"\r\n\tonclick=\"window.location='https://github.com/vaskaloidis/campusswap'\"\r\n\tclass=\"btn
+      btn-large btn-primary\"\r\n\tvalue=\"GitHub - Campus Swap\" />\r\n\r\n\t\r\n<p><center><img
+      class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projects/campusswap/campusswap.png\"
+      /></a></center></p>\r\n<img src=\"./img/iphoneWhite.jpg\" /><img src=\"./img/droidWhite.jpg\"
+      ?>\r\n<br>\r\n"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '" ![](./img/CampusSwap.gif)  \n ![](./img/campusSwapLogoOnly.jpg)\n\n**Technologies:**
+      PHP, AJAX, CSS, Apache, MySql\n\n  \n\nA website for college students, requires
+      a .edu at a CT university to create an account and contact other users. coming
+      soon.\n\n<input type=\"submit\" onclick=\"window.location=''http://www.campusswap.net''\"
+      class=\"btn btn-large btn-primary\" value=\"www.campusswap.net - Alpha\"><input
+      type=\"submit\" onclick=\"window.location=''https://github.com/vaskaloidis/campusswap''\"
+      class=\"btn btn-large btn-primary\" value=\"GitHub - Campus Swap\">\n\n<center><img
+      class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projects/campusswap/campusswap.png\"></center>
+      ![](./img/iphoneWhite.jpg) ![](./img/droidWhite.jpg)  \n"'
+  - - 4
+    - The Bethlehem Vineyard
+    - PHP, Bootstrap, MySql
+    - 0
+    - true
+    - '2017-06-27 03:23:46.895497'
+    - '2017-07-10 06:20:28.339042'
+    - 
+    - "                    \r\n<h2>The Bethlehem Vineyard</h2>\r\n\r\n<p><b>Technologies:
+      </b> PHP, AJAX, CSS, Bootstrap, Apache, MySql</p>\r\n\r\n<p>A website for The
+      Bethlehem Vineyard, in Bethlehem CT. Great wine made by great people! Made with
+      a custom content management (CMS) system complete with a user / admin authentication
+      system.</p>\r\n\r\n<input type=\"submit\"\r\nclass=\"btn btn-large btn-primary\"\r\nonclick=\"window.location='http://www.bethlehemvineyard.com/'\"\r\nvalue=\"www.bethlehemvineyard.com\"
+      />\r\n\r\n\r\n<p>\r\n\t<center>\r\n\t<a href=\"http://www.bethlehemvineyard.com\"><img
+      class=\"img-polaroid\" width=\"400\" src=\"./projects/vineyard/vineyard1.png\"
+      /></a>\r\n<a href=\"http://www.bethlehemvineyard.com\"><img class=\"img-polaroid\"
+      width=\"400\" src=\"./projects/vineyard/vineyard2.png\" /></a>\r\n<a href=\"http://www.bethlehemvineyard.com\"><img
+      class=\"img-polaroid\" width=\"400\" src=\"./projects/vineyard/vineyard3.png\"
+      /></a>\r\n</center>\r\n\r\n</p>\r\n        \r\n        "
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## The Bethlehem Vineyard\n\n**Technologies:** PHP, AJAX, CSS, Bootstrap,
+      Apache, MySql\n\nA website for The Bethlehem Vineyard, in Bethlehem CT. Great
+      wine made by great people! Made with a custom content management (CMS) system
+      complete with a user / admin authentication system.\n\n<input type=\"submit\"
+      class=\"btn btn-large btn-primary\" onclick=\"window.location=''http://www.bethlehemvineyard.com/''\"
+      value=\"www.bethlehemvineyard.com\">\n\n<center>\n\t<a href=\"http://www.bethlehemvineyard.com\"><img
+      class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projects/vineyard/vineyard1.png\"></a>\n<a
+      href=\"http://www.bethlehemvineyard.com\"><img class=\"img-polaroid\" width=\"400\"
+      height=\"400\" src=\"./projects/vineyard/vineyard2.png\"></a>\n<a href=\"http://www.bethlehemvineyard.com\"><img
+      class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projects/vineyard/vineyard3.png\"></a>\n</center>"'
+  - - 5
+    - The Cocktail Chemist
+    - PHP, Photoshop
+    - 0
+    - true
+    - '2017-06-27 03:23:46.901849'
+    - '2017-07-10 06:19:52.842124'
+    - 
+    - "          \r\n<h2>The Cocktail Chemists</h2>\r\n\r\n<p><b>Technologies: </b>
+      PHP, AJAX, CSS, Hosted on Apache by Kaloidis Technologies</p>\r\n\r\n<p>A website
+      for my friend Dimitri Zahariadis for his mixologist consulting company.</p>\r\n\r\n<input
+      type=\"submit\"\r\nclass=\"btn btn-large btn-primary\"\r\nonclick=\"window.location='http://thecocktailchemist.com/'\"\r\nvalue=\"thecocktailchemist.com\"
+      />\r\n\r\n\r\n<p><a href=\"http://thecocktailchemist.com\"><center><img class=\"img-polaroid\"
+      width=\"400\" height=\"400\" src=\"./projects/cocktail/cocktail.png\" /></center></a></p>\r\n
+      \       "
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## The Cocktail Chemists\n\n**Technologies:** PHP, AJAX, CSS, Hosted on Apache
+      by Kaloidis Technologies\n\nA website for my friend Dimitri Zahariadis for his
+      mixologist consulting company.\n\n<input type=\"submit\" class=\"btn btn-large
+      btn-primary\" onclick=\"window.location=''http://thecocktailchemist.com/''\"
+      value=\"thecocktailchemist.com\">\n\n[<center><img class=\"img-polaroid\" width=\"400\"
+      height=\"400\" src=\"./projects/cocktail/cocktail.png\"></center>](http://thecocktailchemist.com)\n\n"'
+  - - 6
+    - Woodbury Flea Market Website
+    - PHP, MySQL, Bootstrap
+    - 0
+    - true
+    - '2017-06-27 03:23:46.911999'
+    - '2017-06-27 04:10:35.673275'
+    - 
+    - "\n<h2>The New Woodbury Flea Market</h2>\n<p><b>Technologies: </b> PHP - CMS
+      / Auth System, Mysql, HTML, CSS</p>\n<p>A website for the Woodbury Flea Market,
+      complete with a marketing campaign launched for the 2015 season</p>\n<p>\n    <center>\n
+      \       <input type=\"submit\"\n        class=\"btn btn-large btn-success\"\n
+      \       onclick=\"window.location='http://www.thenewwoodburyfleamarket.com/'\"\n
+      \       value=\"www.thenewwoodburyfleamarket.com\" /><br>\n        <a href=\"http://www.thenewwoodburyfleamarket.com\">\n
+      \           <img class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projectSections/woodburyflea/woodburyfleaSs1.png\"
+      />\n            <img class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projectSections/woodburyflea/woodburyfleaSs2.png\"
+      />\n            <img class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projectSections/woodburyflea/woodburyfleaSs3.png\"
+      />\n            <img class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projectSections/woodburyflea/woodburyfleaSs4.png\"
+      />\n        </a>\n    </center>\n    </p> "
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## The New Woodbury Flea Market\n\n**Technologies:** PHP - CMS / Auth System,
+      Mysql, HTML, CSS\n\nA website for the Woodbury Flea Market, complete with a
+      marketing campaign launched for the 2015 season\n\n<center>\n        <input
+      type=\"submit\" class=\"btn btn-large btn-success\" onclick=\"window.location=''http://www.thenewwoodburyfleamarket.com/''\"
+      value=\"www.thenewwoodburyfleamarket.com\"><br>\n        <a href=\"http://www.thenewwoodburyfleamarket.com\">\n            <img
+      class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projectSections/woodburyflea/woodburyfleaSs1.png\">\n            <img
+      class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projectSections/woodburyflea/woodburyfleaSs2.png\">\n            <img
+      class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projectSections/woodburyflea/woodburyfleaSs3.png\">\n            <img
+      class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projectSections/woodburyflea/woodburyfleaSs4.png\">\n        </a>\n    </center>"'
+  - - 7
+    - Athan Kaloidis Memorial Foundation
+    - PHP, MySQL, Bootstrap
+    - 0
+    - true
+    - '2017-06-27 03:23:46.915986'
+    - '2017-06-27 04:10:35.677679'
+    - 
+    - "<h2>Athan Kaloidis Memorial Foundation</h2>\n\n<p><b>Technologies: </b> PHP,
+      MySQL, HTML, CSS, Bootstrap</p>\n\n<p>A memorial website for my late Uncle Athan
+      Kaloidis, and the memorial foundation founded in his name by his children: <a
+      href=\"http://www.kaloidislaw.com/\">Attourney Ioannis Kaloidis</a> and <a href=\"http://www.vasisrestaurant.com/\">Vasilios
+      Kaloidis</a> (my cousin, same name, not me)</p>\n\n\t<input type=\"submit\"\n\tclass=\"btn
+      btn-large btn-primary\"\n\tonclick=\"window.location='http://www.athankaloidis.com'\"\n\tvalue=\"www.athankaloidis.com\"
+      />\n\n<p><a href=\"http://athankaloidis.com\">\n\t<img class=\"img-polaroid\"
+      width=\"400\" height=\"400\" src=\"./projects/akmemorial/akmemorial.png\" />\n</a></p>"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## Athan Kaloidis Memorial Foundation\n\n**Technologies:** PHP, MySQL, HTML,
+      CSS, Bootstrap\n\nA memorial website for my late Uncle Athan Kaloidis, and the
+      memorial foundation founded in his name by his children: [Attourney Ioannis
+      Kaloidis](http://www.kaloidislaw.com/) and [Vasilios Kaloidis](http://www.vasisrestaurant.com/)
+      (my cousin, same name, not me)\n\n<input type=\"submit\" class=\"btn btn-large
+      btn-primary\" onclick=\"window.location=''http://www.athankaloidis.com''\" value=\"www.athankaloidis.com\">\n\n[![](./projects/akmemorial/akmemorial.png)](http://athankaloidis.com)\n\n"'
+  - - 8
+    - Applescripts
+    - Mac OSX, New
+    - 0
+    - true
+    - '2017-06-27 03:23:46.92724'
+    - '2017-06-27 04:10:35.687715'
+    - 
+    - "\n<h2><i class=\"fa fa-apple fa-lg\"></i>&nbsp;Applescripts</h2><br />\n<p>Some
+      Applescripts I wrote / I am in the process of writing</p><br>\n\n<h5>\n<span
+      class=\"glyphicon glyphicon-file\"></span>\n\t<a href=\"./projects/applescripts/hidden_files.scpt\">\n\tShow
+      / Hide Hidden Finder Files</a>\n</h5>\n<h5>\t\t\n<span class=\"glyphicon glyphicon-cloud\"></span>\n\t<a
+      href=\"./projects/applescripts/mac_sleep.scpt\">\n\tPut Mac to Sleep</a>\n</h5>\n<h5>\n<span
+      class=\"glyphicon glyphicon-user\"></span>\n\t<a href=\"./projects/applescripts/count_contacts.scpt\">\n\tCount
+      Apple Address Book Contacts</a>\n</h5>\n<h5>\n\t<i class=\"fa fa-flask\"></i>&nbsp;Zipped
+      Mixtape > Unzipped > Imported into Itunes (Soon!)\n</h5>\n<h5>\n\t<i class=\"fa
+      fa-flask\"></i>&nbsp;Finder Action > Resize Image to 400x400px (Soon!)\n</h5>\n<br
+      />\n<br>\n"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## &nbsp;Applescripts\n  \n\nSome Applescripts I wrote / I am in the process
+      of writing\n\n  \n\n##### [Show / Hide Hidden Finder Files](./projects/applescripts/hidden_files.scpt)\n\n#####
+      [Put Mac to Sleep](./projects/applescripts/mac_sleep.scpt)\n\n##### [Count Apple
+      Address Book Contacts](./projects/applescripts/count_contacts.scpt)\n\n#####
+      &nbsp;Zipped Mixtape \\> Unzipped \\> Imported into Itunes (Soon!)\n\n#####
+      &nbsp;Finder Action \\> Resize Image to 400x400px (Soon!)\n  \n  \n"'
+  - - 9
+    - C++ 3D City Building Fly-Through
+    - C++, OpenGL
+    - 0
+    - true
+    - '2017-06-27 03:23:46.944289'
+    - '2017-07-10 06:21:12.09753'
+    - 
+    - "          \r\n<h2>OpenGL 3D City Fly Through + Spotlight and Different Textures
+      C++</h2><br />\r\n<p>My Computer Graphics Class CS371 final project. It is a
+      fly through of multiple buildings. The fly through adjusts the gluLookAt() function
+      by adding and incrementing it's parameters then re-rendering the image in the
+      timer() function. Each building face has a normal, so the spotlight lighting
+      feature could be used. The buildings are all different Textures, all different
+      combinations of specucular, diffuse, ambient and shininess to exemplify Brass,
+      Chrome, Jade, Polished, Gold and Ruby. </p>\r\n\r\n<center>\r\n<img class=\"img-polaroid\"
+      width=\"380\"  src=\"./projects/glfly/screen.png\" />\r\n<img class=\"img-polaroid\"
+      width=\"380\"  src=\"./projects/glfly/screen2.png\" />\r\n<img class=\"img-polaroid\"
+      width=\"380\"  src=\"./projects/glfly/screen3.png\" />\r\n</center>\r\n<script
+      src=\"http://gist.github.com/6265757.js\"></script>\r\n\r\n        "
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## OpenGL 3D City Fly Through + Spotlight and Different Textures C++\n  \n\nMy
+      Computer Graphics Class CS371 final project. It is a fly through of multiple
+      buildings. The fly through adjusts the gluLookAt() function by adding and incrementing
+      it''s parameters then re-rendering the image in the timer() function. Each building
+      face has a normal, so the spotlight lighting feature could be used. The buildings
+      are all different Textures, all different combinations of specucular, diffuse,
+      ambient and shininess to exemplify Brass, Chrome, Jade, Polished, Gold and Ruby.\n\n<center>\n<img
+      class=\"img-polaroid\" width=\"380\" height=\"380\" src=\"./projects/glfly/screen.png\">\n<img
+      class=\"img-polaroid\" width=\"380\" height=\"380\" src=\"./projects/glfly/screen2.png\">\n<img
+      class=\"img-polaroid\" width=\"380\" height=\"380\" src=\"./projects/glfly/screen3.png\">\n</center><script
+      src=\"http://gist.github.com/6265757.js\"></script>"'
+  - - 10
+    - C++ OpenGL 3D Cube
+    - C++, OpenGL
+    - 0
+    - true
+    - '2017-06-27 03:23:46.96149'
+    - '2017-07-10 06:21:43.753041'
+    - 
+    - "          <div  style=\"<?= $display ?>;\" id=\"<?= $thisSection ?>\">\r\n\t<div
+      id=\"insideItem\">\r\n\t\t<h2>OpenGL 3D Cube Manipulation C++</h2><br />\r\n\t\t<p>One
+      of my first C++ Projects, using OpenGL. To make the cube begin spinning, press
+      S, and to make it stop spinning, press s again. To make the cube get bigger,
+      press G, and to make it smaller press H. Pressing D moves it positive along
+      the X axis, and pressing F moves it negative down the X axis. Pressing J makes
+      it spin .1 in one direction and pressing K makes it spin in the other direction.</p>\r\n\r\n<center>\r\n\t<img
+      class=\"img-polaroid\" width=\"400\" src=\"./projects/glcube/cube.png\" />\r\n\t<img
+      class=\"img-polaroid\" width=\"400\"  src=\"./projects/glcube/cube2.png\" />\r\n\t<img
+      class=\"img-polaroid\" width=\"400\"  src=\"./projects/glcube/cube3.png\" />\r\n</center>\r\n<script
+      src=\"http://gist.github.com/6265765.js\"></script>\r\n</div>\r\n</div>\r\n
+      \       "
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## OpenGL 3D Cube Manipulation C++\n  \n\nOne of my first C++ Projects, using
+      OpenGL. To make the cube begin spinning, press S, and to make it stop spinning,
+      press s again. To make the cube get bigger, press G, and to make it smaller
+      press H. Pressing D moves it positive along the X axis, and pressing F moves
+      it negative down the X axis. Pressing J makes it spin .1 in one direction and
+      pressing K makes it spin in the other direction.\n\n<center>\n\t<img class=\"img-polaroid\"
+      width=\"400\" height=\"400\" src=\"./projects/glcube/cube.png\">\n\t<img class=\"img-polaroid\"
+      width=\"400\" height=\"400\" src=\"./projects/glcube/cube2.png\">\n\t<img class=\"img-polaroid\"
+      width=\"400\" height=\"400\" src=\"./projects/glcube/cube3.png\">\n</center><script
+      src=\"http://gist.github.com/6265765.js\"></script>\n\n"'
+  - - 11
+    - Java Directory App
+    - Java
+    - 0
+    - true
+    - '2017-06-27 03:23:46.972066'
+    - '2017-06-27 04:10:35.70777'
+    - 
+    - "\n<h1>User Directory App</h1><br />\n<p>The Java app will initially ask the
+      user to load a .txt file containing the directory. Then the app can insert an
+      entry, delete an entry, or organize the current directories entries.After this
+      is done, the app has the option to save the updated directory back to the file.</p>\n\t<h3>Main.Java</h3>\n\n<script
+      src=\"http://gist.github.com/6265770.js\"></script>\n\n\t<br />\n<p>\n\t<a href=\"./projects/javaSorter/main.java\"><strong>main.java</strong></a><br
+      />\n\t<a href=\"./projects/javaSorter/binSearch.java\"><strong>binSearch.java</strong></a><br
+      />\n\t<a href=\"./projects/javaSorter/fileParser.java\"><strong>fileParser.java</strong></a><br
+      />\n\t<a href=\"./projects/javaSorter/MergeSorter.java\"><strong>MergeSorter.java</strong></a><br
+      />\n</p>"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"# User Directory App\n  \n\nThe Java app will initially ask the user to load
+      a .txt file containing the directory. Then the app can insert an entry, delete
+      an entry, or organize the current directories entries.After this is done, the
+      app has the option to save the updated directory back to the file.\n\n### Main.Java\n<script
+      src=\"http://gist.github.com/6265770.js\"></script>  \n\n[**main.java**](./projects/javaSorter/main.java)  \n[**binSearch.java**](./projects/javaSorter/binSearch.java)  \n[**fileParser.java**](./projects/javaSorter/fileParser.java)  \n[**MergeSorter.java**](./projects/javaSorter/MergeSorter.java)\n\n"'
+  - - 12
+    - Java Merge Sorter
+    - Java
+    - 0
+    - true
+    - '2017-06-27 03:23:46.992065'
+    - '2017-06-27 04:10:35.714838'
+    - 
+    - "\n\t\t<h1>Merge Sorter</h1><br />\n<script src=\"http://gist.github.com/6265780.js\"></script>\n"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"# Merge Sorter\n  \n<script src=\"http://gist.github.com/6265780.js\"></script>"'
+  - - 13
+    - Java Bin Search
+    - Java
+    - 0
+    - true
+    - '2017-06-27 03:23:46.997836'
+    - '2017-06-27 04:10:35.720416'
+    - 
+    - |
+      <h1>Java Bin Search</h1><br />
+
+      <script src="http://gist.github.com/6265786.js"></script>
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"# Java Bin Search\n  \n<script src=\"http://gist.github.com/6265786.js\"></script>"'
+  - - 14
+    - Java File Parser
+    - Java
+    - 0
+    - true
+    - '2017-06-27 03:23:47.0102'
+    - '2017-06-27 04:10:35.72455'
+    - 
+    - "\n\t\t<h1>Java File Parser</h1><br />\n<script src=\"http://gist.github.com/6265777.js\"></script>\n"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"# Java File Parser\n  \n<script src=\"http://gist.github.com/6265777.js\"></script>"'
+  - - 15
+    - Java EE EJB SOAP Service Wrapper around Google GeoCode Rest API
+    - Java, Java EE
+    - 0
+    - true
+    - '2017-06-27 03:23:47.021653'
+    - '2017-06-27 04:10:35.729558'
+    - 
+    - "\n\t\t<h1>Java Web Service Implementation</h1><br />\n\t\t\n\t\t<p>This uses
+      the Google GeoCode web service to return a longitude and latitude from an address.
+      I made it available as a web-service for a project for my CS375 class.</p>\n\t\t\n\t\t<script
+      src=\"https://gist.github.com/vaskaloidis/8000418.js\"></script>\n\t\t\n\t\t<h1>GeoCode
+      Web Service</h1><br />\n\t\t\n\t\t<script src=\"https://gist.github.com/vaskaloidis/8000455.js\"></script>\n\t\t\n\t\t<a
+      href=\"/projects/javaee/GeoCode.zip\"><b>GeoCode.zip</b> Here is a ZIP of the
+      full project, enjoy! </a>\n\t\t\n\t\t<br />\n\t\t\n"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"# Java Web Service Implementation\n  \n\nThis uses the Google GeoCode web
+      service to return a longitude and latitude from an address. I made it available
+      as a web-service for a project for my CS375 class.\n\n<script src=\"https://gist.github.com/vaskaloidis/8000418.js\"></script>\n#
+      GeoCode Web Service\n  \n<script src=\"https://gist.github.com/vaskaloidis/8000455.js\"></script>[**GeoCode.zip**
+      Here is a ZIP of the full project, enjoy!](/projects/javaee/GeoCode.zip)  \n"'
+  - - 16
+    - Java EE Reindeer REST Web Service
+    - Java, Java EE
+    - 0
+    - true
+    - '2017-06-27 03:23:47.027718'
+    - '2017-06-27 04:10:35.73936'
+    - 
+    - "\n\t\t<h1>Java EE Reindeer REST Web Service</h1><br />\n\t\t\n\t\t<p>This is
+      a Java EE REST Service that extends an EJB with a database full of reindeer!
+      This was a question on my final exam for my CS375 class.\n\t\t\n\t\t<script
+      src=\"https://gist.github.com/vaskaloidis/8030917.js\"></script>\n\t\t\n\t\t\n\t\t<a
+      href=\"/projects/javaee/northpole.zip\"><b>northpole.zip</b> Here is a ZIP of
+      the full project, enjoy! </a>\n\t\t\n\t\t<br />\n"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"# Java EE Reindeer REST Web Service\n  \n\nThis is a Java EE REST Service
+      that extends an EJB with a database full of reindeer! This was a question on
+      my final exam for my CS375 class. <script src=\"https://gist.github.com/vaskaloidis/8030917.js\"></script>[**northpole.zip**
+      Here is a ZIP of the full project, enjoy!](/projects/javaee/northpole.zip)\n\n"'
+  - - 17
+    - Java EE SOAP JAX-WS Digital Signature Tool Web Service
+    - Java, Java EE
+    - 0
+    - true
+    - '2017-06-27 03:23:47.042563'
+    - '2017-06-27 04:10:35.748988'
+    - 
+    - |2
+
+      <h1>Java EE SOAP JAX-WS Digital Signature Tool Web Service</h1><br />
+
+      <p>Exposes a few functions for signing and verifying digital signatures through SOAP JAX-WS web service. This was a question on my CS375 Final! Credit to Professor. Mitchell for the Digital Signature Methods. Enjoy!</p>
+
+      <h2 class="mute">SEI Interface Implementation</h2>
+
+      <script src="https://gist.github.com/vaskaloidis/8030994.js"></script>
+
+      <h2 class-"mute">SIB Class and Annotations that expose Digital Signature Service methods to sign and verify as SOAP JAX-WS web-services</h2><br />
+
+      <script src="https://gist.github.com/vaskaloidis/8031023.js"></script>
+
+      <a href="/projects/javaee/digsig.zip"><b>digsig.zip</b> Here is a ZIP of the full project, enjoy! </a>
+
+      <br />
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"# Java EE SOAP JAX-WS Digital Signature Tool Web Service\n  \n\nExposes a
+      few functions for signing and verifying digital signatures through SOAP JAX-WS
+      web service. This was a question on my CS375 Final! Credit to Professor. Mitchell
+      for the Digital Signature Methods. Enjoy!\n\n## SEI Interface Implementation\n<script
+      src=\"https://gist.github.com/vaskaloidis/8030994.js\"></script>\n## SIB Class
+      and Annotations that expose Digital Signature Service methods to sign and verify
+      as SOAP JAX-WS web-services\n  \n<script src=\"https://gist.github.com/vaskaloidis/8031023.js\"></script>[**digsig.zip**
+      Here is a ZIP of the full project, enjoy!](/projects/javaee/digsig.zip)  \n"'
+  - - 18
+    - MIPS Single Precision Floating Point Unit Array of User Input then Output
+    - MIPS
+    - 0
+    - true
+    - '2017-06-27 03:23:47.048438'
+    - '2017-06-27 04:10:35.757067'
+    - 
+    - |2+
+
+              <h2>MIPS Single Precision Floating Point Unit Array of User Input</h2>
+
+              <p>This program takes user input of floating point unit numbers, up to ten numbers and stores them in an FPU array. Once the user enters a negative number, the program will loop through the FPU array and print the numbers that are greater than the last numbered entered before the negative sentinel. Or if the user inputs ten numbers, the program will then loop through and print the FPU array values that are greater than the previous number</p>
+
+          <script src="https://gist.github.com/vaskaloidis/8017788.js"></script>
+
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## MIPS Single Precision Floating Point Unit Array of User Input\n\nThis program
+      takes user input of floating point unit numbers, up to ten numbers and stores
+      them in an FPU array. Once the user enters a negative number, the program will
+      loop through the FPU array and print the numbers that are greater than the last
+      numbered entered before the negative sentinel. Or if the user inputs ten numbers,
+      the program will then loop through and print the FPU array values that are greater
+      than the previous number\n\n<script src=\"https://gist.github.com/vaskaloidis/8017788.js\"></script>"'
+  - - 19
+    - MIPS Program That Swaps the Case of Each Letter In a String
+    - MIPS
+    - 0
+    - true
+    - '2017-06-27 03:23:47.060092'
+    - '2017-06-27 04:10:35.765569'
+    - 
+    - "\n\t\t<h2>MIPS String Letter-Case Switcher</h2>\n\n\t\t<p>MIPS program that
+      inputs an arbitrary length string from a user and outputs a string that reverses
+      the case of its characters.</p>\n\n<script src=\"https://gist.github.com/vaskaloidis/8017814.js\"></script>\n"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## MIPS String Letter-Case Switcher\n\nMIPS program that inputs an arbitrary
+      length string from a user and outputs a string that reverses the case of its
+      characters.\n\n<script src=\"https://gist.github.com/vaskaloidis/8017814.js\"></script>"'
+  - - 20
+    - MIPS Random Number Generator Function Stored In Single Precision Floating Point
+      Unit Array
+    - MIPS
+    - 0
+    - true
+    - '2017-06-27 03:23:47.073366'
+    - '2017-06-27 04:10:35.773846'
+    - 
+    - "\n\t\t<h2>Floating Point Unit Array, Single Precision, MIPS</h2>\n\t\t\n\t\t<p><center><embed
+      height=\"400\" width=\"500\" src=\"./projects/mipsFPUarray/Project5.swf\"></center></p>\n\n\t\t<p>This
+      program takes a random 4 digit number as a seed, and manipulates it. The MIPS
+      program replicates  the C function below:</p>\n\t<pre>\t\n\tint seed = 9973;
+      \n\n\tint randnum() \n\t{ \n\t\tseed = ((seed * 32749) + 32649) % 32768; \n\t\treturn
+      seed; \n\t}\n\t</pre>\n\n\t\t<p>The program loops 20 times, and asks the user
+      for a random seed every time, it adds the result of the above multiplication
+      to an FPU Single Precision array.</p>\n\n<script src=\"http://gist.github.com/6265804.js\"></script>\n\n"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## Floating Point Unit Array, Single Precision, MIPS\n\n<center><embed height=\"400\"
+      width=\"500\" src=\"./projects/mipsFPUarray/Project5.swf\"></embed></center>\n\nThis
+      program takes a random 4 digit number as a seed, and manipulates it. The MIPS
+      program replicates the C function below:\n\n    int seed = 9973; \n    \n    \tint
+      randnum() \n    \t{ \n    \t\tseed = ((seed * 32749) + 32649) % 32768; \n    \t\treturn
+      seed; \n    \t}\n\nThe program loops 20 times, and asks the user for a random
+      seed every time, it adds the result of the above multiplication to an FPU Single
+      Precision array.\n\n<script src=\"http://gist.github.com/6265804.js\"></script>"'
+  - - 21
+    - MIPS Single Precision Positive Addit Function
+    - MIPS
+    - 0
+    - true
+    - '2017-06-27 03:23:47.079551'
+    - '2017-06-27 04:10:35.781806'
+    - 
+    - "\n\t\t<h2>Positive Addit Function</h2>\n\n\t\t<p>The MIPS code bellow replicates
+      the following C code:</p>\n\t\t\n\t\t<pre>\nint positive(int a, int b) \n{ \nif
+      (addit(a, b) > 0)\n  return 1; \nelse\n  return 0;\n} \nint addit(int a, int
+      b) \n{\nreturn a+b; \n}\n\t\t</pre>\n\t\t\n\t\t<p>The MIPS code reffers to the
+      positive function above: it takes input from the user, and if a+b is positive,
+      it returns 1 and tells the user it is a positive number, If the number combination
+      given to addit() function sums negative, the program notifies the user it is
+      negative and returns 0.</p>\n\t\t\n<script src=\"http://gist.github.com/6265798.js\"></script>\n\n\n"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## Positive Addit Function\n\nThe MIPS code bellow replicates the following
+      C code:\n\n    int positive(int a, int b) \n    { \n    if (addit(a, b) > 0)\n      return
+      1; \n    else\n      return 0;\n    } \n    int addit(int a, int b) \n    {\n    return
+      a+b; \n    }\n\nThe MIPS code reffers to the positive function above: it takes
+      input from the user, and if a+b is positive, it returns 1 and tells the user
+      it is a positive number, If the number combination given to addit() function
+      sums negative, the program notifies the user it is negative and returns 0.\n\n<script
+      src=\"http://gist.github.com/6265798.js\"></script>"'
+  - - 22
+    - 'SML Functions: list value member checker and list union'
+    - SML
+    - 0
+    - true
+    - '2017-06-27 03:23:47.094491'
+    - '2017-06-27 04:10:35.792368'
+    - 
+    - "<div  style=\"<?= $display ?>\" id=\"<?= $thisSection ?>\">\n\t<div id=\"insideItem\">\n\t\t<h2>SML
+      Functions: list value member checker and list union</h2>\n\t\t<p>Some Standard
+      ML of New Jersey functions. The member(a, b) uses pattern matching to see if
+      a is a member of list b. The union(a, b) function also uses pattern matching
+      to join list a with list b and produce a list containing all the values of the
+      two (sequentially)</p>\n\n<script src=\"https://gist.github.com/vaskaloidis/10016393.js\"></script>\n\n\t</div>\n</div>"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## SML Functions: list value member checker and list union\n\nSome Standard
+      ML of New Jersey functions. The member(a, b) uses pattern matching to see if
+      a is a member of list b. The union(a, b) function also uses pattern matching
+      to join list a with list b and produce a list containing all the values of the
+      two (sequentially)\n\n<script src=\"https://gist.github.com/vaskaloidis/10016393.js\"></script>\n\n"'
+  - - 23
+    - 'SML Functions: nth power, smallest of 3 numbers and list value cycle'
+    - SML
+    - 0
+    - true
+    - '2017-06-27 03:23:47.10155'
+    - '2017-06-27 04:10:35.801519'
+    - 
+    - |
+      <h2>SML Functions: nth power, smallest of 3 numbers and list member cycle</h2>
+      <p>Some Standard ML of New Jersey functions. The first function pow(a, b) raises a (real) to the power of b (int). the second function power() does the same thing but using only reals (real to a power of a real). min3(a, b, c) takes 3 integers and returns the smallest one. The final function cycle() takes a list and cycles the first number in a list to the last spot </p>
+
+
+      <script src="https://gist.github.com/vaskaloidis/10015816.js"></script>
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## SML Functions: nth power, smallest of 3 numbers and list member cycle\n\nSome
+      Standard ML of New Jersey functions. The first function pow(a, b) raises a (real)
+      to the power of b (int). the second function power() does the same thing but
+      using only reals (real to a power of a real). min3(a, b, c) takes 3 integers
+      and returns the smallest one. The final function cycle() takes a list and cycles
+      the first number in a list to the last spot\n\n<script src=\"https://gist.github.com/vaskaloidis/10015816.js\"></script>"'
+  - - 24
+    - 'SML Functions: polynomial evaluator and powerset creator'
+    - SML
+    - 0
+    - true
+    - '2017-06-27 03:23:47.111178'
+    - '2017-06-27 04:10:35.80972'
+    - 
+    - "<div  style=\"<?= $display ?>\" id=\"<?= $thisSection ?>\">\n\t<div id=\"insideItem\">\n\t\t<h2>SML
+      Functions: polynomial solver and powerset creator</h2>\n\t\t<p>More Standard
+      ML of New Jersey functions. polyeval takes a list (a, b, c) that represent polynomials
+      ax2+bx+c - then also takes a value for x and solves the equation using pattern
+      matching. The second function powerset() takes a set of numbers and returns
+      its powerset. A powerset is a set of all its subsets. This function utilizes
+      pattern matching as well.  </p>\n\n\n<script src=\"https://gist.github.com/vaskaloidis/10016090.js\"></script>\n</div>\n</div>"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## SML Functions: polynomial solver and powerset creator\n\nMore Standard
+      ML of New Jersey functions. polyeval takes a list (a, b, c) that represent polynomials
+      ax2+bx+c - then also takes a value for x and solves the equation using pattern
+      matching. The second function powerset() takes a set of numbers and returns
+      its powerset. A powerset is a set of all its subsets. This function utilizes
+      pattern matching as well.\n\n<script src=\"https://gist.github.com/vaskaloidis/10016090.js\"></script>\n\n"'
+  - - 25
+    - YACC BISON Simple Calculator
+    - C, YACC
+    - 0
+    - true
+    - '2017-06-27 03:23:47.12192'
+    - '2017-06-27 04:10:35.818054'
+    - 
+    - |2
+
+      <h2>YACC BISON Simple Calculator</h2>
+      <p>Some Yacc Grammar for a simple Calculator, compiled using GCC (BISON). The base code was provided by my instructor in my CS320 class at University of Hartford, I added the other operators completing the calculator software.</p>
+      <script src="https://gist.github.com/vaskaloidis/10015863.js"></script>
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## YACC BISON Simple Calculator\n\nSome Yacc Grammar for a simple Calculator,
+      compiled using GCC (BISON). The base code was provided by my instructor in my
+      CS320 class at University of Hartford, I added the other operators completing
+      the calculator software.\n\n<script src=\"https://gist.github.com/vaskaloidis/10015863.js\"></script>"'
+  - - 26
+    - 4 bit Full Adder Circuit (Logism)
+    - Circuit
+    - 0
+    - true
+    - '2017-06-27 03:23:47.128737'
+    - '2017-06-27 04:10:35.823781'
+    - 
+    - "\n<h2>4bit Full Adder Circuit</h2>\n\n<p>4 bit binary adder circuit and remainder.
+      It takes two 4 digit binary numbers (odd or even) as input and outputs the sum
+      as a 4 bit binary number and a remainder if neccesary.<br />You can grab the
+      Logism file <a href=\"./projects/4bitaddercircuit/addercircuit.circ\">adderCircuit.circ</a></p>\n\n<p><center><a
+      href=\"./projects/4bitAdderCircuit/logism.png\"><img class=\"img-polaroid\"
+      width=\"400\" height=\"400\" src=\"./projects/4bitAdderCircuit/logism.png\"
+      /></a></center></p>\n\n<p><h2 class=\"muted\">Vdeo</h2><small class=\"muted\">Takes
+      a second to load\t</small><center>\n\t<embed style=\"border:1px solid black\"
+      height=\"400\" width=\"500\" src=\"/projects/4bitAdderCircuit/Project4.swf\">\n\t\t</center></p>\n"
+    - ''
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
+    - '"## 4bit Full Adder Circuit\n\n4 bit binary adder circuit and remainder. It
+      takes two 4 digit binary numbers (odd or even) as input and outputs the sum
+      as a 4 bit binary number and a remainder if neccesary.  \nYou can grab the Logism
+      file [adderCircuit.circ](./projects/4bitaddercircuit/addercircuit.circ)\n\n<center><a
+      href=\"./projects/4bitAdderCircuit/logism.png\"><img class=\"img-polaroid\"
+      width=\"400\" height=\"400\" src=\"./projects/4bitAdderCircuit/logism.png\"></a></center>\n\n##
+      Vdeo\n<small class=\"muted\">Takes a second to load\t</small><center>\n\t<embed
+      style=\"border:1px solid black\" height=\"400\" width=\"500\" src=\"/projects/4bitAdderCircuit/Project4.swf\">\n\t\t</embed>\n</center>"'
+  - - 28
+    - MailFunnels Client and Server - Rails Shopify Plugin
+    - Rails, Heroku, GithHub, jQuery, Javascript, Postgres, Redis,bootstrap
+    - 2
+    - true
+    - '2017-07-09 19:34:32.975639'
+    - '2017-07-12 07:18:02.789333'
+    - 
+    - "> Mail Funnels is a project we had built for a client that was never finished,
+      leaving it at about 90% completion. This was a Shopify Ruby on Rails plugin,
+      with a Javascript frontend on the Client, connected through REST to the Rails
+      API Server that housed all the data.\r\n\r\n- We used [jQuery Flowchart JS](https://github.com/sdrdis/jquery.flowchart)
+      for client UI\r\n- [Sidekiq](https://github.com/resque/resque) to schedule Jobs\r\n-
+      Redis for the Job Queue and Postgres for the regular data\r\n\r\n- GitHub Mail-Funnel-Server
+      \ - https://github.com/vaskaloidis/mail-funnel-client\r\n- GitHub Mail Funnel
+      Client - https://github.com/vaskaloidis/mail-funnel-server-api\r\n\r\n#### From
+      the README:\r\n\r\n#### Dev-Ops Integrations\r\n\r\nGithub addons that we installed
+      have configured to use automatically when we push or deploy code (depending
+      on when each service is congured to run)! \r\n\r\n* Code Climate: Code Quality
+      Scanner\r\n* CodeCov: Code Coverage Tool. We had about ~80% Test Coverage\r\n*
+      DeppBot: Gem (Dependency) scanner that finds any security issues in any installed
+      gems, and out-dated incompatible gem versions\r\n\r\n#### Server-Features\r\nThe
+      purpose of this server is to serve the mail-funnel-client (soon available in
+      app-store) with the following services: Shopify Webhooks, REST CRUD JSON Web-Services
+      and a Ruby background-job worker.\r\n\r\n* **Shopify Webhooks** - Shopify-API
+      is configured and authenticated and the hooks are ready in /app/api/api.rb\r\n*
+      REST JSON Web-Services, JSON API that serves CRUD operations\r\n* Rails API
+      Security: **JWT**\r\n* Sends emails using **SendGrid**, \r\n* Background-Jobs
+      Worker: **Resque**\r\n* Worker runs every 5 minutes , iterating through each
+      row in the Jobs table\r\n* The Worker checks each Job's and evaluates if it
+      should be executed based on an algorithm\r\n\r\n### Developer Setup\r\n- CI
+      Server - https://github.com/travis-ci\r\n- First download and install Ngrok
+      (http://ngrok.com or we have a in our apps/bin), and run it\r\n\r\n```\r\n./ngrok
+      http 3001   # This starts ngrok\r\n```\r\nYou will need to configure your .env
+      first. The .env can be used with the `gem 'dotenv'`\r\n\r\n     ```\r\n    RAILS_ENV=Development\r\n
+      \   APP_NAME=mailfunnel-server\r\n    APP_KEY=##KEY########\r\n    APP_SECRET=##SECRET###\r\n
+      \   APP_URL=http://GENERATED-URL.ngrok.io/api/ # Or your servers URL\r\n    APP_SCOPE
+      = \"read_orders, read_products\"\r\n    ```\r\n    \r\nThen run the server on
+      port 3001\r\n\r\n```bash\r\nrails s -p 3001\r\n```\r\n**Endpoints**\r\n```\r\nRails
+      JSON REST API\r\nhttp://mailfunnel.bluehelmet.io\r\n\r\nShopify API Endpoint\r\nhttp://mailfunnel.bluehelmet.io/api/\r\n```\r\n\r\n####
+      Production Server\r\n\r\n**Heroku**\r\n\r\n- Ruby on Rails application hosting.\r\n-
+      https://dashboard.heroku.com/\r\n\r\n\r\n**Sentry.io**\r\n\r\n- https://sentry.io/blue-helmet/mail-funnel-client/getting-started/ruby-rails/\r\n\r\n**Dependency
+      Security Analyzer** \r\n\r\n- https://www.deppbot.com/repos\r\n- Github Webhook
+      trigers an audit after every push\r\n\r\n#### From Mail-Funnel-Client README:
+      \r\n\r\n- [Waffle Board](https://waffle.io/vaskaloidis/mail-funnel-client)\r\n-
+      [Mail-Funnel Server API](https://github.com/vaskaloidis/mail-funnel-server-api)\r\n-
+      [Mail-Funnel Client](https://github.com/vaskaloidis/mail-funnel-client)\r\n-
+      [Mail-Funnel Client-Server WIKI](https://github.com/vaskaloidis/mail-funnel-client/wiki)\r\n-
+      [Mail-Funnel Client-Server ISSUES](https://github.com/vaskaloidis/mail-funnel-client/issues)\r\n\r\n
+      \r\n#### Shopify App Store Config\r\nDevelopment - .env\r\n```\r\nAPP_URL=http://localhost:3000/\r\nREDIRECTION_URL=http://localhost:3000/auth/shopify/callback\r\n```\r\n\r\n####
+      Testing\r\n\r\n    rake\r\n    #or\r\n    rake test\r\n    #Test Individual
+      Client-API Tests\r\n    bundle exec rspec ./spec/models/apps_spec.rb # Tests
+      Apps w/ ORM to Server-API\r\n\r\n#### Development\r\n\r\n```bash\r\nrake test\r\n```\r\n\r\n####
+      Deployment Process\r\nGithub -> Circle-CI Server -> Heroku-Staging -> Heroku-Production\r\n\r\n-
+      **Github**\r\n - Pushed to GitHub\r\n - Code-Analysis Service(s) Executed Automatically\r\n-
+      **Circle-CI**\r\n - **coveralls.io** - Test Coverage Executed\r\n - **depbot.io**
+      - Dependency Analysis  \r\n- **Heroku-Staging**  \r\n - Builds temporary Heroku
+      server, destroys 5 days after last use  \r\n - Creates new Heroku server to
+      test production data\r\n- **Heroku-Production**\r\n  - **Rollbar.io** - Error
+      / Log Monitoring + Reporting Tool\r\n- **Mail-Funnel-Client**\r\n\r\n#### Development\r\n\r\n**Warning:**
+      You must\r\nTo start the client execute this\r\n\r\n```\r\nbundle exec rails
+      server\r\n```\r\n\r\nThen, to install this Shopify App, go to \r\n\r\n```\r\nhttp://localhost:3000/login
+      (or /install or /auth)\r\n```\r\n\r\nOnce you have added the client, you must
+      add the server too\r\n\r\n```\r\nhttp://localhost:3001/auth\r\n```\r\n\r\nThen
+      once you visit the client - you will be forwarded to your App's page in the
+      Shopify store it was installed in.   \r\n**NOTICE:** Your app will not load
+      by default, while it is being run on your localhost, because Chrome does not
+      allow cross-site-scripting.   \r\nIn Development environment, (without SSL Certificates,
+      or without using HTTPS feature in Ngrok), you **MUST** disable the Chrome security
+      check by clicking the icon in the URL text-bar, on the right, and allowing it
+      to load the script regardless of SSL Certs or HTTPS\r\n\r\n    #Visit App Install
+      Page\r\n    http://localhost:3000 /mf-client.bluehelmet.io \r\n    \r\n    #
+      This will foward you to the Shopify Store internal Mail Client App URL.\r\n
+      \   http://your-store.myshopify.com\r\n\r\n    #Mail-Funnel API Server (Dev)
+      / (Staging) / (Production)\r\n    http://localhost:3001 / http://mf-server.bluehelmet.io\r\n
+      \   \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n  \r\n
+      \       "
+    - 
+    - 
+    - 
+    - 
+    - 
+    - false
+    - true
+    - 
+
+---
+users:
+  columns:
+  - id
+  - email
+  - password
+  - admin
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - vas
+    - password
+    - true
+    - '2017-06-27 03:23:46.832453'
+    - '2017-06-27 03:23:46.832453'
