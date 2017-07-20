@@ -1,15 +1,44 @@
 source 'https://rubygems.org'
 
-# Vasi.io
-gem 'foreman'
+# VASI.IO
 
-# Cache
-# gem 'memcache'
+group :production do
+  # Logging
+  gem 'rollbar'
+  gem 'foreman'
+
+end
+
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platform: :mri
+end
+
+group :staging, :production do
+# Dev-Tools
+  gem 'awesome_print'
+  gem 'pry_rails'
+  gem 'better_errors'
+  gem 'quiet_assets'
+
+  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+  gem 'web-console'
+  gem 'listen', '~> 3.0.5'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'mysql2'
+  # gem 'wordpress-import'
+  gem 'pry-rails'
+end
+
+
+# gem 'memcache' TODO: Move to production + enable
 # # gem 'memcache', '~> 1.5', '>= 1.5.1'
 
 # gem 'rails-docker'
 
-gem 'dotenv-rails'
+gem "dotenv-rails", require: 'dotenv/rails-now'
 
 # Github API + Cache
 # gem 'github_api'
@@ -42,7 +71,6 @@ gem 'bootstrap-tagsinput-rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
 # Database
-# gem 'sqlite3'
 gem 'pg'
 
 # Use Puma as the app server
@@ -59,7 +87,7 @@ gem 'therubyracer', platforms: :ruby
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+# gem 'turbolinks', '~> 5' #TODO: Disable
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -69,28 +97,3 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-group :production do
-  # Logging
-  gem 'rollbar'
-end
-
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
-end
-
-group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console'
-  gem 'listen', '~> 3.0.5'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-	gem 'mysql2'
-	# gem 'wordpress-import'
-  gem 'pry-rails'
-end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

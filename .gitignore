@@ -34,7 +34,7 @@ capybara-*.html
 .rspec
 /log
 /tmp
-/public/system
+/public/system4
 /coverage/
 /spec/tmp
 **.orig

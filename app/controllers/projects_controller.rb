@@ -74,7 +74,7 @@ class ProjectsController < ApplicationController
   private
   def authenticate
     authenticate_or_request_with_http_basic do |user_name, password|
-      session[:admin] = (user_name == "vas" && password == "vas")
+      session[:admin] = (user_name == @username && password == @password)
     end
   end
 

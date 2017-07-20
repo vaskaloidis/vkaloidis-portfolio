@@ -1,3 +1,5 @@
+require 'dotenv/load'
+
 class AdminController < ApplicationController
 	# before_action :authenticate,
 	# http_basic_authenticate_with name: @username, password: @password
