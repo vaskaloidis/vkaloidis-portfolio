@@ -1,3 +1,5 @@
+require 'dotenv/load'
+
 class ProjectsController < ApplicationController
   @username = ENV['username']
   @password = ENV['password']
