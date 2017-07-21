@@ -28,6 +28,7 @@ class ProjectsController < ApplicationController
   end
 
   # GET /projects/1/edit
+
   def edit
   end
 

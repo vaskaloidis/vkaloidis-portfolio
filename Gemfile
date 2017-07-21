@@ -17,7 +17,6 @@ end
 group :staging, :production do
 # Dev-Tools
   gem 'awesome_print'
-  gem 'pry_rails'
   gem 'better_errors'
   gem 'quiet_assets'
 
@@ -29,7 +28,6 @@ group :staging, :production do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'mysql2'
   # gem 'wordpress-import'
-  gem 'pry-rails'
 end
 
 
