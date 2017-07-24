@@ -22868,28 +22868,28 @@ input[type="checkbox"]:disabled:checked:after,
   color: inherit;
 }
 
-/* line 6, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 6, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 .topButtons > a.btn {
   margin-bottom: 10px;
 }
 
-/* line 10, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 10, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 h1 {
   margin: 20px;
 }
 
-/* line 14, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 14, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 #map {
   width: 100%;
   height: 400px;
 }
 
-/* line 19, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 19, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 .center {
   text-align: center;
 }
 
-/* line 26, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 26, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22909,7 +22909,7 @@ header {
   min-height: 272px;
 }
 
-/* line 47, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 47, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
@@ -22918,7 +22918,7 @@ header .intro-text .intro-lead-in {
   margin-bottom: 25px;
 }
 
-/* line 55, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 55, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -22928,17 +22928,17 @@ header .intro-text .intro-heading {
   margin-bottom: 25px;
 }
 
-/* line 65, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 65, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 .nobreak {
   display: inline-block;
 }
 
-/* line 69, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 69, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 h1.fullname {
   text-align: center;
 }
 
-/* line 73, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 73, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 img.logo {
   max-width: 300px;
   text-align: center;
@@ -22946,51 +22946,51 @@ img.logo {
 }
 
 @media (max-width: 768px) {
-  /* line 82, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+  /* line 82, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
   img.logo {
     width: 100%;
     text-align: center;
   }
 
-  /* line 86, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+  /* line 86, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
   .fullname {
     margin-top: 0px;
     padding-top: 0px;
   }
 
-  /* line 90, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+  /* line 90, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
   h1.fullname > a {
     width: 100%;
   }
 
-  /* line 93, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+  /* line 93, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
   .portfolio-item {
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
 
-  /* line 97, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+  /* line 97, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
   .skills {
     text-align: center;
   }
 }
 @media (min-width: 768px) {
-  /* line 104, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+  /* line 104, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
   .h1.fullname {
     display: inline-block;
   }
 
-  /* line 108, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+  /* line 108, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
   img.logo {
     width: 165px;
   }
 
-  /* line 111, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+  /* line 111, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
   header {
     min-height: 685px;
   }
 
-  /* line 114, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+  /* line 114, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
   header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
@@ -22999,7 +22999,7 @@ img.logo {
     margin-bottom: 25px;
   }
 
-  /* line 121, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+  /* line 121, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
   header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -23009,7 +23009,7 @@ img.logo {
     margin-bottom: 50px;
   }
 }
-/* line 131, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 131, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 .fullName > a {
   font-family: 'Alegreya Sans', sans-serif;
   color: #5E5F60;
@@ -23018,18 +23018,18 @@ img.logo {
   text-align: center;
 }
 
-/* line 144, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 144, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 .post > h4 {
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-/* line 150, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 150, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 .post > p.subtitle {
   margin: 0 0 10px;
 }
 
-/* line 155, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/welcome.scss */
+/* line 155, /Users/vkaloidis/Code/Rails/vkaloidis/vkaloidis-rails/app/assets/stylesheets/main.scss */
 .post > p.meta {
   color: #777;
   font-size: 18px;

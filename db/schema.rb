@@ -15,49 +15,45 @@ ActiveRecord::Schema.define(version: 20170627040705) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "articles", force: :cascade do |t|
-    t.string   "name"
-    t.text     "content"
-    t.text     "excerpt"
-    t.text     "categories"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
-    t.string   "shortname"
-    t.boolean  "published"
-    t.boolean  "markdown",   default: true
+  create_table "articles", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.text "content"
+    t.text "excerpt"
+    t.text "categories"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "shortname"
+    t.boolean "published"
+    t.boolean "markdown", default: true
   end
 
-  create_table "categories", force: :cascade do |t|
-    t.string   "name"
-    t.string   "code"
-    t.string   "html"
+  create_table "categories", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.string "code"
+    t.string "html"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "projects", force: :cascade do |t|
-    t.text     "name"
-    t.text     "categories"
-    t.integer  "order"
-    t.boolean  "displayed"
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
-    t.string   "shortname"
-    t.string   "content"
-    t.string   "summary"
-    t.string   "img_file_name"
-    t.string   "img_content_type"
-    t.integer  "img_file_size"
-    t.datetime "img_updated_at"
-    t.boolean  "isArticle",        default: false
-    t.boolean  "markdown",         default: true
-    t.string   "content_markdown"
+  create_table "projects", id: :serial, force: :cascade do |t|
+    t.text "name"
+    t.text "categories"
+    t.integer "order"
+    t.boolean "displayed"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "shortname"
+    t.string "content"
+    t.string "summary"
+    t.boolean "isArticle", default: false
+    t.boolean "markdown", default: true
+    t.string "content_markdown"
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string   "email"
-    t.string   "password"
-    t.boolean  "admin"
+  create_table "users", id: :serial, force: :cascade do |t|
+    t.string "email"
+    t.string "password"
+    t.boolean "admin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

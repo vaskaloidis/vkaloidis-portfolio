@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-	root 'welcome#index'
+	root 'main#index'
 
   get '/logout', to: 'admin#logout'
 
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 	resources :projects
 
 	# Authentication (Not working yet)
-	get 'login', to: 'welcome#authenticate'
+	get 'login', to: 'main#authenticate'
 	# get '/logout', :controller => 'sessions', :action => 'destroy'
 
 end

@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require welcome
+//= require main.coffee
 
 //= require marked
 //= require bootstrap-tagsinput
