@@ -1,5 +1,7 @@
 require 'dotenv/load'
 
+require 'carrierwave/orm/activerecord'
+
 class ProjectsController < ApplicationController
   @username = ENV['username']
   @password = ENV['password']

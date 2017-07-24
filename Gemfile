@@ -1,61 +1,41 @@
 source 'https://rubygems.org'
-
+ruby '2.3.1'
+gem 'rails', '~> 5.1', '>= 5.1.2'
 # VASI.IO
 
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+
 group :production do
-  # Logging
+  # gem 'memcache', '~> 1.5', '>= 1.5.1'
   gem 'rollbar'
   gem 'foreman'
-
 end
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
-end
-
-group :staging, :production do
-# Dev-Tools
+  gem 'byebug', platform: :mri   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'awesome_print'
   gem 'better_errors'
-  gem 'quiet_assets'
-
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console'
+  gem 'web-console' # Add to page: <%= console %>
   gem 'listen', '~> 3.0.5'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  gem 'spring'   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'mysql2'
-  # gem 'wordpress-import'
 end
 
-
-# gem 'memcache' TODO: Move to production + enable
-# # gem 'memcache', '~> 1.5', '>= 1.5.1'
+gem 'faraday-http-cache'
+gem 'yaml_db'
+gem 'marked-rails'
+gem 'redcarpet'
+gem 'carrierwave', '~> 1.0'
 
 # gem 'rails-docker'
-
-gem "dotenv-rails", require: 'dotenv/rails-now'
-
-# Github API + Cache
 # gem 'github_api'
-gem 'faraday-http-cache'
 
-# MySQL + Db Dump Gem
-gem 'yaml_db'
-
-# Markdown + HTML Converters
-gem 'marked-rails'
-# gem 'html_massage'
-gem 'redcarpet'
 # gem 'reverse_markdown'
 # gem 'kramdown'
 # gem 'upmark'
 
-# Image Attach Feature
 # brew install imagemagick
-# gem "paperclip", "~> 5.0.0"
+# gem 'paperclip', '~> 5.0.0'
 
 # Bootstrap, Bootswatch, Font-Awesome, SASS
 gem 'bootstrap_form'
@@ -64,9 +44,6 @@ gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 gem 'bootstrap-tagsinput-rails'
-
-# Bundle edge Rails instead: gem 'rails', github_api: 'rails/rails'
-gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
 # Database
 gem 'pg'
@@ -85,7 +62,7 @@ gem 'therubyracer', platforms: :ruby
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-# gem 'turbolinks', '~> 5' #TODO: Disable
+gem 'turbolinks', '~> 5' #TODO: Disable, if we end up never actually using it
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
