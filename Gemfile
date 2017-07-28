@@ -5,34 +5,11 @@ gem "rails", "~> 5.1", ">= 5.1.2"
 
 gem "dotenv-rails", require: "dotenv/rails-now"
 
-group :development do
-  gem "awesome_print"
-  gem "pry"
-  gem "pry-rails"
-  gem "pry-byebug"
-end
-
-group :production do
-  # gem "memcache", "~> 1.5", ">= 1.5.1"
-  gem "rollbar"
-  gem "foreman"
-end
-
-group :development, :test do
-  gem "byebug", platform: :mri   # Call "byebug" anywhere in the code to stop execution and get a debugger console
-  gem "awesome_print"
-  gem "better_errors"
-  gem "web-console" # Add to page: <%= console %>
-  gem "listen", "~> 3.0.5"
-  gem "spring"   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem "spring-watcher-listen", "~> 2.0.0"
-end
-
 gem "faraday-http-cache"
 gem "yaml_db"
 gem "marked-rails"
 gem "redcarpet"
-gem "carrierwave", "~> 1.0"
+gem "paperclip"
 
 # gem "rails-docker"
 # gem "github_api"
@@ -79,3 +56,27 @@ gem "jbuilder", "~> 2.5"
 
 # Use Capistrano for deployment
 # gem "capistrano-rails", group: :development
+
+group :development do
+  gem "pry"
+  gem "pry-rails"
+  gem "pry-byebug"
+  gem "binding_of_caller"
+  gem "debug_inspector"
+end
+
+group :production do
+  # gem "memcache", "~> 1.5", ">= 1.5.1"
+  gem "rollbar"
+  gem "foreman"
+end
+
+group :development, :test do
+  gem "byebug", platform: :mri   # Call "byebug" anywhere in the code to stop execution and get a debugger console
+  gem "awesome_print"
+  gem "better_errors"
+  gem "web-console" # Add to page: <%= console %>
+  gem "listen", "~> 3.0.5"
+  gem "spring"   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem "spring-watcher-listen", "~> 2.0.0"
+end

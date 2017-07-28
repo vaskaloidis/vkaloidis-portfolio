@@ -1,7 +1,5 @@
 require 'dotenv/load'
 
-require 'carrierwave/orm/activerecord'
-
 class ProjectsController < ApplicationController
   @username = ENV['username']
   @password = ENV['password']
@@ -90,6 +88,6 @@ class ProjectsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def project_params
-    params.require(:project).permit(:name, :categories, :content, :order, :displayed, :markdown)
+    params.require(:project).permit(:name, :categories, :content, :order, :displayed, :markdown, :image)
   end
 end

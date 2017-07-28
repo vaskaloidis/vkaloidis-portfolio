@@ -43,6 +43,13 @@
         </textarea>
       </div>
 
+      <div id="mde_container" class="field">
+        <label class="control-label" for="project_content">Name</label>
+        <textarea name="project[content]" class="form-control" id="project_content">
+               <%= f.input :image, as: :file %>
+        </textarea>
+      </div>
+
       <script>
         var mde = new SimpleMDE({
           element: $("#project_content")[0],

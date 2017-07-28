@@ -27,6 +27,10 @@
     <%= @project.displayed %>
 	</p>
 
+  <p>
+    <%= image_tag @project.avatar.url(:medium) %>
+  </p>
+
   <% if @project.markdown != true %>
 
     <p>
