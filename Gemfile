@@ -3,7 +3,7 @@ ruby "2.3.1"
 gem "rails", "~> 5.1", ">= 5.1.2"
 # VASI.IO
 
-gem "dotenv-rails", require: "dotenv/rails-now"
+gem 'dotenv-rails', :groups => [:development, :test], :require => 'dotenv/rails-now'
 
 gem "faraday-http-cache"
 gem "yaml_db"
@@ -46,7 +46,7 @@ gem "therubyracer", platforms: :ruby
 # Use jquery as the JavaScript library
 gem "jquery-rails"
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem "turbolinks", "~> 5" #TODO: Disable, if we end up never actually using it
+#gem "turbolinks", "~> 5" #TODO: Disable, if we end up never actually using it
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "jbuilder", "~> 2.5"
 # Use Redis adapter to run Action Cable in production

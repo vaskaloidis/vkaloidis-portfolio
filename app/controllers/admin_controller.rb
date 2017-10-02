@@ -1,14 +1,6 @@
-require 'dotenv/load'
-
 class AdminController < ApplicationController
-	# before_action :authenticate,
-	# http_basic_authenticate_with name: @username, password: @password
-	before_action :authenticate, only: [:login]
-
-
-	@username = ENV['username']
-	@password = ENV['password']
-
+	# http_basic_authenticate_with name: @username, password: @password, except: :view
+	before_action :authenticate, except: :view
 
 	def login
 		# Nothing
@@ -21,7 +13,7 @@ class AdminController < ApplicationController
 	private
 	def authenticate
 		authenticate_or_request_with_http_basic do |user_name, password|
-			session[:admin] = (user_name == @username && password == @password)
+			session[:admin] = (user_name ==  ENV['username'] && password ==  ENV['password'])
 		end
 	end
 

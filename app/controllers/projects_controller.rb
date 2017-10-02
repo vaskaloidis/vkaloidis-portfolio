@@ -1,8 +1,4 @@
-require 'dotenv/load'
-
-class ProjectsController < ApplicationController
-  @username = ENV['username']
-  @password = ENV['password']
+class ProjectsController < AdminController
 
   # http_basic_authenticate_with name: @username, password: @password
   before_action :set_project, only: [:show, :edit, :update, :destroy]
@@ -18,13 +14,18 @@ class ProjectsController < ApplicationController
 
   # GET /projects/1
   # GET /projects/1.json
+  def view
+  end
+
+  # GET /projects/1
+  # GET /projects/1.json
   def show
   end
 
   # GET /projects/new
   def new
     @project = Project.new
-    calculateInfo
+    # calculateInfo # ?????
   end
 
   # GET /projects/1/edit
@@ -77,7 +78,7 @@ class ProjectsController < ApplicationController
   private
   def authenticate
     authenticate_or_request_with_http_basic do |user_name, password|
-      session[:admin] = (user_name == @username && password == @password)
+      session[:admin] = (user_name == ENV['username'] && password == ENV['password'])
     end
   end
 
@@ -88,6 +89,6 @@ class ProjectsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def project_params
-    params.require(:project).permit(:name, :categories, :content, :order, :displayed, :markdown, :image)
+    params.require(:project).permit(:name, :categories, :content, :order, :displayed, :markdown, :image, :sticky)
   end
 end

@@ -53,21 +53,23 @@
 	<br>
 	<hr>
 	<% count = 0 %>
-	<% @articlesBottom.each do |article| %>
-			<% if count == 0 %>
-					<div class="col-xs-4 col-sm-4 col-xs-4 col-md-4">
-			<% end %>
-			
-			<div class="row">
-				<%= link_to article.name, controller: "articles", action: "view", id: article.id %>
-			</div>
-			
-			<% if count == 2 %>
+	<% if @articlesBottom.any? %>
+			<% @articlesBottom.each do |article| %>
+					<% if count == 0 %>
+							<div class="col-xs-4 col-sm-4 col-xs-4 col-md-4">
+					<% end %>
+					
+					<div class="row">
+						<%= link_to article.name, controller: "articles", action: "view", id: article.id %>
 					</div>
-			<% count = 0
-			   else
-				   count = count + 1
-			   end
-			%>
+					
+					<% if count == 2 %>
+							</div>
+					<% count = 0
+					   else
+						   count = count + 1
+					   end
+					%>
+			<% end %>
 	<% end %>
 </div>

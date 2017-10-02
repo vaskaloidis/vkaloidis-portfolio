@@ -1,22 +1,64 @@
 <div class="container">
 	
 	<%= bootstrap_form_for(article) do |f| %>
-			<%= f.error_notification %>
+			<%#= f.error_notificati			<% if project.errors.any? %>
+			<% if article.errors.any? %>
+					
+					<div id="error_explanation">
+						<h2><%= pluralize(article.errors.count, "error") %> prohibited this article from being saved:</h2>
+						
+						<ul>
+							<% article.errors.full_messages.each do |message| %>
+									<li><%= message %></li>
+							<% end %>
+						</ul>
+					</div>
+			<% end %>
 			
-			<div class="form-inputs">
-				<%= f.input :name %>
-				<%= f.input :content %>
-				<%= f.input :excerpt %>
-				<%= f.input :categories %>
+			<div class="field">
+				<%= f.text_area :name %>
+			</div>
+			
+			<!-- Categories -->
+			<div class="field">
+				<strong>Available Categories: </strong>
+				<select multiple data-role="tagsinput">
+					<%= getAllCategories().html_safe %>
+				</select>
+				<strong>Article Categories: </strong><br>
+				<input type="text" value="<%= article.categories.to_s %>" data-role="tagsinput" id="article_categories" name="article[categories]"/>
 			</div>
 			
 			<div class="field">
 				<%= f.check_box :markdown %>
 			</div>
 			
-			<div class="form-actions">
-				<%= f.button :submit %>
+			<div id="mde_container" class="field">
+				<label class="control-label" for="article_content">Name</label>
+				<textarea name="article[content]" class="form-control" id="article_content">
+          <%= article.content %>
+        </textarea>
 			</div>
+			
+			<script>
+				var mde = new SimpleMDE({
+					element: $("#article_content")[0],
+					indentWithTabs: false,
+					parsingConfig: {
+						allowAtxHeaderWithoutSpace: false
+					},
+					renderingConfig: {
+						singleLineBreaks: true,
+						codeSyntaxHighlighting: true
+					}
+				});
+			
+			</script>
+			
+			<div class="actions">
+				<%= f.submit %>
+			</div>
+	
 	<% end %>
 
 </div>
