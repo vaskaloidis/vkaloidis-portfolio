@@ -3,7 +3,7 @@ ruby "2.3.1"
 gem "rails", "~> 5.1", ">= 5.1.2"
 # VASI.IO
 
-gem 'dotenv-rails', :groups => [:development, :test], :require => 'dotenv/rails-now'
+gem 'dotenv-rails', :groups => [:development, :test]
 
 gem "faraday-http-cache"
 gem "yaml_db"
