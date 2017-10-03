@@ -2,7 +2,4 @@
 
 require_relative 'config/environment'
 
-require 'dotenv'
-Dotenv.load
-
 run Rails.application
