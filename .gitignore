@@ -9,6 +9,7 @@ pg_upgrade_utility.log
 kaloidis.iml
 .idea/
 .idea
+.idea/workspace.xml
 
 # Mac DS_Store
 .DS_Store
@@ -66,4 +67,3 @@ bower.json
 # Ignore pow environment settings
 .powenv
 Gemfile.lock
-.idea
