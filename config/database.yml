@@ -1,5 +1,5 @@
 development: &default
-  database: vasi-io-dev
+  database: vkaloidis-dev
   adapter: postgresql
   pool: 10
   host: localhost
@@ -8,17 +8,17 @@ development: &default
 
 development:
   <<: *default
-  database: vasi-io-dev
+  database: vkaloidis-dev
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  database: vasi-io-test
+  database: vkaloidis-test
 
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  database: vasi-io_production
-  username: vasi-io
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  database: vkaloidis_production
+  username: vkaloidis
+  password: <%= ENV['VKALOIDIS_DATABASE_PASSWORD'] %>
