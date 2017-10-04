@@ -46,8 +46,13 @@
 									<%= project.name %><br>
 									<%= buildCategoryLabelHtml(project.categories).html_safe %>
                   <% if session[:admin] %>
-                      <%= link_to '<span class="label label-success"> <i class="fa fa-pencil-square-o"></i>Edit</span>'.html_safe, edit_project_path(project) %>
-                    <% end %>
+											<%= link_to '<span style="background-color: #486082" class="label label-warning"> <i class="fa fa-pencil-square-o"></i>Edit</span>'.html_safe, edit_project_path(project) %>
+									<% end %>
+									<% if project.website == true %>
+											<span class="label label-success">
+												<i class="fa fa-diamond"></i>Website
+											</span>
+									<% end %>
 								</div>
 							</div>
 						</div>
@@ -60,6 +65,10 @@
 								<div class="modal-dialog modal-lg" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
+											<% if session[:admin] %>
+													<%= link_to '<span class="label label-success"> <i class="fa fa-pencil-square-o"></i>Edit</span>'.html_safe,
+													            edit_project_path(project) %>
+											<% end %>
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>

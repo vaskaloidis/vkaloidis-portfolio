@@ -26,28 +26,22 @@ class MainController < ApplicationController
 		end
 
 		# Projects
-		@projectsFeatured = Project.order(created_at: :desc)
+		@featured = Project.order(created_at: :desc)
 			 .where(sticky: true, displayed: true)
 
-		@rails = Project.order(created_at: :desc)
+		@websites        = Project.order(created_at: :desc)
 			 .where.not(sticky: true)
-			 .where('categories LIKE ?', "%rails% OR ")
+			 .where(website: true)
 			 .where(displayed: true)
 
-		@php        = Project.order(created_at: :desc)
-			 .where.not(sticky: true)
-			 .where('categories LIKE ?', "%php%")
-			 .where(displayed: true)
 		@everything = Project.order(categories: :asc)
 			 .where(displayed: true)
 			 .where(sticky: [false, nil])
-			 .where.not('categories LIKE ?', "%rails%")
-			 .where.not('categories LIKE ?', "%php%")
+			 .where(website: [false, nil])
 
 		@projects = Array.new
-		@projects.push(*@projectsFeatured)
-		@projects.push(*@rails)
-		@projects.push(*@php)
+		@projects.push(*@featured)
+		@projects.push(*@websites)
 		@projects.push(*@everything)
 
 
