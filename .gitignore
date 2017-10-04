@@ -10,6 +10,9 @@ kaloidis.iml
 .idea/
 .idea
 .idea/workspace.xml
+/.idea/
+/.idea
+/.idea/*
 
 # Mac DS_Store
 .DS_Store
@@ -23,6 +26,9 @@ kaloidis.iml
 
 # Ignore all logfiles and tempfiles.
 /log/*
+/log
+log/
+log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
@@ -34,6 +40,7 @@ kaloidis.iml
 capybara-*.html
 .rspec
 /log
+/log/*
 /tmp
 /public/system4
 /coverage/
