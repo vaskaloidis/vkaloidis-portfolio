@@ -78,7 +78,9 @@ class ProjectsController < AdminController
   private
   def authenticate
     authenticate_or_request_with_http_basic do |user_name, password|
-      session[:admin] = (user_name == ENV['username'] && password == ENV['password'])
+      # session[:admin] = (user_name == ENV['username'] && password == ENV['password'])
+      session[:admin] = (user_name == 'vas' && password == 'Maxima2016!')
+
     end
   end
 
