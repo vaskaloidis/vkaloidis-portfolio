@@ -40,7 +40,7 @@
                  class="projectHover panel panel-default center-block">
 							<div class="panel-body">
 								<div class="pull-right">
-									<%= buildCategoryIconHtml(project.categories).html_safe %>
+									<%= buildCategoryIconHtml(project.categories, true).html_safe %>
 								</div>
 								<div class="clearfix">
 									<%= project.name %><br>
@@ -73,6 +73,7 @@
 												<span aria-hidden="true">&times;</span>
 											</button>
 											<h4 class="modal-title" id="myModalLabel"><%= project.name %></h4>
+											<%= buildCategoryIconHtml(project.categories).html_safe %>
 										</div>
 										<div class="modal-body project_modal_body">
 											<p>

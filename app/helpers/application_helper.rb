@@ -17,11 +17,19 @@ module ApplicationHelper
 		return firstPart
 	end
 
-	def buildCategoryIconHtml(categories)
+	def buildCategoryIconHtml(categories, frontpage = false)
 		categories   = categories.split(',')
 		categoryHtml = ""
+
+	  count = 0
+
 		categories.each do |c|
-			categoryHtml = categoryHtml + getCategoryIcon(c.strip)
+			if frontpage && count > 4
+				# Do nothing
+			else
+				categoryHtml = categoryHtml + getCategoryIcon(c.strip)
+			end
+			count = count + 1
 		end
 		return categoryHtml
 	end
