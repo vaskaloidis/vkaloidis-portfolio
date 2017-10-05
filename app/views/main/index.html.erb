@@ -59,8 +59,8 @@
 
 						<!-- Modal -->
 						<div class="container">
-							<div class="modal fade" id="modal<%= project.id %>"
-							     tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+							<div class="modal fade project_modal" id="modal<%= project.id %>"
+							     tabindex="-1" role="dialog" aria-labelledby="ModalWindow"
 							     aria-hidden="true">
 								<div class="modal-dialog modal-lg" role="document">
 									<div class="modal-content">
@@ -74,7 +74,7 @@
 											</button>
 											<h4 class="modal-title" id="myModalLabel"><%= project.name %></h4>
 										</div>
-										<div class="modal-body">
+										<div class="modal-body project_modal_body">
 											<p>
                         <% if project.markdown %>
                               <%= convertMarkdown(project.content).html_safe %>
