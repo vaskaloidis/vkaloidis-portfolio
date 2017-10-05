@@ -54,7 +54,11 @@ class ProjectsController < AdminController
   def update
     respond_to do |format|
       if @project.update(project_params)
+
         @project.markdown = @project.markdown.to_s.strip
+        @project.content = @project.content.to_s.strip
+
+
         format.html { redirect_to @project, notice: 'Project was successfully updated.' }
         format.json { render :show, status: :ok, location: @project }
       else

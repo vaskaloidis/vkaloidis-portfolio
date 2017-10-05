@@ -42,7 +42,7 @@
 				<label class="control-label" for="project_content">Name</label>
 				<textarea name="project[content]" class="form-control" id="project_content">
 	        <% if !project.content.nil? %>
-              <%= project.content.html_safe %>
+              <%= project.content.html_safe.strip %>
 	        <% end %>
         </textarea>
 			</div>
