@@ -34,6 +34,17 @@ module ApplicationHelper
 		return categoryHtml
 	end
 
+	def containsCategory(category, categories)
+		categories = categories.split(',')
+		categories.map!(&:downcase)
+		return false
+		# if categories.includes?(category)
+		# 	return true
+		# else
+		# 	return false
+		# end
+	end
+
 	def buildCategoryLabelHtml(categories)
 		categories   = categories.split(',')
 		categoryHtml = ""
