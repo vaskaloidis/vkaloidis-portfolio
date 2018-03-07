@@ -2,7 +2,7 @@ class ProjectsController < AdminController
 
   # http_basic_authenticate_with name: @username, password: @password
   before_action :set_project, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate
+  before_action :authenticate, only: [:new, :edit, :create, :update, :destroy]
 
 
   # GET /projects
