@@ -40,8 +40,9 @@
 
 
   <div class="container">
-    <p class="text-muted">A Vasilios Kaloidis Project.
-      <% link_to_unless session[:admin], "Login", login_url %>
+    <p class="text-muted">
+      <%= link_to 'www.bluehelmet.software', 'BlueHelmet.Software' %>
+      <% link_to_if session[:admin].nil?, "Login", login_url %>
       <% link_to_if session[:admin], "Logout", logout_url %>
     </p>
   </div>
@@ -50,3 +51,5 @@
 
 
 </html>
+
+<%= console %>
