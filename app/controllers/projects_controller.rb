@@ -53,6 +53,25 @@ class ProjectsController < AdminController
     end
   end
 
+  # PATCH/PUT /save_project/1
+  # PATCH/PUT /save_project/1.json
+  def save
+    respond_to do |format|
+      if @project.update(project_params)
+
+        @project.markdown = @project.markdown.to_s.strip
+        @project.content = @project.content.to_s.strip
+
+
+        format.html { redirect_to edit_article_path(@project), notice: 'Project was succesfully Saved' }
+        format.json { render :show, status: :ok, location: @project }
+      else
+        format.html { render :edit }
+        format.json { render json: @project.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
   # PATCH/PUT /projects/1
   # PATCH/PUT /projects/1.json
   def update

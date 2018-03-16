@@ -22,3 +22,18 @@
 function addTag() {
 
 }
+
+
+$(function() {
+    $('.img-modal-popup').on('click', function() {
+        $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+        $('#enlargeImageModal').modal('show');
+    });
+});
+
+$(function() {
+    $('.img-polaroid ').on('click', function() {
+        $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+        $('#enlargeImageModal').modal('show');
+    });
+});

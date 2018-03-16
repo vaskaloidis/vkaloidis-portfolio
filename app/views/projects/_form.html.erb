@@ -1,4 +1,4 @@
-<div class="container">
+
 	
 	<%= bootstrap_form_for(project) do |f| %>
 			<% if project.errors.any? %>
@@ -12,7 +12,9 @@
 					</div>
 			<% end %>
 			<div class="actions">
-				<%= f.submit %>
+        <%= f.submit %>
+        <%#= link_to 'Save Progress', '/project_Save', class: 'btn btn-success' %>
+        <%= link_to 'Cancel', projects_path, class: 'btn btn-success' %>
 			</div>
 			<div class="field">
 				<%= f.text_area :name %>
@@ -70,8 +72,8 @@
 			
 			<div class="actions">
 				<%= f.submit %>
-			</div>
-	
-	<% end %>
+        <%= link_to 'Cancel', projects_path, class: 'btn btn-success' %>
+      </div>
 
-</div>
+
+<% end %>
