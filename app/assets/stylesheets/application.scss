@@ -15,6 +15,9 @@
 @import 'main';
 @import 'bootstrap-tagsinput.scss';
 
+.modal {
+  overflow-y: scroll !important;
+}
 
 img.project_modal_body {
   width: 400px;
