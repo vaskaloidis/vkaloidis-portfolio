@@ -25,13 +25,15 @@ projects:
   - shortname
   - content
   - summary
+  - isArticle
+  - markdown
+  - content_markdown
   - image_file_name
   - image_content_type
   - image_file_size
   - image_updated_at
-  - isArticle
-  - markdown
-  - content_markdown
+  - sticky
+  - website
   records: 
   - - 1
     - ISAAC Release Exporters
@@ -78,10 +80,6 @@ projects:
       class=\"fa fa-github fa-lg\"></i>&nbsp; ISAAC - EconceptExportOperation.java\n
       \       </button>\n    </center>\n"
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## USCRS Content Request Handler - Terminology EConcept (.jbin) / USCRS Content-Request
@@ -116,6 +114,12 @@ projects:
       type=\"submit\" onclick=\"\n            window.location=''https://github.com/Apelon-VA/va-isaac-gui/blob/develop/list-view/src/main/java/gov/va/isaac/gui/listview/operations/EconceptExportOperation.java''\"
       class=\"btn btn-large btn-success\">\n                <i class=\"fa fa-github
       fa-lg\"></i>  ISAAC - EconceptExportOperation.java\n        </button>\n    </center>"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 2
     - OCHCRE - Helper Scripts for Maven in Python
     - Python, Maven
@@ -147,10 +151,6 @@ projects:
           </li>
       </ol>
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## Apelon VA OCHRE Python Build All Maven Projects Script\n\nHere is the Gist\n\n<script
@@ -161,6 +161,12 @@ projects:
       type=\"submit\" style=\"text-align:center\" onclick=\"window.location=''https://gist.github.com/vaskaloidis/70d63d0d69cbfe9a13c7''\"
       class=\"btn btn-large btn-success\" value=\"va-pull-repos-new.py\">\n1. [&nbsp;**Direct
       Link**&nbsp;= $url . $thisSection ?\\>](<?= $url . $thisSection ?>)\n"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 3
     - Campus Swap.Net - College Student Market Place
     - ''
@@ -181,10 +187,6 @@ projects:
       /></a></center></p>\r\n<img src=\"./img/iphoneWhite.jpg\" /><img src=\"./img/droidWhite.jpg\"
       ?>\r\n<br>\r\n"
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '" ![](./img/CampusSwap.gif)  \n ![](./img/campusSwapLogoOnly.jpg)\n\n**Technologies:**
@@ -196,30 +198,32 @@ projects:
       class=\"btn btn-large btn-primary\" value=\"GitHub - Campus Swap\">\n\n<center><img
       class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projects/campusswap/campusswap.png\"></center>
       ![](./img/iphoneWhite.jpg) ![](./img/droidWhite.jpg)  \n"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 4
     - The Bethlehem Vineyard
     - PHP, Bootstrap, MySql
     - 0
     - true
     - '2017-06-27 03:23:46.895497'
-    - '2017-07-10 06:20:28.339042'
+    - '2018-03-16 05:57:07.76688'
     - 
-    - "                    \r\n<h2>The Bethlehem Vineyard</h2>\r\n\r\n<p><b>Technologies:
-      </b> PHP, AJAX, CSS, Bootstrap, Apache, MySql</p>\r\n\r\n<p>A website for The
-      Bethlehem Vineyard, in Bethlehem CT. Great wine made by great people! Made with
-      a custom content management (CMS) system complete with a user / admin authentication
+    - "              <h2>The Bethlehem Vineyard</h2>\r\n\r\n<p><b>Technologies: </b>
+      PHP, AJAX, CSS, Bootstrap, Apache, MySql</p>\r\n\r\n<p>A website for The Bethlehem
+      Vineyard, in Bethlehem CT. Great wine made by great people! Made with a custom
+      content management (CMS) system complete with a user / admin authentication
       system.</p>\r\n\r\n<input type=\"submit\"\r\nclass=\"btn btn-large btn-primary\"\r\nonclick=\"window.location='http://www.bethlehemvineyard.com/'\"\r\nvalue=\"www.bethlehemvineyard.com\"
       />\r\n\r\n\r\n<p>\r\n\t<center>\r\n\t<a href=\"http://www.bethlehemvineyard.com\"><img
-      class=\"img-polaroid\" width=\"400\" src=\"./projects/vineyard/vineyard1.png\"
-      /></a>\r\n<a href=\"http://www.bethlehemvineyard.com\"><img class=\"img-polaroid\"
-      width=\"400\" src=\"./projects/vineyard/vineyard2.png\" /></a>\r\n<a href=\"http://www.bethlehemvineyard.com\"><img
-      class=\"img-polaroid\" width=\"400\" src=\"./projects/vineyard/vineyard3.png\"
-      /></a>\r\n</center>\r\n\r\n</p>\r\n        \r\n        "
+      class=\"img-polaroid\"  src=\"./projects/vineyard/vineyard1.png\" /></a>\r\n<a
+      href=\"http://www.bethlehemvineyard.com\"><img class=\"img-polaroid img-responsive\"
+      src=\"./projects/vineyard/vineyard2.png\" /></a>\r\n<a href=\"http://www.bethlehemvineyard.com\"><img
+      class=\"img-polaroid img-responsive\"  src=\"./projects/vineyard/vineyard3.png\"
+      /></a>\r\n</center>\r\n\r\n</p>\r\n        "
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## The Bethlehem Vineyard\n\n**Technologies:** PHP, AJAX, CSS, Bootstrap,
@@ -232,6 +236,12 @@ projects:
       href=\"http://www.bethlehemvineyard.com\"><img class=\"img-polaroid\" width=\"400\"
       height=\"400\" src=\"./projects/vineyard/vineyard2.png\"></a>\n<a href=\"http://www.bethlehemvineyard.com\"><img
       class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projects/vineyard/vineyard3.png\"></a>\n</center>"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 5
     - The Cocktail Chemist
     - PHP, Photoshop
@@ -248,10 +258,6 @@ projects:
       width=\"400\" height=\"400\" src=\"./projects/cocktail/cocktail.png\" /></center></a></p>\r\n
       \       "
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## The Cocktail Chemists\n\n**Technologies:** PHP, AJAX, CSS, Hosted on Apache
@@ -260,6 +266,12 @@ projects:
       btn-primary\" onclick=\"window.location=''http://thecocktailchemist.com/''\"
       value=\"thecocktailchemist.com\">\n\n[<center><img class=\"img-polaroid\" width=\"400\"
       height=\"400\" src=\"./projects/cocktail/cocktail.png\"></center>](http://thecocktailchemist.com)\n\n"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 6
     - Woodbury Flea Market Website
     - PHP, MySQL, Bootstrap
@@ -280,10 +292,6 @@ projects:
       />\n            <img class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projectSections/woodburyflea/woodburyfleaSs4.png\"
       />\n        </a>\n    </center>\n    </p> "
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## The New Woodbury Flea Market\n\n**Technologies:** PHP - CMS / Auth System,
@@ -295,6 +303,12 @@ projects:
       class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projectSections/woodburyflea/woodburyfleaSs2.png\">\n            <img
       class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projectSections/woodburyflea/woodburyfleaSs3.png\">\n            <img
       class=\"img-polaroid\" width=\"400\" height=\"400\" src=\"./projectSections/woodburyflea/woodburyfleaSs4.png\">\n        </a>\n    </center>"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 7
     - Athan Kaloidis Memorial Foundation
     - PHP, MySQL, Bootstrap
@@ -312,10 +326,6 @@ projects:
       />\n\n<p><a href=\"http://athankaloidis.com\">\n\t<img class=\"img-polaroid\"
       width=\"400\" height=\"400\" src=\"./projects/akmemorial/akmemorial.png\" />\n</a></p>"
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## Athan Kaloidis Memorial Foundation\n\n**Technologies:** PHP, MySQL, HTML,
@@ -324,6 +334,12 @@ projects:
       Kaloidis](http://www.kaloidislaw.com/) and [Vasilios Kaloidis](http://www.vasisrestaurant.com/)
       (my cousin, same name, not me)\n\n<input type=\"submit\" class=\"btn btn-large
       btn-primary\" onclick=\"window.location=''http://www.athankaloidis.com''\" value=\"www.athankaloidis.com\">\n\n[![](./projects/akmemorial/akmemorial.png)](http://athankaloidis.com)\n\n"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 8
     - Applescripts
     - Mac OSX, New
@@ -343,10 +359,6 @@ projects:
       fa-flask\"></i>&nbsp;Finder Action > Resize Image to 400x400px (Soon!)\n</h5>\n<br
       />\n<br>\n"
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## &nbsp;Applescripts\n  \n\nSome Applescripts I wrote / I am in the process
@@ -355,6 +367,12 @@ projects:
       Address Book Contacts](./projects/applescripts/count_contacts.scpt)\n\n#####
       &nbsp;Zipped Mixtape \\> Unzipped \\> Imported into Itunes (Soon!)\n\n#####
       &nbsp;Finder Action \\> Resize Image to 400x400px (Soon!)\n  \n  \n"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 9
     - C++ 3D City Building Fly-Through
     - C++, OpenGL
@@ -376,10 +394,6 @@ projects:
       width=\"380\"  src=\"./projects/glfly/screen3.png\" />\r\n</center>\r\n<script
       src=\"http://gist.github.com/6265757.js\"></script>\r\n\r\n        "
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## OpenGL 3D City Fly Through + Spotlight and Different Textures C++\n  \n\nMy
@@ -393,6 +407,12 @@ projects:
       class=\"img-polaroid\" width=\"380\" height=\"380\" src=\"./projects/glfly/screen2.png\">\n<img
       class=\"img-polaroid\" width=\"380\" height=\"380\" src=\"./projects/glfly/screen3.png\">\n</center><script
       src=\"http://gist.github.com/6265757.js\"></script>"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 10
     - C++ OpenGL 3D Cube
     - C++, OpenGL
@@ -414,10 +434,6 @@ projects:
       src=\"http://gist.github.com/6265765.js\"></script>\r\n</div>\r\n</div>\r\n
       \       "
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## OpenGL 3D Cube Manipulation C++\n  \n\nOne of my first C++ Projects, using
@@ -430,6 +446,12 @@ projects:
       width=\"400\" height=\"400\" src=\"./projects/glcube/cube2.png\">\n\t<img class=\"img-polaroid\"
       width=\"400\" height=\"400\" src=\"./projects/glcube/cube3.png\">\n</center><script
       src=\"http://gist.github.com/6265765.js\"></script>\n\n"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 11
     - Java Directory App
     - Java
@@ -448,10 +470,6 @@ projects:
       />\n\t<a href=\"./projects/javaSorter/MergeSorter.java\"><strong>MergeSorter.java</strong></a><br
       />\n</p>"
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"# User Directory App\n  \n\nThe Java app will initially ask the user to load
@@ -459,6 +477,12 @@ projects:
       an entry, or organize the current directories entries.After this is done, the
       app has the option to save the updated directory back to the file.\n\n### Main.Java\n<script
       src=\"http://gist.github.com/6265770.js\"></script>  \n\n[**main.java**](./projects/javaSorter/main.java)  \n[**binSearch.java**](./projects/javaSorter/binSearch.java)  \n[**fileParser.java**](./projects/javaSorter/fileParser.java)  \n[**MergeSorter.java**](./projects/javaSorter/MergeSorter.java)\n\n"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 12
     - Java Merge Sorter
     - Java
@@ -469,13 +493,15 @@ projects:
     - 
     - "\n\t\t<h1>Merge Sorter</h1><br />\n<script src=\"http://gist.github.com/6265780.js\"></script>\n"
     - ''
+    - false
+    - false
+    - '"# Merge Sorter\n  \n<script src=\"http://gist.github.com/6265780.js\"></script>"'
     - ''
     - 
     - 
     - 
     - false
     - false
-    - '"# Merge Sorter\n  \n<script src=\"http://gist.github.com/6265780.js\"></script>"'
   - - 13
     - Java Bin Search
     - Java
@@ -489,13 +515,15 @@ projects:
 
       <script src="http://gist.github.com/6265786.js"></script>
     - ''
+    - false
+    - false
+    - '"# Java Bin Search\n  \n<script src=\"http://gist.github.com/6265786.js\"></script>"'
     - ''
     - 
     - 
     - 
     - false
     - false
-    - '"# Java Bin Search\n  \n<script src=\"http://gist.github.com/6265786.js\"></script>"'
   - - 14
     - Java File Parser
     - Java
@@ -506,13 +534,15 @@ projects:
     - 
     - "\n\t\t<h1>Java File Parser</h1><br />\n<script src=\"http://gist.github.com/6265777.js\"></script>\n"
     - ''
+    - false
+    - false
+    - '"# Java File Parser\n  \n<script src=\"http://gist.github.com/6265777.js\"></script>"'
     - ''
     - 
     - 
     - 
     - false
     - false
-    - '"# Java File Parser\n  \n<script src=\"http://gist.github.com/6265777.js\"></script>"'
   - - 15
     - Java EE EJB SOAP Service Wrapper around Google GeoCode Rest API
     - Java, Java EE
@@ -529,10 +559,6 @@ projects:
       href=\"/projects/javaee/GeoCode.zip\"><b>GeoCode.zip</b> Here is a ZIP of the
       full project, enjoy! </a>\n\t\t\n\t\t<br />\n\t\t\n"
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"# Java Web Service Implementation\n  \n\nThis uses the Google GeoCode web
@@ -540,6 +566,12 @@ projects:
       as a web-service for a project for my CS375 class.\n\n<script src=\"https://gist.github.com/vaskaloidis/8000418.js\"></script>\n#
       GeoCode Web Service\n  \n<script src=\"https://gist.github.com/vaskaloidis/8000455.js\"></script>[**GeoCode.zip**
       Here is a ZIP of the full project, enjoy!](/projects/javaee/GeoCode.zip)  \n"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 16
     - Java EE Reindeer REST Web Service
     - Java, Java EE
@@ -555,16 +587,18 @@ projects:
       href=\"/projects/javaee/northpole.zip\"><b>northpole.zip</b> Here is a ZIP of
       the full project, enjoy! </a>\n\t\t\n\t\t<br />\n"
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"# Java EE Reindeer REST Web Service\n  \n\nThis is a Java EE REST Service
       that extends an EJB with a database full of reindeer! This was a question on
       my final exam for my CS375 class. <script src=\"https://gist.github.com/vaskaloidis/8030917.js\"></script>[**northpole.zip**
       Here is a ZIP of the full project, enjoy!](/projects/javaee/northpole.zip)\n\n"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 17
     - Java EE SOAP JAX-WS Digital Signature Tool Web Service
     - Java, Java EE
@@ -591,10 +625,6 @@ projects:
 
       <br />
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"# Java EE SOAP JAX-WS Digital Signature Tool Web Service\n  \n\nExposes a
@@ -605,6 +635,12 @@ projects:
       and Annotations that expose Digital Signature Service methods to sign and verify
       as SOAP JAX-WS web-services\n  \n<script src=\"https://gist.github.com/vaskaloidis/8031023.js\"></script>[**digsig.zip**
       Here is a ZIP of the full project, enjoy!](/projects/javaee/digsig.zip)  \n"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 18
     - MIPS Single Precision Floating Point Unit Array of User Input then Output
     - MIPS
@@ -622,10 +658,6 @@ projects:
           <script src="https://gist.github.com/vaskaloidis/8017788.js"></script>
 
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## MIPS Single Precision Floating Point Unit Array of User Input\n\nThis program
@@ -635,6 +667,12 @@ projects:
       numbered entered before the negative sentinel. Or if the user inputs ten numbers,
       the program will then loop through and print the FPU array values that are greater
       than the previous number\n\n<script src=\"https://gist.github.com/vaskaloidis/8017788.js\"></script>"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 19
     - MIPS Program That Swaps the Case of Each Letter In a String
     - MIPS
@@ -647,15 +685,17 @@ projects:
       inputs an arbitrary length string from a user and outputs a string that reverses
       the case of its characters.</p>\n\n<script src=\"https://gist.github.com/vaskaloidis/8017814.js\"></script>\n"
     - ''
+    - false
+    - false
+    - '"## MIPS String Letter-Case Switcher\n\nMIPS program that inputs an arbitrary
+      length string from a user and outputs a string that reverses the case of its
+      characters.\n\n<script src=\"https://gist.github.com/vaskaloidis/8017814.js\"></script>"'
     - ''
     - 
     - 
     - 
     - false
     - false
-    - '"## MIPS String Letter-Case Switcher\n\nMIPS program that inputs an arbitrary
-      length string from a user and outputs a string that reverses the case of its
-      characters.\n\n<script src=\"https://gist.github.com/vaskaloidis/8017814.js\"></script>"'
   - - 20
     - MIPS Random Number Generator Function Stored In Single Precision Floating Point
       Unit Array
@@ -674,10 +714,6 @@ projects:
       for a random seed every time, it adds the result of the above multiplication
       to an FPU Single Precision array.</p>\n\n<script src=\"http://gist.github.com/6265804.js\"></script>\n\n"
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## Floating Point Unit Array, Single Precision, MIPS\n\n<center><embed height=\"400\"
@@ -688,6 +724,12 @@ projects:
       seed; \n    \t}\n\nThe program loops 20 times, and asks the user for a random
       seed every time, it adds the result of the above multiplication to an FPU Single
       Precision array.\n\n<script src=\"http://gist.github.com/6265804.js\"></script>"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 21
     - MIPS Single Precision Positive Addit Function
     - MIPS
@@ -705,10 +747,6 @@ projects:
       given to addit() function sums negative, the program notifies the user it is
       negative and returns 0.</p>\n\t\t\n<script src=\"http://gist.github.com/6265798.js\"></script>\n\n\n"
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## Positive Addit Function\n\nThe MIPS code bellow replicates the following
@@ -719,6 +757,12 @@ projects:
       it is a positive number, If the number combination given to addit() function
       sums negative, the program notifies the user it is negative and returns 0.\n\n<script
       src=\"http://gist.github.com/6265798.js\"></script>"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 22
     - 'SML Functions: list value member checker and list union'
     - SML
@@ -734,10 +778,6 @@ projects:
       to join list a with list b and produce a list containing all the values of the
       two (sequentially)</p>\n\n<script src=\"https://gist.github.com/vaskaloidis/10016393.js\"></script>\n\n\t</div>\n</div>"
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## SML Functions: list value member checker and list union\n\nSome Standard
@@ -745,6 +785,12 @@ projects:
       a is a member of list b. The union(a, b) function also uses pattern matching
       to join list a with list b and produce a list containing all the values of the
       two (sequentially)\n\n<script src=\"https://gist.github.com/vaskaloidis/10016393.js\"></script>\n\n"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 23
     - 'SML Functions: nth power, smallest of 3 numbers and list value cycle'
     - SML
@@ -760,10 +806,6 @@ projects:
 
       <script src="https://gist.github.com/vaskaloidis/10015816.js"></script>
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## SML Functions: nth power, smallest of 3 numbers and list member cycle\n\nSome
@@ -772,6 +814,12 @@ projects:
       using only reals (real to a power of a real). min3(a, b, c) takes 3 integers
       and returns the smallest one. The final function cycle() takes a list and cycles
       the first number in a list to the last spot\n\n<script src=\"https://gist.github.com/vaskaloidis/10015816.js\"></script>"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 24
     - 'SML Functions: polynomial evaluator and powerset creator'
     - SML
@@ -788,10 +836,6 @@ projects:
       its powerset. A powerset is a set of all its subsets. This function utilizes
       pattern matching as well.  </p>\n\n\n<script src=\"https://gist.github.com/vaskaloidis/10016090.js\"></script>\n</div>\n</div>"
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## SML Functions: polynomial solver and powerset creator\n\nMore Standard
@@ -800,6 +844,12 @@ projects:
       matching. The second function powerset() takes a set of numbers and returns
       its powerset. A powerset is a set of all its subsets. This function utilizes
       pattern matching as well.\n\n<script src=\"https://gist.github.com/vaskaloidis/10016090.js\"></script>\n\n"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 25
     - YACC BISON Simple Calculator
     - C, YACC
@@ -814,16 +864,18 @@ projects:
       <p>Some Yacc Grammar for a simple Calculator, compiled using GCC (BISON). The base code was provided by my instructor in my CS320 class at University of Hartford, I added the other operators completing the calculator software.</p>
       <script src="https://gist.github.com/vaskaloidis/10015863.js"></script>
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## YACC BISON Simple Calculator\n\nSome Yacc Grammar for a simple Calculator,
       compiled using GCC (BISON). The base code was provided by my instructor in my
       CS320 class at University of Hartford, I added the other operators completing
       the calculator software.\n\n<script src=\"https://gist.github.com/vaskaloidis/10015863.js\"></script>"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 26
     - 4 bit Full Adder Circuit (Logism)
     - Circuit
@@ -842,10 +894,6 @@ projects:
       a second to load\t</small><center>\n\t<embed style=\"border:1px solid black\"
       height=\"400\" width=\"500\" src=\"/projects/4bitAdderCircuit/Project4.swf\">\n\t\t</center></p>\n"
     - ''
-    - ''
-    - 
-    - 
-    - 
     - false
     - false
     - '"## 4bit Full Adder Circuit\n\n4 bit binary adder circuit and remainder. It
@@ -856,20 +904,27 @@ projects:
       width=\"400\" height=\"400\" src=\"./projects/4bitAdderCircuit/logism.png\"></a></center>\n\n##
       Vdeo\n<small class=\"muted\">Takes a second to load\t</small><center>\n\t<embed
       style=\"border:1px solid black\" height=\"400\" width=\"500\" src=\"/projects/4bitAdderCircuit/Project4.swf\">\n\t\t</embed>\n</center>"'
+    - ''
+    - 
+    - 
+    - 
+    - false
+    - false
   - - 28
     - MailFunnels Client and Server - Rails Shopify Plugin
     - Rails, Heroku, GithHub, jQuery, Javascript, Postgres, Redis,bootstrap
     - 2
     - true
     - '2017-07-09 19:34:32.975639'
-    - '2017-07-12 07:18:02.789333'
+    - '2018-03-16 05:19:05.651562'
     - 
-    - "> Mail Funnels is a project we had built for a client that was never finished,
-      leaving it at about 90% completion. This was a Shopify Ruby on Rails plugin,
-      with a Javascript frontend on the Client, connected through REST to the Rails
-      API Server that housed all the data.\r\n\r\n- We used [jQuery Flowchart JS](https://github.com/sdrdis/jquery.flowchart)
-      for client UI\r\n- [Sidekiq](https://github.com/resque/resque) to schedule Jobs\r\n-
-      Redis for the Job Queue and Postgres for the regular data\r\n\r\n- GitHub Mail-Funnel-Server
+    - "              > Mail Funnels is a project we had built for a client that was
+      never finished, leaving it at about 90% completion. This was a Shopify Ruby
+      on Rails plugin, with a Javascript frontend on the Client, connected through
+      REST to the Rails API Server that housed all the data.\r\n\r\n- We used [jQuery
+      Flowchart JS](https://github.com/sdrdis/jquery.flowchart) for client UI\r\n-
+      [Sidekiq](https://github.com/resque/resque) to schedule Jobs\r\n- Redis for
+      the Job Queue and Postgres for the regular data\r\n\r\n- GitHub Mail-Funnel-Server
       \ - https://github.com/vaskaloidis/mail-funnel-client\r\n- GitHub Mail Funnel
       Client - https://github.com/vaskaloidis/mail-funnel-server-api\r\n\r\n#### From
       the README:\r\n\r\n#### Dev-Ops Integrations\r\n\r\nGithub addons that we installed
@@ -931,16 +986,17 @@ projects:
       This will foward you to the Shopify Store internal Mail Client App URL.\r\n
       \   http://your-store.myshopify.com\r\n\r\n    #Mail-Funnel API Server (Dev)
       / (Staging) / (Production)\r\n    http://localhost:3001 / http://mf-server.bluehelmet.io\r\n
-      \   \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n  \r\n
       \       "
+    - 
+    - false
+    - true
     - 
     - 
     - 
     - 
     - 
     - false
-    - true
-    - 
+    - false
 
 ---
 users:

@@ -88,7 +88,7 @@
                   <h4 class="modal-title" id="myModalLabel"><%= project.name %></h4>
                   <%= buildCategoryIconHtml(project.categories).html_safe %>
                 </div>
-                <div class="modal-body project_modal_body">
+                <div id="project_modal_body" class="modal-body project_modal_body">
                   <p>
                     <% if project.markdown %>
                       <%= convertMarkdown(project.content).html_safe %>
