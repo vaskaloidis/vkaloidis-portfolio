@@ -60,11 +60,14 @@
 											</span>
               <% end %>
             </div>
+
             <div style="margin-top: 10px;" class="visible-xs visible-sm center">
               <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-                <a class="btn btn-default btn-block btn-xs" href="onclick: $("#modal<%= project.id %>").modal();" style="color: gray">
+                <div class="btn btn-default btn-block btn-xs"
+                   onclick="$('#modal_<%= project.id %>').modal();"
+                   style="color:gray">
                   <i class="glyphicon glyphicon-plus-sign"></i> View
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -72,7 +75,7 @@
 
         <!-- Modal -->
         <div class="container">
-          <div style="overflow-y: scroll" class="modal fade project_modal" id="modal<%= project.id %>"
+          <div style="overflow-y: scroll" class="modal fade project_modal" id="modal_<%= project.id %>"
                tabindex="-1" role="dialog" aria-labelledby="ModalWindow"
                aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
