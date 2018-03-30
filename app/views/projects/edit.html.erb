@@ -1,12 +1,29 @@
-<div class="container">
-  <h1>Editing Project</h1>
+<h1>Editing Project</h1>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-6 col-xl-10">
-        <%= render 'form', project: @project %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-xl-10">
+      <%= render 'form', project: @project %>
+    </div>
+    <div class="col-xs-12 col-md-6 col-xl-10">
+      <div>
+        <% if @project.image_dir != '' %>
+          <strong>Project Available Files:</strong>
+          <ul>
+            <% unless @project.image_dir.nil?
+                 album = Rails.root.join('public', 'projects', @project.image_dir)
+                 Dir.foreach(album) do |item|
+                   next if item == '.' or item == '..' or item == '.DS_Store'     %>
+                <li><strong><%= item %></strong></li>
+              <% end %>
+            <% end %>
+          </ul>
+        <% else %>
+          <span>Image Directory is not Set</span>
+        <% end %>
       </div>
-      <div class="col-xs-12 col-md-6 col-xl-10">
+      <div>
+        <strong>Preview:</strong><br>
         <% if @project.markdown != true %>
 
           <p>
@@ -24,10 +41,8 @@
             <%= convertMarkdown(@project.content).html_safe %>
           </div>
           </p>
-
         <% end %>
       </div>
     </div>
   </div>
-
 </div>

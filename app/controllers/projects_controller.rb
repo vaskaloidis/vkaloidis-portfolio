@@ -116,6 +116,6 @@ class ProjectsController < AdminController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def project_params
-    params.require(:project).permit(:name, :categories, :content, :order, :displayed, :markdown, :image, :sticky, :website, :large_modal)
+    params.require(:project).permit(:name, :categories, :content, :order, :displayed, :markdown, :image, :sticky, :website, :large_modal, :image_dir)
   end
 end

@@ -1,80 +1,82 @@
+<%= bootstrap_form_for(project) do |f| %>
+  <% if project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
+      <ul>
+        <% project.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div style="margin: 20px 0px 20px 0px" class="actions">
+    <%= f.submit %>
+    <%#= link_to 'Save Progress', '/project_Save', class: 'btn btn-success' %>
+    <%= link_to 'Cancel', projects_path, class: 'btn btn-success' %>
+  </div>
+  <div class="well">
+    <%= f.text_field :name %>
 
-	
-	<%= bootstrap_form_for(project) do |f| %>
-			<% if project.errors.any? %>
-					<div id="error_explanation">
-						<h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
-						<ul>
-							<% project.errors.full_messages.each do |message| %>
-									<li><%= message %></li>
-							<% end %>
-						</ul>
-					</div>
-			<% end %>
-			<div class="actions">
-        <%= f.submit %>
-        <%#= link_to 'Save Progress', '/project_Save', class: 'btn btn-success' %>
-        <%= link_to 'Cancel', projects_path, class: 'btn btn-success' %>
-			</div>
-			<div class="field">
-				<%= f.text_area :name %>
-			</div>
-			
-			<div class="field">
-				<%= f.check_box :displayed %>
-				<%= f.check_box :sticky %>
-				<%= f.check_box :website %>
-				<%= f.check_box :markdown %>
-        <%= f.check_box :large_modal %>
-			</div>
-			
-			<div class="field">
-				<strong>Available Categories <small>(First 4 get displayed on the front-page)</small>: </strong>
-				<select multiple data-role="tagsinput">
-					<%= getAllCategories().html_safe %>
-				</select>
-				<%#= f.input :categories, input_html:{data:{role:'tagsinput'}} %>
-				<%#= f.input :categories, buildCategoryCsv(project.categories.to_s), { label: "Categories  :" }, { class: "selectpicker" } %>
-				<strong>Project Categories: </strong><br>
-				<input type="text" value="<%= project.categories.to_s %>" data-role="tagsinput" id="project_categories" name="project[categories]"/>
-				<%#= f.text_field :categories %>
-			</div>
-			
-			<div id="mde_container" class="field">
-				<label class="control-label" for="project_content">Name</label>
-				<textarea name="project[content]" class="form-control" id="project_content">
+    <%= f.text_field :image_dir %>
+  </div>
+
+  <div class="field">
+    <%= f.check_box :displayed %>
+    <%= f.check_box :sticky %>
+    <%= f.check_box :website %>
+    <%= f.check_box :markdown %>
+    <%= f.check_box :large_modal %>
+  </div>
+
+  <div class="field">
+    <strong>Available Categories
+      <small>(First 4 get displayed on the front-page)</small>
+      : </strong>
+    <select multiple data-role="tagsinput">
+      <%= getAllCategories().html_safe %>
+    </select>
+    <%#= f.input :categories, input_html:{data:{role:'tagsinput'}} %>
+    <%#= f.input :categories, buildCategoryCsv(project.categories.to_s), { label: "Categories  :" }, { class: "selectpicker" } %>
+    <strong>Project Categories: </strong><br>
+    <input type="text" value="<%= project.categories.to_s %>" data-role="tagsinput" id="project_categories" name="project[categories]"/>
+    <%#= f.text_field :categories %>
+  </div>
+
+  <div id="mde_container" class="field">
+    <label class="control-label" for="project_content">Name</label>
+    <textarea name="project[content]" class="form-control" id="project_content">
 	        <% if !project.content.nil? %>
               <%= project.content.html_safe.strip %>
 	        <% end %>
         </textarea>
-			</div>
-			
-			<!--<div id="mde_container" class="field">-->
-			<!--<label class="control-label" for="project_content">Name</label>-->
-			<!--<textarea name="project[content]" class="form-control" id="project_content">-->
-			<!--<%#= f.input :image, as: :file %>-->
-			<!--</textarea>-->
-			<!--</div>-->
-			
-			<script>
-				var mde = new SimpleMDE({
-					element: $("#project_content")[0],
-					indentWithTabs: false,
-					parsingConfig: {
-						allowAtxHeaderWithoutSpace: false
-					},
-					renderingConfig: {
-						singleLineBreaks: true,
-						codeSyntaxHighlighting: true
-					}
-				});
-			
-			</script>
-			
-			<div class="actions">
-				<%= f.submit %>
-        <%= link_to 'Cancel', projects_path, class: 'btn btn-success' %>
-      </div>
+  </div>
+
+  <!--<div id="mde_container" class="field">-->
+  <!--<label class="control-label" for="project_content">Name</label>-->
+  <!--<textarea name="project[content]" class="form-control" id="project_content">-->
+  <!--<%#= f.input :image, as: :file %>-->
+  <!--</textarea>-->
+  <!--</div>-->
+
+  <script>
+      var mde = new SimpleMDE({
+          element: $("#project_content")[0],
+          indentWithTabs: false,
+          parsingConfig: {
+              allowAtxHeaderWithoutSpace: false
+          },
+          renderingConfig: {
+              singleLineBreaks: true,
+              codeSyntaxHighlighting: true
+          }
+      });
+
+  </script>
+
+  <div class="actions">
+    <%= f.submit %>
+    <%= link_to 'Cancel', projects_path, class: 'btn btn-success' %>
+  </div>
 
 
 <% end %>
