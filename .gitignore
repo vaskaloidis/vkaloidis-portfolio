@@ -88,3 +88,5 @@ Gemfile.lock
 /tmp/pids/server.pid
 /.idea/runConfigurations/Development__bluehelmet.xml
 /public/projects/.DS_Store
+.DS_Store
+.env
