@@ -5,8 +5,6 @@ gem 'rails', '~> 5.1', '>= 5.1.2'
 
 gem 'dotenv-rails', :groups => [:development, :test]
 
-gem 'mdbootstrap-rails'
-
 gem 'faraday-http-cache'
 gem 'yaml_db'
 gem 'marked-rails'
@@ -26,10 +24,11 @@ gem 'paperclip'
 # Bootstrap, Bootswatch, Font-Awesome, SASS
 gem 'bootstrap_form'
 gem 'bootswatch-rails'
-# gem 'font-awesome-rails'
+gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 gem 'bootstrap-tagsinput-rails'
+# gem 'mdbootstrap-rails'
 
 # Database
 gem 'pg'
@@ -77,7 +76,7 @@ group :development, :test do
   gem 'byebug', platform: :mri   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'awesome_print'
   gem 'better_errors'
-  # gem 'web-console' # Add to page: <%= console %>
+  gem 'web-console' # Add to page: <%= console %>
   gem 'listen', '~> 3.0.5'
   gem 'spring'   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring-watcher-listen', '~> 2.0.0'
