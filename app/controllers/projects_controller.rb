@@ -21,8 +21,8 @@ class ProjectsController < AdminController
   # GET /projects/1.json
   def show
     respond_to do |format|
-        format.html { render :show }
-        format.json { render json: @project }
+      format.html {render :show}
+      format.json {render json: @project}
     end
   end
 
@@ -44,11 +44,11 @@ class ProjectsController < AdminController
 
     respond_to do |format|
       if @project.save
-        format.html { redirect_to @project, notice: 'Project was successfully created.' }
-        format.json { render :show, status: :created, location: @project }
+        format.html {redirect_to @project, notice: 'Project was successfully created.'}
+        format.json {render :show, status: :created, location: @project}
       else
-        format.html { render :new }
-        format.json { render json: @project.errors, status: :unprocessable_entity }
+        format.html {render :new}
+        format.json {render json: @project.errors, status: :unprocessable_entity}
       end
     end
   end
@@ -61,13 +61,16 @@ class ProjectsController < AdminController
 
         @project.markdown = @project.markdown.to_s.strip
         @project.content = @project.content.to_s.strip
-
-
-        format.html { redirect_to edit_article_path(@project), notice: 'Project was succesfully Saved' }
-        format.json { render :show, status: :ok, location: @project }
+        if @project.save
+          format.html {redirect_to edit_project_path(@project), notice: 'Project was succesfully Saved'}
+          format.json {render :show, status: :ok, location: @project}
+        else
+          format.html {render :edit}
+          format.json {render json: @project.errors, status: :unprocessable_entity}
+        end
       else
-        format.html { render :edit }
-        format.json { render json: @project.errors, status: :unprocessable_entity }
+        format.html {render :edit}
+        format.json {render json: @project.errors, status: :unprocessable_entity}
       end
     end
   end
@@ -81,12 +84,17 @@ class ProjectsController < AdminController
         @project.markdown = @project.markdown.to_s.strip
         @project.content = @project.content.to_s.strip
 
+        if @project.save
+          format.html {redirect_to edit_project_path(@project), notice: 'Project was succesfully Saved'}
+          format.json {render :show, status: :ok, location: @project}
+        else
+          format.html {render :edit}
+          format.json {render json: @project.errors, status: :unprocessable_entity}
+        end
 
-        format.html { redirect_to @project, notice: 'Project was successfully updated.' }
-        format.json { render :show, status: :ok, location: @project }
       else
-        format.html { render :edit }
-        format.json { render json: @project.errors, status: :unprocessable_entity }
+        format.html {render :edit}
+        format.json {render json: @project.errors, status: :unprocessable_entity}
       end
     end
   end
@@ -96,16 +104,27 @@ class ProjectsController < AdminController
   def destroy
     @project.destroy
     respond_to do |format|
-      format.html { redirect_to projects_url, notice: 'Project was successfully destroyed.' }
-      format.json { head :no_content }
+      format.html {redirect_to projects_url, notice: 'Project was successfully destroyed.'}
+      format.json {head :no_content}
     end
   end
 
 
   private
   def authenticate
-    authenticate_or_request_with_http_basic do |user_name, password|
-      session[:admin] = (user_name == 'vas' && password == 'Maxima2017!')
+    super
+  end
+
+  def authenticate_two
+    if Rails.env.production?
+      authenticate_or_request_with_http_basic do |user_name, password|
+        session[:admin] = (user_name == 'vas' && password == ENV['password'])
+      end
+    else
+      Dotenv::Railtie.load
+      authenticate_or_request_with_http_basic do |user_name, password|
+        session[:admin] = (user_name == 'vas' && password == 'password')
+      end
     end
   end
 

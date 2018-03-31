@@ -6,7 +6,6 @@
       <!-- Left Column -->
       <div id="left_column" class="pre-scrollable col-xs-12 col-md-4">
         <div id="mde_container" class="field">
-          <label class="control-label" for="project_content">Name</label>
           <textarea name="project[content]" class="form-control" id="project_content">
 	        <% if !project.content.nil? %>
               <%= project.content.html_safe.strip %>
@@ -36,8 +35,8 @@
         </script>
 
         <div class="actions">
-          <%= f.submit 'Submit', :class => 'btn btn-success' %>
-          <%= link_to 'Cancel', projects_path, class: 'btn btn-danger' %>
+          <%= f.submit 'Update', :class => 'btn btn-success' %>
+          <%= link_to 'Back', projects_path, class: 'btn btn-danger' %>
         </div>
 
       </div>
@@ -55,12 +54,12 @@
             </ul>
           </div>
         <% end %>
-        <div class="well">
+
+        <div style="padding-top:0px" class="well">
           <%= f.text_field :name %>
-          <%= f.text_field :image_dir %>
 
           <div class="row">
-            <div class="col-xs-6">
+            <div id="checkbox_dir" class="col-xs-4">
               <div class="field">
                 <%= f.check_box :displayed %>
                 <%= f.check_box :sticky %>
@@ -69,29 +68,51 @@
                 <%= f.check_box :large_modal %>
               </div>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-8">
               <% if @project.image_dir != '' %>
-                <strong>Project Available Files:</strong>
-                <ul>
-                  <% unless @project.image_dir.nil?
-                       album = Rails.root.join('public', 'projects', @project.image_dir)
+                <div id="file_list_div" class="pre-scrollable">
+                  <strong>Image_Dir: </strong> <%= @project.image_dir %><br>
+                  <strong>Project Available Files:</strong>
+                  <ul>
+                    <% unless @project.image_dir.nil?
+                         album = Rails.root.join('public', 'projects', @project.image_dir)
+                         Dir.foreach(album) do |item|
+                           next if item == '.' or item == '..' or item == '.DS_Store'               %>
+                        <li><strong><%= item %></strong></li>
+                      <% end %>
+                    <% end %>
+                  </ul>
+                  <div>
+                    <%= f.text_field :image_dir %>
+                    <strong>Available Image Dirs</strong>
+                    <% album = Rails.root.join('public', 'projects')
                        Dir.foreach(album) do |item|
-                         next if item == '.' or item == '..' or item == '.DS_Store'          %>
+                         next if item == '.' or item == '..' or item == '.DS_Store'                %>
                       <li><strong><%= item %></strong></li>
                     <% end %>
-                  <% end %>
-                </ul>
+                  </div>
+                </div>
               <% else %>
-                <span>Image Directory is not Set</span>
+                <div id="file_list_div" class="pre-scrollable">
+                  <div class="alert alert-warning">You need to set an Image Dir.</div>
+                  <%= f.text_field :image_dir %>
+                  <div><strong>Available Project directories:</strong></div>
+                  <ul>
+                    <% album = Rails.root.join('public', 'projects')
+                       Dir.foreach(album) do |item|
+                         next if item == '.' or item == '..' or item == '.DS_Store'               %>
+                      <li><strong><%= item %></strong></li>
+                    <% end %>
+                  </ul>
+                </div>
               <% end %>
             </div>
           </div>
-          <div class="row">
+          <div style="margin-top:7px;" class="row">
             <div class="col-xs-12">
-              <div style="margin: 10px;" class="visible-xs visible-sm actions">
-                <%= f.submit 'Submit', :class => 'btn btn-success' %>
-                <%#= link_to 'Save Progress', '/project_Save', class: 'btn btn-success' %>
-                <%= link_to 'Cancel', projects_path, class: 'btn btn-danger' %>
+              <div style="margin: 10px;" class="actions">
+                <%= f.submit 'Update', :class => 'btn btn-success' %>
+                <%= link_to 'Back', projects_path, class: 'btn btn-danger' %>
               </div>
             </div>
           </div>
@@ -117,24 +138,16 @@
       <!-- Preview Column-->
       <div id="right_column" class="pre-scrollable col-xs-12 col-md-5">
         <div>
-          <strong>Preview:</strong><br>
           <% if @project.markdown != true %>
-
-            <p>
-            <h4>HTML</h4>
-            <div id="preview_window" style="border:1px solid black; margin:25px; padding:5px;">
+            <strong>HTML Preview:</strong>
+            <div id="preview_window" style="border:1px solid black; padding:5px;">
               <%= @project.content.html_safe %>
             </div>
-            </p>
-
           <% else %>
-
-            <p>
-            <h4>Markdown</h4>
-            <div id="preview_window" style="border:1px solid black; margin:25px; padding:5px;">
+            <strong>Markdown Preview:</strong>
+            <div id="preview_window" style="border:1px solid black; padding:5px;">
               <%= convertMarkdown(@project.content).html_safe %>
             </div>
-            </p>
           <% end %>
         </div>
       </div>
@@ -154,6 +167,15 @@
 
           right_column.css("min-height", window_height);
           right_column.height(center_column.height());
+
+          preview_window.css("min-height", window_height);
+          preview_window.height(center_column.height() - (right_column.height() - preview_window.height()) - 200);
+
+          var checkbox_dir = $('#checkbox_dir');
+          var file_list_div = $('#file_list_div');
+          var checkbox_dir_height = checkbox_dir.height();
+          file_list_div.css("min-height", checkbox_dir_height);
+          left_column.height(checkbox_dir_height);
 
           // Debug
           // console.log("Right Column Height: " + right_column.height().toString());
@@ -179,7 +201,13 @@
           right_column.height(center_column.height());
 
           preview_window.css("min-height", window_height);
-          preview_window.height(center_column.height());
+          preview_window.height(center_column.height() - (right_column.height() - preview_window.height()) - 200);
+
+          var checkbox_dir = $('#checkbox_dir');
+          var file_list_div = $('#file_list_div');
+          var checkbox_dir_height = checkbox_dir.height();
+          file_list_div.css("min-height", checkbox_dir_height);
+          left_column.height(checkbox_dir_height);
 
       });
   </script>
