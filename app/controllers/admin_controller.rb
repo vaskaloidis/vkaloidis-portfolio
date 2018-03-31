@@ -14,7 +14,7 @@ class AdminController < ApplicationController
   def authenticate
     if Rails.env.production?
       authenticate_or_request_with_http_basic do |user_name, password|
-        session[:admin] = (user_name == 'vas' && password == ENV['password'])
+        session[:admin] = (user_name == 'vas' && password == ENV['PASSWORD'])
       end
     else
       Dotenv::Railtie.load

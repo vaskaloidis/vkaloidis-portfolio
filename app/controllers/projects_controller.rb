@@ -2,7 +2,7 @@ class ProjectsController < AdminController
 
   # http_basic_authenticate_with name: @username, password: @password
   before_action :set_project, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate, only: [:new, :edit, :create, :update, :destroy]
+  before_action :authenticate
 
 
   # GET /projects
@@ -118,7 +118,7 @@ class ProjectsController < AdminController
   def authenticate_two
     if Rails.env.production?
       authenticate_or_request_with_http_basic do |user_name, password|
-        session[:admin] = (user_name == 'vas' && password == ENV['password'])
+        session[:admin] = (user_name == 'vas' && password == ENV['PASSWORD'])
       end
     else
       Dotenv::Railtie.load
