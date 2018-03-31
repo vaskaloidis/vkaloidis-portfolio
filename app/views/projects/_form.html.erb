@@ -1,82 +1,187 @@
 <%= bootstrap_form_for(project) do |f| %>
-  <% if project.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
-      <ul>
-        <% project.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <div style="margin: 20px 0px 20px 0px" class="actions">
-    <%= f.submit %>
-    <%#= link_to 'Save Progress', '/project_Save', class: 'btn btn-success' %>
-    <%= link_to 'Cancel', projects_path, class: 'btn btn-success' %>
-  </div>
-  <div class="well">
-    <%= f.text_field :name %>
 
-    <%= f.text_field :image_dir %>
-  </div>
+  <div class="container-fluid">
+    <div class="row">
 
-  <div class="field">
-    <%= f.check_box :displayed %>
-    <%= f.check_box :sticky %>
-    <%= f.check_box :website %>
-    <%= f.check_box :markdown %>
-    <%= f.check_box :large_modal %>
-  </div>
-
-  <div class="field">
-    <strong>Available Categories
-      <small>(First 4 get displayed on the front-page)</small>
-      : </strong>
-    <select multiple data-role="tagsinput">
-      <%= getAllCategories().html_safe %>
-    </select>
-    <%#= f.input :categories, input_html:{data:{role:'tagsinput'}} %>
-    <%#= f.input :categories, buildCategoryCsv(project.categories.to_s), { label: "Categories  :" }, { class: "selectpicker" } %>
-    <strong>Project Categories: </strong><br>
-    <input type="text" value="<%= project.categories.to_s %>" data-role="tagsinput" id="project_categories" name="project[categories]"/>
-    <%#= f.text_field :categories %>
-  </div>
-
-  <div id="mde_container" class="field">
-    <label class="control-label" for="project_content">Name</label>
-    <textarea name="project[content]" class="form-control" id="project_content">
+      <!-- Left Column -->
+      <div id="left_column" class="pre-scrollable col-xs-12 col-md-4">
+        <div id="mde_container" class="field">
+          <label class="control-label" for="project_content">Name</label>
+          <textarea name="project[content]" class="form-control" id="project_content">
 	        <% if !project.content.nil? %>
               <%= project.content.html_safe.strip %>
 	        <% end %>
         </textarea>
-  </div>
+        </div>
 
-  <!--<div id="mde_container" class="field">-->
-  <!--<label class="control-label" for="project_content">Name</label>-->
-  <!--<textarea name="project[content]" class="form-control" id="project_content">-->
-  <!--<%#= f.input :image, as: :file %>-->
-  <!--</textarea>-->
-  <!--</div>-->
+        <!--<div id="mde_container" class="field">-->
+        <!--<label class="control-label" for="project_content">Name</label>-->
+        <!--<textarea name="project[content]" class="form-control" id="project_content">-->
+        <!--<%#= f.input :image, as: :file %>-->
+        <!--</textarea>-->
+        <!--</div>-->
+
+        <script>
+            var mde = new SimpleMDE({
+                element: $("#project_content")[0],
+                indentWithTabs: false,
+                parsingConfig: {
+                    allowAtxHeaderWithoutSpace: false
+                },
+                renderingConfig: {
+                    singleLineBreaks: true,
+                    codeSyntaxHighlighting: true
+                }
+            });
+        </script>
+
+        <div class="actions">
+          <%= f.submit 'Submit', :class => 'btn btn-success' %>
+          <%= link_to 'Cancel', projects_path, class: 'btn btn-danger' %>
+        </div>
+
+      </div>
+
+      <!-- Center Column-->
+      <div id="center_column" class="col-xs-12 col-md-3">
+
+        <% if project.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
+            <ul>
+              <% project.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+        <div class="well">
+          <%= f.text_field :name %>
+          <%= f.text_field :image_dir %>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="field">
+                <%= f.check_box :displayed %>
+                <%= f.check_box :sticky %>
+                <%= f.check_box :website %>
+                <%= f.check_box :markdown %>
+                <%= f.check_box :large_modal %>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <% if @project.image_dir != '' %>
+                <strong>Project Available Files:</strong>
+                <ul>
+                  <% unless @project.image_dir.nil?
+                       album = Rails.root.join('public', 'projects', @project.image_dir)
+                       Dir.foreach(album) do |item|
+                         next if item == '.' or item == '..' or item == '.DS_Store'          %>
+                      <li><strong><%= item %></strong></li>
+                    <% end %>
+                  <% end %>
+                </ul>
+              <% else %>
+                <span>Image Directory is not Set</span>
+              <% end %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div style="margin: 10px;" class="visible-xs visible-sm actions">
+                <%= f.submit 'Submit', :class => 'btn btn-success' %>
+                <%#= link_to 'Save Progress', '/project_Save', class: 'btn btn-success' %>
+                <%= link_to 'Cancel', projects_path, class: 'btn btn-danger' %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="field">
+          <strong>Available Categories
+            <small>(First 4 get displayed on the front-page)</small>
+            : </strong>
+          <select multiple data-role="tagsinput">
+            <%= getAllCategories().html_safe %>
+          </select>
+          <%#= f.input :categories, input_html:{data:{role:'tagsinput'}} %>
+          <%#= f.input :categories, buildCategoryCsv(project.categories.to_s), { label: "Categories  :" }, { class: "selectpicker" } %>
+          <strong>Project Categories: </strong><br>
+          <input type="text" value="<%= project.categories.to_s %>" data-role="tagsinput" id="project_categories" name="project[categories]"/>
+          <%#= f.text_field :categories %>
+        </div>
+
+      </div>
+
+      <!-- Preview Column-->
+      <div id="right_column" class="pre-scrollable col-xs-12 col-md-5">
+        <div>
+          <strong>Preview:</strong><br>
+          <% if @project.markdown != true %>
+
+            <p>
+            <h4>HTML</h4>
+            <div id="preview_window" style="border:1px solid black; margin:25px; padding:5px;">
+              <%= @project.content.html_safe %>
+            </div>
+            </p>
+
+          <% else %>
+
+            <p>
+            <h4>Markdown</h4>
+            <div id="preview_window" style="border:1px solid black; margin:25px; padding:5px;">
+              <%= convertMarkdown(@project.content).html_safe %>
+            </div>
+            </p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script>
-      var mde = new SimpleMDE({
-          element: $("#project_content")[0],
-          indentWithTabs: false,
-          parsingConfig: {
-              allowAtxHeaderWithoutSpace: false
-          },
-          renderingConfig: {
-              singleLineBreaks: true,
-              codeSyntaxHighlighting: true
-          }
+      $(function () {
+          var window_height = $(window).height(), content_height = window_height - 200;
+
+          var center_column = $('#center_column');
+          var left_column = $('#left_column');
+          var right_column = $('#right_column');
+
+          left_column.css("min-height", content_height);
+          left_column.height(center_column.height());
+
+          right_column.css("min-height", window_height);
+          right_column.height(center_column.height());
+
+          // Debug
+          // console.log("Right Column Height: " + right_column.height().toString());
+          // console.log("Window Height: " + window_height.toString());
+          // console.log("Content Height (Window Height-200): " + content_height.toString())
+          // console.log("Left_Column. Min-Height: (Window Height) " + window_height.toString());
+          // console.log("Left_Column. Height: (Right Column Height) " + right_column.height().toString());
       });
 
+      $(window).resize(function () {
+          var window_height = $(window).height(), content_height = window_height - 200;
+
+          var center_column = $('#center_column');
+          var left_column = $('#left_column');
+          var right_column = $('#right_column');
+          var preview_window = $('#preview_window');
+
+
+          left_column.css("min-height", window_height);
+          left_column.height(center_column.height());
+
+          right_column.css("min-height", window_height);
+          right_column.height(center_column.height());
+
+          preview_window.css("min-height", window_height);
+          preview_window.height(center_column.height());
+
+      });
   </script>
-
-  <div class="actions">
-    <%= f.submit %>
-    <%= link_to 'Cancel', projects_path, class: 'btn btn-success' %>
-  </div>
-
 
 <% end %>
