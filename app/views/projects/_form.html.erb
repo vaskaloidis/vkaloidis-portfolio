@@ -76,7 +76,7 @@
                   <ul>
                     <% unless @project.image_dir.nil?
                          album = Rails.root.join('public', 'projects', @project.image_dir)
-                         Dir.foreach(album) do |item|
+                         Dir.entries(album).sort_by!{ |filename| filename.downcase }.each do |item|
                            next if item == '.' or item == '..' or item == '.DS_Store'               %>
                         <li><strong><%= item %></strong></li>
                       <% end %>
@@ -86,7 +86,7 @@
                     <%= f.text_field :image_dir %>
                     <strong>Available Image Dirs</strong>
                     <% album = Rails.root.join('public', 'projects')
-                       Dir.foreach(album) do |item|
+                       Dir.entries(album).sort_by!{ |filename| filename.downcase }.each do |item|
                          next if item == '.' or item == '..' or item == '.DS_Store'                %>
                       <li><strong><%= item %></strong></li>
                     <% end %>
@@ -96,10 +96,10 @@
                 <div id="file_list_div" class="pre-scrollable">
                   <div class="alert alert-warning">You need to set an Image Dir.</div>
                   <%= f.text_field :image_dir %>
-                  <div><strong>Available Project directories:</strong></div>
+                  <div><strong>Available Project Dirs:</strong></div>
                   <ul>
                     <% album = Rails.root.join('public', 'projects')
-                       Dir.foreach(album) do |item|
+                       Dir.entries(album).sort_by!{ |filename| filename.downcase }.each do |item|
                          next if item == '.' or item == '..' or item == '.DS_Store'               %>
                       <li><strong><%= item %></strong></li>
                     <% end %>
