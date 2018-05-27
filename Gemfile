@@ -39,6 +39,7 @@ group :production do
   gem 'foreman'
 end
 group :test do
+  gem 'minitest-ci'
   gem 'database_cleaner'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'simplecov', require: false
