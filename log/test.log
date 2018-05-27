@@ -1,0 +1,1583 @@
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 16:43:45 -0400
+Processing by ProjectsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (5.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+Started GET "/projects/new" for 127.0.0.1 at 2018-05-27 16:43:45 -0400
+Processing by ProjectsController#new as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (47.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started POST "/projects" for 127.0.0.1 at 2018-05-27 16:43:45 -0400
+Processing by ProjectsController#create as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+Started GET "/projects/new" for 127.0.0.1 at 2018-05-27 16:50:13 -0400
+Processing by ProjectsController#new as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started POST "/projects" for 127.0.0.1 at 2018-05-27 16:50:14 -0400
+Processing by ProjectsController#create as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 16:50:14 -0400
+Processing by ProjectsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (46.2ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 20:59:54.146127"], ["updated_at", "2018-05-27 20:59:54.146127"], ["shortname", "The Nobel Academy was awarded a prize from HIM"], ["content", "He once turned a vampire into a vegetarian"], ["summary", "He was on a recent archaeological dig and came across prehistoric foot prints that lead out of Africa into all parts of the world. On close inspection, it turned out that the prints were his"], ["content_markdown", "optio | ut | voluptas\n---- | ---- | ----\nqui | pariatur | natus\nesse | omnis | beatae"], ["image_dir", "testproject"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/1/edit" for 127.0.0.1 at 2018-05-27 16:59:54 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (13.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 29ms (ActiveRecord: 13.4ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 20:59:54.314849"], ["updated_at", "2018-05-27 20:59:54.314849"], ["shortname", "The Nobel Academy was awarded a prize from HIM"], ["content", "He once turned a vampire into a vegetarian"], ["summary", "He was on a recent archaeological dig and came across prehistoric foot prints that lead out of Africa into all parts of the world. On close inspection, it turned out that the prints were his"], ["content_markdown", "optio | ut | voluptas\n---- | ---- | ----\nqui | pariatur | natus\nesse | omnis | beatae"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/projects/2" for 127.0.0.1 at 2018-05-27 16:59:54 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"project"=>{"name"=>"new-name"}, "id"=>"2"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (12.2ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 20:59:54.329227"], ["updated_at", "2018-05-27 20:59:54.329227"], ["shortname", "The Nobel Academy was awarded a prize from HIM"], ["content", "He once turned a vampire into a vegetarian"], ["summary", "He was on a recent archaeological dig and came across prehistoric foot prints that lead out of Africa into all parts of the world. On close inspection, it turned out that the prints were his"], ["content_markdown", "optio | ut | voluptas\n---- | ---- | ----\nqui | pariatur | natus\nesse | omnis | beatae"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 16:59:54 -0400
+Processing by ProjectsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 20:59:54.348835"], ["updated_at", "2018-05-27 20:59:54.348835"], ["shortname", "The Nobel Academy was awarded a prize from HIM"], ["content", "He once turned a vampire into a vegetarian"], ["summary", "He was on a recent archaeological dig and came across prehistoric foot prints that lead out of Africa into all parts of the world. On close inspection, it turned out that the prints were his"], ["content_markdown", "optio | ut | voluptas\n---- | ---- | ----\nqui | pariatur | natus\nesse | omnis | beatae"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/new" for 127.0.0.1 at 2018-05-27 16:59:54 -0400
+Processing by ProjectsController#new as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 20:59:54.354600"], ["updated_at", "2018-05-27 20:59:54.354600"], ["shortname", "The Nobel Academy was awarded a prize from HIM"], ["content", "He once turned a vampire into a vegetarian"], ["summary", "He was on a recent archaeological dig and came across prehistoric foot prints that lead out of Africa into all parts of the world. On close inspection, it turned out that the prints were his"], ["content_markdown", "optio | ut | voluptas\n---- | ---- | ----\nqui | pariatur | natus\nesse | omnis | beatae"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started POST "/projects" for 127.0.0.1 at 2018-05-27 16:59:54 -0400
+Processing by ProjectsController#create as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 20:59:54.361535"], ["updated_at", "2018-05-27 20:59:54.361535"], ["shortname", "The Nobel Academy was awarded a prize from HIM"], ["content", "He once turned a vampire into a vegetarian"], ["summary", "He was on a recent archaeological dig and came across prehistoric foot prints that lead out of Africa into all parts of the world. On close inspection, it turned out that the prints were his"], ["content_markdown", "optio | ut | voluptas\n---- | ---- | ----\nqui | pariatur | natus\nesse | omnis | beatae"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/6" for 127.0.0.1 at 2018-05-27 16:59:54 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 20:59:54.368317"], ["updated_at", "2018-05-27 20:59:54.368317"], ["shortname", "The Nobel Academy was awarded a prize from HIM"], ["content", "He once turned a vampire into a vegetarian"], ["summary", "He was on a recent archaeological dig and came across prehistoric foot prints that lead out of Africa into all parts of the world. On close inspection, it turned out that the prints were his"], ["content_markdown", "optio | ut | voluptas\n---- | ---- | ----\nqui | pariatur | natus\nesse | omnis | beatae"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started DELETE "/projects/7" for 127.0.0.1 at 2018-05-27 16:59:54 -0400
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:04:17.902707"], ["updated_at", "2018-05-27 21:04:17.902707"], ["shortname", "If he were to punch you in the face you would have to fight off a strong urge to thank him"], ["content", "He never says something tastes like chicken.. not even chicken"], ["summary", "Panhandlers give him money"], ["content_markdown", "ad | quis | rem\n---- | ---- | ----\nnulla | hic | unde\nvelit | dolor | similique"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:04:17.909926"], ["updated_at", "2018-05-27 21:04:17.909926"], ["shortname", "If he were to punch you in the face you would have to fight off a strong urge to thank him"], ["content", "He never says something tastes like chicken.. not even chicken"], ["summary", "Panhandlers give him money"], ["content_markdown", "ad | quis | rem\n---- | ---- | ----\nnulla | hic | unde\nvelit | dolor | similique"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:04:17.913790"], ["updated_at", "2018-05-27 21:04:17.913790"], ["shortname", "If he were to punch you in the face you would have to fight off a strong urge to thank him"], ["content", "He never says something tastes like chicken.. not even chicken"], ["summary", "Panhandlers give him money"], ["content_markdown", "ad | quis | rem\n---- | ---- | ----\nnulla | hic | unde\nvelit | dolor | similique"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:04:17.917415"], ["updated_at", "2018-05-27 21:04:17.917415"], ["shortname", "If he were to punch you in the face you would have to fight off a strong urge to thank him"], ["content", "He never says something tastes like chicken.. not even chicken"], ["summary", "Panhandlers give him money"], ["content_markdown", "ad | quis | rem\n---- | ---- | ----\nnulla | hic | unde\nvelit | dolor | similique"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:04:17.920850"], ["updated_at", "2018-05-27 21:04:17.920850"], ["shortname", "If he were to punch you in the face you would have to fight off a strong urge to thank him"], ["content", "He never says something tastes like chicken.. not even chicken"], ["summary", "Panhandlers give him money"], ["content_markdown", "ad | quis | rem\n---- | ---- | ----\nnulla | hic | unde\nvelit | dolor | similique"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:04:17.926048"], ["updated_at", "2018-05-27 21:04:17.926048"], ["shortname", "If he were to punch you in the face you would have to fight off a strong urge to thank him"], ["content", "He never says something tastes like chicken.. not even chicken"], ["summary", "Panhandlers give him money"], ["content_markdown", "ad | quis | rem\n---- | ---- | ----\nnulla | hic | unde\nvelit | dolor | similique"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:04:17.930130"], ["updated_at", "2018-05-27 21:04:17.930130"], ["shortname", "If he were to punch you in the face you would have to fight off a strong urge to thank him"], ["content", "He never says something tastes like chicken.. not even chicken"], ["summary", "Panhandlers give him money"], ["content_markdown", "ad | quis | rem\n---- | ---- | ----\nnulla | hic | unde\nvelit | dolor | similique"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.7ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:08:46.207098"], ["updated_at", "2018-05-27 21:08:46.207098"], ["shortname", "His beard alone has experienced more than a lesser man’s entire body"], ["content", "When a tree falls in a forest and no one is there, he hears it"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "veritatis | omnis | nostrum\n---- | ---- | ----\nvelit | deserunt | placeat\nquae | rerum | aut"], ["image_dir", "testproject"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started POST "/projects" for 127.0.0.1 at 2018-05-27 17:08:46 -0400
+Processing by ProjectsController#create as HTML
+Completed 400 Bad Request in 10ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:08:46.311000"], ["updated_at", "2018-05-27 21:08:46.311000"], ["shortname", "His beard alone has experienced more than a lesser man’s entire body"], ["content", "When a tree falls in a forest and no one is there, he hears it"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "veritatis | omnis | nostrum\n---- | ---- | ----\nvelit | deserunt | placeat\nquae | rerum | aut"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/projects/16" for 127.0.0.1 at 2018-05-27 17:08:46 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"project"=>{"name"=>"new-name"}, "id"=>"16"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (24.8ms)[0m  [1m[33mUPDATE "projects" SET "name" = $1, "updated_at" = $2 WHERE "projects"."id" = $3[0m  [["name", "new-name"], ["updated_at", "2018-05-27 21:08:46.332893"], ["id", 16]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/16/edit
+Completed 302 Found in 48ms (ActiveRecord: 27.9ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:08:46.371149"], ["updated_at", "2018-05-27 21:08:46.371149"], ["shortname", "His beard alone has experienced more than a lesser man’s entire body"], ["content", "When a tree falls in a forest and no one is there, he hears it"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "veritatis | omnis | nostrum\n---- | ---- | ----\nvelit | deserunt | placeat\nquae | rerum | aut"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:08:46 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+Completed 200 OK in 208ms (Views: 202.7ms | ActiveRecord: 1.4ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:08:46.586959"], ["updated_at", "2018-05-27 21:08:46.586959"], ["shortname", "His beard alone has experienced more than a lesser man’s entire body"], ["content", "When a tree falls in a forest and no one is there, he hears it"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "veritatis | omnis | nostrum\n---- | ---- | ----\nvelit | deserunt | placeat\nquae | rerum | aut"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/18/edit" for 127.0.0.1 at 2018-05-27 17:08:46 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (23.9ms)
+  Rendered projects/edit.html.erb within layouts/application (30.6ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.7ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.3ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:08:46.640521"], ["updated_at", "2018-05-27 21:08:46.640521"], ["shortname", "His beard alone has experienced more than a lesser man’s entire body"], ["content", "When a tree falls in a forest and no one is there, he hears it"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "veritatis | omnis | nostrum\n---- | ---- | ----\nvelit | deserunt | placeat\nquae | rerum | aut"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/new" for 127.0.0.1 at 2018-05-27 17:08:46 -0400
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (4.3ms)
+  Rendered projects/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:08:46.663821"], ["updated_at", "2018-05-27 21:08:46.663821"], ["shortname", "His beard alone has experienced more than a lesser man’s entire body"], ["content", "When a tree falls in a forest and no one is there, he hears it"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "veritatis | omnis | nostrum\n---- | ---- | ----\nvelit | deserunt | placeat\nquae | rerum | aut"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/20" for 127.0.0.1 at 2018-05-27 17:08:46 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_authentication
+-------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:08:46.695162"], ["updated_at", "2018-05-27 21:08:46.695162"], ["shortname", "His beard alone has experienced more than a lesser man’s entire body"], ["content", "When a tree falls in a forest and no one is there, he hears it"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "veritatis | omnis | nostrum\n---- | ---- | ----\nvelit | deserunt | placeat\nquae | rerum | aut"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:08:46 -0400
+Processing by ProjectsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:08:46 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:08:46.708508"], ["updated_at", "2018-05-27 21:08:46.708508"], ["shortname", "His beard alone has experienced more than a lesser man’s entire body"], ["content", "When a tree falls in a forest and no one is there, he hears it"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "veritatis | omnis | nostrum\n---- | ---- | ----\nvelit | deserunt | placeat\nquae | rerum | aut"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started DELETE "/projects/22" for 127.0.0.1 at 2018-05-27 17:08:46 -0400
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 22]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 3ms (ActiveRecord: 1.3ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:10:55.999549"], ["updated_at", "2018-05-27 21:10:55.999549"], ["shortname", "Sharks have a week dedicated to him"], ["content", "The circus ran away to join him"], ["summary", "His wallet is woven out of chupacabra leather"], ["content_markdown", "id | aut | voluptatibus\n---- | ---- | ----\nest | non | tempora\ndebitis | soluta | quas"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started POST "/projects" for 127.0.0.1 at 2018-05-27 17:10:56 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"project"=>{"name"=>"MyString", "categories"=>"rails", "order"=>"0.2678226372430895", "displayed"=>"true", "shortname"=>"Sharks have a week dedicated to him", "content"=>"The circus ran away to join him", "summary"=>"His wallet is woven out of chupacabra leather", "isArticle"=>"false", "markdown"=>"true", "content_markdown"=>"id | aut | voluptatibus\n---- | ---- | ----\nest | non | tempora\ndebitis | soluta | quas", "sticky"=>"false", "website"=>"false", "large_modal"=>"false", "image_dir"=>"testproject"}}
+Unpermitted parameters: :shortname, :summary, :isArticle, :content_markdown
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "content", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:10:56.098821"], ["updated_at", "2018-05-27 21:10:56.098821"], ["content", "The circus ran away to join him"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/24
+Completed 302 Found in 12ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY "projects"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (8.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:10:56.113274"], ["updated_at", "2018-05-27 21:10:56.113274"], ["shortname", "Sharks have a week dedicated to him"], ["content", "The circus ran away to join him"], ["summary", "His wallet is woven out of chupacabra leather"], ["content_markdown", "id | aut | voluptatibus\n---- | ---- | ----\nest | non | tempora\ndebitis | soluta | quas"], ["image_dir", "testproject"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/25" for 127.0.0.1 at 2018-05-27 17:10:56 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (22.5ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:10:56.170288"], ["updated_at", "2018-05-27 21:10:56.170288"], ["shortname", "Sharks have a week dedicated to him"], ["content", "The circus ran away to join him"], ["summary", "His wallet is woven out of chupacabra leather"], ["content_markdown", "id | aut | voluptatibus\n---- | ---- | ----\nest | non | tempora\ndebitis | soluta | quas"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/26/edit" for 127.0.0.1 at 2018-05-27 17:10:56 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (22.0ms)
+  Rendered projects/edit.html.erb within layouts/application (24.6ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:10:56.204750"], ["updated_at", "2018-05-27 21:10:56.204750"], ["shortname", "Sharks have a week dedicated to him"], ["content", "The circus ran away to join him"], ["summary", "His wallet is woven out of chupacabra leather"], ["content_markdown", "id | aut | voluptatibus\n---- | ---- | ----\nest | non | tempora\ndebitis | soluta | quas"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started DELETE "/projects/27" for 127.0.0.1 at 2018-05-27 17:10:56 -0400
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 27]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_authentication
+-------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:10:56.216211"], ["updated_at", "2018-05-27 21:10:56.216211"], ["shortname", "Sharks have a week dedicated to him"], ["content", "The circus ran away to join him"], ["summary", "His wallet is woven out of chupacabra leather"], ["content_markdown", "id | aut | voluptatibus\n---- | ---- | ----\nest | non | tempora\ndebitis | soluta | quas"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:10:56 -0400
+Processing by ProjectsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:10:56 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 177ms (Views: 172.5ms | ActiveRecord: 1.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:10:56.400939"], ["updated_at", "2018-05-27 21:10:56.400939"], ["shortname", "Sharks have a week dedicated to him"], ["content", "The circus ran away to join him"], ["summary", "His wallet is woven out of chupacabra leather"], ["content_markdown", "id | aut | voluptatibus\n---- | ---- | ----\nest | non | tempora\ndebitis | soluta | quas"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/projects/29" for 127.0.0.1 at 2018-05-27 17:10:56 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"project"=>{"name"=>"new-name", "content"=>"this is new content", "markdown_content"=>"more markdown content"}, "id"=>"29"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+Unpermitted parameter: :markdown_content
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "projects" SET "name" = $1, "content" = $2, "updated_at" = $3 WHERE "projects"."id" = $4[0m  [["name", "new-name"], ["content", "this is new content"], ["updated_at", "2018-05-27 21:10:56.406971"], ["id", 29]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/29/edit
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:10:56.413264"], ["updated_at", "2018-05-27 21:10:56.413264"], ["shortname", "Sharks have a week dedicated to him"], ["content", "The circus ran away to join him"], ["summary", "His wallet is woven out of chupacabra leather"], ["content_markdown", "id | aut | voluptatibus\n---- | ---- | ----\nest | non | tempora\ndebitis | soluta | quas"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/new" for 127.0.0.1 at 2018-05-27 17:10:56 -0400
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.1ms)
+  Rendered projects/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:10:56.428218"], ["updated_at", "2018-05-27 21:10:56.428218"], ["shortname", "Sharks have a week dedicated to him"], ["content", "The circus ran away to join him"], ["summary", "His wallet is woven out of chupacabra leather"], ["content_markdown", "id | aut | voluptatibus\n---- | ---- | ----\nest | non | tempora\ndebitis | soluta | quas"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:10:56 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 1.0ms)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:13:31.459673"], ["updated_at", "2018-05-27 21:13:31.459673"], ["shortname", "He once got pulled over for speeding, and the cop got the ticket"], ["content", "He once got pulled over for speeding, and the cop got the ticket"], ["summary", "He has taught old dogs a variety of new tricks"], ["content_markdown", "quidem | assumenda | sapiente\n---- | ---- | ----\nquos | vitae | pariatur\nautem | ea | eaque"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started POST "/projects" for 127.0.0.1 at 2018-05-27 17:13:31 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"project"=>{"name"=>"MyString", "categories"=>"rails", "order"=>"0.07456673242559475", "displayed"=>"true", "shortname"=>"He once got pulled over for speeding, and the cop got the ticket", "content"=>"He once got pulled over for speeding, and the cop got the ticket", "summary"=>"He has taught old dogs a variety of new tricks", "isArticle"=>"false", "markdown"=>"true", "content_markdown"=>"quidem | assumenda | sapiente\n---- | ---- | ----\nquos | vitae | pariatur\nautem | ea | eaque", "sticky"=>"false", "website"=>"false", "large_modal"=>"false", "image_dir"=>"testproject"}}
+Unpermitted parameters: :shortname, :summary, :isArticle, :content_markdown
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "content", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:13:31.564804"], ["updated_at", "2018-05-27 21:13:31.564804"], ["content", "He once got pulled over for speeding, and the cop got the ticket"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/33
+Completed 302 Found in 13ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY "projects"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:13:31.587345"], ["updated_at", "2018-05-27 21:13:31.587345"], ["shortname", "He once got pulled over for speeding, and the cop got the ticket"], ["content", "He once got pulled over for speeding, and the cop got the ticket"], ["summary", "He has taught old dogs a variety of new tricks"], ["content_markdown", "quidem | assumenda | sapiente\n---- | ---- | ----\nquos | vitae | pariatur\nautem | ea | eaque"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:13:31 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 205ms (Views: 200.1ms | ActiveRecord: 1.4ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:13:31.800460"], ["updated_at", "2018-05-27 21:13:31.800460"], ["shortname", "He once got pulled over for speeding, and the cop got the ticket"], ["content", "He once got pulled over for speeding, and the cop got the ticket"], ["summary", "He has taught old dogs a variety of new tricks"], ["content_markdown", "quidem | assumenda | sapiente\n---- | ---- | ----\nquos | vitae | pariatur\nautem | ea | eaque"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/new" for 127.0.0.1 at 2018-05-27 17:13:31 -0400
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (15.9ms)
+  Rendered projects/new.html.erb within layouts/application (20.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:13:31.833518"], ["updated_at", "2018-05-27 21:13:31.833518"], ["shortname", "He once got pulled over for speeding, and the cop got the ticket"], ["content", "He once got pulled over for speeding, and the cop got the ticket"], ["summary", "He has taught old dogs a variety of new tricks"], ["content_markdown", "quidem | assumenda | sapiente\n---- | ---- | ----\nquos | vitae | pariatur\nautem | ea | eaque"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/projects/36" for 127.0.0.1 at 2018-05-27 17:13:31 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"project"=>{"name"=>"new-name", "content"=>"this is new content", "markdown_content"=>"more markdown content", "sticky"=>"true", "displayed"=>"true"}, "id"=>"36"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+Unpermitted parameter: :markdown_content
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "projects" SET "name" = $1, "content" = $2, "sticky" = $3, "updated_at" = $4 WHERE "projects"."id" = $5[0m  [["name", "new-name"], ["content", "this is new content"], ["sticky", "t"], ["updated_at", "2018-05-27 21:13:31.841765"], ["id", 36]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/36/edit
+Completed 302 Found in 9ms (ActiveRecord: 2.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:13:31.850196"], ["updated_at", "2018-05-27 21:13:31.850196"], ["shortname", "He once got pulled over for speeding, and the cop got the ticket"], ["content", "He once got pulled over for speeding, and the cop got the ticket"], ["summary", "He has taught old dogs a variety of new tricks"], ["content_markdown", "quidem | assumenda | sapiente\n---- | ---- | ----\nquos | vitae | pariatur\nautem | ea | eaque"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/37/edit" for 127.0.0.1 at 2018-05-27 17:13:31 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (6.3ms)
+  Rendered projects/edit.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:13:31.866937"], ["updated_at", "2018-05-27 21:13:31.866937"], ["shortname", "He once got pulled over for speeding, and the cop got the ticket"], ["content", "He once got pulled over for speeding, and the cop got the ticket"], ["summary", "He has taught old dogs a variety of new tricks"], ["content_markdown", "quidem | assumenda | sapiente\n---- | ---- | ----\nquos | vitae | pariatur\nautem | ea | eaque"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started DELETE "/projects/38" for 127.0.0.1 at 2018-05-27 17:13:31 -0400
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"id"=>"38"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 38]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:13:31.878573"], ["updated_at", "2018-05-27 21:13:31.878573"], ["shortname", "He once got pulled over for speeding, and the cop got the ticket"], ["content", "He once got pulled over for speeding, and the cop got the ticket"], ["summary", "He has taught old dogs a variety of new tricks"], ["content_markdown", "quidem | assumenda | sapiente\n---- | ---- | ----\nquos | vitae | pariatur\nautem | ea | eaque"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/39" for 127.0.0.1 at 2018-05-27 17:13:31 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_authentication
+-------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:13:31.892384"], ["updated_at", "2018-05-27 21:13:31.892384"], ["shortname", "He once got pulled over for speeding, and the cop got the ticket"], ["content", "He once got pulled over for speeding, and the cop got the ticket"], ["summary", "He has taught old dogs a variety of new tricks"], ["content_markdown", "quidem | assumenda | sapiente\n---- | ---- | ----\nquos | vitae | pariatur\nautem | ea | eaque"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:13:31 -0400
+Processing by ProjectsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:13:31 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:14:50.582994"], ["updated_at", "2018-05-27 21:14:50.582994"], ["shortname", "He never wears a watch because time is always on his side"], ["content", "Presidents take his birthday off"], ["summary", "He once made a weeping willow laugh"], ["content_markdown", "accusantium | impedit | eaque\n---- | ---- | ----\nvel | non | quidem\nvelit | et | eum"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:14:50 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 189ms (Views: 176.7ms | ActiveRecord: 1.6ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:14:50.849342"], ["updated_at", "2018-05-27 21:14:50.849342"], ["shortname", "He never wears a watch because time is always on his side"], ["content", "Presidents take his birthday off"], ["summary", "He once made a weeping willow laugh"], ["content_markdown", "accusantium | impedit | eaque\n---- | ---- | ----\nvel | non | quidem\nvelit | et | eum"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/new" for 127.0.0.1 at 2018-05-27 17:14:50 -0400
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (12.3ms)
+  Rendered projects/new.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (8.9ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:14:50.877409"], ["updated_at", "2018-05-27 21:14:50.877409"], ["shortname", "He never wears a watch because time is always on his side"], ["content", "Presidents take his birthday off"], ["summary", "He once made a weeping willow laugh"], ["content_markdown", "accusantium | impedit | eaque\n---- | ---- | ----\nvel | non | quidem\nvelit | et | eum"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/projects/43" for 127.0.0.1 at 2018-05-27 17:14:50 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"project"=>{"name"=>"new-name", "content"=>"this is new content", "markdown_content"=>"more markdown content", "sticky"=>"true", "displayed"=>"true"}, "id"=>"43"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+Unpermitted parameter: :markdown_content
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[33mUPDATE "projects" SET "name" = $1, "content" = $2, "sticky" = $3, "updated_at" = $4 WHERE "projects"."id" = $5[0m  [["name", "new-name"], ["content", "this is new content"], ["sticky", "t"], ["updated_at", "2018-05-27 21:14:50.900666"], ["id", 43]]
+  [1m[35m (4.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/43/edit
+Completed 302 Found in 15ms (ActiveRecord: 7.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:14:50.912635"], ["updated_at", "2018-05-27 21:14:50.912635"], ["shortname", "He never wears a watch because time is always on his side"], ["content", "Presidents take his birthday off"], ["summary", "He once made a weeping willow laugh"], ["content_markdown", "accusantium | impedit | eaque\n---- | ---- | ----\nvel | non | quidem\nvelit | et | eum"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started DELETE "/projects/44" for 127.0.0.1 at 2018-05-27 17:14:50 -0400
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 44]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:14:50.926221"], ["updated_at", "2018-05-27 21:14:50.926221"], ["shortname", "He never wears a watch because time is always on his side"], ["content", "Presidents take his birthday off"], ["summary", "He once made a weeping willow laugh"], ["content_markdown", "accusantium | impedit | eaque\n---- | ---- | ----\nvel | non | quidem\nvelit | et | eum"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started POST "/projects" for 127.0.0.1 at 2018-05-27 17:14:50 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"project"=>{"name"=>"MyString", "categories"=>"rails", "order"=>"0.21649220037715367", "displayed"=>"true", "shortname"=>"He never wears a watch because time is always on his side", "content"=>"Presidents take his birthday off", "summary"=>"He once made a weeping willow laugh", "isArticle"=>"false", "markdown"=>"true", "content_markdown"=>"accusantium | impedit | eaque\n---- | ---- | ----\nvel | non | quidem\nvelit | et | eum", "sticky"=>"false", "website"=>"false", "large_modal"=>"false", "image_dir"=>"testproject"}}
+Unpermitted parameters: :shortname, :summary, :isArticle, :content_markdown
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "content", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:14:50.933055"], ["updated_at", "2018-05-27 21:14:50.933055"], ["content", "Presidents take his birthday off"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/46
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY "projects"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:14:50.940371"], ["updated_at", "2018-05-27 21:14:50.940371"], ["shortname", "He never wears a watch because time is always on his side"], ["content", "Presidents take his birthday off"], ["summary", "He once made a weeping willow laugh"], ["content_markdown", "accusantium | impedit | eaque\n---- | ---- | ----\nvel | non | quidem\nvelit | et | eum"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/47/edit" for 127.0.0.1 at 2018-05-27 17:14:50 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (5.2ms)
+  Rendered projects/edit.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:14:50.956166"], ["updated_at", "2018-05-27 21:14:50.956166"], ["shortname", "He never wears a watch because time is always on his side"], ["content", "Presidents take his birthday off"], ["summary", "He once made a weeping willow laugh"], ["content_markdown", "accusantium | impedit | eaque\n---- | ---- | ----\nvel | non | quidem\nvelit | et | eum"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/48" for 127.0.0.1 at 2018-05-27 17:14:50 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_authentication
+-------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:14:50.969915"], ["updated_at", "2018-05-27 21:14:50.969915"], ["shortname", "He never wears a watch because time is always on his side"], ["content", "Presidents take his birthday off"], ["summary", "He once made a weeping willow laugh"], ["content_markdown", "accusantium | impedit | eaque\n---- | ---- | ----\nvel | non | quidem\nvelit | et | eum"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:14:50 -0400
+Processing by ProjectsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:14:50 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:19:48.276637"], ["updated_at", "2018-05-27 21:19:48.276637"], ["shortname", "His shirts never wrinkle"], ["content", "His garden maze is responsible for more missing persons than the bermuda triangle"], ["summary", "His ten gallon hat holds twenty gallons"], ["content_markdown", "eius | earum | doloribus\n---- | ---- | ----\nsed | quo | rerum\nipsa | commodi | quo"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started POST "/projects" for 127.0.0.1 at 2018-05-27 17:19:48 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"project"=>{"name"=>"MyString", "categories"=>"rails", "order"=>"0.5958049356107381", "displayed"=>"true", "shortname"=>"His shirts never wrinkle", "content"=>"His garden maze is responsible for more missing persons than the bermuda triangle", "summary"=>"His ten gallon hat holds twenty gallons", "isArticle"=>"false", "markdown"=>"true", "content_markdown"=>"eius | earum | doloribus\n---- | ---- | ----\nsed | quo | rerum\nipsa | commodi | quo", "sticky"=>"false", "website"=>"false", "large_modal"=>"false", "image_dir"=>"testproject"}}
+Unpermitted parameters: :shortname, :summary, :isArticle, :content_markdown
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "content", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:19:48.392351"], ["updated_at", "2018-05-27 21:19:48.392351"], ["content", "His garden maze is responsible for more missing persons than the bermuda triangle"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/51
+Completed 302 Found in 12ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY "projects"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:19:48.407955"], ["updated_at", "2018-05-27 21:19:48.407955"], ["shortname", "His shirts never wrinkle"], ["content", "His garden maze is responsible for more missing persons than the bermuda triangle"], ["summary", "His ten gallon hat holds twenty gallons"], ["content_markdown", "eius | earum | doloribus\n---- | ---- | ----\nsed | quo | rerum\nipsa | commodi | quo"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/52" for 127.0.0.1 at 2018-05-27 17:19:48 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 193ms (Views: 188.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:19:48.607724"], ["updated_at", "2018-05-27 21:19:48.607724"], ["shortname", "His shirts never wrinkle"], ["content", "His garden maze is responsible for more missing persons than the bermuda triangle"], ["summary", "His ten gallon hat holds twenty gallons"], ["content_markdown", "eius | earum | doloribus\n---- | ---- | ----\nsed | quo | rerum\nipsa | commodi | quo"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started DELETE "/projects/53" for 127.0.0.1 at 2018-05-27 17:19:48 -0400
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 53]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_authentication
+-------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:19:48.619309"], ["updated_at", "2018-05-27 21:19:48.619309"], ["shortname", "His shirts never wrinkle"], ["content", "His garden maze is responsible for more missing persons than the bermuda triangle"], ["summary", "His ten gallon hat holds twenty gallons"], ["content_markdown", "eius | earum | doloribus\n---- | ---- | ----\nsed | quo | rerum\nipsa | commodi | quo"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:19:48 -0400
+Processing by ProjectsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:19:48 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 8ms (Views: 4.3ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:19:48.635169"], ["updated_at", "2018-05-27 21:19:48.635169"], ["shortname", "His shirts never wrinkle"], ["content", "His garden maze is responsible for more missing persons than the bermuda triangle"], ["summary", "His ten gallon hat holds twenty gallons"], ["content_markdown", "eius | earum | doloribus\n---- | ---- | ----\nsed | quo | rerum\nipsa | commodi | quo"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/new" for 127.0.0.1 at 2018-05-27 17:19:48 -0400
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (15.9ms)
+  Rendered projects/new.html.erb within layouts/application (18.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:19:48.664691"], ["updated_at", "2018-05-27 21:19:48.664691"], ["shortname", "His shirts never wrinkle"], ["content", "His garden maze is responsible for more missing persons than the bermuda triangle"], ["summary", "His ten gallon hat holds twenty gallons"], ["content_markdown", "eius | earum | doloribus\n---- | ---- | ----\nsed | quo | rerum\nipsa | commodi | quo"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/projects/56" for 127.0.0.1 at 2018-05-27 17:19:48 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"project"=>{"name"=>"new-name", "content"=>"this is new content", "markdown_content"=>"more markdown content", "sticky"=>"true", "displayed"=>"true"}, "id"=>"56"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+Unpermitted parameter: :markdown_content
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "projects" SET "name" = $1, "content" = $2, "sticky" = $3, "updated_at" = $4 WHERE "projects"."id" = $5[0m  [["name", "new-name"], ["content", "this is new content"], ["sticky", "t"], ["updated_at", "2018-05-27 21:19:48.670753"], ["id", 56]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/56/edit
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:19:48.678842"], ["updated_at", "2018-05-27 21:19:48.678842"], ["shortname", "His shirts never wrinkle"], ["content", "His garden maze is responsible for more missing persons than the bermuda triangle"], ["summary", "His ten gallon hat holds twenty gallons"], ["content_markdown", "eius | earum | doloribus\n---- | ---- | ----\nsed | quo | rerum\nipsa | commodi | quo"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/57/edit" for 127.0.0.1 at 2018-05-27 17:19:48 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"57"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.4ms)
+  Rendered projects/edit.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:19:48.695882"], ["updated_at", "2018-05-27 21:19:48.695882"], ["shortname", "His shirts never wrinkle"], ["content", "His garden maze is responsible for more missing persons than the bermuda triangle"], ["summary", "His ten gallon hat holds twenty gallons"], ["content_markdown", "eius | earum | doloribus\n---- | ---- | ----\nsed | quo | rerum\nipsa | commodi | quo"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:19:48 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 1.4ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------
+CategoriesControllerTest: test_should_get_index
+-----------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (17.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ALGOL"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:39:47.373156"], ["updated_at", "2018-05-27 21:39:47.373156"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/categories" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+CategoriesControllerTest: test_should_get_new
+---------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ALGOL"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:39:47.512863"], ["updated_at", "2018-05-27 21:39:47.512863"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/categories/new" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (11.3ms)
+  Rendered categories/new.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+CategoriesControllerTest: test_should_show_category
+---------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ALGOL"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:39:47.539193"], ["updated_at", "2018-05-27 21:39:47.539193"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/categories/3" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------------
+CategoriesControllerTest: test_should_update_category
+-----------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ALGOL"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:39:47.553274"], ["updated_at", "2018-05-27 21:39:47.553274"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/categories/4" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by CategoriesController#update as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------------
+CategoriesControllerTest: test_should_get_edit
+----------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ALGOL"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:39:47.564915"], ["updated_at", "2018-05-27 21:39:47.564915"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/categories/5/edit" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering categories/edit.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.9ms)
+  Rendered categories/edit.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------------
+CategoriesControllerTest: test_should_create_category
+-----------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ALGOL"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:39:47.578513"], ["updated_at", "2018-05-27 21:39:47.578513"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+Started POST "/categories" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by CategoriesController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------------
+CategoriesControllerTest: test_should_destroy_category
+------------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ALGOL"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:39:47.584607"], ["updated_at", "2018-05-27 21:39:47.584607"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+Started DELETE "/categories/7" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/categories
+Completed 302 Found in 3ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+WelcomeControllerTest: test_home_page_is_succesful
+--------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by MainController#index as HTML
+  [1m[36mProject Load (14.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."sticky" = $1 AND "projects"."displayed" = $2 ORDER BY "projects"."created_at" DESC[0m  [["sticky", "t"], ["displayed", "t"]]
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE ("projects"."sticky" != $1) AND "projects"."website" = $2 AND "projects"."displayed" = $3 ORDER BY "projects"."created_at" DESC[0m  [["sticky", "t"], ["website", "t"], ["displayed", "t"]]
+  [1m[36mProject Load (1.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 AND ("projects"."sticky" = 'f' OR "projects"."sticky" IS NULL) AND ("projects"."website" = 'f' OR "projects"."website" IS NULL) ORDER BY "projects"."categories" ASC[0m  [["displayed", "t"]]
+  Rendering main/index.html.erb within layouts/application
+  Rendered layouts/_name.html.erb (0.7ms)
+  Rendered main/_skills.html.erb (0.6ms)
+  Rendered main/_buttons.html.erb (0.4ms)
+  Rendered main/index.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 16.0ms | ActiveRecord: 19.6ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:39:47.676510"], ["updated_at", "2018-05-27 21:39:47.676510"], ["shortname", "His feet don’t get blisters, but his shoes do"], ["content", "He has never walked into a spider web"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "minima | accusamus | totam\n---- | ---- | ----\net | inventore | aliquid\nasperiores | libero | qui"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/59/edit" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 59], ["LIMIT", 1]]
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (13.2ms)
+  Rendered projects/edit.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:39:47.715717"], ["updated_at", "2018-05-27 21:39:47.715717"], ["shortname", "His feet don’t get blisters, but his shoes do"], ["content", "He has never walked into a spider web"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "minima | accusamus | totam\n---- | ---- | ----\net | inventore | aliquid\nasperiores | libero | qui"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 12ms (Views: 6.9ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_authentication
+-------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:39:47.738030"], ["updated_at", "2018-05-27 21:39:47.738030"], ["shortname", "His feet don’t get blisters, but his shoes do"], ["content", "He has never walked into a spider web"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "minima | accusamus | totam\n---- | ---- | ----\net | inventore | aliquid\nasperiores | libero | qui"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by ProjectsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:39:47.756300"], ["updated_at", "2018-05-27 21:39:47.756300"], ["shortname", "His feet don’t get blisters, but his shoes do"], ["content", "He has never walked into a spider web"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "minima | accusamus | totam\n---- | ---- | ----\net | inventore | aliquid\nasperiores | libero | qui"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started POST "/projects" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"project"=>{"name"=>"MyString", "categories"=>"rails", "order"=>"0.22709366142977971", "displayed"=>"true", "shortname"=>"His feet don’t get blisters, but his shoes do", "content"=>"He has never walked into a spider web", "summary"=>"If he were to say something costs an arm and a leg, it would", "isArticle"=>"false", "markdown"=>"true", "content_markdown"=>"minima | accusamus | totam\n---- | ---- | ----\net | inventore | aliquid\nasperiores | libero | qui", "sticky"=>"false", "website"=>"false", "large_modal"=>"false", "image_dir"=>"testproject"}}
+Unpermitted parameters: :shortname, :summary, :isArticle, :content_markdown
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "content", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:39:47.767091"], ["updated_at", "2018-05-27 21:39:47.767091"], ["content", "He has never walked into a spider web"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/63
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY "projects"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:39:47.776525"], ["updated_at", "2018-05-27 21:39:47.776525"], ["shortname", "His feet don’t get blisters, but his shoes do"], ["content", "He has never walked into a spider web"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "minima | accusamus | totam\n---- | ---- | ----\net | inventore | aliquid\nasperiores | libero | qui"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/new" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (6.4ms)
+  Rendered projects/new.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 14ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:39:47.800606"], ["updated_at", "2018-05-27 21:39:47.800606"], ["shortname", "His feet don’t get blisters, but his shoes do"], ["content", "He has never walked into a spider web"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "minima | accusamus | totam\n---- | ---- | ----\net | inventore | aliquid\nasperiores | libero | qui"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/projects/65" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"project"=>{"name"=>"new-name", "content"=>"this is new content", "markdown_content"=>"more markdown content", "sticky"=>"true", "displayed"=>"true"}, "id"=>"65"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+Unpermitted parameter: :markdown_content
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "projects" SET "name" = $1, "content" = $2, "sticky" = $3, "updated_at" = $4 WHERE "projects"."id" = $5[0m  [["name", "new-name"], ["content", "this is new content"], ["sticky", "t"], ["updated_at", "2018-05-27 21:39:47.809140"], ["id", 65]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/65/edit
+Completed 302 Found in 9ms (ActiveRecord: 2.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:39:47.818632"], ["updated_at", "2018-05-27 21:39:47.818632"], ["shortname", "His feet don’t get blisters, but his shoes do"], ["content", "He has never walked into a spider web"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "minima | accusamus | totam\n---- | ---- | ----\net | inventore | aliquid\nasperiores | libero | qui"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started DELETE "/projects/66" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"id"=>"66"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 66]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:39:47.831385"], ["updated_at", "2018-05-27 21:39:47.831385"], ["shortname", "His feet don’t get blisters, but his shoes do"], ["content", "He has never walked into a spider web"], ["summary", "If he were to say something costs an arm and a leg, it would"], ["content_markdown", "minima | accusamus | totam\n---- | ---- | ----\net | inventore | aliquid\nasperiores | libero | qui"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/67" for 127.0.0.1 at 2018-05-27 17:39:47 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:41:22.544238"], ["updated_at", "2018-05-27 21:41:22.544238"], ["shortname", "When he was young he once sent his parents to his room"], ["content", "He is fluent in all languages, including three that he only speaks"], ["summary", "When he drives a car off the lot, its price increases in value"], ["content_markdown", "vel | ut | deserunt\n---- | ---- | ----\nreiciendis | aut | nostrum\net | natus | dignissimos"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 36ms (Views: 21.7ms | ActiveRecord: 2.5ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:41:22.694761"], ["updated_at", "2018-05-27 21:41:22.694761"], ["shortname", "When he was young he once sent his parents to his room"], ["content", "He is fluent in all languages, including three that he only speaks"], ["summary", "When he drives a car off the lot, its price increases in value"], ["content_markdown", "vel | ut | deserunt\n---- | ---- | ----\nreiciendis | aut | nostrum\net | natus | dignissimos"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started POST "/projects" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"project"=>{"name"=>"MyString", "categories"=>"rails", "order"=>"0.6395694486821656", "displayed"=>"true", "shortname"=>"When he was young he once sent his parents to his room", "content"=>"He is fluent in all languages, including three that he only speaks", "summary"=>"When he drives a car off the lot, its price increases in value", "isArticle"=>"false", "markdown"=>"true", "content_markdown"=>"vel | ut | deserunt\n---- | ---- | ----\nreiciendis | aut | nostrum\net | natus | dignissimos", "sticky"=>"false", "website"=>"false", "large_modal"=>"false", "image_dir"=>"testproject"}}
+Unpermitted parameters: :shortname, :summary, :isArticle, :content_markdown
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "content", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:41:22.709080"], ["updated_at", "2018-05-27 21:41:22.709080"], ["content", "He is fluent in all languages, including three that he only speaks"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/70
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY "projects"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:41:22.716302"], ["updated_at", "2018-05-27 21:41:22.716302"], ["shortname", "When he was young he once sent his parents to his room"], ["content", "He is fluent in all languages, including three that he only speaks"], ["summary", "When he drives a car off the lot, its price increases in value"], ["content_markdown", "vel | ut | deserunt\n---- | ---- | ----\nreiciendis | aut | nostrum\net | natus | dignissimos"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/projects/71" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by ProjectsController#update as HTML
+  Parameters: {"project"=>{"name"=>"new-name", "content"=>"this is new content", "markdown_content"=>"more markdown content", "sticky"=>"true", "displayed"=>"true"}, "id"=>"71"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+Unpermitted parameter: :markdown_content
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "projects" SET "name" = $1, "content" = $2, "sticky" = $3, "updated_at" = $4 WHERE "projects"."id" = $5[0m  [["name", "new-name"], ["content", "this is new content"], ["sticky", "t"], ["updated_at", "2018-05-27 21:41:22.725314"], ["id", 71]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects/71/edit
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:41:22.731429"], ["updated_at", "2018-05-27 21:41:22.731429"], ["shortname", "When he was young he once sent his parents to his room"], ["content", "He is fluent in all languages, including three that he only speaks"], ["summary", "When he drives a car off the lot, its price increases in value"], ["content_markdown", "vel | ut | deserunt\n---- | ---- | ----\nreiciendis | aut | nostrum\net | natus | dignissimos"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/new" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (17.1ms)
+  Rendered projects/new.html.erb within layouts/application (20.3ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:41:22.762288"], ["updated_at", "2018-05-27 21:41:22.762288"], ["shortname", "When he was young he once sent his parents to his room"], ["content", "He is fluent in all languages, including three that he only speaks"], ["summary", "When he drives a car off the lot, its price increases in value"], ["content_markdown", "vel | ut | deserunt\n---- | ---- | ----\nreiciendis | aut | nostrum\net | natus | dignissimos"], ["image_dir", "testproject"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/73" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:41:22.775501"], ["updated_at", "2018-05-27 21:41:22.775501"], ["shortname", "When he was young he once sent his parents to his room"], ["content", "He is fluent in all languages, including three that he only speaks"], ["summary", "When he drives a car off the lot, its price increases in value"], ["content_markdown", "vel | ut | deserunt\n---- | ---- | ----\nreiciendis | aut | nostrum\net | natus | dignissimos"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects/74/edit" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"74"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (4.9ms)
+  Rendered projects/edit.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:41:22.794196"], ["updated_at", "2018-05-27 21:41:22.794196"], ["shortname", "When he was young he once sent his parents to his room"], ["content", "He is fluent in all languages, including three that he only speaks"], ["summary", "When he drives a car off the lot, its price increases in value"], ["content_markdown", "vel | ut | deserunt\n---- | ---- | ----\nreiciendis | aut | nostrum\net | natus | dignissimos"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started DELETE "/projects/75" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"id"=>"75"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 75]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 4ms (ActiveRecord: 1.6ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_authentication
+-------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "categories", "order", "displayed", "created_at", "updated_at", "shortname", "content", "summary", "content_markdown", "image_dir") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "MyString"], ["categories", "rails"], ["order", 0], ["displayed", "t"], ["created_at", "2018-05-27 21:41:22.806229"], ["updated_at", "2018-05-27 21:41:22.806229"], ["shortname", "When he was young he once sent his parents to his room"], ["content", "He is fluent in all languages, including three that he only speaks"], ["summary", "When he drives a car off the lot, its price increases in value"], ["content_markdown", "vel | ut | deserunt\n---- | ---- | ----\nreiciendis | aut | nostrum\net | natus | dignissimos"], ["image_dir", "testproject"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by ProjectsController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Started GET "/projects" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 ORDER BY "projects"."order" DESC[0m  [["displayed", "t"]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1[0m  [["displayed", "f"]]
+  Rendered projects/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+WelcomeControllerTest: test_home_page_is_succesful
+--------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by MainController#index as HTML
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."sticky" = $1 AND "projects"."displayed" = $2 ORDER BY "projects"."created_at" DESC[0m  [["sticky", "t"], ["displayed", "t"]]
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE ("projects"."sticky" != $1) AND "projects"."website" = $2 AND "projects"."displayed" = $3 ORDER BY "projects"."created_at" DESC[0m  [["sticky", "t"], ["website", "t"], ["displayed", "t"]]
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."displayed" = $1 AND ("projects"."sticky" = 'f' OR "projects"."sticky" IS NULL) AND ("projects"."website" = 'f' OR "projects"."website" IS NULL) ORDER BY "projects"."categories" ASC[0m  [["displayed", "t"]]
+  Rendering main/index.html.erb within layouts/application
+  Rendered layouts/_name.html.erb (0.7ms)
+  Rendered main/_skills.html.erb (1.0ms)
+  Rendered main/_buttons.html.erb (0.5ms)
+  Rendered main/index.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 26ms (Views: 17.2ms | ActiveRecord: 2.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------------
+CategoriesControllerTest: test_should_create_category
+-----------------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Smalltalk"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:41:22.872891"], ["updated_at", "2018-05-27 21:41:22.872891"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+Started POST "/categories" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"name"=>"Smalltalk", "code"=>"language-code", "html"=>"fa fa-money"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Smalltalk"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:41:22.881954"], ["updated_at", "2018-05-27 21:41:22.881954"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/categories/9
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------------
+CategoriesControllerTest: test_should_destroy_category
+------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Smalltalk"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:41:22.889165"], ["updated_at", "2018-05-27 21:41:22.889165"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+Started DELETE "/categories/10" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/categories
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+CategoriesControllerTest: test_should_show_category
+---------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Smalltalk"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:41:22.900133"], ["updated_at", "2018-05-27 21:41:22.900133"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/categories/11" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering categories/show.html.erb within layouts/application
+  Rendered categories/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+CategoriesControllerTest: test_should_get_new
+---------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Smalltalk"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:41:22.912351"], ["updated_at", "2018-05-27 21:41:22.912351"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/categories/new" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (4.1ms)
+  Rendered categories/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------------
+CategoriesControllerTest: test_should_get_edit
+----------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (9.1ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Smalltalk"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:41:22.929900"], ["updated_at", "2018-05-27 21:41:22.929900"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/categories/13/edit" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering categories/edit.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.8ms)
+  Rendered categories/edit.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------
+CategoriesControllerTest: test_should_get_index
+-----------------------------------------------
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Smalltalk"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:41:22.954450"], ["updated_at", "2018-05-27 21:41:22.954450"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/categories" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------------------
+CategoriesControllerTest: test_should_update_category
+-----------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "code", "html", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Smalltalk"], ["code", "language-code"], ["html", "fa fa-money"], ["created_at", "2018-05-27 21:41:22.969248"], ["updated_at", "2018-05-27 21:41:22.969248"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/categories/15" for 127.0.0.1 at 2018-05-27 17:41:22 -0400
+Processing by CategoriesController#update as HTML
+  Parameters: {"category"=>{"name"=>"new-name", "code"=>"new-cat-code", "html"=>"fa fa-new-icon"}, "id"=>"15"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "categories" SET "name" = $1, "code" = $2, "html" = $3, "updated_at" = $4 WHERE "categories"."id" = $5[0m  [["name", "new-name"], ["code", "new-cat-code"], ["html", "fa fa-new-icon"], ["updated_at", "2018-05-27 21:41:22.976115"], ["id", 15]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/categories/15
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m

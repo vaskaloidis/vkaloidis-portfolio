@@ -11,7 +11,8 @@ development:
   database: vkaloidis-dev
 
 test:
-  database: vkaloidis-test
+    <<: *default
+    database: vkaloidis-test
 
 production:
   <<: *default

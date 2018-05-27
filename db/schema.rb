@@ -45,17 +45,9 @@ ActiveRecord::Schema.define(version: 20180330220601) do
     t.string "shortname"
     t.string "content"
     t.string "summary"
-    t.string "img_file_name"
-    t.string "img_content_type"
-    t.integer "img_file_size"
-    t.datetime "img_updated_at"
     t.boolean "isArticle", default: false
     t.boolean "markdown", default: true
     t.string "content_markdown"
-    t.string "image_file_name"
-    t.string "image_content_type"
-    t.integer "image_file_size"
-    t.datetime "image_updated_at"
     t.boolean "sticky", default: false
     t.boolean "website", default: false
     t.boolean "large_modal", default: false

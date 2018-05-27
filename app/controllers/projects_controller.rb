@@ -1,9 +1,7 @@
 class ProjectsController < AdminController
-
   # http_basic_authenticate_with name: @username, password: @password
-  before_action :set_project, only: [:show, :edit, :update, :destroy]
+  before_action :set_project, only: %i[show edit update destroy]
   before_action :authenticate
-
 
   # GET /projects
   # GET /projects.json
@@ -14,15 +12,14 @@ class ProjectsController < AdminController
 
   # GET /projects/1
   # GET /projects/1.json
-  def view
-  end
+  def view; end
 
   # GET /projects/1
   # GET /projects/1.json
   def show
     respond_to do |format|
-      format.html {render :show}
-      format.json {render json: @project}
+      format.html { render :show }
+      format.json { render json: @project }
     end
   end
 
@@ -34,8 +31,7 @@ class ProjectsController < AdminController
 
   # GET /projects/1/edit
 
-  def edit
-  end
+  def edit; end
 
   # POST /projects
   # POST /projects.json
@@ -44,11 +40,11 @@ class ProjectsController < AdminController
 
     respond_to do |format|
       if @project.save
-        format.html {redirect_to @project, notice: 'Project was successfully created.'}
-        format.json {render :show, status: :created, location: @project}
+        format.html { redirect_to @project, notice: 'Project was successfully created.' }
+        format.json { render :show, status: :created, location: @project }
       else
-        format.html {render :new}
-        format.json {render json: @project.errors, status: :unprocessable_entity}
+        format.html { render :new }
+        format.json { render json: @project.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -62,15 +58,15 @@ class ProjectsController < AdminController
         @project.markdown = @project.markdown.to_s.strip
         @project.content = @project.content.to_s.strip
         if @project.save
-          format.html {redirect_to edit_project_path(@project), notice: 'Project was succesfully Saved'}
-          format.json {render :show, status: :ok, location: @project}
+          format.html { redirect_to edit_project_path(@project), notice: 'Project was succesfully Saved' }
+          format.json { render :show, status: :ok, location: @project }
         else
-          format.html {render :edit}
-          format.json {render json: @project.errors, status: :unprocessable_entity}
+          format.html { render :edit }
+          format.json { render json: @project.errors, status: :unprocessable_entity }
         end
       else
-        format.html {render :edit}
-        format.json {render json: @project.errors, status: :unprocessable_entity}
+        format.html { render :edit }
+        format.json { render json: @project.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -85,16 +81,16 @@ class ProjectsController < AdminController
         @project.content = @project.content.to_s.strip
 
         if @project.save
-          format.html {redirect_to edit_project_path(@project), notice: 'Project was succesfully Saved'}
-          format.json {render :show, status: :ok, location: @project}
+          format.html { redirect_to edit_project_path(@project), notice: 'Project was succesfully Saved' }
+          format.json { render :show, status: :ok, location: @project }
         else
-          format.html {render :edit}
-          format.json {render json: @project.errors, status: :unprocessable_entity}
+          format.html { render :edit }
+          format.json { render json: @project.errors, status: :unprocessable_entity }
         end
 
       else
-        format.html {render :edit}
-        format.json {render json: @project.errors, status: :unprocessable_entity}
+        format.html { render :edit }
+        format.json { render json: @project.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -104,28 +100,15 @@ class ProjectsController < AdminController
   def destroy
     @project.destroy
     respond_to do |format|
-      format.html {redirect_to projects_url, notice: 'Project was successfully destroyed.'}
-      format.json {head :no_content}
+      format.html { redirect_to projects_url, notice: 'Project was successfully destroyed.' }
+      format.json { head :no_content }
     end
   end
-
 
   private
+
   def authenticate
     super
-  end
-
-  def authenticate_two
-    if Rails.env.production?
-      authenticate_or_request_with_http_basic do |user_name, password|
-        session[:admin] = (user_name == 'vas' && password == ENV['PASSWORD'])
-      end
-    else
-      Dotenv::Railtie.load
-      authenticate_or_request_with_http_basic do |user_name, password|
-        session[:admin] = (user_name == 'vas' && password == 'password')
-      end
-    end
   end
 
   # Use callbacks to share common setup or constraints between actions.

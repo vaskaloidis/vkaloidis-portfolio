@@ -2,7 +2,7 @@
 
   <%= link_to 'Edit', edit_project_path(@project) %> |
 	<%= link_to 'Back', projects_path %>
-	
+
 	<p id="notice"><%= notice %></p>
 
 
@@ -10,7 +10,7 @@
 		<strong>Name:</strong>
 		<%= @project.name %>
 	</p>
-	
+
 	<p>
 		<strong>Shortname:</strong>
 		<%= @project.shortname %>
@@ -20,12 +20,12 @@
     <strong>Image Directory:</strong>
     <%= @project.image_dir %>
   </p>
-	
+
 	<p>
 		<strong>Categories:</strong>
 		<%= @project.categories %>
 	</p>
-	
+
 	<p>
 		<strong>Sticky / Displayed:</strong>
 		<%= @project.sticky %> /
@@ -36,7 +36,7 @@
     <!--<%#= image_tag @project.avatar.url(:medium) %>-->
   <!--</p>-->
 
-  <% if @project.markdown != true %>
+  <% unless @project.markdown %>
 
     <p>
       <h4>HTML</h4>
@@ -50,12 +50,12 @@
     <p>
       <h4>Markdown</h4>
       <div style="border:1px solid black; margin:25px; padding:5px;">
-          <%= convertMarkdown(@project.content).html_safe %>
+          <%= convert_markdown(@project.content) %>
       </div>
     </p>
 
   <% end %>
-	
+
 </div>
 
 

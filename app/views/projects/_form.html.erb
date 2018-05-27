@@ -75,10 +75,14 @@
                   <strong>Project Available Files:</strong>
                   <ul>
                     <% unless @project.image_dir.nil?
+                      if File.directory?(Rails.root.join('public', 'projects', @project.image_dir))
                          album = Rails.root.join('public', 'projects', @project.image_dir)
                          Dir.entries(album).sort_by!{ |filename| filename.downcase }.each do |item|
                            next if item == '.' or item == '..' or item == '.DS_Store'               %>
                         <li><strong><%= item %></strong></li>
+                      <% end %>
+                      <% else %>
+                        <strong>Directory /public/projects/<%= @project.image_dir %>/ does not exist</strong>
                       <% end %>
                     <% end %>
                   </ul>
@@ -111,7 +115,7 @@
           <div style="margin-top:7px;" class="row">
             <div class="col-xs-12">
               <div style="margin: 10px;" class="actions">
-                <%= f.submit 'Update', :class => 'btn btn-success' %>
+                <%= f.submit 'Save', :class => 'btn btn-success' %>
                 <%= link_to 'Back', projects_path, class: 'btn btn-danger' %>
               </div>
             </div>
@@ -132,9 +136,7 @@
           <input type="text" value="<%= project.categories.to_s %>" data-role="tagsinput" id="project_categories" name="project[categories]"/>
           <%#= f.text_field :categories %>
         </div>
-
       </div>
-
       <!-- Preview Column-->
       <div id="right_column" class="pre-scrollable col-xs-12 col-md-5">
         <div>
@@ -146,7 +148,7 @@
           <% else %>
             <strong>Markdown Preview:</strong>
             <div id="preview_window" style="border:1px solid black; padding:5px;">
-              <%= convertMarkdown(@project.content).html_safe %>
+              <%= convert_markdown(@project.content) %>
             </div>
           <% end %>
         </div>

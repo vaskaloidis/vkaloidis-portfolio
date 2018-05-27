@@ -11,13 +11,11 @@
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
 
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
   <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/highlight.js/latest/highlight.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/latest/styles/github.min.css">
-  <%= stylesheet_link_tag 'bootstrap-tagsinput-rails' %>
 
   <script>
       function openModal(div) {
@@ -54,41 +52,25 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36624287-1"></script>
   <script>
       window.dataLayer = window.dataLayer || [];
-
       function gtag() {
           dataLayer.push(arguments);
       }
-
       gtag('js', new Date());
-
       gtag('config', 'UA-36624287-1');
   </script>
-
 </head>
 
 <body>
-
 <%= render 'layouts/navbar' %>
-
 <% if current_page?(:controller => 'main') %>
-
-  <!-- Header -->
   <header>
     <div class="container">
     </div>
   </header>
-
   <%= yield %>
   </div>
-
-<% elsif controller_name == 'projects' %>
-
-  <div class="container-fluid">
-    <%= yield %>
-  </div>
-
 <% else %>
-  <div class="container">
+  <div class="container-fluid">
     <%= yield %>
   </div>
 <% end %>

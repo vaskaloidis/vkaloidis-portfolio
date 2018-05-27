@@ -1,54 +1,54 @@
 <div class="container">
-	
+
 	<%= link_to 'Edit', edit_project_path(@project) %> |
 	<%= link_to 'Back', projects_path %>
-	
+
 	<p id="notice"><%= notice %></p>
-	
-	
+
+
 	<p>
 		<strong>Name:</strong>
 		<%= @project.name %>
 	</p>
-	
+
 	<p>
 		<strong>Shortname:</strong>
 		<%= @project.shortname %>
 	</p>
-	
+
 	<p>
 		<strong>Categories:</strong>
 		<%= @project.categories %>
 	</p>
-	
+
 	<p>
 		<strong>Sticky / Displayed:</strong>
 		<%= @project.sticky %>
 		<%= @project.displayed %>
 	</p>
-	
+
 	<p>
 		<%= image_tag @project.avatar.url(:medium) %>
 	</p>
-	
+
 	<% if @project.markdown != true %>
-			
+
 			<p>
 			<h4>HTML</h4>
 			<div style="border:1px solid black; margin:25px; padding:5px;">
 				<%= @project.content.html_safe %>
 			</div>
 			</p>
-	
+
 	<% else %>
-			
+
 			<p>
 			<h4>Markdown</h4>
 			<div style="border:1px solid black; margin:25px; padding:5px;">
-				<%= convertMarkdown(@project.content).html_safe %>
+				<%= convert_markdown(@project.content).html_safe %>
 			</div>
 			</p>
-	
+
 	<% end %>
 
 </div>
