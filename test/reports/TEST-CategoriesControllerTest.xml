@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time='0.925024' skipped='0' failures='0' errors='0' name="CategoriesControllerTest" assertions='9' tests='7' timestamp="2018-05-27T18:12:15-04:00">
+  <testcase time='0.748954' file="test/controllers/categories_controller_test.rb" name="test_should_get_edit" assertions='1'>
+  </testcase>
+  <testcase time='0.013039' file="test/controllers/categories_controller_test.rb" name="test_should_show_category" assertions='1'>
+  </testcase>
+  <testcase time='0.077574' file="test/controllers/categories_controller_test.rb" name="test_should_update_category" assertions='1'>
+  </testcase>
+  <testcase time='0.014233' file="test/controllers/categories_controller_test.rb" name="test_should_get_new" assertions='1'>
+  </testcase>
+  <testcase time='0.042146' file="test/controllers/categories_controller_test.rb" name="test_should_destroy_category" assertions='2'>
+  </testcase>
+  <testcase time='0.016578' file="test/controllers/categories_controller_test.rb" name="test_should_create_category" assertions='2'>
+  </testcase>
+  <testcase time='0.012500' file="test/controllers/categories_controller_test.rb" name="test_should_get_index" assertions='1'>
+  </testcase>
+</testsuite>
