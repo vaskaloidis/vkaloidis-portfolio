@@ -73,6 +73,7 @@ group :production do
 end
 
 group :development, :test do
+  gem 'coveralls', require: false
   gem 'byebug', platform: :mri   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'awesome_print'
   gem 'better_errors'
