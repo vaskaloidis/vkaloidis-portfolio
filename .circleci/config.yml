@@ -20,6 +20,10 @@ jobs:
 
     steps:
       - checkout
+
+      # Install Gems
+      - run: bundle install
+
       # Database Setup
       - run: bundle exec rake db:setup
 
