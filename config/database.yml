@@ -1,14 +1,17 @@
 development: &default
   database: vkaloidis-dev
   adapter: postgresql
-  pool: 10
   host: localhost
-  username: postgres
-  password: postgres
+  encoding: utf8
+  min_messages: warning
+  pool: 2
+  timeout: 5000
 
 development:
   <<: *default
   database: vkaloidis-dev
+  username: postgres
+  password: postgres
 
 test:
     <<: *default
