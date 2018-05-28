@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite time='0.207358' skipped='0' failures='0' errors='0' name="ProjectsControllerTest" assertions='11' tests='8' timestamp="2018-05-27T18:12:15-04:00">
-  <testcase time='0.078492' file="test/controllers/projects_controller_test.rb" name="test_should_show_project" assertions='1'>
+<testsuite time='0.668867' skipped='0' failures='0' errors='0' name="ProjectsControllerTest" assertions='16' tests='8' timestamp="2018-05-28T03:51:29-04:00">
+  <testcase time='0.510273' file="test/controllers/projects_controller_test.rb" name="test_should_show_project" assertions='2'>
   </testcase>
-  <testcase time='0.029601' file="test/controllers/projects_controller_test.rb" name="test_should_destroy_project" assertions='2'>
+  <testcase time='0.032650' file="test/controllers/projects_controller_test.rb" name="test_should_get_new" assertions='1'>
   </testcase>
-  <testcase time='0.023952' file="test/controllers/projects_controller_test.rb" name="test_should_get_edit" assertions='1'>
+  <testcase time='0.031544' file="test/controllers/projects_controller_test.rb" name="test_should_update_project" assertions='2'>
   </testcase>
-  <testcase time='0.017572' file="test/controllers/projects_controller_test.rb" name="test_should_get_new" assertions='1'>
+  <testcase time='0.015376' file="test/controllers/projects_controller_test.rb" name="test_authentication" assertions='2'>
   </testcase>
-  <testcase time='0.017828' file="test/controllers/projects_controller_test.rb" name="test_authentication" assertions='2'>
+  <testcase time='0.010819' file="test/controllers/projects_controller_test.rb" name="test_should_get_index" assertions='1'>
   </testcase>
-  <testcase time='0.013608' file="test/controllers/projects_controller_test.rb" name="test_should_update_project" assertions='1'>
+  <testcase time='0.025231' file="test/controllers/projects_controller_test.rb" name="test_should_create_project" assertions='3'>
   </testcase>
-  <testcase time='0.014804' file="test/controllers/projects_controller_test.rb" name="test_should_create_project" assertions='2'>
+  <testcase time='0.024021' file="test/controllers/projects_controller_test.rb" name="test_should_get_edit" assertions='2'>
   </testcase>
-  <testcase time='0.011501' file="test/controllers/projects_controller_test.rb" name="test_should_get_index" assertions='1'>
+  <testcase time='0.018953' file="test/controllers/projects_controller_test.rb" name="test_should_destroy_project" assertions='3'>
   </testcase>
 </testsuite>

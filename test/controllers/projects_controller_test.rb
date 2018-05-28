@@ -27,16 +27,19 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
       post projects_url, params: { project: attributes_for(:project) }, headers: headers
     end
     assert_redirected_to project_url(Project.last)
+    check_homepage
   end
 
   test 'should show project' do
     get project_url(@project), headers: headers
     assert_response :success
+    check_homepage
   end
 
   test 'should get edit' do
     get edit_project_url(@project), headers: headers
     assert_response :success
+    check_homepage
   end
 
   test 'should update project' do
@@ -47,6 +50,7 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
                       displayed: true }
     patch project_url(@project), params: { project: update_params }, headers: headers
     assert_redirected_to edit_project_url(@project)
+    check_homepage
   end
 
   test 'should destroy project' do
@@ -54,6 +58,12 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
       delete project_url(@project), headers: headers
     end
     assert_redirected_to projects_url
+    check_homepage
+  end
+
+  def check_homepage
+    get root_url
+    assert_response :success
   end
 
   protected

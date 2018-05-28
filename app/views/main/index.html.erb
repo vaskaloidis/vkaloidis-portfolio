@@ -94,7 +94,7 @@
                 <div id="project_modal_body" class="modal-body project_modal_body">
                   <p>
                     <% if project.markdown %>
-                      <%= convertMarkdown(project.content).html_safe %>
+                      <%= convert_markdown(project.content).html_safe %>
                     <% else %>
                       <%= project.content.html_safe %>
                     <% end %>

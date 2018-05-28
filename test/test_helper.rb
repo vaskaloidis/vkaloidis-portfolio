@@ -6,6 +6,8 @@ require 'minitest/reporters'
 
 class ActiveSupport::TestCase
   include FactoryBot::Syntax::Methods
-  Minitest::Reporters.use! [Minitest::Reporters::DefaultReporter.new({ color: true })]
-  # Minitest::Reporters.use!(Minitest::Reporters::ProgressReporter.new,ENV,Minitest.backtrace_filter)
+  Minitest::Reporters.use! [Minitest::Reporters::DefaultReporter.new(color: true)]
+  # Load Portfolio Data
+  Vkaloidis::Application.load_tasks
+  Rake::Task['db:schema:load'].invoke
 end

@@ -1,6 +1,6 @@
 FactoryBot.define do
-  factory :project do
-    name "MyString"
+  factory :project, class: Project do
+    name 'MyString'
     categories 'rails'
     order { Random.rand }
     displayed true
@@ -14,5 +14,17 @@ FactoryBot.define do
     website false
     large_modal false
     image_dir 'testproject'
+
+    factory :markdown_project do
+      markdown true
+    end
+
+    factory :sticky_project do
+      sticky true
+    end
+
+    factory :website_project do
+      website true
+    end
   end
 end
