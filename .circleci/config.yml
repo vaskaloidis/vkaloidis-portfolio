@@ -7,7 +7,7 @@ jobs:
   build:
     working_directory: ~/vkaloidis
     docker:
-      - image: circleci/ruby:2.5.0-node-browsers
+      - image: circleci/ruby:2.4.1-node-browsers
         environment:
           PGHOST: localhost
           PGUSER: vkaloidis
@@ -15,7 +15,7 @@ jobs:
       - image: postgres:10.1-alpine
         environment:
           POSTGRES_USER: vkaloidis
-          POSTGRES_DB: ruby25
+          POSTGRES_DB: ruby24
           POSTGRES_PASSWORD: ""
 
     steps:
