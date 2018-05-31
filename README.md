@@ -1,44 +1,56 @@
+# Vasis.Work Portfolio
 
+A portfolio written in Rails. Converting into a Gem for public use (soon).
 
+It also contains a Blog but it has been disabled along with the GitHub feed view. These will be revamped and re-enabled when the Gem is created.
 
+```bash
+rails db:setup
+rails db:migrate
+rails db:data:loade
+```
 
+Custom Rake Tasks
 
----
+```bash
+# Import Wordpress Posts for Blog
+rake BlueHelmet:import_wp
+# Convert all the posts to markdown
+rake BlueHelmet:convert_posts_to_markdown
+# Unpublish all Blog articles
+rake BlueHelmet:unpublish_all_articles
 
+# Custom Seeder
+rake BlueHelmet:seed
+# Does the following:
+Rake::Task['Bluehelmet:import_wp'].invoke
+Rake::Task['db:data:load'].invoke
+Rake::Task['Bluehelmet:convert_projects'].invoke
 
-# THOUGHTBOT SUSPENDERS DOCS
+# Clear the Cache on Heroku server
+rake BlueHelmet:heroku_cache
 
-## Getting Started
+# Pushes local DB to Heroku
+rake BlueHelmet:push_db
+# Executes the following
+heroku('pg:reset HEROKU_POSTGRESQL_GOLD')
+heroku('pg:push vkaloidis HEROKU_POSTGRESQL_GOLD --app vkaloidis')
 
-After you have cloned this repo, run this setup script to set up your machine
-with the necessary dependencies to run and test this app:
+# Clears Cache
+rake BlueHelmet:clear_cache
+# Does the following
+Rake::Task['tmp:clear'].invoke
+Rake::Task['tmp:cache:clear'].invoke
+Rake::Task['assets:clean'].invoke
 
-    % ./bin/setup
+# Clear memcache
+rake BlueHelmet:clear_memcache
 
-It assumes you have a machine equipped with Ruby, Postgres, etc. If not, set up
-your machine with [this script].
+# View Available Custom Rake Tasks
+rake BlueHelmet:info
 
-[this script]: https://github.com/thoughtbot/laptop
-
-After setting up, you can run the application using [Heroku Local]:
-
-    % heroku local
-
-[Heroku Local]: https://devcenter.heroku.com/articles/heroku-local
-
-## Guidelines
-
-Use the following guides for getting things done, programming well, and
-programming in style.
-
-* [Protocol](http://github.com/thoughtbot/guides/blob/master/protocol)
-* [Best Practices](http://github.com/thoughtbot/guides/blob/master/best-practices)
-* [Style](http://github.com/thoughtbot/guides/blob/master/style)
-
-## Deploying
-
-If you have previously run the `./bin/setup` script,
-you can deploy to staging and production with:
-
-    $ ./bin/deploy staging
-    $ ./bin/deploy production
+# In the BlueHelmet.rake file you can use the Heroku method to execute Heroku commands easily in the file
+heroku(command_to_run)
+# Example
+heroku(config:get GMAIL_EMAIL)
+```
