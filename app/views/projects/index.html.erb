@@ -8,18 +8,20 @@
 		<th>Name</th>
 		<th>Categories</th>
 		<th>Display</th>
+		<th>Markdown</th>
 		<th></th>
 		<th></th>
     <th></th>
   </tr>
 	</thead>
-	
+
 	<tbody>
     <% @projectsEnabled.each do |project| %>
         <tr>
           <td><%= project.name %></td>
           <td><%= project.categories %></td>
           <td><%= project.displayed %></td>
+					<td><%= project.markdown %>
 	        <td><%= link_to 'View', project_path(project) %></td>
           <td><%= link_to 'Edit', edit_project_path(project) %></td>
           <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -50,7 +52,3 @@
   <% end %>
   </tbody>
 </table>
-
-
-
-
