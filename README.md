@@ -1,6 +1,13 @@
 # Vasis.Work Portfolio
+<p align="center">
+<a href="http://vasis.work"><img src ="https://raw.githubusercontent.com/vaskaloidis/vkaloidis-portfolio/master/app/assets/images/vkaloidis-hipster-logo.png"></a>
+</p>
 
-A portfolio written in Rails. Converting into a Gem for public use (soon).
+[![CircleCI](https://circleci.com/gh/vaskaloidis/vkaloidis-portfolio.svg?style=svg&circle-token=20686ca35eb668eed724ca4744be0766e2303c26)](https://circleci.com/gh/vaskaloidis/vkaloidis-portfolio)
+[![Coverage Status](https://coveralls.io/repos/github/vaskaloidis/vkaloidis-portfolio/badge.svg?branch=master)](https://coveralls.io/github/vaskaloidis/vkaloidis-portfolio?branch=master)
+[![Slack](https://img.shields.io/badge/discuss-Slack-brightgreen.svg)](https://bluehelmet.slack.com)
+
+A portfolio written in Rails, located at [www.vasis.work](http://vasis.work). Converting into a Gem for public use (soon).
 
 It also contains a Blog but it has been disabled along with the GitHub feed view. These will be revamped and re-enabled when the Gem is created.
 
