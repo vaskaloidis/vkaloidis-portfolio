@@ -2,7 +2,7 @@ require 'Bluehelmet/RedcarpetRenderer'
 # Parser for converting Markdown to HTML
 class Parser
 	def self.convert_markdown(md)
-		unless md.nil?
+		if !md.nil?
 	    options = {
 	      no_intra_emphasis: true,
 	      tables: true,
@@ -20,7 +20,7 @@ class Parser
 	        prettify: true
 	    }
 			redcarpet = Redcarpet::Markdown.new(custom_renderer, redcarpet_options)
-		return redcarpet.render(md)
+		return redcarpet.render(md).html_safe
 		 # return Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true).render(md)
 	 else
 		 md
