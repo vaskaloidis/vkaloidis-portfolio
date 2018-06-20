@@ -21,7 +21,7 @@
         <!--</div>-->
 
         <script>
-            var mde = new SimpleMDE({
+            new SimpleMDE({
                 element: $("#project_content")[0],
                 indentWithTabs: false,
                 parsingConfig: {
@@ -57,10 +57,15 @@
 
         <div style="padding-top:0px" class="well">
           <%= f.text_field :name %>
-
+          <div id="shortcuts-window" style="display:none" class="row">
+            <%= render 'projects/shortcuts' %>
+          </div>
           <div class="row">
             <div id="checkbox_dir" class="col-xs-4">
               <div class="field">
+                <small><a href="#" onclick="$('#shortcuts-window').slideToggle(); return false;">View Shortcuts</a>
+                </small>
+                <br>
                 <%= f.check_box :displayed %>
                 <%= f.check_box :sticky %>
                 <%= f.check_box :website %>
@@ -75,12 +80,12 @@
                   <strong>Project Available Files:</strong>
                   <ul>
                     <% unless @project.image_dir.nil?
-                      if File.directory?(Rails.root.join('public', 'projects', @project.image_dir))
-                         album = Rails.root.join('public', 'projects', @project.image_dir)
-                         Dir.entries(album).sort_by!{ |filename| filename.downcase }.each do |item|
-                           next if item == '.' or item == '..' or item == '.DS_Store'               %>
-                        <li><strong><%= item %></strong></li>
-                      <% end %>
+                         if File.directory?(Rails.root.join('public', 'projects', @project.image_dir))
+                           album = Rails.root.join('public', 'projects', @project.image_dir)
+                           Dir.entries(album).sort_by! {|filename| filename.downcase}.each do |item|
+                             next if item == '.' or item == '..' or item == '.DS_Store'                   %>
+                          <li><strong><%= item %></strong></li>
+                        <% end %>
                       <% else %>
                         <strong>Directory /public/projects/<%= @project.image_dir %>/ does not exist</strong>
                       <% end %>
@@ -90,8 +95,8 @@
                     <%= f.text_field :image_dir %>
                     <strong>Available Image Dirs</strong>
                     <% album = Rails.root.join('public', 'projects')
-                       Dir.entries(album).sort_by!{ |filename| filename.downcase }.each do |item|
-                         next if item == '.' or item == '..' or item == '.DS_Store'                %>
+                       Dir.entries(album).sort_by! {|filename| filename.downcase}.each do |item|
+                         next if item == '.' or item == '..' or item == '.DS_Store'                    %>
                       <li><strong><%= item %></strong></li>
                     <% end %>
                   </div>
@@ -103,8 +108,8 @@
                   <div><strong>Available Project Dirs:</strong></div>
                   <ul>
                     <% album = Rails.root.join('public', 'projects')
-                       Dir.entries(album).sort_by!{ |filename| filename.downcase }.each do |item|
-                         next if item == '.' or item == '..' or item == '.DS_Store'               %>
+                       Dir.entries(album).sort_by! {|filename| filename.downcase}.each do |item|
+                         next if item == '.' or item == '..' or item == '.DS_Store'                   %>
                       <li><strong><%= item %></strong></li>
                     <% end %>
                   </ul>
@@ -140,16 +145,24 @@
       <!-- Preview Column-->
       <div id="right_column" class="pre-scrollable col-xs-12 col-md-5">
         <div>
-          <% if @project.markdown != true %>
-            <strong>HTML Preview:</strong>
-            <div id="preview_window" style="border:1px solid black; padding:5px;">
-              <%= @project.content.html_safe %>
-            </div>
-          <% else %>
+          <% if @project.markdown %>
             <strong>Markdown Preview:</strong>
-            <div id="preview_window" style="border:1px solid black; padding:5px;">
-              <%= convert_markdown(@project.content) %>
-            </div>
+          <% else %>
+            <strong>HTML Preview:</strong>
+          <% end %>
+          <div id="preview_window" style="border:1px solid black; padding:5px;">
+            <% unless @project.content.nil? || @project.content.empty? %>
+              <%= @project.content.html_safe %>
+            <% end %>
+          </div>
+          <% if @project.markdown %>
+            <script>
+                var markedOptions = {};
+                markedOptions.breaks = true;
+                // marked.setOptions(markedOptions);
+                var preview_window = $('#preview_window');
+                preview_window.html(marked(preview_window.html()));
+            </script>
           <% end %>
         </div>
       </div>
@@ -170,8 +183,8 @@
           right_column.css("min-height", window_height);
           right_column.height(center_column.height());
 
-          preview_window.css("min-height", window_height);
-          preview_window.height(center_column.height() - (right_column.height() - preview_window.height()) - 200);
+          // preview_window.css("min-height", window_height);
+          // preview_window.height(center_column.height() - (right_column.height() - preview_window.height()) - 200);
 
           var checkbox_dir = $('#checkbox_dir');
           var file_list_div = $('#file_list_div');

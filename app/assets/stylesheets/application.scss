@@ -15,6 +15,9 @@
 @import 'main';
 @import 'bootstrap-tagsinput.scss';
 
+.navbar {
+  z-index: -1;
+}
 .modal {
   overflow-y: scroll !important;
 }

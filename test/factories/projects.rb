@@ -5,7 +5,7 @@ FactoryBot.define do
     order { Random.rand }
     displayed true
     shortname Faker::MostInterestingManInTheWorld.quote
-    content Faker::MostInterestingManInTheWorld.quote
+    content Faker::Markdown.table
     summary Faker::MostInterestingManInTheWorld.quote
     isArticle false
     markdown true

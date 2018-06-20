@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite time='0.110178' skipped='0' failures='0' errors='0' name="CategoriesControllerTest" assertions='9' tests='7' timestamp="2018-05-28T03:51:29-04:00">
-  <testcase time='0.033123' file="test/controllers/categories_controller_test.rb" name="test_should_update_category" assertions='1'>
+<testsuite time='0.107560' skipped='0' failures='0' errors='0' name="CategoriesControllerTest" assertions='9' tests='7' timestamp="2018-06-20T19:00:25-04:00">
+  <testcase time='0.029983' file="test/controllers/categories_controller_test.rb" name="test_should_destroy_category" assertions='2'>
   </testcase>
-  <testcase time='0.011413' file="test/controllers/categories_controller_test.rb" name="test_should_create_category" assertions='2'>
+  <testcase time='0.017015' file="test/controllers/categories_controller_test.rb" name="test_should_get_index" assertions='1'>
   </testcase>
-  <testcase time='0.010408' file="test/controllers/categories_controller_test.rb" name="test_should_destroy_category" assertions='2'>
+  <testcase time='0.016638' file="test/controllers/categories_controller_test.rb" name="test_should_get_new" assertions='1'>
   </testcase>
-  <testcase time='0.022810' file="test/controllers/categories_controller_test.rb" name="test_should_get_edit" assertions='1'>
+  <testcase time='0.011810' file="test/controllers/categories_controller_test.rb" name="test_should_create_category" assertions='2'>
   </testcase>
-  <testcase time='0.010696' file="test/controllers/categories_controller_test.rb" name="test_should_get_index" assertions='1'>
+  <testcase time='0.010034' file="test/controllers/categories_controller_test.rb" name="test_should_show_category" assertions='1'>
   </testcase>
-  <testcase time='0.011834' file="test/controllers/categories_controller_test.rb" name="test_should_get_new" assertions='1'>
+  <testcase time='0.009335' file="test/controllers/categories_controller_test.rb" name="test_should_update_category" assertions='1'>
   </testcase>
-  <testcase time='0.009894' file="test/controllers/categories_controller_test.rb" name="test_should_show_category" assertions='1'>
+  <testcase time='0.012745' file="test/controllers/categories_controller_test.rb" name="test_should_get_edit" assertions='1'>
   </testcase>
 </testsuite>

@@ -64,8 +64,8 @@
             <div style="margin-top: 10px;" class="center">
               <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                 <div class="btn btn-default btn-block btn-xs"
-                   onclick="$('#modal_<%= project.id %>').modal();"
-                   style="color:gray">
+                     onclick="$('#modal_<%= project.id %>').modal();"
+                     style="color:gray">
                   <i class="glyphicon glyphicon-plus-sign"></i> View
                 </div>
               </div>
@@ -92,13 +92,18 @@
                   <%= buildCategoryIconHtml(project.categories).html_safe %>
                 </div>
                 <div id="project_modal_body" class="modal-body project_modal_body">
-                  <p>
-                    <% if project.markdown %>
-                      <%= convert_markdown(project.content) %>
-                    <% else %>
-                      <%= project.content.html_safe %>
-                    <% end %>
-                  </p>
+                  <div id="render_project_markdown_<%= project.id.to_s %>">
+                    <%= project.content.html_safe %>
+                  </div>
+                  <% if project.markdown %>
+                    <script>
+                        var markedOptions = {};
+                        markedOptions.breaks = true;
+                        // marked.setOptions(markedOptions);
+                        var preview_window = $('#render_project_markdown_<%= project.id.to_s %>');
+                        preview_window.html(marked(preview_window.html()));
+                    </script>
+                  <% end %>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary pull-left" data-dismiss="modal">Close</button>
