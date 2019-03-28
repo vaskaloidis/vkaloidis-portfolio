@@ -7,9 +7,9 @@ require 'Bluehelmet/Parser'
 # require 'kramdown'
 
 # ReverseMarkdown.config do |config|
-# 	config.unknown_tags    = :pass_through
-# 	config.github_flavored = false
-# 	config.tag_border      = ''
+#   config.unknown_tags    = :pass_through
+#   config.github_flavored = false
+#   config.tag_border      = ''
 # end
 
 namespace :Bluehelmet do
@@ -132,7 +132,7 @@ namespace :Bluehelmet do
       # result = Kramdown::Converter::Kramdown
       # puts result
       puts '**********'
-      # output = Parser.convertMarkdown(result.inspect) # Markdown to HTML
+      # output = Parser.convert_markdown(result.inspect) # Markdown to HTML
       # output = Kramdown::Document.new(result).to_html
       output = Kramdown::Converter::HTML.convert(result)
       puts output
@@ -151,7 +151,7 @@ namespace :Bluehelmet do
       result = ReverseMarkdown.convert(content)
       puts result.inspect
       puts '**********'
-      output = Parser.convertMarkdown(result.inspect)
+      output = Parser.convert_markdown(result.inspect)
       puts output
       puts '******************************'
       puts ''

@@ -22,3 +22,25 @@
 function addTag() {
 
 }
+
+
+$(function() {
+    $('#project_modal_body > img.img-modal-popup').on('click', function() {
+        $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+        $('#enlargeImageModal').modal('show');
+    });
+});
+
+$(function() {
+    $('#project_modal_body > img.img-polaroid ').on('click', function() {
+        $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+        $('#enlargeImageModal').modal('show');
+    });
+});
+
+$(function() {
+    $('#project_modal_body > img').on('click', function() {
+        $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+        $('#enlargeImageModal').modal('show');
+    });
+});

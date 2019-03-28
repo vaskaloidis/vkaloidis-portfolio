@@ -1,28 +1,20 @@
 module ApplicationHelper
 	require 'Bluehelmet/Parser'
-
-
-
 	def self.isTrue(s)
 		!!(s =~ /^(true|t|yes|y|1)$/i)
 	end
-
-	def convertMarkdown(markdown)
-		return Parser.convertMarkdown(markdown)
+	def convert_markdown(markdown)
+		return Parser.convert_markdown(markdown)
 	end
-
 	def trimDescription(count, description)
 		firstPart = description.split(" ").first(count).join(" ")
 		firstPart = description[0..count]
 		return firstPart
 	end
-
 	def buildCategoryIconHtml(categories, frontpage = false)
 		categories   = categories.split(',')
 		categoryHtml = ""
-
 	  count = 0
-
 		categories.each do |c|
 			if frontpage && count > 4
 				# Do nothing
@@ -33,7 +25,6 @@ module ApplicationHelper
 		end
 		return categoryHtml
 	end
-
 	def containsCategory(category, categories)
 		categories = categories.split(',')
 		categories.map!(&:downcase)

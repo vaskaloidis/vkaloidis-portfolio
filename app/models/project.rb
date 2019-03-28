@@ -5,6 +5,4 @@ class Project < ApplicationRecord
 	#                     thumb: "100x100>" }
 	# default_url: "/images/:style/missing.png"
 	# validates_attachment_content_type :img, content_type: /\Aimage\/.*\z/
-
-  has_attached_file :avatar, styles: { medium: "800x495>", thumb: "100x100>" }, default_url: "/images/:style/missing.png"
-end
+  end

@@ -6,6 +6,9 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+unless Rails.env.production?
+	Dotenv::Railtie.load
+end
 
 module Vkaloidis
 	class Application < Rails::Application

@@ -76,3 +76,17 @@ bower.json
 # Ignore pow environment settings
 .powenv
 Gemfile.lock
+/.idea/runConfigurations/Production__bluehelmet.xml
+/.idea/vkaloidis.iml
+/log/development.log
+/.idea/runConfigurations/tidbits.xml
+/.idea/.rakeTasks
+/.idea/vcs.xml
+/.idea/modules.xml
+/.idea/.generators
+/.idea/workspace.xml
+/tmp/pids/server.pid
+/.idea/runConfigurations/Development__bluehelmet.xml
+/public/projects/.DS_Store
+.DS_Store
+.env

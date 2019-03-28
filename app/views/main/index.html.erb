@@ -1,112 +1,143 @@
-   <div class="container">
+<div class="container">
 
-	<%#= link_to "vasilios c. kaloidis", root_path %>
+  <%#= link_to "vasilios c. kaloidis", root_path %>
 
-	<%= render 'layouts/name' %>
+  <%= render 'layouts/name' %>
 
-	<div class="skills center">
-		<%= render "skills" %>
-	</div>
+  <div class="skills center">
+    <%= render "skills" %>
+  </div>
 
-	<div class="center topButtons">
-		<%= render "buttons" %>
-	</div>
+  <div class="col-xs-12 center topButtons">
+    <%= render "buttons" %>
+  </div>
 
-	<hr>
+  <hr>
 
-	<!-- PROJECTS -->
-	<h1 class="center">projects</h1>
-	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-		<% @projects.each do |project| %>
-				<% if project.displayed %>
+  <!-- PROJECTS -->
+  <h1 class="center">projects</h1>
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <% @projects.each do |project| %>
+      <% if project.displayed %>
 
-						<%
-							if project.isArticle?
-								# name = Lookup Article by Name
-							else
-								name = project.name
-							end
-						%>
+        <%
+          if project.isArticle?
+            # name = Lookup Article by Name
+          else
+            name = project.name
+          end
+        %>
 
-            <!-- <%= @count %> == <% @half.round %>  -->
-						<% if (@count == @half.round) && (@columnSplit == false) %>
-              <!-- Split DIV For 2 columns -->
-              <% @columnSplit = true %>
-								</div>
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<% end %>
+        <!-- <%= @count %> ==
+        <% @half.round %>  -->
+        <% if (@count == @half.round) && (@columnSplit == false) %>
+          <!-- Split DIV For 2 columns -->
+          <% @columnSplit = true %>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <% end %>
 
-						<div data-toggle="modal" data-target="#modal<%= project.id %>"
-                 class="projectHover panel panel-default center-block">
-							<div class="panel-body">
-								<div class="pull-right">
-									<%= buildCategoryIconHtml(project.categories, true).html_safe %>
-								</div>
-								<div class="clearfix">
-									<%= project.name %><br>
-									<%= buildCategoryLabelHtml(project.categories).html_safe %>
-                  <% if session[:admin] %>
-											<%= link_to '<span style="background-color: #486082" class="label label-warning"> <i class="fa fa-pencil-square-o"></i>Edit</span>'.html_safe, edit_project_path(project) %>
-									<% end %>
-									<% if project.website == true %>
+        <div data-toggle="modal" data-target="#modal<%= project.id %>"
+             class="projectHover panel panel-default center-block">
+          <div class="panel-body">
+            <div class="pull-right">
+              <%= buildCategoryIconHtml(project.categories, true).html_safe %>
+            </div>
+            <div class="clearfix">
+              <%= project.name %><br>
+              <%= buildCategoryLabelHtml(project.categories).html_safe %>
+
+              <% if session[:admin] %>
+                <%= link_to '<span style="background-color: #486082" class="label label-warning"> <i class="fa fa-pencil-square-o"></i>Edit</span>'.html_safe, edit_project_path(project) %>
+              <% end %>
+              <% if project.website == true %>
 											<span class="label label-success">
 												<i class="fa fa-diamond"></i>Website
 											</span>
-										<% elsif containsCategory('ruby', project.categories) %>
+              <% elsif containsCategory('ruby', project.categories) %>
 											<span style="background-color:#1c8c21fa" class="label label-success">
 												<i class="fa fa-diamond"></i>Web-Application
 											</span>
-									<% end %>
-								</div>
-							</div>
-						</div>
+              <% end %>
+            </div>
 
-						<!-- Modal -->
-						<div class="container">
-							<div class="modal fade project_modal" id="modal<%= project.id %>"
-							     tabindex="-1" role="dialog" aria-labelledby="ModalWindow"
-							     aria-hidden="true">
-								<div class="modal-dialog modal-lg" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<% if session[:admin] %>
-													<%= link_to '<span class="label label-success"> <i class="fa fa-pencil-square-o"></i>Edit</span>'.html_safe,
-													            edit_project_path(project) %>
-											<% end %>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-											<h4 class="modal-title" id="myModalLabel"><%= project.name %></h4>
-											<%= buildCategoryIconHtml(project.categories).html_safe %>
-										</div>
-										<div class="modal-body project_modal_body">
-											<p>
-                        <% if project.markdown %>
-                              <%= convertMarkdown(project.content).html_safe %>
-                        <% else %>
-                          <%= project.content.html_safe %>
-                        <% end %>
-											</p>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-				<% end %>
-				<% @count = @count + 1 %>
-		<% end %>
-		</div>
+            <div style="margin-top: 10px;" class="center">
+              <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                <div class="btn btn-default btn-block btn-xs"
+                     onclick="$('#modal_<%= project.id %>').modal();"
+                     style="color:gray">
+                  <i class="glyphicon glyphicon-plus-sign"></i> View
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-		<!-- BLOG -->
-		<% if @featureBlog %>
-				<%= render "blog" %>
-		<% end %>
+        <!-- Modal -->
+        <div class="container">
+          <div style="overflow-y: scroll" class="modal fade project_modal" id="modal_<%= project.id %>"
+               tabindex="-1" role="dialog" aria-labelledby="ModalWindow"
+               aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <% if session[:admin] %>
+                    <%= link_to '<span class="label label-success"> <i class="fa fa-pencil-square-o"></i>Edit</span>'.html_safe,
+                                edit_project_path(project) %>
+                  <% end %>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel"><%= project.name %></h4>
+                  <%= buildCategoryIconHtml(project.categories).html_safe %>
+                </div>
+                <div id="project_modal_body" class="modal-body project_modal_body">
+                  <div id="render_project_markdown_<%= project.id.to_s %>">
+                    <%= project.content.html_safe %>
+                  </div>
+                  <% if project.markdown %>
+                    <script>
+                        var markedOptions = {};
+                        markedOptions.breaks = true;
+                        // marked.setOptions(markedOptions);
+                        var preview_window = $('#render_project_markdown_<%= project.id.to_s %>');
+                        preview_window.html(marked(preview_window.html()));
+                    </script>
+                  <% end %>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary pull-left" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <% @count = @count + 1 %>
+    <% end %>
+    </div>
 
-		<!-- GITHUB -->
-		<% if @featureGithub %>
-				<%= render "github" %>
-		<% end %>
-		</div>
+    <!-- Image Click Enlarge Modal -->
+    <div style="overflow-y: scroll" class="modal fade" id="enlargeImageModal" tabindex="2" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a href="#" type="button" class="close" onclick="$('#enlargeImageModal').modal('hide');">×</a>
+          </div>
+          <div class="modal-body">
+            <img src="" class="enlargeImageModalSource" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOG -->
+    <% if @featureBlog %>
+      <%= render "blog" %>
+    <% end %>
+
+    <!-- GITHUB -->
+    <% if @featureGithub %>
+      <%= render "github" %>
+    <% end %>
+    </div>
