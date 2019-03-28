@@ -47,8 +47,6 @@ GEM
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
     bindex (0.5.0)
-    binding_of_caller (0.7.2)
-      debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -127,14 +125,6 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
     pg (0.21.0)
-    pry (0.11.1)
-      coderay (~> 1.1.0)
-      method_source (~> 0.9.0)
-    pry-byebug (3.5.0)
-      byebug (~> 9.1)
-      pry (~> 0.10)
-    pry-rails (0.3.6)
-      pry (>= 0.10.4)
     puma (3.10.0)
     rack (2.0.3)
     rack-test (0.7.0)
@@ -221,7 +211,6 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   better_errors
-  binding_of_caller
   bootstrap-sass (~> 3.3.6)
   bootstrap-tagsinput-rails
   bootstrap_form
@@ -239,9 +228,6 @@ DEPENDENCIES
   marked-rails
   paperclip
   pg
-  pry
-  pry-byebug
-  pry-rails
   puma (~> 3.0)
   rails (~> 5.1, >= 5.1.2)
   redcarpet

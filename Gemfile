@@ -41,7 +41,7 @@ gem "uglifier", ">= 1.3.0"
 # Use CoffeeScript for .coffee assets and views
 gem "coffee-rails", "~> 4.2"
 # See https://github.com/rails/execjs#readme for more supported runtimes
-gem "therubyracer", platforms: :ruby
+gem "therubyracer", platforms: :ruby, require: 'v8'
 
 # Use jquery as the JavaScript library
 gem "jquery-rails"
@@ -58,10 +58,10 @@ gem "jbuilder", "~> 2.5"
 # gem "capistrano-rails", group: :development
 
 group :development do
-  gem "pry"
-  gem "pry-rails"
-  gem "pry-byebug"
-  gem "binding_of_caller"
+  # gem "pry"
+  # gem "pry-rails"
+  # gem "pry-byebug"
+  # gem "binding_of_caller"
   gem "debug_inspector"
 end
 

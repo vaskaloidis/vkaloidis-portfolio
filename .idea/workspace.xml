@@ -8,7 +8,11 @@
     <list default="true" id="f9870d33-115c-410b-8692-b4b77b37230e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../tidbits/.idea/tidbits.iml" afterPath="$PROJECT_DIR$/../tidbits/.idea/tidbits.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../tidbits/config/database.yml" afterPath="$PROJECT_DIR$/../tidbits/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main/index.html.erb" afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vkaloidis.iml" afterPath="$PROJECT_DIR$/.idea/vkaloidis.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/pids/server.pid" afterPath="$PROJECT_DIR$/tmp/pids/server.pid" />
     </list>
     <ignored path="vkaloidis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,61 +55,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="projects_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
+      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="107" column="45" lean-forward="false" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="google_maps_stock.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bluehelmet/app/assets/javascripts/google_maps_stock.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="58" column="54" lean-forward="true" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
+              <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/login.html.erb">
+      <file leaf-file-name="ionicons.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bluehelmet/app/assets/stylesheets/ionicons.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+            <state relative-caret-position="210">
+              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
+      <file leaf-file-name="pe-icon-7-stroke.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../bluehelmet/app/assets/stylesheets/pe-icon-7-stroke.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
+      <file leaf-file-name="_contact.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/main/_contact.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/projects/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/main/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="74" column="25" lean-forward="false" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+            <state relative-caret-position="210">
+              <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -128,6 +122,17 @@
       <find>cloud</find>
       <find>vi</find>
       <find>desktop</find>
+      <find>clear</find>
+      <find>alert</find>
+      <find>ruby</find>
+      <find>init</find>
+      <find>ionicons.woff</find>
+      <find>Pe-icon-</find>
+      <find>url('</find>
+      <find>src</find>
+      <find>url</find>
+      <find>/assets/</find>
+      <find>ionicons.ttf</find>
     </findStrings>
     <replaceStrings>
       <replace>bluehelmet</replace>
@@ -135,7 +140,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../bluehelmet" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -155,22 +160,37 @@
         <option value="$PROJECT_DIR$/app/views/projects/view.html.erb" />
         <option value="$PROJECT_DIR$/app/views/projects/show.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20171002033528_set_sticky_false_default.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config.ru" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/../bluehelmet/Gemfile" />
         <option value="$PROJECT_DIR$/../bluehelmet/config/database.yml" />
-        <option value="$PROJECT_DIR$/../bluehelmet/app/controllers/contact_messages_controller.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/db/migrate/20171004151335_add_website_to_projects.rb" />
         <option value="$PROJECT_DIR$/app/controllers/main_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-        <option value="$PROJECT_DIR$/app/views/projects/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/main/_skills.html.erb" />
         <option value="$PROJECT_DIR$/app/views/main/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/projects/_form.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/../bluehelmet/app/views/main/_messageForm.html.erb" />
+        <option value="$PROJECT_DIR$/../bluehelmet/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/../bluehelmet/app/views/main/products/_social.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
+        <option value="$PROJECT_DIR$/../bluehelmet/app/controllers/contact_messages_controller.rb" />
+        <option value="$PROJECT_DIR$/../bluehelmet/app/assets/stylesheets/style.scss" />
+        <option value="$PROJECT_DIR$/../bluehelmet/app/views/main/home.html.erb" />
+        <option value="$PROJECT_DIR$/../bluehelmet/app/views/main/_jumbotron.html.erb" />
+        <option value="$PROJECT_DIR$/../bluehelmet/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/../bluehelmet/Gemfile" />
+        <option value="$PROJECT_DIR$/../bluehelmet/config/initializers/assets.rb" />
+        <option value="$PROJECT_DIR$/../bluehelmet/app/assets/javascripts/google_maps.js" />
+        <option value="$PROJECT_DIR$/../bluehelmet/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/../bluehelmet/app/views/main/_contact.html.erb" />
+        <option value="$PROJECT_DIR$/../bluehelmet/app/assets/javascripts/google_maps_stock.js" />
+        <option value="$PROJECT_DIR$/../bluehelmet/app/assets/stylesheets/ionicons.css" />
+        <option value="$PROJECT_DIR$/../bluehelmet/app/assets/stylesheets/pe-icon-7-stroke.css" />
       </list>
     </option>
   </component>
@@ -186,6 +206,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/../bluehelmet/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="34" />
@@ -217,177 +240,76 @@
           <expand>
             <path>
               <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
+              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
             </path>
             <path>
               <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
+              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
               <item name="Controllers" type="28580ddf:ControllersFolderNode" />
             </path>
             <path>
               <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
+              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
+              <item name="Controllers" type="28580ddf:ControllersFolderNode" />
+              <item name="ApplicationController" type="2b770dde:ControllerClassNode" />
+            </path>
+            <path>
+              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
+              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
               <item name="Controllers" type="28580ddf:ControllersFolderNode" />
               <item name="MainController" type="2b770dde:ControllerClassNode" />
             </path>
             <path>
               <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
+              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
               <item name="Controllers" type="28580ddf:ControllersFolderNode" />
               <item name="MainController" type="2b770dde:ControllerClassNode" />
               <item name="Partials" type="b4d82f74:ControllerPartialsFolder" />
             </path>
             <path>
               <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
+              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
               <item name="Controllers" type="28580ddf:ControllersFolderNode" />
               <item name="MainController" type="2b770dde:ControllerClassNode" />
-              <item name="index" type="ddea66bf:ControllerActionNode" />
+              <item name="home" type="ddea66bf:ControllerActionNode" />
             </path>
             <path>
               <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
-              <item name="Controllers" type="28580ddf:ControllersFolderNode" />
-              <item name="ProjectsController" type="2b770dde:ControllerClassNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
-              <item name="Controllers" type="28580ddf:ControllersFolderNode" />
-              <item name="ProjectsController" type="2b770dde:ControllerClassNode" />
-              <item name="Partials" type="b4d82f74:ControllerPartialsFolder" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
-              <item name="Controllers" type="28580ddf:ControllersFolderNode" />
-              <item name="ProjectsController" type="2b770dde:ControllerClassNode" />
-              <item name="edit" type="ddea66bf:ControllerActionNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
-              <item name="Controllers" type="28580ddf:ControllersFolderNode" />
-              <item name="ProjectsController" type="2b770dde:ControllerClassNode" />
-              <item name="index" type="ddea66bf:ControllerActionNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
+              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
               <item name="Assets" type="f36ffe3d:AssetsTopLevelFolderNode" />
             </path>
             <path>
               <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
+              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
               <item name="Assets" type="f36ffe3d:AssetsTopLevelFolderNode" />
               <item name="Stylesheets" type="8736b8df:AssetsPredefinedGroupFolderNode" />
             </path>
             <path>
               <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
+              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
+              <item name="Assets" type="f36ffe3d:AssetsTopLevelFolderNode" />
+              <item name="fonts" type="63c60fdc:AssetsRootFolderNode" />
+            </path>
+            <path>
+              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
+              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
               <item name="Layouts" type="8e5d065:LayoutsFolder" />
             </path>
             <path>
               <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
+              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
               <item name="Public" type="2bb883d:PublicFolderNode" />
             </path>
             <path>
               <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
+              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
               <item name="Public" type="2bb883d:PublicFolderNode" />
-              <item name="projects" type="3dfa953c:FolderSubFolderNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
-              <item name="Public" type="2bb883d:PublicFolderNode" />
-              <item name="projects" type="3dfa953c:FolderSubFolderNode" />
-              <item name="highland" type="3dfa953c:FolderSubFolderNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
-              <item name="Public" type="2bb883d:PublicFolderNode" />
-              <item name="projects" type="3dfa953c:FolderSubFolderNode" />
-              <item name="shopify_flowchart" type="3dfa953c:FolderSubFolderNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
-              <item name="Public" type="2bb883d:PublicFolderNode" />
-              <item name="projects" type="3dfa953c:FolderSubFolderNode" />
-              <item name="vineyard" type="3dfa953c:FolderSubFolderNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="vkaloidis" type="ca5d24b0:RailsModuleNode" />
-              <item name="Public" type="2bb883d:PublicFolderNode" />
-              <item name="projects" type="3dfa953c:FolderSubFolderNode" />
-              <item name="woodburyflea" type="3dfa953c:FolderSubFolderNode" />
+              <item name="assets" type="3dfa953c:FolderSubFolderNode" />
             </path>
             <path>
               <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
               <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
-              <item name="Controllers" type="28580ddf:ControllersFolderNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
-              <item name="Controllers" type="28580ddf:ControllersFolderNode" />
-              <item name="ContactMessagesController" type="2b770dde:ControllerClassNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
-              <item name="Models" type="4bd37eb5:ModelsFolderNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
-              <item name="Models" type="4bd37eb5:ModelsFolderNode" />
-              <item name="Migrations" type="5e88d8ef:MigrationsFolder" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
-              <item name="Config" type="9a8f28a7:ConfigFolderNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="bluehelmet" type="ca5d24b0:RailsModuleNode" />
-              <item name="Config" type="9a8f28a7:ConfigFolderNode" />
-              <item name="environments" type="3dfa953c:FolderSubFolderNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="highland-brass" type="ca5d24b0:RailsModuleNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="highland-brass" type="ca5d24b0:RailsModuleNode" />
-              <item name="Application" type="1a20d5f2:ApplicationFolderNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="highland-brass" type="ca5d24b0:RailsModuleNode" />
-              <item name="Application" type="1a20d5f2:ApplicationFolderNode" />
-              <item name="ApplicationController" type="2b770dde:ControllerClassNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="highland-brass" type="ca5d24b0:RailsModuleNode" />
-              <item name="Models" type="4bd37eb5:ModelsFolderNode" />
-            </path>
-            <path>
-              <item name="vkaloidis" type="52f3b0f7:RailsProjectNode" />
-              <item name="highland-brass" type="ca5d24b0:RailsModuleNode" />
-              <item name="Models" type="4bd37eb5:ModelsFolderNode" />
-              <item name="Migrations" type="5e88d8ef:MigrationsFolder" />
+              <item name="Test::Unit" type="40ce5064:TestUnitTestsFolderNode" />
             </path>
           </expand>
           <select />
@@ -402,6 +324,12 @@
     <property name="project.settings.patched" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../bluehelmet/public" />
+      <recent name="$PROJECT_DIR$/../bluehelmet/app/assets/stylesheets/colors" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -642,12 +570,12 @@
       <workItem from="1498107872904" duration="884000" />
       <workItem from="1501516298617" duration="5037000" />
       <workItem from="1505380702587" duration="3981000" />
-      <workItem from="1506914871328" duration="10034000" />
+      <workItem from="1506914871328" duration="16629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31567000" />
+    <option name="totallyTimeSpent" value="38162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1255" height="777" extended-state="6" />
@@ -658,7 +586,7 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.50581396" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -703,220 +631,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Dockerfile" />
-    <entry file="file://$PROJECT_DIR$/../campusswap/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../campusswap/app/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml" />
-    <entry file="file://$PROJECT_DIR$/../campusswap/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../campusswap/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bluehelmet/db/migrate/20170726224932_create_demo_users.rb" />
-    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/models/user.rb" />
-    <entry file="file://$PROJECT_DIR$/../bluehelmet/db/schema.rb" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fcc7af83-52ef-4a39-a552-c6b045fe2c8e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_name.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/view.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="44" column="24" lean-forward="true" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-          <folding>
-            <marker date="1507130590000" expanded="true" signature="2062:2068" ph="do ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="75" column="10" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bluehelmet/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bluehelmet/config.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bluehelmet/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bluehelmet/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170725012146_add_image_to_project.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170914095823_add_sticky_to_projects.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../highland-brass/db/migrate/20171001022024_add_feature_to_events.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../highland-brass/db/migrate/20171001022737_set_events_public_true.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20171004151335_add_website_to_projects.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/controllers/contact_messages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/controllers/main_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1024,18 +742,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="58" column="54" lean-forward="true" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
-          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+          <caret line="42" column="43" lean-forward="false" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1048,18 +758,276 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/main/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        <state relative-caret-position="516">
+          <caret line="76" column="26" lean-forward="false" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="74" column="25" lean-forward="false" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+        <state relative-caret-position="176">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/projects/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="44" column="19" lean-forward="false" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/controllers/main_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/assets/stylesheets/colors/blue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/contact_messages/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/main/_messageForm.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../highland-brass/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="88" column="6" lean-forward="true" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/main/_packages.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/main/_services.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/main/_products.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/main/products/_social.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/controllers/contact_messages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="59" lean-forward="false" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/assets/stylesheets/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="640" column="19" lean-forward="false" selection-start-line="640" selection-start-column="19" selection-end-line="640" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/main/_carousel.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="41" column="36" lean-forward="true" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/main/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/main/_jumbotron.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="63" lean-forward="true" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="56" lean-forward="true" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/config/initializers/assets.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="26" column="67" lean-forward="true" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/main/_contact.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/assets/javascripts/google_maps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="107" column="45" lean-forward="false" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/assets/javascripts/google_maps_stock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/assets/stylesheets/ionicons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/public/assets/ionicons-988c3f67d1407af4989d164ac044024b7ae61271c78a71dde8c66c8f96833dc1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bluehelmet/app/assets/stylesheets/pe-icon-7-stroke.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
           <folding />
         </state>
       </provider>
