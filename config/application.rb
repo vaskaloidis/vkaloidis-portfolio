@@ -10,8 +10,6 @@ unless Rails.env.production?
 	Dotenv::Railtie.load
 end
 
-Dotenv::Railtie.load
-
 module Vkaloidis
 	class Application < Rails::Application
 
