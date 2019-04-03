@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.4.1'
-gem 'rails', '~> 5.1', '>= 5.1.2'
+ruby '2.5.1'
+gem 'rails', '~> 5.2.0', '>= 5.2.0'
 # VASI.IO
-gem 'dotenv-rails', :groups => [:development, :test]
+# gem 'dotenv-rails', '~> 2.1', '>= 2.1.1', :groups => [:development, :test]
 gem 'faraday-http-cache'
 gem 'yaml_db'
 gem 'marked-rails'
@@ -52,6 +52,7 @@ group :development do
   # gem "pry-rails"
   # gem "pry-byebug"
   # gem "binding_of_caller"
+  gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
   gem "debug_inspector"
 end
 
@@ -61,6 +62,7 @@ group :production do
   gem 'foreman'
 end
 group :test do
+  gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
   gem 'minitest-ci'
   gem 'database_cleaner'
   gem 'shoulda-matchers', '~> 3.1'

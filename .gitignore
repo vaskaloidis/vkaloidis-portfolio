@@ -75,7 +75,6 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
-Gemfile.lock
 /.idea/runConfigurations/Production__bluehelmet.xml
 /.idea/vkaloidis.iml
 /log/development.log
