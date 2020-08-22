@@ -1,5 +1,4 @@
 class AdminController < ApplicationController
-  # http_basic_authenticate_with name: @username, password: @password, except: :view
   before_action :authenticate, except: :view
 
   def index

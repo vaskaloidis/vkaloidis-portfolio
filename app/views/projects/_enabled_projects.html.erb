@@ -4,6 +4,7 @@
 	<thead>
 	<tr>
 		<th>Name</th>
+		<th>Short_Name</th>
 		<th>Categories</th>
 		<th>Display</th>
 		<th>Markdown</th>
@@ -17,6 +18,7 @@
     <% @projectsEnabled.each do |project| %>
         <tr>
           <td><%= project.name %></td>
+          <td><%= project.shortname %></td>
           <td><%= project.categories %></td>
           <td><%= project.displayed %></td>
 					<td><%= project.markdown %>

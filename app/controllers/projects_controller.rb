@@ -1,7 +1,9 @@
 class ProjectsController < AdminController
   # http_basic_authenticate_with name: @username, password: @password
   before_action :set_project, only: %i[show edit update destroy]
-  before_action :authenticate
+  before_action :set_project_shortname, only: %i[view view_raw]
+  before_action :authenticate, except: %i[view view_raw]
+  before_action :populate_image_directories
 
   # GET /projects
   # GET /projects.json
@@ -10,9 +12,25 @@ class ProjectsController < AdminController
     @projectsDisabled = Project.where(displayed: false)
   end
 
-  # GET /projects/1
-  # GET /projects/1.json
-  def view;
+  def populate_image_directories
+    @directories = []
+    project_dirs = Rails.root.join('public', 'projects')
+    Dir.entries(project_dirs).sort_by! {|filename| filename.downcase}.each do |item|
+      next if item == '.' or item == '..' or item == '.DS_Store'
+      @directories << item
+    end
+  end
+
+  def view
+
+  end
+
+  def view_raw
+    render(:layout => "layouts/raw_application")
+  end
+
+  def set_project_shortname
+    @project = Project.where(shortname: params[:shortname]).first
   end
 
   # GET /projects/1
@@ -30,9 +48,7 @@ class ProjectsController < AdminController
     # calculateInfo # ?????
   end
 
-  # GET /projects/1/edit
-
-  def edit;
+  def edit
   end
 
   # POST /projects
@@ -80,22 +96,21 @@ class ProjectsController < AdminController
     end
   end
 
+  def project_params
+    params.require(:project).permit(:name, :shortname, :categories, :content, :order, :displayed, :markdown, :image, :sticky, :website, :large_modal, :image_dir)
+    # project = params[:project]
+    # project[:content] = (project[:content]).strip
+    # params[:project].merge!(project)
+  end
+
   private
 
   def authenticate
     super
   end
 
-  # Use callbacks to share common setup or constraints between actions.
   def set_project
     @project = Project.find(params[:id])
   end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
-  def project_params
-    params.require(:project).permit(:name, :categories, :content, :order, :displayed, :markdown, :image, :sticky, :website, :large_modal, :image_dir)
-    # project = params[:project]
-    # project[:content] = (project[:content]).strip
-    # params[:project].merge!(project)
-  end
 end

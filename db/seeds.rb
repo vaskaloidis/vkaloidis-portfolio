@@ -5,9 +5,8 @@ require 'rubygems'
 require 'uri'
 
 
-create = User.create(email: 'blue.helmet.dev@gmail.com', password: 'password', admin: true)
-create = User.create(email: 'vas', password: 'password', admin: false)
-create = User.create(email: 'vas', password: 'password', admin: false)
+User.create(email: 'blue.helmet.dev@gmail.com', password: 'password', admin: true)
+User.create(email: 'vas', password: 'password', admin: false)
 
 
 # Dirs
