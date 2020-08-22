@@ -6,23 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9870d33-115c-410b-8692-b4b77b37230e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/raw_application.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/projects/_project.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/projects/view_raw.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vkaloidis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vkaloidis.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/main/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/projects/_disabled_projects.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/projects/_disabled_projects.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/projects/_enabled_projects.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/projects/_enabled_projects.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/projects/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/projects/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/projects/view.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/projects/view.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +66,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -251,7 +238,8 @@
       <workItem from="1593642400420" duration="352000" />
       <workItem from="1594339537200" duration="600000" />
       <workItem from="1594350636605" duration="189000" />
-      <workItem from="1598054775958" duration="12362000" />
+      <workItem from="1598054775958" duration="15754000" />
+      <workItem from="1598122812328" duration="46000" />
     </task>
     <servers />
   </component>
@@ -289,9 +277,9 @@
       <screen x="0" y="23" width="1280" height="742" />
     </state>
     <state x="341" y="149" width="598" height="490" key="find.popup/0.23.1280.742@0.23.1280.742" timestamp="1598067863598" />
-    <state x="305" y="89" width="670" height="676" key="search.everywhere.popup" timestamp="1598067671705">
+    <state x="305" y="89" width="670" height="676" key="search.everywhere.popup" timestamp="1598122815715">
       <screen x="0" y="23" width="1280" height="742" />
     </state>
-    <state x="305" y="89" width="670" height="676" key="search.everywhere.popup/0.23.1280.742@0.23.1280.742" timestamp="1598067671705" />
+    <state x="305" y="89" width="670" height="676" key="search.everywhere.popup/0.23.1280.742@0.23.1280.742" timestamp="1598122815715" />
   </component>
 </project>

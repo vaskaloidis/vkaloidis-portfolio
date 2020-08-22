@@ -1,9 +1,14 @@
 class ProjectsController < AdminController
+  after_action :allow_iframe, only: %i[view view_raw]
   # http_basic_authenticate_with name: @username, password: @password
   before_action :set_project, only: %i[show edit update destroy]
   before_action :set_project_shortname, only: %i[view view_raw]
   before_action :authenticate, except: %i[view view_raw]
   before_action :populate_image_directories
+
+  def allow_iframe
+    response.headers.except! 'X-Frame-Options'
+  end
 
   # GET /projects
   # GET /projects.json
