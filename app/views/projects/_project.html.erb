@@ -1,7 +1,3 @@
-<div id="render_project_markdown_<%= project.id.to_s %>">
-	<%= project.content.html_safe %>
-</div>
-
 <% if project.markdown %>
 	<script>
 		var markedOptions = {};
@@ -10,4 +6,11 @@
 		var preview_window = $('#render_project_markdown_<%= project.id.to_s %>');
 		preview_window.html(marked(preview_window.html()));
 	</script>
+<% else %>
+	<%= buildCategoryIconHtml(project.categories, true).html_safe %>
+	
+	<div id="render_project_markdown_<%= project.id.to_s %>">
+		<%= project.content.html_safe %>
+	</div>
+
 <% end %>
