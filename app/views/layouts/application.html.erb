@@ -38,10 +38,10 @@
 </head>
 
 <body>
-<% if session[:admin] %>
-	<%= render 'layouts/navbar' %>
-<% elsif current_page?(:controller => 'projects') && current_page?(:view => 'view') %>
+<% if current_page?(:controller => 'projects') && current_page?(:view => 'view') %>
 		<%= render 'layouts/customer_navbar' %>
+<% elsif session[:admin] %>
+		<%= render 'layouts/navbar' %>
 <% end %>
 
 <% if current_page?(:controller => 'main') %>
