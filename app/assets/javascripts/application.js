@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require main.coffee
+// require main.coffee
 
 //= require marked
 //= require bootstrap-tagsinput

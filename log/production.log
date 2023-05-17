@@ -11,3 +11,56 @@ D, [2016-10-14T21:54:51.062001 #25659] DEBUG -- :   [1m[36mActiveRecord::Schem
 D, [2016-10-14T21:54:51.063558 #25659] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
 D, [2016-10-14T21:54:51.065996 #25659] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 D, [2016-10-14T21:54:51.067468 #25659] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+I, [2023-05-17T15:10:47.779050 #67788]  INFO -- : [Rollbar] Scheduling item
+I, [2023-05-17T15:10:47.779653 #67788]  INFO -- : [Rollbar] Sending item
+I, [2023-05-17T15:10:47.780912 #67788]  INFO -- : [Rollbar] Sending json
+I, [2023-05-17T15:10:47.986680 #67788]  INFO -- : [Rollbar] Success
+I, [2023-05-17T15:10:47.986791 #67788]  INFO -- : [Rollbar] Details: https://rollbar.com/instance/uuid?uuid=4a9c8f0c-a17d-440b-9893-fbedac0c309f (only available if report was successful)
+I, [2023-05-17T15:11:28.503970 #67802]  INFO -- : [Rollbar] Scheduling item
+I, [2023-05-17T15:11:28.504066 #67802]  INFO -- : [Rollbar] Sending item
+I, [2023-05-17T15:11:28.504632 #67802]  INFO -- : [Rollbar] Sending json
+I, [2023-05-17T15:11:28.749995 #67802]  INFO -- : [Rollbar] Success
+I, [2023-05-17T15:11:28.750133 #67802]  INFO -- : [Rollbar] Details: https://rollbar.com/instance/uuid?uuid=8acdb3c8-3f36-4bd1-a93f-975dd255ae91 (only available if report was successful)
+I, [2023-05-17T15:16:31.339176 #68030]  INFO -- : [da70d011-e684-4079-b4ad-b92cee422ced] Started GET "/" for 127.0.0.1 at 2023-05-17 15:16:31 -0400
+I, [2023-05-17T15:16:31.340636 #68030]  INFO -- : [da70d011-e684-4079-b4ad-b92cee422ced] Processing by MainController#index as HTML
+I, [2023-05-17T15:16:31.370029 #68030]  INFO -- : [da70d011-e684-4079-b4ad-b92cee422ced] Completed 500 Internal Server Error in 29ms
+I, [2023-05-17T15:16:31.391035 #68030]  INFO -- : [da70d011-e684-4079-b4ad-b92cee422ced] [Rollbar] Scheduling item
+I, [2023-05-17T15:16:31.391102 #68030]  INFO -- : [da70d011-e684-4079-b4ad-b92cee422ced] [Rollbar] Sending item
+I, [2023-05-17T15:16:31.392424 #68030]  INFO -- : [da70d011-e684-4079-b4ad-b92cee422ced] [Rollbar] Sending json
+I, [2023-05-17T15:16:32.672801 #68030]  INFO -- : [da70d011-e684-4079-b4ad-b92cee422ced] [Rollbar] Success
+I, [2023-05-17T15:16:32.672919 #68030]  INFO -- : [da70d011-e684-4079-b4ad-b92cee422ced] [Rollbar] Details: https://rollbar.com/instance/uuid?uuid=cc2c2a9d-587b-49d9-bc44-af48c853fcc5 (only available if report was successful)
+F, [2023-05-17T15:16:32.673748 #68030] FATAL -- : [da70d011-e684-4079-b4ad-b92cee422ced]   
+F, [2023-05-17T15:16:32.673805 #68030] FATAL -- : [da70d011-e684-4079-b4ad-b92cee422ced] ActiveRecord::NoDatabaseError (connection to server at "::1", port 5432 failed: FATAL:  role "vkaloidis" does not exist
+):
+F, [2023-05-17T15:16:32.673916 #68030] FATAL -- : [da70d011-e684-4079-b4ad-b92cee422ced]   
+F, [2023-05-17T15:16:32.673961 #68030] FATAL -- : [da70d011-e684-4079-b4ad-b92cee422ced] app/controllers/main_controller.rb:29:in `index'
+I, [2023-05-17T15:16:32.751164 #68030]  INFO -- : [86062a4c-730f-4c56-9211-99d1628813d6] Started GET "/favicon.ico" for 127.0.0.1 at 2023-05-17 15:16:32 -0400
+F, [2023-05-17T15:16:32.751966 #68030] FATAL -- : [86062a4c-730f-4c56-9211-99d1628813d6]   
+F, [2023-05-17T15:16:32.752015 #68030] FATAL -- : [86062a4c-730f-4c56-9211-99d1628813d6] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2023-05-17T15:16:32.752042 #68030] FATAL -- : [86062a4c-730f-4c56-9211-99d1628813d6]   
+F, [2023-05-17T15:16:32.752070 #68030] FATAL -- : [86062a4c-730f-4c56-9211-99d1628813d6] actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[86062a4c-730f-4c56-9211-99d1628813d6] rollbar (3.4.0) lib/rollbar/middleware/rails/show_exceptions.rb:22:in `call_with_rollbar'
+[86062a4c-730f-4c56-9211-99d1628813d6] actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[86062a4c-730f-4c56-9211-99d1628813d6] railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+[86062a4c-730f-4c56-9211-99d1628813d6] railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+[86062a4c-730f-4c56-9211-99d1628813d6] activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[86062a4c-730f-4c56-9211-99d1628813d6] activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[86062a4c-730f-4c56-9211-99d1628813d6] activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[86062a4c-730f-4c56-9211-99d1628813d6] railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+[86062a4c-730f-4c56-9211-99d1628813d6] actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[86062a4c-730f-4c56-9211-99d1628813d6] actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[86062a4c-730f-4c56-9211-99d1628813d6] rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+[86062a4c-730f-4c56-9211-99d1628813d6] rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+[86062a4c-730f-4c56-9211-99d1628813d6] actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[86062a4c-730f-4c56-9211-99d1628813d6] rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+[86062a4c-730f-4c56-9211-99d1628813d6] railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+[86062a4c-730f-4c56-9211-99d1628813d6] puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+[86062a4c-730f-4c56-9211-99d1628813d6] puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+[86062a4c-730f-4c56-9211-99d1628813d6] puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+[86062a4c-730f-4c56-9211-99d1628813d6] puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+[86062a4c-730f-4c56-9211-99d1628813d6] puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2023-05-17T15:16:32.755981 #68030]  INFO -- : [86062a4c-730f-4c56-9211-99d1628813d6] [Rollbar] Scheduling item
+I, [2023-05-17T15:16:32.756044 #68030]  INFO -- : [86062a4c-730f-4c56-9211-99d1628813d6] [Rollbar] Sending item
+I, [2023-05-17T15:16:32.756376 #68030]  INFO -- : [86062a4c-730f-4c56-9211-99d1628813d6] [Rollbar] Sending json
+I, [2023-05-17T15:16:32.881908 #68030]  INFO -- : [86062a4c-730f-4c56-9211-99d1628813d6] [Rollbar] Success
+I, [2023-05-17T15:16:32.882021 #68030]  INFO -- : [86062a4c-730f-4c56-9211-99d1628813d6] [Rollbar] Details: https://rollbar.com/instance/uuid?uuid=b3b6ef66-6a24-4504-b32c-493ef4058047 (only available if report was successful)

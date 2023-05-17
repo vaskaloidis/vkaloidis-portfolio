@@ -31,7 +31,8 @@ gem "uglifier", ">= 1.3.0"
 # Use CoffeeScript for .coffee assets and views
 gem "coffee-rails", "~> 4.2"
 # See https://github.com/rails/execjs#readme for more supported runtimes
-gem "therubyracer", platforms: :ruby, require: 'v8'
+# gem "therubyracer", platforms: :ruby, require: 'v8'
+gem 'mini_racer'
 
 # Use jquery as the JavaScript library
 gem "jquery-rails"
@@ -46,6 +47,8 @@ gem "jbuilder", "~> 2.5"
 
 # Use Capistrano for deployment
 # gem "capistrano-rails", group: :development
+#
+# gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 
 group :development do
   # gem "pry"
@@ -76,7 +79,8 @@ group :development, :test do
   gem 'coveralls', require: false
   gem 'factory_bot'
   gem 'factory_bot_rails'
-  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+  # gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+  gem 'faker'
 end
 group :development do
   gem 'web-console' # Add to page: <%= console %>

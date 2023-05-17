@@ -1,0 +1,5 @@
+#!/bin/sh
+
+
+pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d vkaloidis-dev latest.dump
+

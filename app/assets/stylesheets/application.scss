@@ -10,7 +10,7 @@
 @import "bootstrap";
 @import "bootswatch/paper/bootswatch";
 @import 'font-awesome';
-@import 'https://fonts.googleapis.com/css?family=Oswald';
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 @import 'rails_bootstrap_forms';
 @import 'main';
 @import 'bootstrap-tagsinput.scss';
@@ -32,6 +32,7 @@ img.project_modal_body {
 
 .logo {
   text-align: center;
+  width: 75%;
 }
 
 body {
