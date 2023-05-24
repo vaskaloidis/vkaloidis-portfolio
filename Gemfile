@@ -71,7 +71,7 @@ group :test do
   gem 'shoulda-matchers', '~> 3.1'
   gem 'simplecov', require: false
   gem 'capybara'
-  gem 'selenium-webdriver'
+  # gem 'selenium-webdriver'
   gem 'chromedriver-helper'
   gem 'minitest-reporters'
 end
