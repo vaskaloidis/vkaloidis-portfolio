@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.7.1'
+ruby '2.5.1'
 gem 'rails', '~> 5.2.0', '>= 5.2.0'
 # VASI.IO
 # gem 'dotenv-rails', '~> 2.1', '>= 2.1.1', :groups => [:development, :test]
