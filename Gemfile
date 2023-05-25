@@ -70,9 +70,9 @@ group :test do
   gem 'database_cleaner'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'simplecov', require: false
-  gem 'capybara'
+  # gem 'capybara'
   # gem 'selenium-webdriver'
-  gem 'chromedriver-helper'
+  # gem 'chromedriver-helper'
   gem 'minitest-reporters'
 end
 group :development, :test do
