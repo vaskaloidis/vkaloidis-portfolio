@@ -48,19 +48,19 @@
 		<%= render 'layouts/navbar' %>
 <% end %>
 
-<% if current_page?(:controller => 'main') %>
-	<header>
-		<div class="container">
-		</div>
-	</header>
+<%# if current_page?(:controller => 'main') %>
+<!--	<header>-->
+<!--		<div class="container">-->
+<!--		</div>-->
+<!--	</header>-->
+<!--	<div class="container-fluid">-->
+		<%#= yield %>
+<!--	</div>-->
+<%# else %>
 	<div class="container-fluid">
 		<%= yield %>
 	</div>
-<% else %>
-	<div class="container-fluid">
-		<%= yield %>
-	</div>
-<% end %>
+<%# end %>
 
 
 <div class="container">
