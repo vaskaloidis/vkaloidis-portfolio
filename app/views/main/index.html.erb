@@ -13,9 +13,12 @@
 	</div>
 	
 	<hr>
-	
+
+  <div class="my-5">
+    <%= render "wellinks" %>
+  </div>
 	<!-- PROJECTS -->
-	<h1 class="center">projects</h1>
+<!--	<h2 class="center">projects</h2>-->
 	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 		<% @projects.each do |project| %>
 			<% if project.displayed %>
