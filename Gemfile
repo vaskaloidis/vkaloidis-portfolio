@@ -63,6 +63,7 @@ group :production do
   # gem 'memcache', '~> 1.5', '>= 1.5.1'
   gem 'rollbar'
   gem 'foreman'
+  gem 'rails_12factor'
 end
 group :test do
   gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
