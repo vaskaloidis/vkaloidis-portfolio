@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9870d33-115c-410b-8692-b4b77b37230e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main/_wellinks.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/_wellinks.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +89,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="HTML&#10;ruby.rbs&#10;ruby&#10;ERbRuby" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/image" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -373,7 +375,7 @@
       <workItem from="1594350636605" duration="189000" />
       <workItem from="1598054775958" duration="15754000" />
       <workItem from="1598122812328" duration="2301000" />
-      <workItem from="1684349446278" duration="23869000" />
+      <workItem from="1684349446278" duration="25426000" />
     </task>
     <servers />
   </component>
