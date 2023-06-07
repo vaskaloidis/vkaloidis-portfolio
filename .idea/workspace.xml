@@ -6,7 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9870d33-115c-410b-8692-b4b77b37230e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -374,7 +373,7 @@
       <workItem from="1594350636605" duration="189000" />
       <workItem from="1598054775958" duration="15754000" />
       <workItem from="1598122812328" duration="2301000" />
-      <workItem from="1684349446278" duration="23216000" />
+      <workItem from="1684349446278" duration="23321000" />
     </task>
     <servers />
   </component>
