@@ -29,17 +29,35 @@
       function openModal(div) {
         $(div).modal();
       }
-      // // Can also be used with $(document).ready()
-      // $(window).load(function() {
-      //     $('.flexslider').flexslider({
-      //         animation: "slide"
-      //     });
-      // });
+
 	</script>
 
-  <style>
+  <style type="text/css">
       .wellinks-screenshot {
           width: 400px;
+      }
+
+      .img-thumb {
+          max-width: 200px;
+      }
+
+      .gallery {
+          background-color: #333;
+          overflow: auto;
+          white-space: nowrap;
+          padding: 10px;
+      }
+
+      .gallery img {
+          padding: 10px;
+      }
+
+      .gallery video {
+          padding: 10px;
+      }
+
+      video {
+          max-width: 200px;
       }
   </style>
 
