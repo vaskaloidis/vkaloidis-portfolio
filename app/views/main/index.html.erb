@@ -4,16 +4,17 @@
 	
 	<%= render 'layouts/name' %>
 
-  <div class="skills center">
-    <%= render "skills" %>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <%= render "skills" %>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <%= render "skills_progress_bar" %>
+      </div>
+    </div>
   </div>
-
-
-<!--	<div class="row">-->
-<!--    <div clas="col col-12">-->
-		  <%#= render "skills_progress_bar" %>
-<!--    </div>-->
-<!--	</div>-->
 	
 	<div class="col-xs-12 center topButtons">
 		<%= render "buttons" %>

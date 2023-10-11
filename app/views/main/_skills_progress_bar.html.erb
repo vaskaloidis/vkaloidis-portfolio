@@ -1,38 +1,181 @@
 <style>
+  /*.progress {*/
+  /*    !*height: 20px !important;*!*/
+  /*}*/
+
+  .progress-bar {
+      float: left;
+      width: 0%;
+      height: 100%;
+      font-size: 15px;
+      line-height: 23px;
+      color: #fff;
+      text-align: left;
+      padding-left: 20px;
+      -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15) !important;
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15) !important;
+      -webkit-transition: width 0.6s ease !important;
+      -o-transition: width 0.6s ease !important;
+      transition: width 0.6s ease !important;
+  }
+
+  /* line 36, ../../../.rvm/gems/ruby-2.7.1/gems/bootstrap-sass-3.4.1/assets/stylesheets/bootstrap/_progress-bars.scss */
+  .progress-bar {
+      float: left;
+      width: 0%;
+      height: 100%;
+      line-height: 23px;
+      color: #fff;
+      background-color: #2196F3;
+      -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15) !important;
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15) !important;
+      -webkit-transition: width 0.6s ease;
+      -o-transition: width 0.6s ease;
+      transition: width 0.6s ease;
+  }
+
   .progress {
-      height: 20px !important;
+      position: relative;
+      z-index: 1;
+      height: 25px;
+  }
+
+  /* line 565, ../../../.rvm/gems/ruby-2.7.1/gems/bootswatch-rails-3.3.5/vendor/assets/stylesheets/bootswatch/paper/_bootswatch.scss */
+  .progress-bar {
+      /*-webkit-box-shadow: none;*/
+      /*box-shadow: none;*/
+  }
+
+  /* line 568, ../../../.rvm/gems/ruby-2.7.1/gems/bootswatch-rails-3.3.5/vendor/assets/stylesheets/bootswatch/paper/_bootswatch.scss */
+  .progress-bar:last-child {
+      border-radius: 3px 3px 3px 3px !important;
+  }
+
+  /* line 573, ../../../.rvm/gems/ruby-2.7.1/gems/bootswatch-rails-3.3.5/vendor/assets/stylesheets/bootswatch/paper/_bootswatch.scss */
+  .progress-bar:last-child:before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background-color: #cae6fc;
+  }
+
+  /* line 587, ../../../.rvm/gems/ruby-2.7.1/gems/bootswatch-rails-3.3.5/vendor/assets/stylesheets/bootswatch/paper/_bootswatch.scss */
+  .progress-bar-success.progress-bar:last-child:before {
+      background-color: #c7e7c8;
+  }
+
+  /* line 591, ../../../.rvm/gems/ruby-2.7.1/gems/bootswatch-rails-3.3.5/vendor/assets/stylesheets/bootswatch/paper/_bootswatch.scss */
+  .progress-bar-info.progress-bar:last-child:before {
+      background-color: #edc9f3;
+  }
+
+  /* line 595, ../../../.rvm/gems/ruby-2.7.1/gems/bootswatch-rails-3.3.5/vendor/assets/stylesheets/bootswatch/paper/_bootswatch.scss */
+  .progress-bar-warning.progress-bar:last-child:before {
+      background-color: #ffe0b3;
+  }
+
+  /* line 599, ../../../.rvm/gems/ruby-2.7.1/gems/bootswatch-rails-3.3.5/vendor/assets/stylesheets/bootswatch/paper/_bootswatch.scss */
+  .progress-bar-danger.progress-bar:last-child:before {
+      background-color: #f28e92;
+  }
+
+
+
+  /* line 54, ../../../.rvm/gems/ruby-2.7.1/gems/bootstrap-sass-3.4.1/assets/stylesheets/bootstrap/_progress-bars.scss */
+  .progress-striped .progress-bar,
+  .progress-bar-striped {
+      background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-size: 40px 40px;
+  }
+
+  /* line 64, ../../../.rvm/gems/ruby-2.7.1/gems/bootstrap-sass-3.4.1/assets/stylesheets/bootstrap/_progress-bars.scss */
+  .progress.active .progress-bar,
+  .progress-bar.active {
+      -webkit-animation: progress-bar-stripes 2s linear infinite;
+      -o-animation: progress-bar-stripes 2s linear infinite;
+      animation: progress-bar-stripes 2s linear infinite;
+  }
+
+  /* line 73, ../../../.rvm/gems/ruby-2.7.1/gems/bootstrap-sass-3.4.1/assets/stylesheets/bootstrap/_progress-bars.scss */
+  .progress-bar-success {
+      background-color: #4CAF50;
+  }
+
+  /* line 7, ../../../.rvm/gems/ruby-2.7.1/gems/bootstrap-sass-3.4.1/assets/stylesheets/bootstrap/mixins/_progress-bar.scss */
+  .progress-striped .progress-bar-success {
+      background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  }
+
+  /* line 77, ../../../.rvm/gems/ruby-2.7.1/gems/bootstrap-sass-3.4.1/assets/stylesheets/bootstrap/_progress-bars.scss */
+  .progress-bar-info {
+      background-color: #9C27B0;
+  }
+
+  /* line 7, ../../../.rvm/gems/ruby-2.7.1/gems/bootstrap-sass-3.4.1/assets/stylesheets/bootstrap/mixins/_progress-bar.scss */
+  .progress-striped .progress-bar-info {
+      background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  }
+
+  /* line 81, ../../../.rvm/gems/ruby-2.7.1/gems/bootstrap-sass-3.4.1/assets/stylesheets/bootstrap/_progress-bars.scss */
+  .progress-bar-warning {
+      background-color: #ff9800;
+  }
+
+  /* line 7, ../../../.rvm/gems/ruby-2.7.1/gems/bootstrap-sass-3.4.1/assets/stylesheets/bootstrap/mixins/_progress-bar.scss */
+  .progress-striped .progress-bar-warning {
+      background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  }
+
+  /* line 85, ../../../.rvm/gems/ruby-2.7.1/gems/bootstrap-sass-3.4.1/assets/stylesheets/bootstrap/_progress-bars.scss */
+  .progress-bar-danger {
+      background-color: #e51c23;
+  }
+
+  /* line 7, ../../../.rvm/gems/ruby-2.7.1/gems/bootstrap-sass-3.4.1/assets/stylesheets/bootstrap/mixins/_progress-bar.scss */
+  .progress-striped .progress-bar-danger {
+      background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   }
 </style>
 
 <div class="progress">
-  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-    3+ Years Swift
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+    Ruby on Rails: <strong>10+ Years</strong>
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow=80 aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+    Java: <strong>10+ Years</strong>
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    Javascript: <strong>7+ Years</strong>
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-notice progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    iOS / Swift: <strong>3+ Years</strong>
     <!--    <span class="sr-only">3+ Years Swift</span>-->
   </div>
 </div>
 
-<div class="progress">
-  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow=70 aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-    7+ Years Java
-  </div>
-</div>
-
-<div class="progress">
-  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-    5+ Years Javascript
-  </div>
-</div>
-
-<div class="progress">
-  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-    10+ Years Ruby on Rails
-  </div>
-</div>
-
-<div class="progress">
-  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-    10+ Sysadmin / Devops
-  </div>
-</div>
 
 </div>

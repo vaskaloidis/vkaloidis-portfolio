@@ -44,7 +44,7 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (9.0.0)
-    autoprefixer-rails (10.4.13.0)
+    autoprefixer-rails (10.4.15.0)
       execjs (~> 2)
     awesome_print (1.9.2)
     better_errors (2.10.0)
@@ -52,9 +52,9 @@ GEM
       rack (>= 0.9.0)
       rouge (>= 1.0.0)
     bindex (0.8.1)
-    bootstrap-sass (3.3.7)
+    bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
-      sass (>= 3.3.4)
+      sassc (>= 2.0.0)
     bootstrap-tagsinput-rails (0.4.2.1)
       railties (>= 3.1)
     bootstrap_form (5.1.0)
@@ -224,11 +224,6 @@ GEM
     rouge (4.1.1)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
-    sass (3.7.4)
-      sass-listen (~> 4.0.0)
-    sass-listen (4.0.0)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
@@ -293,7 +288,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   better_errors
-  bootstrap-sass (~> 3.3.6)
+  bootstrap-sass (~> 3.4.1)
   bootstrap-tagsinput-rails
   bootstrap_form
   bootswatch-rails

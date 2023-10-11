@@ -1,0 +1,71 @@
+/*
+ *
+ * Color Scheme: https://coolors.co/f1e0c5-9ffff5-c9b79c-ff7260-5e5f60
+ * Dark Bootstrap Swatch: Slate
+ *
+ */
+@import "mixins";
+@import "bootstrap-sprockets";
+@import "bootswatch/paper/variables";
+@import "bootstrap";
+@import "bootswatch/paper/bootswatch";
+@import 'font-awesome';
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import 'rails_bootstrap_forms';
+@import 'main';
+@import 'bootstrap-tagsinput.scss';
+
+.navbar {
+  z-index: -1;
+}
+.modal {
+  overflow-y: scroll !important;
+}
+
+img.project_modal_body {
+  width: 400px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.logo {
+  text-align: center;
+  width: 100px !important;
+}
+
+body {
+  //padding-top: 60px;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.devicon {
+  font-size: 40px;
+  margin-right:6px;
+}
+
+.projectHover:hover {
+  border-top:1px solid #333;
+}
+
+.fa {
+  margin-right:6px;
+}
+
+#project_content {
+  height: 500px;
+}
+
+.modal-body > .img-responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-item {
+  margin-bottom: 25px;
+}
