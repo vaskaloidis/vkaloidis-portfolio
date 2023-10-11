@@ -102,7 +102,7 @@ class ProjectsController < AdminController
   end
 
   def project_params
-    params.require(:project).permit(:name, :shortname, :categories, :content, :order, :displayed, :markdown, :image, :sticky, :website, :large_modal, :image_dir)
+    params.require(:project).permit(:name, :shortname, :categories, :content, :order, :displayed, :markdown, :image, :sticky, :website, :large_modal, :image_dir, :source_code)
     # project = params[:project]
     # project[:content] = (project[:content]).strip
     # params[:project].merge!(project)
