@@ -8,7 +8,8 @@ Rails.application.config.assets.version = '1.0'
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-# Rails.application.config.assets.precompile += %w( search.js )
-
+# Rails.application.config.assets.precompile += %w( application.scss )
+# Rails.application.config.assets.precompile += %w( slider-hover.scss )
+# 
 # Rails.application.config.assets.precompile += %w( bootstrap-tagsinput.js )
 # Rails.application.config.assets.precompile += %w( bootstrap-tagsinput.scss )
