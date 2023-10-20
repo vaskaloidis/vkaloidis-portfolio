@@ -85,6 +85,8 @@ module ApplicationHelper
 			when 'Updated'
 				result = 'success'
 				tag    = 'star'
+		when 'nextjs'
+			result = 'success'
 		end
 
 		if !tag.empty?
@@ -305,6 +307,10 @@ module ApplicationHelper
 				devicon = 'devicon-redis-plain-wordmark colored'
 			when "travis"
 				devicon = 'devicon-travis-plain-wordmark colored'
+			when "nextjs"
+				devicon = 'devicon-nextjs-original'
+		when "aws"
+				devicon = 'devicon-amazonwebservices-original'
 		end
 
 		if !devicon.empty?
